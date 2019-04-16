@@ -11,23 +11,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="69276b14-4ee2-4ea1-b52a-468dc8c2e733" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pathfinding.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pathfinding.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../List/.idea/List.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../List/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../List/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../List/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../List/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../List/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../List/CMakeLists.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../List/List.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../List/List_def.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../List/Node.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../List/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../txt" beforeDir="false" />
-    </list>
+    <list default="true" id="69276b14-4ee2-4ea1-b52a-468dc8c2e733" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
