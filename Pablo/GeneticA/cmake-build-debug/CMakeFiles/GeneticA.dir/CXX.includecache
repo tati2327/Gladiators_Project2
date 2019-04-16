@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/pablo/Documentos/GeneticA/Army.cpp
+Army.h
+/home/pablo/Documentos/GeneticA/Army.h
+iostream
+-
+
+/home/pablo/Documentos/GeneticA/Army.h
+Gladiator.h
+/home/pablo/Documentos/GeneticA/Gladiator.h
+cstdlib
+-
+ctime
+-
+
+/home/pablo/Documentos/GeneticA/Gladiator.h
+cmath
+-
+
