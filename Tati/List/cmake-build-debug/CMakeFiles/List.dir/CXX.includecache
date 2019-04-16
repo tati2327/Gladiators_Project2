@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/tati2327/Documentos/GITHUB/P2/Tati/List/List.h
+iostream
+-
+Node.h
+/home/tati2327/Documentos/GITHUB/P2/Tati/List/Node.h
+List_def.h
+/home/tati2327/Documentos/GITHUB/P2/Tati/List/List_def.h
+
+/home/tati2327/Documentos/GITHUB/P2/Tati/List/List_def.h
+
+/home/tati2327/Documentos/GITHUB/P2/Tati/List/Node.h
+
+/home/tati2327/Documentos/GITHUB/P2/Tati/List/main.cpp
+iostream
+-
+List.h
+/home/tati2327/Documentos/GITHUB/P2/Tati/List/List.h
+
