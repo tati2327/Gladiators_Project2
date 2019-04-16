@@ -9,6 +9,9 @@ int main() {
     list.add("Hello");
     list.add("Another message");
     list.add("Third message!");
-    cout << list[1] <<endl;
+    list.show();
+    cout<<"Despues de eliminarse el primer elemento..."<<endl;
+    list.deleteNode("Hello");
+    list.show();
     return 0;
 }

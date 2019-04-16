@@ -11,7 +11,22 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="69276b14-4ee2-4ea1-b52a-468dc8c2e733" name="Default Changelist" comment="" />
+    <list default="true" id="69276b14-4ee2-4ea1-b52a-468dc8c2e733" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../List/Node_def.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Pablo/Gladiators/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Pablo/Gladiators/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../List/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../List/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../List/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../List/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../List/List.h" beforeDir="false" afterPath="$PROJECT_DIR$/../List/List.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../List/List_def.h" beforeDir="false" afterPath="$PROJECT_DIR$/../List/List_def.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../List/Node.h" beforeDir="false" afterPath="$PROJECT_DIR$/../List/Node.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../List/cmake-build-debug/CMakeFiles/List.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/../List/cmake-build-debug/CMakeFiles/List.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../List/cmake-build-debug/CMakeFiles/List.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/../List/cmake-build-debug/CMakeFiles/List.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../List/cmake-build-debug/CMakeFiles/List.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/../List/cmake-build-debug/CMakeFiles/List.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../List/cmake-build-debug/List" beforeDir="false" afterPath="$PROJECT_DIR$/../List/cmake-build-debug/List" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../List/cmake-build-debug/List.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/../List/cmake-build-debug/List.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../List/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../List/main.cpp" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -49,7 +64,7 @@
         <entry file="file://$PROJECT_DIR$/Pathfinding.h">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="307">
-              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+              <caret line="33" selection-start-line="33" selection-end-line="33" />
               <folding>
                 <element signature="e#103#119#0" expanded="true" />
               </folding>
@@ -71,10 +86,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="683" />
-    <option name="y" value="25" />
-    <option name="width" value="683" />
-    <option name="height" value="743" />
+    <option name="y" value="27" />
+    <option name="width" value="673" />
+    <option name="height" value="741" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -188,7 +202,7 @@
     <entry file="file://$PROJECT_DIR$/Pathfinding.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="307">
-          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
           <folding>
             <element signature="e#103#119#0" expanded="true" />
           </folding>

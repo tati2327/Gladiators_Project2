@@ -2,9 +2,15 @@
 #define LIST_NODE_H
 
 template<typename T>
-struct Node {
-    Node<T>* next;
-    T data;
+class Node {
+    public:
+        Node<T>* next;
+        T data;
+
+        T getValue();
+        Node<T> * getNext();
 };
+
+#include "Node_def.h"
 
 #endif //LIST_NODE_H
