@@ -35,15 +35,41 @@ void List<T>::add(T data) {
 }
 
 template<typename T>
-void List<T>::deleteNode(T data) {
+void List<T>::deleteData(T _data) {
     if (first != nullptr) {
         Node<T> *auxDelete;
-        //Node<T> *prev = nullptr;
         auxDelete = first;
 
-        while ((auxDelete != nullptr) && (auxDelete->data != data)) {
+        while ((auxDelete != nullptr) && (auxDelete->data != _data)) {
             curr = auxDelete;
             auxDelete = auxDelete->next;
+        }
+
+        //No se encontró el elemento
+        if (auxDelete == nullptr) {
+            cout << "El elemento no existe"<<endl;
+        } else if (curr == nullptr) { //El elemento es el primero de la lista
+            first = first->next;
+            delete(auxDelete);
+        } else { //El elemento está en el medio o al final
+            curr->next = auxDelete->next;
+            delete(auxDelete);
+        }
+    }
+}
+
+template<typename T>
+void List<T>::deleteNode(T&_node) {
+    if (first != nullptr) {
+        Node<T> *auxDelete;
+        auxDelete = first;
+
+        while ((auxDelete != nullptr) && (&auxDelete->data != &_node)) {
+            curr = auxDelete;
+            cout<<"CURR ES "<<curr<<endl;
+            auxDelete = auxDelete->next;
+            cout<<"AHORA AUX ES "<<auxDelete<<endl;
+
         }
 
         //No se encontró el elemento
@@ -78,14 +104,14 @@ template<typename T>
 T List<T>::getData(int index) {
     if(index == 0) {
         // Get the first element
-        return this->first->data;
+        return first->data;
     } else {
         // Get the index'th element
-        Node<T>* curr = this->first;
+        curr = first;
         for(int i = 0; i < index; ++i) {
-            curr = curr->next->data;
+            curr = curr->next;
         }
-        return curr;
+        return curr->data;
     }
 }
 
@@ -109,7 +135,7 @@ int List<T>::size(){
         count=count+1;
     }
 
-    cout<<"El tamaño de la lista es"<<count<<endl;
+    //cout<<"El tamaño de la lista es "<<count<<endl;
     return count;
 }
 

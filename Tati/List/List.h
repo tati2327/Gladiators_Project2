@@ -29,9 +29,12 @@ class List {
          * Elimina un nodo de la lista por dato.
          * @param data de tipo T
          */
-        void deleteNode(T data);
+        void deleteData(T _data);
 
-        /*!
+        void deleteNode(T &_node);
+
+
+    /*!
          * getNode()
          * Retorna un nodo de tipo T
          * @param un indice

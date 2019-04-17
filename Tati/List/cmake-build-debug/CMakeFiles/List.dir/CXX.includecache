@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+/home/tati2327/Documentos/GITHUB/P2/Tati/List/Field.h
+List.h
+/home/tati2327/Documentos/GITHUB/P2/Tati/List/List.h
+
 /home/tati2327/Documentos/GITHUB/P2/Tati/List/List.h
 iostream
 -
@@ -30,6 +34,18 @@ Node_def.h
 
 /home/tati2327/Documentos/GITHUB/P2/Tati/List/Node_def.h
 
+/home/tati2327/Documentos/GITHUB/P2/Tati/List/Pathfinding.cpp
+Pathfinding.h
+/home/tati2327/Documentos/GITHUB/P2/Tati/List/Pathfinding.h
+
+/home/tati2327/Documentos/GITHUB/P2/Tati/List/Pathfinding.h
+Field.h
+/home/tati2327/Documentos/GITHUB/P2/Tati/List/Field.h
+List.h
+/home/tati2327/Documentos/GITHUB/P2/Tati/List/List.h
+Matrix.h
+/home/tati2327/Documentos/GITHUB/P2/Tati/List/Matrix.h
+
 /home/tati2327/Documentos/GITHUB/P2/Tati/List/main.cpp
 iostream
 -
@@ -37,4 +53,8 @@ List.h
 /home/tati2327/Documentos/GITHUB/P2/Tati/List/List.h
 Matrix.h
 /home/tati2327/Documentos/GITHUB/P2/Tati/List/Matrix.h
+Field.h
+/home/tati2327/Documentos/GITHUB/P2/Tati/List/Field.h
+Pathfinding.h
+/home/tati2327/Documentos/GITHUB/P2/Tati/List/Pathfinding.h
 
