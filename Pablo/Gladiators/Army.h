@@ -16,16 +16,16 @@
 class Army {
 public:
     int armySize;
-    List<Gladiator*> gladiators;
+    List<Gladiator> gladiators;
 
 
 public:
     Army(int armySize);
     void printArray(int *array, int n);
-    void insertionSort(List<Gladiator*> gladiators, int listSize);
+    void insertionSort(List<Gladiator> gladiators, int listSize);
     void createArmy(int armySize);
-    Gladiator* setRandomValues(Gladiator *gladiator,int i);
-    Gladiator* setHeuristicValues(Gladiator *gladiator, int i);
+    Gladiator setRandomValues(Gladiator gladiator,int i);
+    Gladiator setHeuristicValues(Gladiator gladiator, int i);
 
 
 };

@@ -30,7 +30,7 @@ public:
      * @return
      */
     T getData(int index);
-    Node<T> getNode(int index);
+    Node<T>* getNode(int index);
 
         T setData(T data);
 

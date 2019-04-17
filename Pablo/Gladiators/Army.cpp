@@ -15,94 +15,94 @@ Army::Army(int armySize ) {
 
 
 
-Gladiator* Army::setRandomValues(Gladiator *gladiator, int i) {
-    gladiator->setId(i+1);
-    cout<<"My id is:"<<gladiator->getId()<<endl;
+Gladiator Army::setRandomValues(Gladiator gladiator, int i) {
+    gladiator.setId(i+1);
+    cout<<"My id is:"<<gladiator.getId()<<endl;
 
     int random= (rand() % 5) + 0;
-    gladiator->setAnger(random);
-    cout<<gladiator->getAnger()<<endl;
+    gladiator.setAnger(random);
+    cout<<gladiator.getAnger()<<endl;
 
     int random1= (rand() % 5) + 0;
-    gladiator->setJoy(random1);
-    cout<<gladiator->getJoy()<<endl;
+    gladiator.setJoy(random1);
+    cout<<gladiator.getJoy()<<endl;
 
     int random2= (rand() % 5) + 0;
-    gladiator->setSelfcontrol(random2);
-    cout<<gladiator->getSelfControl()<<endl;
+    gladiator.setSelfcontrol(random2);
+    cout<<gladiator.getSelfControl()<<endl;
 
     int random3= (rand() % 5) + 0;
-    gladiator->setSadness(random3);
-    cout<<gladiator->getSadness()<<endl;
+    gladiator.setSadness(random3);
+    cout<<gladiator.getSadness()<<endl;
 
-    gladiator->setEmotionalInt(gladiator->calculateEmotionalInt());
-    cout<<"Inteligencia Emocional, inicie aqui zorro :"<<gladiator->getEmotionalInt()<<endl;
+    gladiator.setEmotionalInt(gladiator.calculateEmotionalInt());
+    cout<<"Inteligencia Emocional, inicie aqui zorro :"<<gladiator.getEmotionalInt()<<endl;
 
     int random4= (rand() % 20) + 0;
-    gladiator->setPhysicalCondition(random4);
-    cout<<gladiator->getPhysicalCondition()<<endl;
+    gladiator.setPhysicalCondition(random4);
+    cout<<gladiator.getPhysicalCondition()<<endl;
 
     int random5= (rand() % 20) + 0;
-    gladiator->setUpperTrunckStrenght(random5);
-    cout<<gladiator->getUpperTrunckStrenght()<<endl;
+    gladiator.setUpperTrunckStrenght(random5);
+    cout<<gladiator.getUpperTrunckStrenght()<<endl;
 
     int random6= (rand() % 20) + 0;
-    gladiator->setLowerTrunckStrenght(random6);
-    cout<<gladiator->getLowerTrunckStrenght()<<endl;
+    gladiator.setLowerTrunckStrenght(random6);
+    cout<<gladiator.getLowerTrunckStrenght()<<endl;
 
     int random7= (rand() % 40) + 0;
-    gladiator->setAge(random7);
-    cout<<"edad"<<gladiator->getAge()<<endl;
+    gladiator.setAge(random7);
+    cout<<"edad"<<gladiator.getAge()<<endl;
 
-    gladiator->setResistance(gladiator->calculateFitness());
-    cout<<gladiator->getResistance()<<endl;
+    gladiator.setResistance(gladiator.calculateFitness());
+    cout<<gladiator.getResistance()<<endl;
     cout<<"Termine RASTAMAN"<<endl;
 
     return gladiator;
 }
 
 
-Gladiator* Army::setHeuristicValues(Gladiator *gladiator, int i) {
-    gladiator->setId(i+1);
-    cout<<"My id is:"<<gladiator->getId()<<endl;
+Gladiator Army::setHeuristicValues(Gladiator gladiator, int i) {
+    gladiator.setId(i+1);
+    cout<<"My id is:"<<gladiator.getId()<<endl;
 
-    gladiator->setAnger(2);
-    cout<<gladiator->getAnger()<<endl;
-
-
-    gladiator->setJoy(3);
-    cout<<gladiator->getJoy()<<endl;
+    gladiator.setAnger(2);
+    cout<<gladiator.getAnger()<<endl;
 
 
-    gladiator->setSelfcontrol(3);
-    cout<<gladiator->getSelfControl()<<endl;
+    gladiator.setJoy(3);
+    cout<<gladiator.getJoy()<<endl;
+
+
+    gladiator.setSelfcontrol(3);
+    cout<<gladiator.getSelfControl()<<endl;
 
 
 
-    gladiator->setSadness(3);
-    cout<<gladiator->getSadness()<<endl;
+    gladiator.setSadness(3);
+    cout<<gladiator.getSadness()<<endl;
 
-    gladiator->setEmotionalInt(gladiator->calculateEmotionalInt());
-    cout<<"Inteligencia Emocional, inicie aqui zorro :"<<gladiator->getEmotionalInt()<<endl;
-
-
-    gladiator->setPhysicalCondition(18);
-    cout<<gladiator->getPhysicalCondition()<<endl;
+    gladiator.setEmotionalInt(gladiator.calculateEmotionalInt());
+    cout<<"Inteligencia Emocional, inicie aqui zorro :"<<gladiator.getEmotionalInt()<<endl;
 
 
-    gladiator->setUpperTrunckStrenght(3);
-    cout<<gladiator->getUpperTrunckStrenght()<<endl;
+    gladiator.setPhysicalCondition(18);
+    cout<<gladiator.getPhysicalCondition()<<endl;
 
 
-    gladiator->setLowerTrunckStrenght(18);
-    cout<<gladiator->getLowerTrunckStrenght()<<endl;
+    gladiator.setUpperTrunckStrenght(3);
+    cout<<gladiator.getUpperTrunckStrenght()<<endl;
 
 
-    gladiator->setAge(17);
-    cout<<"edad"<<gladiator->getAge()<<endl;
+    gladiator.setLowerTrunckStrenght(18);
+    cout<<gladiator.getLowerTrunckStrenght()<<endl;
 
-    gladiator->setResistance(gladiator->calculateFitness());
-    cout<<gladiator->getResistance()<<endl;
+
+    gladiator.setAge(17);
+    cout<<"edad"<<gladiator.getAge()<<endl;
+
+    gladiator.setResistance(gladiator.calculateFitness());
+    cout<<gladiator.getResistance()<<endl;
 
     return gladiator;
 
@@ -112,7 +112,7 @@ Gladiator* Army::setHeuristicValues(Gladiator *gladiator, int i) {
 void Army::createArmy(int armySize) {
     srand(time(NULL));
     for (int i = 0; i <= armySize-1; i++) {
-        Gladiator *gladiator = new Gladiator();
+        Gladiator gladiator =Gladiator();
 
         if(i==0) {
             gladiators.add(setHeuristicValues(gladiator, i));
@@ -125,7 +125,7 @@ void Army::createArmy(int armySize) {
 
     int i=0;
     while(i<=19) {
-        cout << "Sirve " << gladiators.getData(i)->getResistance() << endl;
+        cout << "Sirve " << gladiators.getData(i).getResistance() << endl;
         i++;
     }
 
@@ -142,18 +142,18 @@ void Army:: printArray(int *array, int n) {
 
 
 
-/*void Army:: insertionSort(List<Gladiator*> gladiators, int listSize){
-    if(listSize > 1){
+void Army:: insertionSort(List<Gladiator> gladiators, int listSize) {
+    if (listSize > 1) {
         int size = listSize;
-        for(int i = 1; i < size; ++i){
+        for (int i = 1; i < size; ++i) {
             int j = i - 1;
-            int key = gladiators[i]->getResistance();
-            Gladiator* temp =gladiators[i];
-            while(j >= 0 && gladiators[j]->getResistance() > key){
-                gladiators.getNode(j+1).setNode(gladiators.getNode(j));
-                --j;
+            //int key = gladiators[i]->getResistance();
+            if (j == 0) {
+                while (j >= 0 && gladiators[j].getResistance() > gladiators[i].getResistance()) {
+                    gladiators.getNode(j)->next = gladiators.getNode(i)->next;
+                }
+                gladiators.getNode(j + 1).setNode(keyptr);
             }
-            gladiators.getNode(j+1).setNode(keyptr);
         }
     }
-}*/
+}

@@ -76,7 +76,7 @@ T List<T>::getData(int index) {
 }
 
 template<typename T>
-Node<T> List<T>::getNode(int index) {
+Node<T>* List<T>::getNode(int index) {
     if(index == 0) {
         // Get the first element
         return first;
