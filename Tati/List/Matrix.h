@@ -18,7 +18,7 @@ class Matrix {
         void setCol(int c);
         void setData(int row, int col, T _data);
 
-¿        T& operator()(int row, int col);
+        T& operator()(int row, int col);
         void show();
 };
 
