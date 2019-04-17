@@ -43,10 +43,10 @@ RM = /opt/clion-2018.3.4/bin/cmake/linux/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pablo/Documentos/GeneticA
+CMAKE_SOURCE_DIR = /home/pablo/Documentos/Github/Gladiators/Pablo/GeneticA
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pablo/Documentos/GeneticA/cmake-build-debug
+CMAKE_BINARY_DIR = /home/pablo/Documentos/Github/Gladiators/Pablo/GeneticA/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/GeneticA.dir/depend.make
@@ -59,42 +59,42 @@ include CMakeFiles/GeneticA.dir/flags.make
 
 CMakeFiles/GeneticA.dir/main.cpp.o: CMakeFiles/GeneticA.dir/flags.make
 CMakeFiles/GeneticA.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pablo/Documentos/GeneticA/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/GeneticA.dir/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GeneticA.dir/main.cpp.o -c /home/pablo/Documentos/GeneticA/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pablo/Documentos/Github/Gladiators/Pablo/GeneticA/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/GeneticA.dir/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GeneticA.dir/main.cpp.o -c /home/pablo/Documentos/Github/Gladiators/Pablo/GeneticA/main.cpp
 
 CMakeFiles/GeneticA.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GeneticA.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pablo/Documentos/GeneticA/main.cpp > CMakeFiles/GeneticA.dir/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pablo/Documentos/Github/Gladiators/Pablo/GeneticA/main.cpp > CMakeFiles/GeneticA.dir/main.cpp.i
 
 CMakeFiles/GeneticA.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GeneticA.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pablo/Documentos/GeneticA/main.cpp -o CMakeFiles/GeneticA.dir/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pablo/Documentos/Github/Gladiators/Pablo/GeneticA/main.cpp -o CMakeFiles/GeneticA.dir/main.cpp.s
 
 CMakeFiles/GeneticA.dir/Gladiator.cpp.o: CMakeFiles/GeneticA.dir/flags.make
 CMakeFiles/GeneticA.dir/Gladiator.cpp.o: ../Gladiator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pablo/Documentos/GeneticA/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/GeneticA.dir/Gladiator.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GeneticA.dir/Gladiator.cpp.o -c /home/pablo/Documentos/GeneticA/Gladiator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pablo/Documentos/Github/Gladiators/Pablo/GeneticA/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/GeneticA.dir/Gladiator.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GeneticA.dir/Gladiator.cpp.o -c /home/pablo/Documentos/Github/Gladiators/Pablo/GeneticA/Gladiator.cpp
 
 CMakeFiles/GeneticA.dir/Gladiator.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GeneticA.dir/Gladiator.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pablo/Documentos/GeneticA/Gladiator.cpp > CMakeFiles/GeneticA.dir/Gladiator.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pablo/Documentos/Github/Gladiators/Pablo/GeneticA/Gladiator.cpp > CMakeFiles/GeneticA.dir/Gladiator.cpp.i
 
 CMakeFiles/GeneticA.dir/Gladiator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GeneticA.dir/Gladiator.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pablo/Documentos/GeneticA/Gladiator.cpp -o CMakeFiles/GeneticA.dir/Gladiator.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pablo/Documentos/Github/Gladiators/Pablo/GeneticA/Gladiator.cpp -o CMakeFiles/GeneticA.dir/Gladiator.cpp.s
 
 CMakeFiles/GeneticA.dir/Army.cpp.o: CMakeFiles/GeneticA.dir/flags.make
 CMakeFiles/GeneticA.dir/Army.cpp.o: ../Army.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pablo/Documentos/GeneticA/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/GeneticA.dir/Army.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GeneticA.dir/Army.cpp.o -c /home/pablo/Documentos/GeneticA/Army.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pablo/Documentos/Github/Gladiators/Pablo/GeneticA/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/GeneticA.dir/Army.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GeneticA.dir/Army.cpp.o -c /home/pablo/Documentos/Github/Gladiators/Pablo/GeneticA/Army.cpp
 
 CMakeFiles/GeneticA.dir/Army.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GeneticA.dir/Army.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pablo/Documentos/GeneticA/Army.cpp > CMakeFiles/GeneticA.dir/Army.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pablo/Documentos/Github/Gladiators/Pablo/GeneticA/Army.cpp > CMakeFiles/GeneticA.dir/Army.cpp.i
 
 CMakeFiles/GeneticA.dir/Army.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GeneticA.dir/Army.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pablo/Documentos/GeneticA/Army.cpp -o CMakeFiles/GeneticA.dir/Army.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pablo/Documentos/Github/Gladiators/Pablo/GeneticA/Army.cpp -o CMakeFiles/GeneticA.dir/Army.cpp.s
 
 # Object files for target GeneticA
 GeneticA_OBJECTS = \
@@ -110,7 +110,7 @@ GeneticA: CMakeFiles/GeneticA.dir/Gladiator.cpp.o
 GeneticA: CMakeFiles/GeneticA.dir/Army.cpp.o
 GeneticA: CMakeFiles/GeneticA.dir/build.make
 GeneticA: CMakeFiles/GeneticA.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/pablo/Documentos/GeneticA/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable GeneticA"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/pablo/Documentos/Github/Gladiators/Pablo/GeneticA/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable GeneticA"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/GeneticA.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -123,6 +123,6 @@ CMakeFiles/GeneticA.dir/clean:
 .PHONY : CMakeFiles/GeneticA.dir/clean
 
 CMakeFiles/GeneticA.dir/depend:
-	cd /home/pablo/Documentos/GeneticA/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pablo/Documentos/GeneticA /home/pablo/Documentos/GeneticA /home/pablo/Documentos/GeneticA/cmake-build-debug /home/pablo/Documentos/GeneticA/cmake-build-debug /home/pablo/Documentos/GeneticA/cmake-build-debug/CMakeFiles/GeneticA.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/pablo/Documentos/Github/Gladiators/Pablo/GeneticA/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pablo/Documentos/Github/Gladiators/Pablo/GeneticA /home/pablo/Documentos/Github/Gladiators/Pablo/GeneticA /home/pablo/Documentos/Github/Gladiators/Pablo/GeneticA/cmake-build-debug /home/pablo/Documentos/Github/Gladiators/Pablo/GeneticA/cmake-build-debug /home/pablo/Documentos/Github/Gladiators/Pablo/GeneticA/cmake-build-debug/CMakeFiles/GeneticA.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/GeneticA.dir/depend
 

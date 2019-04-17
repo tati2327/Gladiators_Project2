@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Gladiators.dir/main.cpp.o"
   "CMakeFiles/Gladiators.dir/Gladiator.cpp.o"
+  "CMakeFiles/Gladiators.dir/Army.cpp.o"
   "Gladiators.pdb"
   "Gladiators"
 )

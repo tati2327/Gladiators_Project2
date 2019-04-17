@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/pablo/Documentos/GeneticA/Army.cpp" "/home/pablo/Documentos/GeneticA/cmake-build-debug/CMakeFiles/GeneticA.dir/Army.cpp.o"
-  "/home/pablo/Documentos/GeneticA/Gladiator.cpp" "/home/pablo/Documentos/GeneticA/cmake-build-debug/CMakeFiles/GeneticA.dir/Gladiator.cpp.o"
-  "/home/pablo/Documentos/GeneticA/main.cpp" "/home/pablo/Documentos/GeneticA/cmake-build-debug/CMakeFiles/GeneticA.dir/main.cpp.o"
+  "/home/pablo/Documentos/Github/Gladiators/Pablo/GeneticA/Army.cpp" "/home/pablo/Documentos/Github/Gladiators/Pablo/GeneticA/cmake-build-debug/CMakeFiles/GeneticA.dir/Army.cpp.o"
+  "/home/pablo/Documentos/Github/Gladiators/Pablo/GeneticA/Gladiator.cpp" "/home/pablo/Documentos/Github/Gladiators/Pablo/GeneticA/cmake-build-debug/CMakeFiles/GeneticA.dir/Gladiator.cpp.o"
+  "/home/pablo/Documentos/Github/Gladiators/Pablo/GeneticA/main.cpp" "/home/pablo/Documentos/Github/Gladiators/Pablo/GeneticA/cmake-build-debug/CMakeFiles/GeneticA.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
