@@ -1,26 +1,50 @@
 #include <iostream>
-#include "Army.h"
-#include "List.h"
+//#include "Army.h"
+//#include "List.h"
+#include "GeneticEvolution.h"
 
 
 int main() {
+    GeneticEvolution gA;
+    gA.army.createArmy(gA.army.armySize);
+    gA.army.insertionSort(gA.army.gladiators);
+    gA.army.printArray(gA.army.gladiators, gA.army.armySize);
+    gA.setFittest();
+    cout<<"Fittest: " <<gA.fittest.getResistance()<<endl;
+    gA.setSecondFittest();
+    cout<<"secondFittest: "<<gA.secondFittest.getResistance()<<endl;
 
-    /*Army army;
-    army.createArmy(army.armySize);
+    cout<<"Voy a hacer el crossovereo"<<endl;
+    srand(time(NULL));
 
-    //army.printArray(army.gladiators, 20);
-    army.insertionSort(army.gladiators);
-    cout<<"lista ordenada"<<endl;
-    army.printArray(army.gladiators, 20);*/
+    gA.crossover();
+    gA.generationCount=+1;
+    gA.setFittest();
+    cout<<"Fittest: " <<gA.fittest.getResistance()<<endl;
+    gA.setSecondFittest();
+    cout<<"secondFittest: "<<gA.secondFittest.getResistance()<<endl;
 
-    /*List<string> list;
-    list.add("Hello");
-    list.add("Another message");
-    list.add("Third message!");
-    list.show();
-    cout<<"Despues de eliminarse el primer elemento..."<<endl;
-    list.deleteNode("Hello");
-    list.show();*/
+
+
+    gA.crossover();
+    gA.generationCount=+1;
+    gA.setFittest();
+    cout<<"Fittest: " <<gA.fittest.getResistance()<<endl;
+    gA.setSecondFittest();
+    cout<<"secondFittest: "<<gA.secondFittest.getResistance()<<endl;
+
+
+    gA.crossover();
+    gA.generationCount=+1;
+    gA.setFittest();
+    cout<<"Fittest: " <<gA.fittest.getResistance()<<endl;
+    gA.setSecondFittest();
+    cout<<"secondFittest: "<<gA.secondFittest.getResistance()<<endl;
+
+
+
+
+
 
 
     return 0;

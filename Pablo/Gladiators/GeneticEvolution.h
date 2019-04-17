@@ -7,16 +7,19 @@
 
 #include "Army.h"
 #include"Gladiator.h"
+#include "Gladiator.h"
 
 
 class GeneticEvolution {
-    private:
+    public:
         Army army;
         Gladiator fittest;
         Gladiator secondFittest;
         int generationCount;
     public:
         GeneticEvolution();
+        void setFittest();
+        void setSecondFittest();
         void crossover();
         void mutation();
         List<int> fittestGenes();

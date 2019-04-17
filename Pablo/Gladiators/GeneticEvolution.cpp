@@ -5,10 +5,20 @@
 #include "GeneticEvolution.h"
 
 GeneticEvolution::GeneticEvolution() {
-    this->fittest=army.gladiators[19];
-    this->secondFittest=army.gladiators[18];
+    this->fittest;
+    this->secondFittest;
     this->generationCount=0;
 }
+
+void GeneticEvolution::setFittest() {
+    fittest=army.gladiators[19];
+}
+
+void GeneticEvolution::setSecondFittest() {
+        secondFittest=army.gladiators[18];
+}
+
+
 
 List<int> GeneticEvolution::fittestGenes() {
     List<int> fittestList;
@@ -44,7 +54,6 @@ void GeneticEvolution::crossover() {
     Gladiator tmp2;
     List<int> fittestList= fittestGenes();
     List<int> secondFittestList= secondFittestGenes();
-    srand(time(NULL));
     int random= (rand() % 7) + 0;
     for(int i=0; i<=random; i++){
        if(i==0) {
@@ -86,8 +95,8 @@ void GeneticEvolution::crossover() {
         tmp1.setEmotionalInt(tmp1.calculateEmotionalInt());
         tmp1.setResistance(tmp1.calculateFitness());
         tmp2.setId(20 + generationCount + 2);
-        tmp2.setEmotionalInt(tmp1.calculateEmotionalInt());
-        tmp2.setResistance(tmp1.calculateFitness());
+        tmp2.setEmotionalInt(tmp2.calculateEmotionalInt());
+        tmp2.setResistance(tmp2.calculateFitness());
         /*! Se asigna tmp1 y tmp2 al gladiador menos apto y el segundo menos apto respectivamente*/
         army.gladiators[0]=tmp1;
         army.gladiators[1]=tmp2;
@@ -136,11 +145,18 @@ void GeneticEvolution::crossover() {
     tmp1.setEmotionalInt(tmp1.calculateEmotionalInt());
     tmp1.setResistance(tmp1.calculateFitness());
     tmp2.setId(20 + generationCount + 2);
-    tmp2.setEmotionalInt(tmp1.calculateEmotionalInt());
-    tmp2.setResistance(tmp1.calculateFitness());
+    tmp2.setEmotionalInt(tmp2.calculateEmotionalInt());
+    tmp2.setResistance(tmp2.calculateFitness());
+
+    cout<<"El nuevo valor es: "<<tmp1.getLowerTrunckStrenght()<<endl;
+    cout<<"El nuevo valor es: "<<tmp2.getLowerTrunckStrenght()<<endl;
+
+
     /*! Se asigna tmp1 y tmp2 al gladiador menos apto y el segundo menos apto respectivamente*/
-    army.gladiators[0]=tmp1;
-    army.gladiators[1]=tmp2;
+    army.gladiators.getNode(0)->setData(tmp1);
+    cout<<"El nuevo valor del mansote 0 es: "<<army.gladiators[0].getResistance()<<endl;
+    army.gladiators.getNode(1)->setData(tmp2);
+    cout<<"El nuevo valor del mansote 1 es: "<<army.gladiators[1].getResistance()<<endl;
     /*! Se reordena la lista de gladiadores*/
     army.insertionSort(army.gladiators);
     army.printArray(army.gladiators, army.armySize);
