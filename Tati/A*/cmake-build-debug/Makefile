@@ -111,44 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named A_
+# Target rules for targets named List
 
 # Build rule for target.
-A_: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 A_
-.PHONY : A_
+List: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 List
+.PHONY : List
 
 # fast build rule for target.
-A_/fast:
-	$(MAKE) -f CMakeFiles/A_.dir/build.make CMakeFiles/A_.dir/build
-.PHONY : A_/fast
-
-Pathfinding.o: Pathfinding.cpp.o
-
-.PHONY : Pathfinding.o
-
-# target to build an object file
-Pathfinding.cpp.o:
-	$(MAKE) -f CMakeFiles/A_.dir/build.make CMakeFiles/A_.dir/Pathfinding.cpp.o
-.PHONY : Pathfinding.cpp.o
-
-Pathfinding.i: Pathfinding.cpp.i
-
-.PHONY : Pathfinding.i
-
-# target to preprocess a source file
-Pathfinding.cpp.i:
-	$(MAKE) -f CMakeFiles/A_.dir/build.make CMakeFiles/A_.dir/Pathfinding.cpp.i
-.PHONY : Pathfinding.cpp.i
-
-Pathfinding.s: Pathfinding.cpp.s
-
-.PHONY : Pathfinding.s
-
-# target to generate assembly for a file
-Pathfinding.cpp.s:
-	$(MAKE) -f CMakeFiles/A_.dir/build.make CMakeFiles/A_.dir/Pathfinding.cpp.s
-.PHONY : Pathfinding.cpp.s
+List/fast:
+	$(MAKE) -f CMakeFiles/List.dir/build.make CMakeFiles/List.dir/build
+.PHONY : List/fast
 
 main.o: main.cpp.o
 
@@ -156,7 +129,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) -f CMakeFiles/A_.dir/build.make CMakeFiles/A_.dir/main.cpp.o
+	$(MAKE) -f CMakeFiles/List.dir/build.make CMakeFiles/List.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -165,7 +138,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) -f CMakeFiles/A_.dir/build.make CMakeFiles/A_.dir/main.cpp.i
+	$(MAKE) -f CMakeFiles/List.dir/build.make CMakeFiles/List.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -174,7 +147,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) -f CMakeFiles/A_.dir/build.make CMakeFiles/A_.dir/main.cpp.s
+	$(MAKE) -f CMakeFiles/List.dir/build.make CMakeFiles/List.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -184,11 +157,8 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... A_"
+	@echo "... List"
 	@echo "... edit_cache"
-	@echo "... Pathfinding.o"
-	@echo "... Pathfinding.i"
-	@echo "... Pathfinding.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

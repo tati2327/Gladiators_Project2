@@ -1,2 +1,2 @@
-# Empty dependencies file for A_.
+# Empty dependencies file for List.
 # This may be replaced when dependencies are built.

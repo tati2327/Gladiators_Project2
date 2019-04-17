@@ -1,5 +1,11 @@
 file(REMOVE_RECURSE
   "CMakeFiles/List.dir/main.cpp.o"
+  "CMakeFiles/List.dir/Pathfinding.cpp.o"
+  "CMakeFiles/List.dir/Field.cpp.o"
+  "CMakeFiles/List.dir/SingleArrow.cpp.o"
+  "CMakeFiles/List.dir/FireArrow.cpp.o"
+  "CMakeFiles/List.dir/ExplosiveArrow.cpp.o"
+  "CMakeFiles/List.dir/Tower.cpp.o"
   "List.pdb"
   "List"
 )

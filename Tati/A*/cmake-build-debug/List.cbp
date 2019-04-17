@@ -2,7 +2,7 @@
 <CodeBlocks_project_file>
 	<FileVersion major="1" minor="6"/>
 	<Project>
-		<Option title="A_"/>
+		<Option title="List"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
 		<Option virtualFolders="CMake Files\;"/>
@@ -27,8 +27,8 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/tati2327/Documentos/GITHUB/P2/Tati/A*/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="A_">
-				<Option output="/home/tati2327/Documentos/GITHUB/P2/Tati/A*/cmake-build-debug/A_" prefix_auto="0" extension_auto="0"/>
+			<Target title="List">
+				<Option output="/home/tati2327/Documentos/GITHUB/P2/Tati/A*/cmake-build-debug/List" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/tati2327/Documentos/GITHUB/P2/Tati/A*/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -44,14 +44,14 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/tati2327/Documentos/GITHUB/P2/Tati/A*/cmake-build-debug/Makefile&quot;  VERBOSE=1 A_"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/tati2327/Documentos/GITHUB/P2/Tati/A*/cmake-build-debug/Makefile&quot;  VERBOSE=1 List"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/tati2327/Documentos/GITHUB/P2/Tati/A*/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/home/tati2327/Documentos/GITHUB/P2/Tati/A*/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/tati2327/Documentos/GITHUB/P2/Tati/A*/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="A_/fast">
-				<Option output="/home/tati2327/Documentos/GITHUB/P2/Tati/A*/cmake-build-debug/A_" prefix_auto="0" extension_auto="0"/>
+			<Target title="List/fast">
+				<Option output="/home/tati2327/Documentos/GITHUB/P2/Tati/A*/cmake-build-debug/List" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/tati2327/Documentos/GITHUB/P2/Tati/A*/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -67,7 +67,7 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/tati2327/Documentos/GITHUB/P2/Tati/A*/cmake-build-debug/Makefile&quot;  VERBOSE=1 A_/fast"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/tati2327/Documentos/GITHUB/P2/Tati/A*/cmake-build-debug/Makefile&quot;  VERBOSE=1 List/fast"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/tati2327/Documentos/GITHUB/P2/Tati/A*/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/home/tati2327/Documentos/GITHUB/P2/Tati/A*/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/tati2327/Documentos/GITHUB/P2/Tati/A*/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -84,14 +84,26 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/tati2327/Documentos/GITHUB/P2/Tati/A*/Pathfinding.cpp">
-			<Option target="A_"/>
+		<Unit filename="/home/tati2327/Documentos/GITHUB/P2/Tati/A*/List.h">
+			<Option target="List"/>
 		</Unit>
-		<Unit filename="/home/tati2327/Documentos/GITHUB/P2/Tati/A*/Pathfinding.h">
-			<Option target="A_"/>
+		<Unit filename="/home/tati2327/Documentos/GITHUB/P2/Tati/A*/List_def.h">
+			<Option target="List"/>
+		</Unit>
+		<Unit filename="/home/tati2327/Documentos/GITHUB/P2/Tati/A*/Matrix.h">
+			<Option target="List"/>
+		</Unit>
+		<Unit filename="/home/tati2327/Documentos/GITHUB/P2/Tati/A*/Matrix_def.h">
+			<Option target="List"/>
+		</Unit>
+		<Unit filename="/home/tati2327/Documentos/GITHUB/P2/Tati/A*/Node.h">
+			<Option target="List"/>
+		</Unit>
+		<Unit filename="/home/tati2327/Documentos/GITHUB/P2/Tati/A*/Node_def.h">
+			<Option target="List"/>
 		</Unit>
 		<Unit filename="/home/tati2327/Documentos/GITHUB/P2/Tati/A*/main.cpp">
-			<Option target="A_"/>
+			<Option target="List"/>
 		</Unit>
 		<Unit filename="/home/tati2327/Documentos/GITHUB/P2/Tati/A*/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
