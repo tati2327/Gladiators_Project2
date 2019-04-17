@@ -20,7 +20,7 @@ public:
 
 
 public:
-    Army(int armySize);
+    Army();
     void printArray(List<Gladiator> gladiators, int n);
     void insertionSort(List<Gladiator> gladiators);
     void createArmy(int armySize);

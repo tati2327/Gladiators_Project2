@@ -9,6 +9,15 @@ CMakeFiles/Gladiators.dir/Army.cpp.o: ../List_def.h
 CMakeFiles/Gladiators.dir/Army.cpp.o: ../Node.h
 CMakeFiles/Gladiators.dir/Army.cpp.o: ../Node_def.h
 
+CMakeFiles/Gladiators.dir/GeneticEvolution.cpp.o: ../Army.h
+CMakeFiles/Gladiators.dir/GeneticEvolution.cpp.o: ../GeneticEvolution.cpp
+CMakeFiles/Gladiators.dir/GeneticEvolution.cpp.o: ../GeneticEvolution.h
+CMakeFiles/Gladiators.dir/GeneticEvolution.cpp.o: ../Gladiator.h
+CMakeFiles/Gladiators.dir/GeneticEvolution.cpp.o: ../List.h
+CMakeFiles/Gladiators.dir/GeneticEvolution.cpp.o: ../List_def.h
+CMakeFiles/Gladiators.dir/GeneticEvolution.cpp.o: ../Node.h
+CMakeFiles/Gladiators.dir/GeneticEvolution.cpp.o: ../Node_def.h
+
 CMakeFiles/Gladiators.dir/Gladiator.cpp.o: ../Gladiator.cpp
 CMakeFiles/Gladiators.dir/Gladiator.cpp.o: ../Gladiator.h
 

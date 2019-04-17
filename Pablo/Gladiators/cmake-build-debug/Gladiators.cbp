@@ -90,6 +90,12 @@
 		<Unit filename="/home/pablo/Documentos/Github/Gladiators/Pablo/Gladiators/Army.h">
 			<Option target="Gladiators"/>
 		</Unit>
+		<Unit filename="/home/pablo/Documentos/Github/Gladiators/Pablo/Gladiators/GeneticEvolution.cpp">
+			<Option target="Gladiators"/>
+		</Unit>
+		<Unit filename="/home/pablo/Documentos/Github/Gladiators/Pablo/Gladiators/GeneticEvolution.h">
+			<Option target="Gladiators"/>
+		</Unit>
 		<Unit filename="/home/pablo/Documentos/Github/Gladiators/Pablo/Gladiators/Gladiator.cpp">
 			<Option target="Gladiators"/>
 		</Unit>

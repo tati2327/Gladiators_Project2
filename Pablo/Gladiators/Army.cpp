@@ -3,7 +3,7 @@
 
 using namespace std;
 
-Army::Army(int armySize ) {
+Army::Army() {
     this->armySize=20;
 }
 
