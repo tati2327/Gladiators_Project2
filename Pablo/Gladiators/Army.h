@@ -21,8 +21,8 @@ public:
 
 public:
     Army(int armySize);
-    void printArray(int *array, int n);
-    void insertionSort(List<Gladiator> gladiators, int listSize);
+    void printArray(List<Gladiator> gladiators, int n);
+    void insertionSort(List<Gladiator> gladiators);
     void createArmy(int armySize);
     Gladiator setRandomValues(Gladiator gladiator,int i);
     Gladiator setHeuristicValues(Gladiator gladiator, int i);

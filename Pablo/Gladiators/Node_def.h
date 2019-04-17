@@ -18,6 +18,6 @@ void Node<T>::setData(T _data){
 }
 
 template<typename T>
-void Node<T>::setNode(Node<T> _node){
-    data = _node.data;
+void Node<T>::setNode(Node<T> *_node){
+    data = _node->data;
 }

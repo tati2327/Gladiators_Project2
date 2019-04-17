@@ -14,7 +14,7 @@ public:
 
     T getValue();
     void setData(T data);
-    void setNode(Node<T> _node);
+    void setNode(Node<T> *_node);
     Node<T> * getNext();
 };
 
