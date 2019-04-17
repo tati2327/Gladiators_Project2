@@ -60,6 +60,21 @@ void List<T>::deleteNode(T data) {
 }
 
 template<typename T>
+Node<T>* List<T>::getNode(int index) {
+    if(index == 0) {
+        // Get the first element
+        return first;
+    } else {
+        // Get the index'th element
+        Node<T>* curr = this->first;
+        for(int i = 0; i < index; ++i) {
+            curr = curr->next;
+        }
+        return curr;
+    }
+}
+
+template<typename T>
 T List<T>::getData(int index) {
     if(index == 0) {
         // Get the first element
@@ -68,9 +83,9 @@ T List<T>::getData(int index) {
         // Get the index'th element
         Node<T>* curr = this->first;
         for(int i = 0; i < index; ++i) {
-            curr = curr->next;
+            curr = curr->next->data;
         }
-        return curr->data;
+        return curr;
     }
 }
 
@@ -78,8 +93,8 @@ template<typename T>
 void List<T>::show(){
     curr = first;
     while (curr!= nullptr){
-        cout << curr->getValue()<<endl; /*! Se recorre la lista con Curr y Curr.next*/
-        curr = curr->getNext(); /*! En cada punto imprime el char */
+        cout << curr->getValue()<<endl;
+        curr = curr->getNext();
     }
 }
 

@@ -16,6 +16,14 @@ List_def.h
 
 /home/tati2327/Documentos/GITHUB/P2/Tati/List/List_def.h
 
+/home/tati2327/Documentos/GITHUB/P2/Tati/List/Matrix.h
+List.h
+/home/tati2327/Documentos/GITHUB/P2/Tati/List/List.h
+Matrix_def.h
+/home/tati2327/Documentos/GITHUB/P2/Tati/List/Matrix_def.h
+
+/home/tati2327/Documentos/GITHUB/P2/Tati/List/Matrix_def.h
+
 /home/tati2327/Documentos/GITHUB/P2/Tati/List/Node.h
 Node_def.h
 /home/tati2327/Documentos/GITHUB/P2/Tati/List/Node_def.h
@@ -27,4 +35,6 @@ iostream
 -
 List.h
 /home/tati2327/Documentos/GITHUB/P2/Tati/List/List.h
+Matrix.h
+/home/tati2327/Documentos/GITHUB/P2/Tati/List/Matrix.h
 
