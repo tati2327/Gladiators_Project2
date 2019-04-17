@@ -12,7 +12,7 @@ Matrix<T>::Matrix( int rows, int cols){
     for(int i = 0; i < row; i++) {
         for(int j = 0; j < cols; j++) {
             data[i][j] = myData;
-            cout<<data[i][j]<<" ";
+            //cout<<data[i][j]<<" ";
         }
         cout<<endl;
     }

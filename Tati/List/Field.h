@@ -2,12 +2,19 @@
 #define LIST_FIELD_H
 
 
+#include "List.h"
+
 class Field {
     public:
-        Field();
+        int f, g, h, i, j;
         bool empty;
+
+        Field();
+
         bool addObstacle();
         bool isEmpty();
+
+        List<Field> neighbors;
 };
 
 
