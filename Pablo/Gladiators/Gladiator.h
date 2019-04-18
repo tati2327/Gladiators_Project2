@@ -19,10 +19,6 @@ public:
 
     int calculateEmotionalInt();
 
-    long long decimalToBinary(int n);
-
-
-    int binaryToDecimal(long long n);
 
 
 /*------------------------------------------------------------GETTERS-------------------------------------------------------------------------------*/

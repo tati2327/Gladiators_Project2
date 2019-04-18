@@ -54,36 +54,6 @@ int Gladiator::calculateEmotionalInt() {
 }
 
 
-long long decimalToBinary(int n)
-{
-    long long binaryNumber = 0;
-    int remainder, i = 1, step = 1;
-
-    while (n!=0)
-    {
-        remainder = n%2;
-        cout << "Step " << step++ << ": " << n << "/2, Remainder = " << remainder << ", Quotient = " << n/2 << endl;
-        n /= 2;
-        binaryNumber += remainder*i;
-        i *= 10;
-    }
-    return binaryNumber;
-}
-
-
-
-int binaryToDecimal(long long n)
-{
-    int decimalNumber = 0, i = 0, remainder;
-    while (n!=0)
-    {
-        remainder = n%10;
-        n /= 10;
-        decimalNumber += remainder*pow(2,i);
-        ++i;
-    }
-    return decimalNumber;
-}
 
 
 
@@ -164,55 +134,55 @@ int Gladiator::getId() const {
 
 /*------------------------------------------------------SETTERS-----------------------------------------------*/
 
-void Gladiator::setId(int id) {
-    Gladiator::id = id;
+void Gladiator::setId(int _id) {
+    id = _id;
 }
 
-void Gladiator::setAge(int age) {
-    Gladiator::age = age;
+void Gladiator::setAge(int _age) {
+    age = _age;
 }
 
-void Gladiator::setSurvivalProb(int survivalProb) {
-    Gladiator::survivalProb = survivalProb;
+void Gladiator::setSurvivalProb(int _survivalProb) {
+    survivalProb = _survivalProb;
 }
 
-void Gladiator::setExpectedGenerations(int expectedGenerations) {
-    Gladiator::expectedGenerations = expectedGenerations;
+void Gladiator::setExpectedGenerations(int _expectedGenerations) {
+    expectedGenerations = _expectedGenerations;
 }
 
-void Gladiator::setEmotionalInt(int emotionalInt) {
-    Gladiator::emotionalInt = emotionalInt;
+void Gladiator::setEmotionalInt(int _emotionalInt) {
+    emotionalInt = _emotionalInt;
 }
 
-void Gladiator::setSelfcontrol(int selfcontrol) {
-    Gladiator::selfcontrol = selfcontrol;
+void Gladiator::setSelfcontrol(int _selfcontrol) {
+    selfcontrol = _selfcontrol;
 }
 
-void Gladiator::setAnger(int anger) {
-    Gladiator::anger = anger;
+void Gladiator::setAnger(int _anger) {
+    anger = _anger;
 }
 
-void Gladiator::setSadness(int sadness) {
-    Gladiator::sadness = sadness;
+void Gladiator::setSadness(int _sadness) {
+    sadness = _sadness;
 }
 
-void Gladiator::setJoy(int joy) {
-    Gladiator::joy = joy;
+void Gladiator::setJoy(int _joy) {
+    joy = _joy;
 }
 
-void Gladiator::setUpperTrunckStrenght(int upperTrunckStrenght) {
-    Gladiator::upperTrunckStrenght = upperTrunckStrenght;
+void Gladiator::setUpperTrunckStrenght(int _upperTrunckStrenght) {
+    upperTrunckStrenght = _upperTrunckStrenght;
 }
 
-void Gladiator::setLowerTrunckStrenght(int lowerTrunckStrenght) {
-    Gladiator::lowerTrunckStrenght = lowerTrunckStrenght;
+void Gladiator::setLowerTrunckStrenght(int _lowerTrunckStrenght) {
+    lowerTrunckStrenght = _lowerTrunckStrenght;
 }
 
-void Gladiator::setResistance(int resistance) {
-    Gladiator::resistance = resistance;
+void Gladiator::setResistance(int _resistance) {
+    resistance = _resistance;
 }
 
 
-void Gladiator::setPhysicalCondition(int physicalCondition) {
-    Gladiator::physicalCondition = physicalCondition;
+void Gladiator::setPhysicalCondition(int _physicalCondition) {
+    physicalCondition = _physicalCondition;
 }

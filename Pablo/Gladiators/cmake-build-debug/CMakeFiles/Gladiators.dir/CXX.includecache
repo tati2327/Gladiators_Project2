@@ -25,6 +25,12 @@ Gladiator.h
 /home/pablo/Documentos/Github/Gladiators/Pablo/Gladiators/Gladiator.h
 Gladiator.h
 /home/pablo/Documentos/Github/Gladiators/Pablo/Gladiators/Gladiator.h
+sstream
+-
+string
+-
+iostream
+-
 
 /home/pablo/Documentos/Github/Gladiators/Pablo/Gladiators/Gladiator.h
 cmath
@@ -49,6 +55,10 @@ Node_def.h
 /home/pablo/Documentos/Github/Gladiators/Pablo/Gladiators/main.cpp
 iostream
 -
+Army.h
+/home/pablo/Documentos/Github/Gladiators/Pablo/Gladiators/Army.h
+List.h
+/home/pablo/Documentos/Github/Gladiators/Pablo/Gladiators/List.h
 GeneticEvolution.h
 /home/pablo/Documentos/Github/Gladiators/Pablo/Gladiators/GeneticEvolution.h
 

@@ -3,6 +3,8 @@
 //
 
 #include "GeneticEvolution.h"
+using namespace std;
+
 
 GeneticEvolution::GeneticEvolution() {
     this->fittest;
@@ -16,6 +18,158 @@ void GeneticEvolution::setFittest() {
 
 void GeneticEvolution::setSecondFittest() {
         secondFittest=army.gladiators[18];
+}
+
+
+void GeneticEvolution::mutation() {
+    int random= (rand() % 19) + 0;
+    cout<<"Este es random bruhh: "<<random<<endl;
+    int random1= 1;//(rand() % 6) + 0;
+
+    cout<<"Este es random1 bruhh: "<<random1<<endl;
+    if(random1==0) {
+        int value=army.gladiators[random].getUpperTrunckStrenght();
+        cout<<"El valor del "<<army.gladiators[random].getResistance()<<"es: "<<value<<endl;
+        int data=changeValue(value);
+        cout<<"pppppp"<<data<<endl;
+        army.gladiators.getNode(random)->data.setUpperTrunckStrenght(data);
+        cout<<"prueba "<<army.gladiators[random].getUpperTrunckStrenght()<<endl;
+        army.gladiators.getNode(random)->data.setResistance(army.gladiators[random].calculateFitness());
+
+
+    }
+    if(random1==1) {
+        int value1=army.gladiators[random].getLowerTrunckStrenght();
+        cout<<"El valor del "<<army.gladiators[random].getResistance()<<"es: "<<value1<<endl;
+        int data=changeValue(value1);
+        cout<<"pppppp"<<data<<endl;
+        army.gladiators.getNode(random)->data.setLowerTrunckStrenght(data);
+        cout<<"prueba"<<army.gladiators[random].getLowerTrunckStrenght()<<endl;
+        army.gladiators.getNode(random)->data.setResistance(army.gladiators[random].calculateFitness());
+
+    }
+    if(random1==2) {
+        int value2=army.gladiators[random].getAnger();
+        cout<<"El valor del "<<army.gladiators[random].getResistance()<<"es: "<<value2<<endl;
+        int data=changeValue(value2);
+        cout<<"pppppp"<<data<<endl;
+        army.gladiators.getNode(random)->data.setAnger(data);
+        cout<<"prueba"<<army.gladiators[random].getAnger()<<endl;
+        army.gladiators.getNode(random)->data.setEmotionalInt(army.gladiators[random].calculateEmotionalInt());
+        army.gladiators.getNode(random)->data.setResistance(army.gladiators[random].calculateFitness());
+
+    }
+    if(random1==3) {
+        int value3=army.gladiators[random].getJoy();
+        cout<<"El valor del "<<army.gladiators[random].getResistance()<<"es: "<<value3<<endl;
+        int data= changeValue(value3);
+        cout<<"pppppp"<<data<<endl;
+        army.gladiators.getNode(random)->data.setJoy(data);
+        cout<<"prueba"<<army.gladiators[random].getJoy()<<endl;
+        army.gladiators.getNode(random)->data.setEmotionalInt(army.gladiators[random].calculateEmotionalInt());
+        army.gladiators.getNode(random)->data.setResistance(army.gladiators[random].calculateFitness());
+    }
+    if(random1==4) {
+        int value4=army.gladiators[random].getSadness();
+        cout<<"El valor del "<<army.gladiators[random].getResistance()<<"es: "<<value4<<endl;
+        int data=changeValue(value4);
+        cout<<"pppppp"<<data<<endl;
+        army.gladiators.getNode(random)->data.setSadness(data);
+        cout<<"prueba"<<army.gladiators[random].getSadness()<<endl;
+        army.gladiators.getNode(random)->data.setEmotionalInt(army.gladiators[random].calculateEmotionalInt());
+        army.gladiators.getNode(random)->data.setResistance(army.gladiators[random].calculateFitness());
+
+    }
+    if(random1==5) {
+        int value5=army.gladiators[random].getSelfControl();
+        cout<<"El valor del "<<army.gladiators[random].getResistance()<<"es: "<<value5<<endl;
+        int data=changeValue(value5);
+        cout<<"pppppp"<<data<<endl;
+        army.gladiators.getNode(random)->data.setSelfcontrol(data);
+        cout<<"prueba"<<army.gladiators[random].getSelfControl()<<endl;
+        army.gladiators.getNode(random)->data.setEmotionalInt(army.gladiators[random].calculateEmotionalInt());
+        army.gladiators.getNode(random)->data.setResistance(army.gladiators[random].calculateFitness());
+    }
+    if(random1==6) {
+        int value6=army.gladiators[random].getPhysicalCondition();
+        cout<<"El valor del "<<army.gladiators[random].getResistance()<<"es: "<<value6<<endl;
+        int data=changeValue(value6);
+        cout<<"pppppp"<<data<<endl;
+        army.gladiators.getNode(random)->data.setPhysicalCondition(data);
+        cout<<"prueba"<<army.gladiators[random].getPhysicalCondition()<<endl;
+        army.gladiators.getNode(random)->data.setResistance(army.gladiators[random].calculateFitness());
+    }
+
+}
+
+int GeneticEvolution::changeValue(int value) {
+    if(value==0){
+        return 1;
+    }
+    if(value==1){
+        return 0;
+    }
+    if (value>=16){
+        return value;
+    }
+    long long binary=decimalToBinary(value);
+    std::string binary_str = std::to_string(binary);
+    int size= binary_str.length();
+    size=size-1;
+   int random= (rand() % size) + 0;
+   cout<<"le cambie la posicion "<<random<<" del binario"<<endl;
+    if ("0" == string(1, binary_str[random])) {
+        binary_str=binary_str.erase(random,1);
+        binary_str=binary_str.insert(random,"1");
+    }else{
+        binary_str=binary_str.erase(random,1);
+        binary_str=binary_str.insert(random,"0");
+   }
+   cout<<"El nuevo binary_str es :"<<binary_str<<endl;
+   binary= atol(binary_str.c_str());
+   cout<<"jjjjjjjjjjj"<<binary<<endl;
+   int decimal_value= binaryToDecimal(binary);
+   cout<<"el numero transformado es: "<<decimal_value<<endl;
+   return decimal_value;
+
+}
+
+
+
+long long GeneticEvolution::decimalToBinary(int n){
+
+    long long binaryNumber = 0;
+    int remainder, i = 1, step = 1;
+
+    while (n!=0)
+    {
+        remainder = n%2;
+        n /= 2;
+        binaryNumber += remainder*i;
+        i *= 10;
+    }
+    return binaryNumber;
+}
+
+
+
+int GeneticEvolution:: binaryToDecimal(long long n){
+    if(n==0){
+        return 0;
+    }
+    if(n==1){
+        return 1;
+    }
+
+    int decimalNumber = 0, i = 0, remainder;
+    while (n!=0)
+    {
+        remainder = n%10;
+        n /= 10;
+        decimalNumber += remainder*pow(2,i);
+        ++i;
+    }
+    return decimalNumber;
 }
 
 
