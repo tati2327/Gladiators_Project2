@@ -12,14 +12,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4dc83b9b-ed6d-4736-9c89-f03fce0d9172" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeneticEvolution.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/GeneticEvolution.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeneticEvolution.h" beforeDir="false" afterPath="$PROJECT_DIR$/GeneticEvolution.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gladiator.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Gladiator.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gladiator.h" beforeDir="false" afterPath="$PROJECT_DIR$/Gladiator.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Gladiators.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Gladiators.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Gladiators" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Gladiators" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Josue/Proyecto2/Proyecto2.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Josue/Proyecto2/Proyecto2.pro.user" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Josue/Proyecto2/bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Josue/Proyecto2/bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Josue/Proyecto2/button.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Josue/Proyecto2/button.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Josue/Proyecto2/client.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Josue/Proyecto2/client.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Josue/Proyecto2/game.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Josue/Proyecto2/game.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Josue/Proyecto2/gamethread.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Josue/Proyecto2/gamethread.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Josue/Proyecto2/main.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Josue/Proyecto2/mainmenu.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Josue/Proyecto2/mainmenu.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Josue/Proyecto2/mainwindow.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Josue/Proyecto2/mainwindow.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Josue/Proyecto2/myplayer.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Josue/Proyecto2/myplayer.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Josue/Proyecto2/mythread.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Josue/Proyecto2/mythread.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Josue/Proyecto2/player.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Josue/Proyecto2/player.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Josue/Proyecto2/resources.qrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Josue/Proyecto2/tower.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Josue/Proyecto2/tower.h" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -219,12 +237,12 @@
       <workItem from="1555377198546" duration="107000" />
       <workItem from="1555437448062" duration="2694000" />
       <workItem from="1555440159780" duration="15976000" />
-      <workItem from="1555464743391" duration="48570000" />
+      <workItem from="1555464743391" duration="48874000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67347000" />
+    <option name="totallyTimeSpent" value="67651000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
