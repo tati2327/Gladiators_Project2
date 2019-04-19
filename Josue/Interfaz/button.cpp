@@ -2,7 +2,7 @@
 #include <QBrush>
 Button::Button(QString name, QGraphicsItem *parent): QGraphicsRectItem(parent)
 {
-  setRect(0,0,50,50);
+  setRect(0,0,250,50);
   QBrush brush;
   brush.setStyle(Qt::SolidPattern);
   brush.setColor(Qt::cyan);
@@ -13,7 +13,7 @@ Button::Button(QString name, QGraphicsItem *parent): QGraphicsRectItem(parent)
   int yPos = rect().height()/2 - text->boundingRect().height()/2;
   text->setPos(xPos,yPos);
   setAcceptHoverEvents(true);
-\
+
 }
 
 void Button::mousePressEvent(QGraphicsSceneMouseEvent *event){
