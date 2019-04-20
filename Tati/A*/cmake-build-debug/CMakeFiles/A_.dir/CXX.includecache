@@ -34,21 +34,15 @@ Node_def.h
 
 /home/tati2327/Documentos/GITHUB/P2/Tati/A*/Node_def.h
 
+/home/tati2327/Documentos/GITHUB/P2/Tati/A*/Pathfinding.cpp
+Pathfinding.h
+/home/tati2327/Documentos/GITHUB/P2/Tati/A*/Pathfinding.h
+
 /home/tati2327/Documentos/GITHUB/P2/Tati/A*/Pathfinding.h
 Field.h
 /home/tati2327/Documentos/GITHUB/P2/Tati/A*/Field.h
 List.h
 /home/tati2327/Documentos/GITHUB/P2/Tati/A*/List.h
-Matrix.h
-/home/tati2327/Documentos/GITHUB/P2/Tati/A*/Matrix.h
-
-/home/tati2327/Documentos/GITHUB/P2/Tati/A*/main.cpp
-iostream
--
-Field.h
-/home/tati2327/Documentos/GITHUB/P2/Tati/A*/Field.h
-Pathfinding.h
-/home/tati2327/Documentos/GITHUB/P2/Tati/A*/Pathfinding.h
 Matrix.h
 /home/tati2327/Documentos/GITHUB/P2/Tati/A*/Matrix.h
 

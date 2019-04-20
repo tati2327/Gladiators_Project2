@@ -7,19 +7,17 @@
 
 class Pathfinding {
 public:
-    Pathfinding(Matrix<Field> board);
+    Pathfinding(Matrix<Field>& board);
 
     List<Field> openSet;
     List<Field> closeSet;
-
-    List<string> path;
 
     Field *start;
     Field *end;
 
     int rows, cols;
 
-    Matrix<Field> board;
+    Matrix<Field> *board;
 
     void addNeighbors(Field *_field);
     int heuristic(Field a, Field b);

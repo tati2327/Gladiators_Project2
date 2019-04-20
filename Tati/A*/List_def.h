@@ -15,8 +15,6 @@ void List<T>::add(T data) {
         first->data = data;
         first->next = nullptr;
         last = first;
-        cout<<"AGREGOO DE PRIMERO"<<endl;
-
     } else {
         /*! Si la lista NO esta vacia */
         if(last == first) {
@@ -25,7 +23,6 @@ void List<T>::add(T data) {
             last->data = data;
             last->next = nullptr;
             first->next = last;
-            cout<<"AGREGOO DE SEGUNDO"<<endl;
         } else {
             /*! Si la lista tiene mas de un elemento */
             Node<T>* newData = new Node<T>;
@@ -33,7 +30,6 @@ void List<T>::add(T data) {
             newData->next = nullptr;
             last->next = newData;
             last = newData;
-            cout<<"AGREGOO DE ULTIMO"<<endl;
         }
     }
 }

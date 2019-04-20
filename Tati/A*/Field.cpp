@@ -1,7 +1,11 @@
 #include "Field.h"
 
 Field::Field() {
-    this->empty = true;
+    obstacle = false;
+    inDiagonal = false;
+    inLine = false;
+    l = false;
+    d = false;
     g = 0;
     h = 0;
     f = 0;
@@ -11,11 +15,18 @@ Field::Field() {
 
 /*! Funcion que sera necesaria para luego agregar obstaculos */
 bool Field::addObstacle() {
-    return false;
+    obstacle = true;
+    cout<<"Se agregó un obstaculo en "<<i<<j<<endl;
+    return true;
 }
 
-bool Field::isEmpty() {
-    return empty;
+bool Field::isObstacle() {
+    if(obstacle){
+        cout<<"Hay un obstaculo"<<endl;
+    }else{
+        cout<<"NO hay un obstaculo"<<endl;
+    }
+    return obstacle;
 }
 
 bool Field::equal(Field object) {
@@ -48,4 +59,19 @@ void Field::deleteField(Field _node, List<Field>& _list) {
             delete(auxDelete);
         }
     }
+}
+
+void Field::setInLine(bool inLine) {
+    if(l || inDiagonal)
+        return;
+    else
+        Field::inLine = inLine;
+
+}
+
+void Field::setInDiagonal(bool inDiagonal) {
+    if(d || inLine)
+        return;
+    else
+        Field::inDiagonal = inDiagonal;
 }

@@ -6,12 +6,20 @@
 class Field {
 public:
     int f, g, h, i, j;
-    bool empty;
+    bool obstacle;
 
     Field();
 
+    void setInLine(bool inLine);
+
+    void setInDiagonal(bool inDiagonal);
+
+    bool inLine;
+    bool l, d;
+    bool inDiagonal;
+
     bool addObstacle();
-    bool isEmpty();
+    bool isObstacle();
 
     List<Field*> neighbors;
     bool equal(Field object);

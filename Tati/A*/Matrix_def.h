@@ -6,7 +6,6 @@ Matrix<T>::Matrix( int rows, int cols){
     data = new T*[rows];
     for (int i = 0; i < row; i++) {
         data[i] = new T [cols];
-        cout<<data[i]<<endl;
     }
 
     for(int i = 0; i < row; i++) {
@@ -15,7 +14,6 @@ Matrix<T>::Matrix( int rows, int cols){
             myData.j = j;
             data[i][j] = myData;
         }
-        cout<<endl;
     }
 }
 
