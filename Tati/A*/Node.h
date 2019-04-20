@@ -1,5 +1,5 @@
-#ifndef LIST_NODE_H
-#define LIST_NODE_H
+#ifndef A_NODE_H
+#define A_NODE_H
 
 /*!
  * Class Node<T>
@@ -8,39 +8,39 @@
  */
 template<typename T>
 class Node {
-    public:
-        Node<T>* next; /*!< Puntero al siguiente nodo*/
-        T data; /*!< Dato que almacena el nodo */
+public:
+    Node<T>* next; /*!< Puntero al siguiente nodo*/
+    T data; /*!< Dato que almacena el nodo */
 
-        /*!
-         * getValue()
-         * Retorna el valor del nodo
-         * @return dato T
-         */
-        T getValue();
+    /*!
+     * getValue()
+     * Retorna el valor del nodo
+     * @return dato T
+     */
+    T getValue();
 
-        /*!
-         * setValue()
-         * Cambia el dato de un nodo
-         * @param recibe un dato T
-         */
-        void setValue(T _data);
+    /*!
+     * setValue()
+     * Cambia el dato de un nodo
+     * @param recibe un dato T
+     */
+    void setValue(T _data);
 
-        /*!
-         * setNode()
-         * Cambia un "Nodo" por otro
-         * @param recibe un nodo de tipo T
-         */
-        void setNode(Node<T> _node);
+    /*!
+     * setNode()
+     * Cambia un "Nodo" por otro
+     * @param recibe un nodo de tipo T
+     */
+    void setNode(Node<T> _node);
 
-        /*!
-         * getNext()
-         * Retorna el siguiente nodo de un nodo en específico
-         * @return un nodo de tipo T
-         */
-        Node<T> * getNext();
+    /*!
+     * getNext()
+     * Retorna el siguiente nodo de un nodo en específico
+     * @return un nodo de tipo T
+     */
+    Node<T> * getNext();
 };
 
 #include "Node_def.h"
 
-#endif //LIST_NODE_H
+#endif //A_NODE_H

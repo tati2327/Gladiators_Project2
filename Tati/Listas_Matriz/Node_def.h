@@ -19,5 +19,3 @@ template<typename T>
 void Node<T>::setNode(Node<T> _node){
     data = _node.data;
 }
-
-

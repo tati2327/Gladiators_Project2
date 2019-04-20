@@ -1,3 +1,0 @@
-/home/tati2327/Documentos/GITHUB/P2/Tati/List/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/tati2327/Documentos/GITHUB/P2/Tati/List/cmake-build-debug/CMakeFiles/List.dir
-/home/tati2327/Documentos/GITHUB/P2/Tati/List/cmake-build-debug/CMakeFiles/edit_cache.dir

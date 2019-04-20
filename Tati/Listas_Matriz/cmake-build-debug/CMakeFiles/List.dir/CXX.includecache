@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/tati2327/Documentos/GITHUB/P2/Tati/Listas_Matriz/List.h
+iostream
+-
+Node.h
+/home/tati2327/Documentos/GITHUB/P2/Tati/Listas_Matriz/Node.h
+List_def.h
+/home/tati2327/Documentos/GITHUB/P2/Tati/Listas_Matriz/List_def.h
+
+/home/tati2327/Documentos/GITHUB/P2/Tati/Listas_Matriz/List_def.h
+
+/home/tati2327/Documentos/GITHUB/P2/Tati/Listas_Matriz/Matrix.h
+List.h
+/home/tati2327/Documentos/GITHUB/P2/Tati/Listas_Matriz/List.h
+Matrix_def.h
+/home/tati2327/Documentos/GITHUB/P2/Tati/Listas_Matriz/Matrix_def.h
+
+/home/tati2327/Documentos/GITHUB/P2/Tati/Listas_Matriz/Matrix_def.h
+
+/home/tati2327/Documentos/GITHUB/P2/Tati/Listas_Matriz/Node.h
+Node_def.h
+/home/tati2327/Documentos/GITHUB/P2/Tati/Listas_Matriz/Node_def.h
+
+/home/tati2327/Documentos/GITHUB/P2/Tati/Listas_Matriz/Node_def.h
+
+/home/tati2327/Documentos/GITHUB/P2/Tati/Listas_Matriz/main.cpp
+iostream
+-
+List.h
+/home/tati2327/Documentos/GITHUB/P2/Tati/Listas_Matriz/List.h
+Matrix.h
+/home/tati2327/Documentos/GITHUB/P2/Tati/Listas_Matriz/Matrix.h
+

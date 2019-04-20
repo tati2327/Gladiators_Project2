@@ -1,17 +1,13 @@
 #include <iostream>
-#include "List.h"
+#include "Field.h"
+#include "Pathfinding.h"
 #include "Matrix.h"
 
-using namespace std;
-
 int main() {
+    Matrix<Field> m = Matrix<Field >(3,3);
 
-    List<int> l1;
-    l1.add(2);
-    l1.add(3);
-    l1.add(5);
-
-    l1.getNode(0)->next = l1.getNode(2)->next;
+    Pathfinding p = Pathfinding(m);
+    p.makeRoute();
 
     return 0;
 }

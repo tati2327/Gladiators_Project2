@@ -9,12 +9,14 @@ List<T>::List() {
 
 template<typename T>
 void List<T>::add(T data) {
-    if(!first) {
+    if(first == nullptr) {
         /*! Si la lista esta vacia */
         first = new Node<T>;
         first->data = data;
         first->next = nullptr;
         last = first;
+        cout<<"AGREGOO DE PRIMERO"<<endl;
+
     } else {
         /*! Si la lista NO esta vacia */
         if(last == first) {
@@ -23,6 +25,7 @@ void List<T>::add(T data) {
             last->data = data;
             last->next = nullptr;
             first->next = last;
+            cout<<"AGREGOO DE SEGUNDO"<<endl;
         } else {
             /*! Si la lista tiene mas de un elemento */
             Node<T>* newData = new Node<T>;
@@ -30,90 +33,97 @@ void List<T>::add(T data) {
             newData->next = nullptr;
             last->next = newData;
             last = newData;
+            cout<<"AGREGOO DE ULTIMO"<<endl;
         }
     }
 }
 
 template<typename T>
-void List<T>::deleteNode(T data) {
+void List<T>::deleteNode(T _data) {
     if (first != nullptr) {
         Node<T> *auxDelete;
-        //Node<T> *prev = nullptr;
         auxDelete = first;
 
-        while ((auxDelete != nullptr) && (auxDelete->data != data)) {
+        while ((auxDelete != nullptr) && (auxDelete->data != _data)) {
             curr = auxDelete;
             auxDelete = auxDelete->next;
         }
 
-        //No se encontró el elemento
+        /*! No se encontró el elemento*/
         if (auxDelete == nullptr) {
-            cout << "El elemento no existe"<<endl;
-        } else if (curr == nullptr) { //El elemento es el primero de la lista
+            cout << "El elemento no existe" << endl;
+        } else if (curr == nullptr) {
+            /*! El elemento es el primero de la lista */
             first = first->next;
-            delete(auxDelete);
-        } else { //El elemento está en el medio o al final
+            delete (auxDelete);
+        } else if (auxDelete == last) {
+            /*! El elemento esta al final*/
+            last = curr;
             curr->next = auxDelete->next;
-            delete(auxDelete);
+            delete (auxDelete);
+        } else {
+            /*!El elemento esta en el medio*/
+            curr->next = auxDelete->next;
+            delete (auxDelete);
         }
     }
 }
 
-template<typename T>
-Node<T>* List<T>::getNode(int index) {
-    if(index == 0) {
-        // Get the first element
-        return first;
-    } else {
-        // Get the index'th element
-        Node<T>* curr = this->first;
-        for(int i = 0; i < index; ++i) {
-            curr = curr->next;
+    template<typename T>
+    T List<T>::getData(int index) {
+        if(index == 0) {
+            // Get the first element
+            return first->data;
+        } else {
+            // Get the index'th element
+            curr = first;
+            for(int i = 0; i < index; ++i) {
+                curr = curr->next;
+            }
+            return curr->data;
         }
-        return curr;
     }
-}
 
-template<typename T>
-T List<T>::getData(int index) {
-    if(index == 0) {
-        // Get the first element
-        return this->first->data;
-    } else {
-        // Get the index'th element
-        Node<T>* curr = this->first;
-        for(int i = 0; i < index; ++i) {
-            curr = curr->next->data;
+    template<typename T>
+    Node<T>* List<T>::getNode(int index) {
+        if(index == 0) {
+            // Get the first element
+            return first;
+        } else {
+            // Get the index'th element
+            Node<T>* curr = this->first;
+            for(int i = 0; i < index; ++i) {
+                curr = curr->next;
+            }
+            return curr;
         }
-        return curr;
     }
-}
 
-template<typename T>
-void List<T>::show(){
-    curr = first;
-    while (curr!= nullptr){
-        cout << curr->getValue()<<endl;
-        curr = curr->getNext();
+    template<typename T>
+    void List<T>::show(){
+        curr = first;
+        while (curr!= nullptr){
+            cout << curr->getValue()<<endl;
+            curr = curr->getNext();
+        }
     }
-}
 
-template<typename T>
-int List<T>::size(){
-    curr = first;
-    int count=0;
+    template<typename T>
+    int List<T>::size(){
+        curr = first;
+        int count=0;
 
-    while(curr != nullptr){     /*! La lista se recorre con .getNext() y se tiene un contador para que
+        while(curr != nullptr){     /*! La lista se recorre con .getNext() y se tiene un contador para que
                                  *  crezca segun se recorra la lista*/
-        curr = curr->getNext();
-        count=count+1;
+            curr = curr->getNext();
+            count=count+1;
+        }
+
+        //cout<<"El tamaño de la lista es "<<count<<endl;
+        return count;
     }
 
-    cout<<"El tamaño de la lista es"<<count<<endl;
-    return count;
-}
-
-template<typename T>
-T List<T>::operator [](int index) {
-    return getData(index);
-}
+    template<typename T>
+    T List<T>::operator [](int index) {
+        return getData(index);
+    }
