@@ -6,7 +6,7 @@
 #include <QDebug>
 #include <tower.h>
 #include <arrow.h>
-
+#include <stdlib.h>
 Game::Game()
 {
   scene=new QGraphicsScene();
@@ -28,13 +28,13 @@ void Game::displayMenu()
 {
 
   Button * button = new Button(QString("Play"));
-  int posbx = scene->width()/2 - button->boundingRect().width()/2;
+  double posbx = scene->width()/2 - button->boundingRect().width()/2;
   int posby = 200;
   button->setPos(posbx,posby);
   connect(button,SIGNAL(clicked()),this,SLOT(start()));
   scene->addItem(button);
   Button * quitButton = new Button(QString("Quit"));
-  int posqx = scene->width()/2 - button->boundingRect().width()/2;
+  double posqx = scene->width()/2 - button->boundingRect().width()/2;
   int posqy = 300;
   quitButton->setPos(posqx,posqy);
   connect(quitButton,SIGNAL(clicked()),this,SLOT(close()));
@@ -57,18 +57,57 @@ void Game::start()
   player->setPos(posx,posy);
   player->setFlag(QGraphicsItem::ItemIsFocusable);
   player->setFocus();
+
   life_points = new Stadistics();
-  life_points->setPlainText(QString::number(player->life_points));
-  life_points->setPos(900,160);
+  life_points->set(player->life_points,900,160,35);
   scene->addItem(life_points);
 
+  ID = new Stadistics();
+  ID->set(player->ID,920,223,20);
+  scene->addItem(ID);
 
+  age = new Stadistics();
+  age->set(player->age,920,257,20);
+  scene->addItem(age);
+
+  survival_prob = new Stadistics();
+  survival_prob->set(player->survival_prob,920,300,20);
+  scene->addItem(survival_prob);
+
+  expected_gen = new Stadistics();
+  expected_gen->set(player->expected_gen,920,338,20);
+  scene->addItem(expected_gen);
+
+  emotional_intelligence  = new Stadistics();
+  emotional_intelligence->set(player->emotional_intelligence,920,385,20);
+  scene->addItem(emotional_intelligence);
+
+  upper_stregth = new Stadistics();
+  upper_stregth->set(player->upper_stregth,920,425,20);
+  scene->addItem(upper_stregth);
+
+  lower_stregth = new Stadistics();
+  lower_stregth->set(player->lower_stregth,920,475,20);
+  scene->addItem(lower_stregth);
+
+  resistance = new Stadistics();
+  resistance->set(player->resistance,920,515,20);
+  scene->addItem(resistance);
+
+  physical_condition = new Stadistics();
+  physical_condition->set(player->physical_condition,920,555,20);
+  scene->addItem(physical_condition);
+
+  time = new Stadistics();
+  time->set(0,880,43,35);
+  time->setPlainText(QString("0000"));
+  scene->addItem(time);
 
   scene->setBackgroundBrush(QBrush(QImage(":images/game.png")));
-  QTimer *timer = new QTimer();
-  QObject::connect(timer,SIGNAL(timeout()),this,SLOT(spawn()));
-  timer->start(4000);
 
+  timer = new QTimer();
+  QObject::connect(timer,SIGNAL(timeout()),this,SLOT(spawn()));
+  timer->start(1000);
 }
 
 void Game::close()
@@ -78,10 +117,13 @@ void Game::close()
 
 void Game::spawn()
 {
-  Tower * tower = new Tower();
-  scene->addItem(tower);
-
-
+  if (cont>=3){
+      timer->stop();
+      return;
+    }
+      Tower * tower = new Tower();
+      scene->addItem(tower);
+      cont++;
 
 }
 void Game::movement(int movement){
@@ -89,5 +131,6 @@ void Game::movement(int movement){
   if (movement==2)player->setPos(player->x()-10,player->y());
   if (movement==3)player->setPos(player->x(),player->y()+10);
   if (movement==4)player->setPos(player->x(),player->y()-10);
-                }
+}
+
 

@@ -13,7 +13,7 @@ Arrow::Arrow(QGraphicsItem *parent)
 
   QTimer *move_timer = new QTimer(this);
   connect(move_timer,SIGNAL(timeout()),this,SLOT(move()));
-  move_timer->start(50);
+  move_timer->start(30);
 }
 
 void Arrow::move(){
@@ -23,9 +23,26 @@ void Arrow::move(){
           g->life_points->setPlainText(QString::number(g->player->life_points-1));
           g->player->life_points--;
           scene()->removeItem(this);
+          if (g->player->life_points==0){
+              delete g->player;
+              MyPlayer *p = new MyPlayer();
+              g->player = p;
+              g->scene->addItem(p);
+              g->life_points->setPlainText(QString::number(g->player->life_points));
+              p->setPos(71,32);
+              p->setFlag(QGraphicsItem::ItemIsFocusable);
+              p->setFocus();
+              g->cont=0;
+              g->timer->stop();
+              g->timer->start(1000);
+            }
           delete this;
           return;
         }
+   }
+  if (pos().y()<0||pos().x()<0||pos().x()>g->scene->width()||pos().y()>g->scene->height()){
+      delete  this;
+      return;
     }
   int mov = 30;
   double cita = rotation();

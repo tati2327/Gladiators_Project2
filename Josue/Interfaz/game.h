@@ -18,12 +18,13 @@ public:
   QGraphicsView *view;
   QGraphicsScene *scene;
   MyPlayer *player;
-  void displayMenu();
   Stadistics *life_points;
-
+  Stadistics* ID, *age, *survival_prob, *expected_gen, *emotional_intelligence,*upper_stregth,*lower_stregth,*resistance,*physical_condition,*time;
+  QTimer *timer;
+  int cont=0;
+  void displayMenu();
   void movement(int movement);
 public slots:
-
   void spawn();
   void start();
   void close();

@@ -15,8 +15,8 @@ Tower::Tower(QGraphicsItem *parent):QObject(), QGraphicsPixmapItem (){
    srand(time(NULL));
    int randwidth = rand()%10;
    int randheight = rand()%10;
-   int posx=randwidth*66.5+71;
-   int posy=randheight*64+32;
+   int posx=randwidth*66.5+72;
+   int posy=randheight*64+29;
    setPos(posx,posy);
    //setRect(0,0,30,30);
 

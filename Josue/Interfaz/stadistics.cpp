@@ -1,9 +1,13 @@
-#include "stadistics.h"
+  #include "stadistics.h"
 #include <QFont>
 
 Stadistics::Stadistics(QGraphicsItem *parent)
 {
-  setPlainText(QString("hola"));
   setDefaultTextColor(Qt::white);
-  setFont(QFont("times",35));
+}
+void Stadistics::set(int player,int x, int y, int size)
+{
+  this->setPlainText(QString::number(player));
+  this->setPos(x,y);
+  setFont(QFont("times",size));
 }

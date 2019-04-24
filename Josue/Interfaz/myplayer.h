@@ -8,7 +8,15 @@ public:
   MyPlayer(QGraphicsItem * parent =0);
   void keyPressEvent(QKeyEvent *event);
   int life_points=10;
-  int ID, age, survival_prob, expected_gen, emotional_intelligence,upper_stregth,lower_stregth,resistance,physical_condition;
+  int ID=10;
+  int age=0;
+  int survival_prob=0;
+  int expected_gen=0;
+  int emotional_intelligence=0;
+  int upper_stregth=0;
+  int lower_stregth=0;
+  int resistance=0;
+  int physical_condition=0;
 };
 
 #endif // MYPLAYER_H
