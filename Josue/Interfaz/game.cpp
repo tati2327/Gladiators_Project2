@@ -75,10 +75,7 @@ void Game::spawn()
 {
   Tower * tower = new Tower();
   scene->addItem(tower);
-  Arrow * arrow  = new Arrow();
-  arrow->setPos(tower->x(),tower->y());
-  arrow->setRotation(40);
-  scene->addItem(arrow);
+
 
 
 }

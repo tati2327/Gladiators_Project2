@@ -1,7 +1,7 @@
 #include "myplayer.h"
 #include <QDebug>
 #include <QKeyEvent>
-MyPlayer::MyPlayer(QGraphicsItem *parent):QGraphicsPixmapItem ()
+MyPlayer::MyPlayer(QGraphicsItem *parent):QObject(),QGraphicsPixmapItem ()
 {
   setPixmap(QPixmap(":/images/gladeador.png"));
 }

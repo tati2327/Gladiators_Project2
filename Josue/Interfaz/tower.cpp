@@ -5,7 +5,12 @@
 #include <QPointF>
 #include  <QDebug>
 #include "arrow.h"
-Tower::Tower(QGraphicsItem *parent):QGraphicsPixmapItem (){
+#include "game.h"
+#include "myplayer.h"
+
+extern Game * g;
+
+Tower::Tower(QGraphicsItem *parent):QObject(), QGraphicsPixmapItem (){
    setPixmap(QPixmap(":/images/torre.png"));
    srand(time(NULL));
    int randwidth = rand()%10;
@@ -26,7 +31,52 @@ Tower::Tower(QGraphicsItem *parent):QGraphicsPixmapItem (){
        points[i].ry()*=SCALE_FACTORY;
      }
    attack_area = new QGraphicsPolygonItem(QPolygonF(points),this);
+   QTimer *timer = new QTimer();
+   QObject::connect(timer,SIGNAL(timeout()),this,SLOT(kill()));
+   timer->start(1000);
+}
 
+void Tower::attack()
+{
+  Arrow * arrow  = new Arrow();
+  arrow->setPos(this->x()+33.5,this->y()+33.5);
+  QLineF ln(QPointF(x(),y()),attack_point);
+  int angle = -1 * ln.angle();
+  arrow->setRotation(angle);
+  g->scene->addItem(arrow);
+}
+
+void Tower::kill()
+{
+  collide_items= this->attack_area->collidingItems();
+  if (collide_items.size()==1){
+      has_target=false;
+      return;
+    }
+  double closest=100;
+  QPointF enemy=QPointF(0,0);
+  for(size_t i =0,n = collide_items.size();i<n;i++){
+      MyPlayer * player = dynamic_cast<MyPlayer *>(collide_items[i]);
+
+      if (player){
+          double this_dist = distanceTo(player);
+          if (this_dist<closest){
+              closest=this_dist;
+              enemy=collide_items[i]->pos();
+              has_target=true;
+              attack_point= enemy;
+              attack();
+            }
+        }
+    }
+
+
+}
+
+double Tower::distanceTo(QGraphicsItem *player)
+{
+  QLineF ln(this->pos(),player->pos());
+  return ln.length();
 }
 
 

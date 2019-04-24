@@ -10,10 +10,11 @@
 #include "client.h"
 
 using namespace std;
-
+Game *g;
 int juego(int argc, char *argv[]){
   QApplication a(argc,argv);
-  Game *g = new Game();
+  //Game *g = new Game();
+  g=new Game();
   g->displayMenu();
   return a.exec();
 }

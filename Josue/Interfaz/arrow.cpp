@@ -9,7 +9,6 @@ Arrow::Arrow(QGraphicsItem *parent)
   QTimer *move_timer = new QTimer(this);
   connect(move_timer,SIGNAL(timeout()),this,SLOT(move()));
   move_timer->start(50);
-  setPos(100,100);
 }
 
 void Arrow::move(){
