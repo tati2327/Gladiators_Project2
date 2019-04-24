@@ -35,7 +35,8 @@ SOURCES += \
     mainmenu.cpp \
     button.cpp \
     thread2.cpp \
-    arrow.cpp
+    arrow.cpp \
+    stadistics.cpp
 
 
 HEADERS += \
@@ -48,7 +49,8 @@ HEADERS += \
     mainmenu.h \
     button.h \
     thread2.h \
-    arrow.h
+    arrow.h \
+    stadistics.h
 
 FORMS +=
 

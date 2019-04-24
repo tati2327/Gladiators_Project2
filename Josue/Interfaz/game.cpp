@@ -6,6 +6,7 @@
 #include <QDebug>
 #include <tower.h>
 #include <arrow.h>
+
 Game::Game()
 {
   scene=new QGraphicsScene();
@@ -48,7 +49,6 @@ void Game::start()
 
   player = new MyPlayer();
 
-  scene->setBackgroundBrush(QBrush(QImage(":images/game.png")));
 
 
   scene->addItem(player);
@@ -56,10 +56,15 @@ void Game::start()
   int posy= 32;
   player->setPos(posx,posy);
   player->setFlag(QGraphicsItem::ItemIsFocusable);
-
   player->setFocus();
+  life_points = new Stadistics();
+  life_points->setPlainText(QString::number(player->life_points));
+  life_points->setPos(900,160);
+  scene->addItem(life_points);
 
 
+
+  scene->setBackgroundBrush(QBrush(QImage(":images/game.png")));
   QTimer *timer = new QTimer();
   QObject::connect(timer,SIGNAL(timeout()),this,SLOT(spawn()));
   timer->start(4000);
