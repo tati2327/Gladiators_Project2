@@ -7,7 +7,8 @@
 #include "myplayer.h"
 #include <QObject>
 #include <QWidget>
-#include <tower.h>
+
+#include<QKeyEvent>
 class Game:public QGraphicsView
 {
   Q_OBJECT
@@ -21,6 +22,7 @@ public:
 
   void movement(int movement);
 public slots:
+
   void spawn();
   void start();
   void close();

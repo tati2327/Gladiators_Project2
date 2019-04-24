@@ -3,17 +3,33 @@
 #include <mythread.h>
 #include <game.h>
 #include <QDebug>
-int main(int argc, char *argv[])
-{
-  QApplication a(argc, argv);
+#include <thread2.h>
+#include <iostream>
+#include <thread>
+#include <unistd.h>
+#include "client.h"
 
-  //MyThread  *m = new MyThread();
-  //m->start();
-  //m->wait();
-  qDebug() << "Fiooooooo";
+using namespace std;
+
+int juego(int argc, char *argv[]){
+  QApplication a(argc,argv);
   Game *g = new Game();
-
   g->displayMenu();
   return a.exec();
+}
+
+void cliente(){
+  Client c;
+  c.newClient();
+}
+
+int main(int argc, char *argv[])
+{
+  std::thread first (juego,argc,argv);
+  std::thread second(cliente);
+  first.join();
+  second.join();
+
+  return 0;
 }
 

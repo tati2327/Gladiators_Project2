@@ -6,9 +6,12 @@ class MyThread: public QThread
 {
   Q_OBJECT
 protected:
-  void run();
+  void run(int argc, char *argv[]);
+  int a;
+  char *b;
 public:
-  MyThread();
+  MyThread(int a,char *b[]);
+  int hello(int argc,char *argv[]);
 };
 
 #endif // MYTHREAD_H

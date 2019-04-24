@@ -6,5 +6,6 @@
         <file>game.png</file>
         <file>inicio.png</file>
         <file>gladeador.png</file>
+        <file>arrow.png</file>
     </qresource>
 </RCC>

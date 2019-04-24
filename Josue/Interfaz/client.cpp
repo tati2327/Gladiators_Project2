@@ -24,7 +24,7 @@ int Client::newClient()
 
     //	Create a hint structure for the server we're connecting with
     int port = 54000;
-    string ipAddress = "102.168.1.31";
+    string ipAddress = "172.18.185.208";
 
     sockaddr_in hint{};
     hint.sin_family = AF_INET;

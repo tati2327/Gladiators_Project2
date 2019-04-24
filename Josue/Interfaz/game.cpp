@@ -4,6 +4,8 @@
 #include "mainmenu.h"
 #include "button.h"
 #include <QDebug>
+#include <tower.h>
+#include <arrow.h>
 Game::Game()
 {
   scene=new QGraphicsScene();
@@ -23,14 +25,7 @@ Game::Game()
 
 void Game::displayMenu()
 {
-  //MainMenu *m = new MainMenu();
-  //QGraphicsTextItem *title = new QGraphicsTextItem(QString("Gladiators"));
-  //QFont font("comicsans",30);
-  //int posx = scene->width()/2-title->boundingRect().width()-title->boundingRect().width()*0.3;
-  //int posy = 100;
-  //title->setPos(posx,posy);
-  //title->setFont(font);
-  //scene->addItem(title);
+
   Button * button = new Button(QString("Play"));
   int posbx = scene->width()/2 - button->boundingRect().width()/2;
   int posby = 200;
@@ -44,6 +39,8 @@ void Game::displayMenu()
   connect(quitButton,SIGNAL(clicked()),this,SLOT(close()));
   scene->addItem(quitButton);
 }
+
+
 
 void Game::start()
 {
@@ -66,6 +63,7 @@ void Game::start()
   QTimer *timer = new QTimer();
   QObject::connect(timer,SIGNAL(timeout()),this,SLOT(spawn()));
   timer->start(4000);
+
 }
 
 void Game::close()
@@ -77,6 +75,12 @@ void Game::spawn()
 {
   Tower * tower = new Tower();
   scene->addItem(tower);
+  Arrow * arrow  = new Arrow();
+  arrow->setPos(tower->x(),tower->y());
+  arrow->setRotation(40);
+  scene->addItem(arrow);
+
+
 }
 void Game::movement(int movement){
   if (movement==1)player->setPos(player->x()+10,player->y());

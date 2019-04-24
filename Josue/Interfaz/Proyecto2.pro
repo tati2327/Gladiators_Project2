@@ -33,7 +33,10 @@ SOURCES += \
     client.cpp \
     gamethread.cpp \
     mainmenu.cpp \
-    button.cpp
+    button.cpp \
+    thread2.cpp \
+    arrow.cpp
+
 
 HEADERS += \
     myplayer.h \
@@ -43,7 +46,9 @@ HEADERS += \
     client.h \
     gamethread.h \
     mainmenu.h \
-    button.h
+    button.h \
+    thread2.h \
+    arrow.h
 
 FORMS +=
 
