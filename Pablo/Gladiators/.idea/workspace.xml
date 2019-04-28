@@ -12,14 +12,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4dc83b9b-ed6d-4736-9c89-f03fce0d9172" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../Logic/A*/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Logic/A*/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Logic/A*/Game.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../Logic/A*/Game.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Logic/A*/Game.h" beforeDir="false" afterPath="$PROJECT_DIR$/../Logic/A*/Game.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Logic/A*/Pathfinding.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../Logic/A*/Pathfinding.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Logic/A*/Pathfinding.h" beforeDir="false" afterPath="$PROJECT_DIR$/../Logic/A*/Pathfinding.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Logic/A*/cmake-build-debug/A_" beforeDir="false" afterPath="$PROJECT_DIR$/../Logic/A*/cmake-build-debug/A_" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Logic/A*/cmake-build-debug/CMakeFiles/A_.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/../Logic/A*/cmake-build-debug/CMakeFiles/A_.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Logic/A*/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../Logic/A*/main.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Tati/Logic/A*/.idea/.name" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Tati/Logic/A*/.idea/A*.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Tati/Logic/A*/.idea/encodings.xml" beforeDir="false" />
@@ -299,7 +291,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16249305" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
