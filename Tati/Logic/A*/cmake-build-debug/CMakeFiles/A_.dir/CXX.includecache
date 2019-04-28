@@ -6,45 +6,81 @@
 
 #IncludeRegexTransform: 
 
-/home/tati2327/Documentos/GITHUB/P2/Tati/A*/Field.h
+/home/tati2327/Documentos/GITHUB/P2/Tati/Logic/A*/Army.h
+Gladiator.h
+/home/tati2327/Documentos/GITHUB/P2/Tati/Logic/A*/Gladiator.h
+cstdlib
+-
+ctime
+-
 List.h
-/home/tati2327/Documentos/GITHUB/P2/Tati/A*/List.h
+/home/tati2327/Documentos/GITHUB/P2/Tati/Logic/A*/List.h
+unistd.h
+-
 
-/home/tati2327/Documentos/GITHUB/P2/Tati/A*/List.h
+/home/tati2327/Documentos/GITHUB/P2/Tati/Logic/A*/Field.h
+List.h
+/home/tati2327/Documentos/GITHUB/P2/Tati/Logic/A*/List.h
+
+/home/tati2327/Documentos/GITHUB/P2/Tati/Logic/A*/GeneticEvolution.h
+Army.h
+/home/tati2327/Documentos/GITHUB/P2/Tati/Logic/A*/Army.h
+Gladiator.h
+/home/tati2327/Documentos/GITHUB/P2/Tati/Logic/A*/Gladiator.h
+Gladiator.h
+/home/tati2327/Documentos/GITHUB/P2/Tati/Logic/A*/Gladiator.h
+sstream
+-
+string
+-
+iostream
+-
+
+/home/tati2327/Documentos/GITHUB/P2/Tati/Logic/A*/Gladiator.h
+cmath
+-
+
+/home/tati2327/Documentos/GITHUB/P2/Tati/Logic/A*/List.h
 iostream
 -
 Node.h
-/home/tati2327/Documentos/GITHUB/P2/Tati/A*/Node.h
+/home/tati2327/Documentos/GITHUB/P2/Tati/Logic/A*/Node.h
 List_def.h
-/home/tati2327/Documentos/GITHUB/P2/Tati/A*/List_def.h
+/home/tati2327/Documentos/GITHUB/P2/Tati/Logic/A*/List_def.h
 
-/home/tati2327/Documentos/GITHUB/P2/Tati/A*/List_def.h
+/home/tati2327/Documentos/GITHUB/P2/Tati/Logic/A*/List_def.h
 
-/home/tati2327/Documentos/GITHUB/P2/Tati/A*/Matrix.h
+/home/tati2327/Documentos/GITHUB/P2/Tati/Logic/A*/Matrix.h
 List.h
-/home/tati2327/Documentos/GITHUB/P2/Tati/A*/List.h
+/home/tati2327/Documentos/GITHUB/P2/Tati/Logic/A*/List.h
 Matrix_def.h
-/home/tati2327/Documentos/GITHUB/P2/Tati/A*/Matrix_def.h
+/home/tati2327/Documentos/GITHUB/P2/Tati/Logic/A*/Matrix_def.h
 
-/home/tati2327/Documentos/GITHUB/P2/Tati/A*/Matrix_def.h
+/home/tati2327/Documentos/GITHUB/P2/Tati/Logic/A*/Matrix_def.h
 
-/home/tati2327/Documentos/GITHUB/P2/Tati/A*/Node.h
+/home/tati2327/Documentos/GITHUB/P2/Tati/Logic/A*/Node.h
 Node_def.h
-/home/tati2327/Documentos/GITHUB/P2/Tati/A*/Node_def.h
+/home/tati2327/Documentos/GITHUB/P2/Tati/Logic/A*/Node_def.h
 
-/home/tati2327/Documentos/GITHUB/P2/Tati/A*/Node_def.h
+/home/tati2327/Documentos/GITHUB/P2/Tati/Logic/A*/Node_def.h
 
-/home/tati2327/Documentos/GITHUB/P2/Tati/A*/Pathfinding.cpp
-Pathfinding.h
-/home/tati2327/Documentos/GITHUB/P2/Tati/A*/Pathfinding.h
-chrono
--
-
-/home/tati2327/Documentos/GITHUB/P2/Tati/A*/Pathfinding.h
+/home/tati2327/Documentos/GITHUB/P2/Tati/Logic/A*/Pathfinding.h
 Field.h
-/home/tati2327/Documentos/GITHUB/P2/Tati/A*/Field.h
+/home/tati2327/Documentos/GITHUB/P2/Tati/Logic/A*/Field.h
 List.h
-/home/tati2327/Documentos/GITHUB/P2/Tati/A*/List.h
+/home/tati2327/Documentos/GITHUB/P2/Tati/Logic/A*/List.h
 Matrix.h
-/home/tati2327/Documentos/GITHUB/P2/Tati/A*/Matrix.h
+/home/tati2327/Documentos/GITHUB/P2/Tati/Logic/A*/Matrix.h
+
+/home/tati2327/Documentos/GITHUB/P2/Tati/Logic/A*/main.cpp
+iostream
+-
+Field.h
+/home/tati2327/Documentos/GITHUB/P2/Tati/Logic/A*/Field.h
+Pathfinding.h
+/home/tati2327/Documentos/GITHUB/P2/Tati/Logic/A*/Pathfinding.h
+Matrix.h
+/home/tati2327/Documentos/GITHUB/P2/Tati/Logic/A*/Matrix.h
+GeneticEvolution.h
+/home/tati2327/Documentos/GITHUB/P2/Tati/Logic/A*/GeneticEvolution.h
 

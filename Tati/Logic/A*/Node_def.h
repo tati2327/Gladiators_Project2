@@ -11,13 +11,13 @@ Node<T>* Node<T>::getNext(){
 }
 
 template<typename T>
-void Node<T>::setValue(T _data){
+void Node<T>::setData(T _data){
     data = _data;
 }
 
 template<typename T>
-void Node<T>::setNode(Node<T> _node){
-    data = _node.data;
+void Node<T>::setNode(Node<T> *_node){
+    data = _node->data;
 }
 
 
