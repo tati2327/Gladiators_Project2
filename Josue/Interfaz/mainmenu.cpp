@@ -5,6 +5,7 @@ MainMenu::MainMenu()
 {
   scene = new QGraphicsScene();
   QGraphicsView *view = new QGraphicsView(scene);
+
   scene->clear();
   scene->setBackgroundBrush(QBrush(QImage(":images/inicio.png")));
 

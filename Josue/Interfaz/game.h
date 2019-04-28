@@ -19,7 +19,7 @@ public:
   QGraphicsScene *scene;
   MyPlayer *player;
   Stadistics *life_points;
-  Stadistics* ID, *age, *survival_prob, *expected_gen, *emotional_intelligence,*upper_stregth,*lower_stregth,*resistance,*physical_condition,*time;
+  Stadistics* ID, *age, *survival_prob, *expected_gen, *emotional_intelligence,*upper_stregth,*lower_stregth,*resistance,*physical_condition,*time_in;
   QTimer *timer;
   int cont=0;
   void displayMenu();

@@ -36,7 +36,11 @@ SOURCES += \
     button.cpp \
     thread2.cpp \
     arrow.cpp \
-    stadistics.cpp
+    stadistics.cpp \
+    tower2.cpp \
+    tower3.cpp \
+    arrow2.cpp \
+    arrow3.cpp
 
 
 HEADERS += \
@@ -50,7 +54,11 @@ HEADERS += \
     button.h \
     thread2.h \
     arrow.h \
-    stadistics.h
+    stadistics.h \
+    tower2.h \
+    tower3.h \
+    arrow2.h \
+    arrow3.h
 
 FORMS +=
 

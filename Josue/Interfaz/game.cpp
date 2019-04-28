@@ -5,8 +5,11 @@
 #include "button.h"
 #include <QDebug>
 #include <tower.h>
+#include <tower2.h>
+#include <tower3.h>
 #include <arrow.h>
 #include <stdlib.h>
+
 Game::Game()
 {
   scene=new QGraphicsScene();
@@ -36,6 +39,9 @@ void Game::displayMenu()
   Button * quitButton = new Button(QString("Quit"));
   double posqx = scene->width()/2 - button->boundingRect().width()/2;
   int posqy = 300;
+
+
+
   quitButton->setPos(posqx,posqy);
   connect(quitButton,SIGNAL(clicked()),this,SLOT(close()));
   scene->addItem(quitButton);
@@ -98,10 +104,10 @@ void Game::start()
   physical_condition->set(player->physical_condition,920,555,20);
   scene->addItem(physical_condition);
 
-  time = new Stadistics();
-  time->set(0,880,43,35);
-  time->setPlainText(QString("0000"));
-  scene->addItem(time);
+  time_in = new Stadistics();
+  time_in->set(0,880,43,35);
+  time_in->setPlainText(QString("0000"));
+  scene->addItem(time_in);
 
   scene->setBackgroundBrush(QBrush(QImage(":images/game.png")));
 
@@ -121,9 +127,24 @@ void Game::spawn()
       timer->stop();
       return;
     }
+  srand(time(NULL));
+  int t = (rand()%3)+0;
+  if (t==0){
       Tower * tower = new Tower();
       scene->addItem(tower);
       cont++;
+    }
+  if (t==1){
+      Tower2 * tower = new Tower2();
+      scene->addItem(tower);
+      cont++;
+    }
+  if (t==2){
+      Tower3 * tower = new Tower3();
+      scene->addItem(tower);
+      cont++;
+    }
+
 
 }
 void Game::movement(int movement){

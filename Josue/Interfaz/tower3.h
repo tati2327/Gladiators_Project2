@@ -1,13 +1,15 @@
-#ifndef TOWER_H
-#define TOWER_H
+#ifndef TOWER3_H
+#define TOWER3_H
+
+#include "tower.h"
 #include <QGraphicsPixmapItem>
 #include <QGraphicsPolygonItem>
 #include <QObject>
-class Tower:public QObject, public QGraphicsPixmapItem
+class Tower3:public QObject, public QGraphicsPixmapItem
 {
   Q_OBJECT
 public:
-  Tower(QGraphicsItem * parent =0);
+  Tower3();
   void attack();
 
 public slots:
@@ -20,5 +22,4 @@ private:
 
 };
 
-
-#endif // TOWER_H
+#endif // TOWER3_H

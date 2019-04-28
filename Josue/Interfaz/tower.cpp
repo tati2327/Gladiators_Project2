@@ -11,7 +11,7 @@
 extern Game * g;
 
 Tower::Tower(QGraphicsItem *parent):QObject(), QGraphicsPixmapItem (){
-   setPixmap(QPixmap(":/images/torre.png"));
+   setPixmap(QPixmap(":/images/TorreSimple.png"));
    srand(time(NULL));
    int randwidth = rand()%10;
    int randheight = rand()%10;
@@ -48,7 +48,7 @@ void Tower::attack()
 
 void Tower::kill()
 {
-  collide_items= this->attack_area->collidingItems();
+  collide_items=attack_area->collidingItems();
   if (collide_items.size()==1){
       has_target=false;
       return;

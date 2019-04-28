@@ -1,4 +1,4 @@
-#include "arrow.h"
+#include "arrow3.h"
 #include <QPixelFormat>
 #include <QTimer>
 #include <qmath.h>
@@ -7,21 +7,21 @@
 #include "game.h"
 #include <QGraphicsScene>
 extern  Game* g;
-Arrow::Arrow(QGraphicsItem *parent)
+Arrow3::Arrow3(QGraphicsItem *parent)
 {
-  setPixmap(QPixmap(":images/SimpleArrow.png"));
+  setPixmap(QPixmap(":images/Explosive.png"));
 
   QTimer *move_timer = new QTimer(this);
   connect(move_timer,SIGNAL(timeout()),this,SLOT(move()));
   move_timer->start(30);
 }
 
-void Arrow::move(){
+void Arrow3::move(){
   QList<QGraphicsItem *> colliding_items = collidingItems();
   for(int i=0,n=colliding_items.size();i<n;i++){
       if(typeid(*(colliding_items[i]))==typeid (MyPlayer)){
-          g->life_points->setPlainText(QString::number(g->player->life_points-1));
-          g->player->life_points--;
+          g->life_points->setPlainText(QString::number(g->player->life_points-2));
+          g->player->life_points=g->player->life_points-2;
           scene()->removeItem(this);
           if (g->player->life_points<=0){
               delete g->player;
