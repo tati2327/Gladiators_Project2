@@ -6,22 +6,23 @@
 #include "Matrix.h"
 
 class Pathfinding {
-public:
-    Pathfinding(Matrix<Field>& board);
+    public:
+        Pathfinding();
+        Pathfinding(Matrix<Field>& board);
 
-    List<Field> openSet;
-    List<Field> closeSet;
+        List<Field> openSet;
+        List<Field> closeSet;
 
-    Field *start;
-    Field *end;
+        Field *start;
+        Field *end;
 
-    int rows, cols;
+        int rows, cols;
 
-    Matrix<Field> *board;
+        Matrix<Field> *board;
 
-    void addNeighbors(Field *_field);
-    int heuristic(Field a, Field b);
-    bool makeRoute();
+        void addNeighbors(Field *_field);
+        int heuristic(Field a, Field b);
+        bool makeRoute();
 };
 
 

@@ -1,6 +1,10 @@
 #include "Pathfinding.h"
 #include <chrono>
 
+Pathfinding::Pathfinding() {
+
+}
+
 Pathfinding::Pathfinding(Matrix<Field>& _board) :board(&_board) {
     /*! Se crea la matriz con datos de tipo field*/
     this->board = &_board;
@@ -97,17 +101,16 @@ bool Pathfinding::makeRoute() {
         cout<<" f "<<current->f<<" g "<<current->g<<" h "<<current->h<<endl;
 
         /*! Verifica que el nodo winner sea o no el final
-         * IMPORTANTE: Si entra en ese if significa que ya hay una ruta
-         * */
+         * IMPORTANTE: Si entra en ese if significa que ya hay una ruta */
         if((current->i == end->i) && (current->j == end->j)){
             closeSet.add(*end);
             cout<<"Se encontró la mejor ruta!!!"<<endl;
-            string strTemp = " ";
+            string strTemp = "";
             for (int i = 0;i<closeSet.size(); i++){
                 strTemp += "["+to_string(closeSet.getNode(i)->data.i)+","+to_string((closeSet.getNode(i)->data.j))+"]";
             }
             auto finish = std::chrono::high_resolution_clock::now();
-            cout <<"Duración "<< chrono::duration_cast<chrono::nanoseconds>(finish-timeStart).count() << endl;
+            cout <<"Duración "<< chrono::duration_cast<chrono::microseconds>(finish-timeStart).count() << endl;
             cout<<strTemp<<endl;
             return true;
         }
@@ -142,7 +145,7 @@ bool Pathfinding::makeRoute() {
                     strTemp +="["+to_string(closeSet.getNode(j)->data.i)+ "," +to_string((closeSet.getNode(j)->data.j))+"]";
                 }
                 auto finish = std::chrono::high_resolution_clock::now();
-                cout <<"Duración "<< chrono::duration_cast<chrono::nanoseconds>(finish-timeStart).count()<<" nanosegundos"<< endl;
+                cout <<"Duración "<< chrono::duration_cast<chrono::microseconds>(finish-timeStart).count() << endl;
                 cout << strTemp << endl;
                 return true;
             }
@@ -199,3 +202,4 @@ bool Pathfinding::makeRoute() {
     cout<<"No hay solución"<<endl;
     return false;
 }
+

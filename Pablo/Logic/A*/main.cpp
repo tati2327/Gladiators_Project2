@@ -3,6 +3,7 @@
 #include "Pathfinding.h"
 #include "Matrix.h"
 #include "GeneticEvolution.h"
+#include "Game.h"
 
 int main() {
 
@@ -16,7 +17,8 @@ int main() {
     m.operator()(1,3).addObstacle();
 
     p.makeRoute();*/
-    Army army;
+
+    /*Army army;
     GeneticEvolution gA;
 
     //Primera generacion.
@@ -55,7 +57,10 @@ int main() {
     cout<<"Fittest: " <<army.fittest.getResistance()<<endl;
     army.setSecondFittest();
     cout<<"secondFittest: "<<army.secondFittest.getResistance()<<endl;
-    //Segunda Generacion
+    //Segunda Generacion*/
+
+    Game myGame;
+    myGame.newGame();
 
     return 0;
 }

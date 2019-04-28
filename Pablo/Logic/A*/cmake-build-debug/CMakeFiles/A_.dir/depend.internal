@@ -37,6 +37,7 @@ CMakeFiles/A_.dir/Game.cpp.o
  /home/pablo/Documentos/Github/Gladiators/Pablo/Logic/A*/Field.h
  /home/pablo/Documentos/Github/Gladiators/Pablo/Logic/A*/Game.cpp
  /home/pablo/Documentos/Github/Gladiators/Pablo/Logic/A*/Game.h
+ /home/pablo/Documentos/Github/Gladiators/Pablo/Logic/A*/GeneticEvolution.h
  /home/pablo/Documentos/Github/Gladiators/Pablo/Logic/A*/Gladiator.h
  /home/pablo/Documentos/Github/Gladiators/Pablo/Logic/A*/List.h
  /home/pablo/Documentos/Github/Gladiators/Pablo/Logic/A*/List_def.h
@@ -44,6 +45,7 @@ CMakeFiles/A_.dir/Game.cpp.o
  /home/pablo/Documentos/Github/Gladiators/Pablo/Logic/A*/Matrix_def.h
  /home/pablo/Documentos/Github/Gladiators/Pablo/Logic/A*/Node.h
  /home/pablo/Documentos/Github/Gladiators/Pablo/Logic/A*/Node_def.h
+ /home/pablo/Documentos/Github/Gladiators/Pablo/Logic/A*/Pathfinding.h
 CMakeFiles/A_.dir/GeneticEvolution.cpp.o
  /home/pablo/Documentos/Github/Gladiators/Pablo/Logic/A*/Army.h
  /home/pablo/Documentos/Github/Gladiators/Pablo/Logic/A*/GeneticEvolution.cpp
@@ -84,6 +86,7 @@ CMakeFiles/A_.dir/Tower.cpp.o
 CMakeFiles/A_.dir/main.cpp.o
  /home/pablo/Documentos/Github/Gladiators/Pablo/Logic/A*/Army.h
  /home/pablo/Documentos/Github/Gladiators/Pablo/Logic/A*/Field.h
+ /home/pablo/Documentos/Github/Gladiators/Pablo/Logic/A*/Game.h
  /home/pablo/Documentos/Github/Gladiators/Pablo/Logic/A*/GeneticEvolution.h
  /home/pablo/Documentos/Github/Gladiators/Pablo/Logic/A*/Gladiator.h
  /home/pablo/Documentos/Github/Gladiators/Pablo/Logic/A*/List.h

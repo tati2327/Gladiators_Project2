@@ -6,6 +6,7 @@
 #include "Gladiator.h"
 #include "Army.h"
 #include "GeneticEvolution.h"
+#include "Pathfinding.h"
 
 class Game {
 
@@ -15,11 +16,12 @@ class Game {
         Army army;
         GeneticEvolution gE;
         int generationCount;
-
+        Pathfinding myRoute;
 
         Game();
         void newGame();
         void play();
+        bool addObstacles();
 };
 
 

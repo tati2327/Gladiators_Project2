@@ -36,6 +36,7 @@ CMakeFiles/A_.dir/Game.cpp.o: ../Army.h
 CMakeFiles/A_.dir/Game.cpp.o: ../Field.h
 CMakeFiles/A_.dir/Game.cpp.o: ../Game.cpp
 CMakeFiles/A_.dir/Game.cpp.o: ../Game.h
+CMakeFiles/A_.dir/Game.cpp.o: ../GeneticEvolution.h
 CMakeFiles/A_.dir/Game.cpp.o: ../Gladiator.h
 CMakeFiles/A_.dir/Game.cpp.o: ../List.h
 CMakeFiles/A_.dir/Game.cpp.o: ../List_def.h
@@ -43,6 +44,7 @@ CMakeFiles/A_.dir/Game.cpp.o: ../Matrix.h
 CMakeFiles/A_.dir/Game.cpp.o: ../Matrix_def.h
 CMakeFiles/A_.dir/Game.cpp.o: ../Node.h
 CMakeFiles/A_.dir/Game.cpp.o: ../Node_def.h
+CMakeFiles/A_.dir/Game.cpp.o: ../Pathfinding.h
 
 CMakeFiles/A_.dir/GeneticEvolution.cpp.o: ../Army.h
 CMakeFiles/A_.dir/GeneticEvolution.cpp.o: ../GeneticEvolution.cpp
@@ -83,6 +85,7 @@ CMakeFiles/A_.dir/Tower.cpp.o: ../Tower.h
 
 CMakeFiles/A_.dir/main.cpp.o: ../Army.h
 CMakeFiles/A_.dir/main.cpp.o: ../Field.h
+CMakeFiles/A_.dir/main.cpp.o: ../Game.h
 CMakeFiles/A_.dir/main.cpp.o: ../GeneticEvolution.h
 CMakeFiles/A_.dir/main.cpp.o: ../Gladiator.h
 CMakeFiles/A_.dir/main.cpp.o: ../List.h
