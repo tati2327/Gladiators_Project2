@@ -147,11 +147,5 @@ void Game::spawn()
 
 
 }
-void Game::movement(int movement){
-  if (movement==1)player->setPos(player->x()+10,player->y());
-  if (movement==2)player->setPos(player->x()-10,player->y());
-  if (movement==3)player->setPos(player->x(),player->y()+10);
-  if (movement==4)player->setPos(player->x(),player->y()-10);
-}
 
 

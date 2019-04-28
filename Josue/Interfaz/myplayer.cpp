@@ -3,7 +3,7 @@
 #include <QKeyEvent>
 MyPlayer::MyPlayer(QGraphicsItem *parent):QObject(),QGraphicsPixmapItem ()
 {
-  setPixmap(QPixmap(":/images/gladeador.png"));
+  setPixmap(QPixmap(":/images/Gladeador2.png"));
 }
 
 void MyPlayer::keyPressEvent(QKeyEvent *event)

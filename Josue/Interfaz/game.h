@@ -23,7 +23,6 @@ public:
   QTimer *timer;
   int cont=0;
   void displayMenu();
-  void movement(int movement);
 public slots:
   void spawn();
   void start();

@@ -40,8 +40,11 @@ void Tower::attack()
 {
   Arrow * arrow  = new Arrow();
   arrow->setPos(this->x()+33.5,this->y()+33.5);
-  QLineF ln(QPointF(x(),y()),attack_point);
-  int angle = -1 * ln.angle();
+  QLineF ln(QPointF(this->x(),this->y()),attack_point);
+
+  int angle =  -1 * ln.angle();
+
+
   arrow->setRotation(angle);
   g->scene->addItem(arrow);
 }
