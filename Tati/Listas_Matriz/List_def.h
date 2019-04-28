@@ -65,6 +65,39 @@ void List<T>::deleteNode(T data) {
     }
 }
 
+template <typename T>
+void List<T>::deleteIndex(int index) {
+    if (first != nullptr) {
+        Node<T> *auxDelete;
+        auxDelete = first;
+
+        int count=0;
+        while ((auxDelete != nullptr) && index!= count) {
+            curr = auxDelete;
+            auxDelete = auxDelete->next;
+            count++;
+        }
+
+        /*! No se encontró el elemento*/
+        if (auxDelete == nullptr) {
+            cout << "El elemento no existe"<<endl;
+        } else if (curr == nullptr) {
+            /*! El elemento es el primero de la lista */
+            first = first->next;
+            delete(auxDelete);
+        } else if(auxDelete == last) {
+            /*! El elemento esta al final*/
+            last = curr;
+            curr->next = auxDelete->next;
+            delete(auxDelete);
+        } else{
+            /*!El elemento esta en el medio*/
+            curr->next = auxDelete->next;
+            delete(auxDelete);
+        }
+    }
+}
+
 template<typename T>
 Node<T>* List<T>::getNode(int index) {
     if(index == 0) {

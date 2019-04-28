@@ -31,6 +31,8 @@ class List {
          */
         void deleteNode(T data);
 
+        void deleteIndex(int index);
+
         /*!
          * getNode()
          * Retorna un nodo de tipo T
