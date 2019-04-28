@@ -30,7 +30,7 @@ public:
      * Elimina un nodo de la lista por dato.
      * @param data de tipo T
      */
-    void deleteNode(T _node);
+    void deleteNode(T _data);
 
     /*!
     * getData()

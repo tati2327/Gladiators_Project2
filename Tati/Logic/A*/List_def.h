@@ -65,61 +65,61 @@ void List<T>::deleteNode(T _data) {
     }
 }
 
-    template<typename T>
-    T List<T>::getData(int index) {
-        if(index == 0) {
-            // Get the first element
-            return first->data;
-        } else {
-            // Get the index'th element
-            curr = first;
-            for(int i = 0; i < index; ++i) {
-                curr = curr->next;
-            }
-            return curr->data;
-        }
-    }
-
-    template<typename T>
-    Node<T>* List<T>::getNode(int index) {
-        if(index == 0) {
-            // Get the first element
-            return first;
-        } else {
-            // Get the index'th element
-            Node<T>* curr = this->first;
-            for(int i = 0; i < index; ++i) {
-                curr = curr->next;
-            }
-            return curr;
-        }
-    }
-
-    template<typename T>
-    void List<T>::show(){
+template<typename T>
+T List<T>::getData(int index) {
+    if(index == 0) {
+        // Get the first element
+        return first->data;
+    } else {
+        // Get the index'th element
         curr = first;
-        while (curr!= nullptr){
-            cout << curr->getValue()<<endl;
-            curr = curr->getNext();
+        for(int i = 0; i < index; ++i) {
+            curr = curr->next;
         }
+        return curr->data;
     }
+}
 
-    template<typename T>
-    int List<T>::size(){
-        curr = first;
-        int count=0;
-
-        while(curr != nullptr){     /*! La lista se recorre con .getNext() y se tiene un contador para que
-                                 *  crezca segun se recorra la lista*/
-            curr = curr->getNext();
-            count=count+1;
+template<typename T>
+Node<T>* List<T>::getNode(int index) {
+    if(index == 0) {
+        // Get the first element
+        return first;
+    } else {
+        // Get the index'th element
+        Node<T>* curr = this->first;
+        for(int i = 0; i < index; ++i) {
+            curr = curr->next;
         }
+        return curr;
+    }
+}
 
-        //cout<<"El tamaño de la lista es "<<count<<endl;
-        return count;
+template<typename T>
+void List<T>::show(){
+    curr = first;
+    while (curr!= nullptr){
+        cout << curr->getValue()<<endl;
+        curr = curr->getNext();
+    }
+}
+
+template<typename T>
+int List<T>::size(){
+    curr = first;
+    int count=0;
+
+    while(curr != nullptr){     /*! La lista se recorre con .getNext() y se tiene un contador para que
+                             *  crezca segun se recorra la lista*/
+        curr = curr->getNext();
+        count=count+1;
     }
 
-    template<typename T>
-    T List<T>::operator [](int index) {
-        return getData(index);
-    }
+    //cout<<"El tamaño de la lista es "<<count<<endl;
+    return count;
+}
+
+template<typename T>
+T List<T>::operator [](int index) {
+    return getData(index);
+}

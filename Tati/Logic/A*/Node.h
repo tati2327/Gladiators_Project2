@@ -24,14 +24,14 @@ public:
      * Cambia el dato de un nodo
      * @param recibe un dato T
      */
-    void setValue(T _data);
+    void setData(T _data);
 
     /*!
      * setNode()
      * Cambia un "Nodo" por otro
      * @param recibe un nodo de tipo T
      */
-    void setNode(Node<T> _node);
+    void setNode(Node<T>* _node);
 
     /*!
      * getNext()

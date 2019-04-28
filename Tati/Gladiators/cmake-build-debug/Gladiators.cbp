@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="Gladiators"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/tati2327/Documentos/GITHUB/P2/Tati/Gladiators/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/tati2327/Documentos/GITHUB/P2/Tati/Gladiators/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/tati2327/Documentos/GITHUB/P2/Tati/Gladiators/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/tati2327/Documentos/GITHUB/P2/Tati/Gladiators/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/tati2327/Documentos/GITHUB/P2/Tati/Gladiators/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/tati2327/Documentos/GITHUB/P2/Tati/Gladiators/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/tati2327/Documentos/GITHUB/P2/Tati/Gladiators/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/tati2327/Documentos/GITHUB/P2/Tati/Gladiators/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/tati2327/Documentos/GITHUB/P2/Tati/Gladiators/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/tati2327/Documentos/GITHUB/P2/Tati/Gladiators/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Gladiators">
+				<Option output="/home/tati2327/Documentos/GITHUB/P2/Tati/Gladiators/cmake-build-debug/Gladiators" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/tati2327/Documentos/GITHUB/P2/Tati/Gladiators/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/tati2327/Documentos/GITHUB/P2/Tati/Gladiators/cmake-build-debug/Makefile&quot;  VERBOSE=1 Gladiators"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/tati2327/Documentos/GITHUB/P2/Tati/Gladiators/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/tati2327/Documentos/GITHUB/P2/Tati/Gladiators/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/tati2327/Documentos/GITHUB/P2/Tati/Gladiators/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Gladiators/fast">
+				<Option output="/home/tati2327/Documentos/GITHUB/P2/Tati/Gladiators/cmake-build-debug/Gladiators" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/tati2327/Documentos/GITHUB/P2/Tati/Gladiators/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/tati2327/Documentos/GITHUB/P2/Tati/Gladiators/cmake-build-debug/Makefile&quot;  VERBOSE=1 Gladiators/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/tati2327/Documentos/GITHUB/P2/Tati/Gladiators/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/tati2327/Documentos/GITHUB/P2/Tati/Gladiators/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/tati2327/Documentos/GITHUB/P2/Tati/Gladiators/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/tati2327/Documentos/GITHUB/P2/Tati/Gladiators/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/tati2327/Documentos/GITHUB/P2/Tati/Gladiators/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/tati2327/Documentos/GITHUB/P2/Tati/Gladiators/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/tati2327/Documentos/GITHUB/P2/Tati/Gladiators/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/tati2327/Documentos/GITHUB/P2/Tati/Gladiators/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/tati2327/Documentos/GITHUB/P2/Tati/Gladiators/Army.cpp">
+			<Option target="Gladiators"/>
+		</Unit>
+		<Unit filename="/home/tati2327/Documentos/GITHUB/P2/Tati/Gladiators/Army.h">
+			<Option target="Gladiators"/>
+		</Unit>
+		<Unit filename="/home/tati2327/Documentos/GITHUB/P2/Tati/Gladiators/GeneticEvolution.cpp">
+			<Option target="Gladiators"/>
+		</Unit>
+		<Unit filename="/home/tati2327/Documentos/GITHUB/P2/Tati/Gladiators/GeneticEvolution.h">
+			<Option target="Gladiators"/>
+		</Unit>
+		<Unit filename="/home/tati2327/Documentos/GITHUB/P2/Tati/Gladiators/Gladiator.cpp">
+			<Option target="Gladiators"/>
+		</Unit>
+		<Unit filename="/home/tati2327/Documentos/GITHUB/P2/Tati/Gladiators/Gladiator.h">
+			<Option target="Gladiators"/>
+		</Unit>
+		<Unit filename="/home/tati2327/Documentos/GITHUB/P2/Tati/Gladiators/List.h">
+			<Option target="Gladiators"/>
+		</Unit>
+		<Unit filename="/home/tati2327/Documentos/GITHUB/P2/Tati/Gladiators/List_def.h">
+			<Option target="Gladiators"/>
+		</Unit>
+		<Unit filename="/home/tati2327/Documentos/GITHUB/P2/Tati/Gladiators/Node.h">
+			<Option target="Gladiators"/>
+		</Unit>
+		<Unit filename="/home/tati2327/Documentos/GITHUB/P2/Tati/Gladiators/Node_def.h">
+			<Option target="Gladiators"/>
+		</Unit>
+		<Unit filename="/home/tati2327/Documentos/GITHUB/P2/Tati/Gladiators/main.cpp">
+			<Option target="Gladiators"/>
+		</Unit>
+		<Unit filename="/home/tati2327/Documentos/GITHUB/P2/Tati/Gladiators/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

@@ -48,10 +48,10 @@ RM = /home/tati2327/clion-2018.3.4/bin/cmake/linux/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/tati2327/Documentos/GITHUB/P2/Tati/A*"
+CMAKE_SOURCE_DIR = "/home/tati2327/Documentos/GITHUB/P2/Tati/Logic/A*"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/tati2327/Documentos/GITHUB/P2/Tati/A*/cmake-build-debug"
+CMAKE_BINARY_DIR = "/home/tati2327/Documentos/GITHUB/P2/Tati/Logic/A*/cmake-build-debug"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/tati2327/Documentos/GITHUB/P2/Tati/A*/cmake-build-debug/CMakeFiles" "/home/tati2327/Documentos/GITHUB/P2/Tati/A*/cmake-build-debug/CMakeFiles/progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/tati2327/Documentos/GITHUB/P2/Tati/Logic/A*/cmake-build-debug/CMakeFiles" "/home/tati2327/Documentos/GITHUB/P2/Tati/Logic/A*/cmake-build-debug/CMakeFiles/progress.marks"
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/tati2327/Documentos/GITHUB/P2/Tati/A*/cmake-build-debug/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/tati2327/Documentos/GITHUB/P2/Tati/Logic/A*/cmake-build-debug/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -122,6 +122,33 @@ A_: cmake_check_build_system
 A_/fast:
 	$(MAKE) -f CMakeFiles/A_.dir/build.make CMakeFiles/A_.dir/build
 .PHONY : A_/fast
+
+Army.o: Army.cpp.o
+
+.PHONY : Army.o
+
+# target to build an object file
+Army.cpp.o:
+	$(MAKE) -f CMakeFiles/A_.dir/build.make CMakeFiles/A_.dir/Army.cpp.o
+.PHONY : Army.cpp.o
+
+Army.i: Army.cpp.i
+
+.PHONY : Army.i
+
+# target to preprocess a source file
+Army.cpp.i:
+	$(MAKE) -f CMakeFiles/A_.dir/build.make CMakeFiles/A_.dir/Army.cpp.i
+.PHONY : Army.cpp.i
+
+Army.s: Army.cpp.s
+
+.PHONY : Army.s
+
+# target to generate assembly for a file
+Army.cpp.s:
+	$(MAKE) -f CMakeFiles/A_.dir/build.make CMakeFiles/A_.dir/Army.cpp.s
+.PHONY : Army.cpp.s
 
 ExplosiveArrow.o: ExplosiveArrow.cpp.o
 
@@ -230,6 +257,60 @@ Game.s: Game.cpp.s
 Game.cpp.s:
 	$(MAKE) -f CMakeFiles/A_.dir/build.make CMakeFiles/A_.dir/Game.cpp.s
 .PHONY : Game.cpp.s
+
+GeneticEvolution.o: GeneticEvolution.cpp.o
+
+.PHONY : GeneticEvolution.o
+
+# target to build an object file
+GeneticEvolution.cpp.o:
+	$(MAKE) -f CMakeFiles/A_.dir/build.make CMakeFiles/A_.dir/GeneticEvolution.cpp.o
+.PHONY : GeneticEvolution.cpp.o
+
+GeneticEvolution.i: GeneticEvolution.cpp.i
+
+.PHONY : GeneticEvolution.i
+
+# target to preprocess a source file
+GeneticEvolution.cpp.i:
+	$(MAKE) -f CMakeFiles/A_.dir/build.make CMakeFiles/A_.dir/GeneticEvolution.cpp.i
+.PHONY : GeneticEvolution.cpp.i
+
+GeneticEvolution.s: GeneticEvolution.cpp.s
+
+.PHONY : GeneticEvolution.s
+
+# target to generate assembly for a file
+GeneticEvolution.cpp.s:
+	$(MAKE) -f CMakeFiles/A_.dir/build.make CMakeFiles/A_.dir/GeneticEvolution.cpp.s
+.PHONY : GeneticEvolution.cpp.s
+
+Gladiator.o: Gladiator.cpp.o
+
+.PHONY : Gladiator.o
+
+# target to build an object file
+Gladiator.cpp.o:
+	$(MAKE) -f CMakeFiles/A_.dir/build.make CMakeFiles/A_.dir/Gladiator.cpp.o
+.PHONY : Gladiator.cpp.o
+
+Gladiator.i: Gladiator.cpp.i
+
+.PHONY : Gladiator.i
+
+# target to preprocess a source file
+Gladiator.cpp.i:
+	$(MAKE) -f CMakeFiles/A_.dir/build.make CMakeFiles/A_.dir/Gladiator.cpp.i
+.PHONY : Gladiator.cpp.i
+
+Gladiator.s: Gladiator.cpp.s
+
+.PHONY : Gladiator.s
+
+# target to generate assembly for a file
+Gladiator.cpp.s:
+	$(MAKE) -f CMakeFiles/A_.dir/build.make CMakeFiles/A_.dir/Gladiator.cpp.s
+.PHONY : Gladiator.cpp.s
 
 Pathfinding.o: Pathfinding.cpp.o
 
@@ -348,6 +429,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... A_"
 	@echo "... edit_cache"
+	@echo "... Army.o"
+	@echo "... Army.i"
+	@echo "... Army.s"
 	@echo "... ExplosiveArrow.o"
 	@echo "... ExplosiveArrow.i"
 	@echo "... ExplosiveArrow.s"
@@ -360,6 +444,12 @@ help:
 	@echo "... Game.o"
 	@echo "... Game.i"
 	@echo "... Game.s"
+	@echo "... GeneticEvolution.o"
+	@echo "... GeneticEvolution.i"
+	@echo "... GeneticEvolution.s"
+	@echo "... Gladiator.o"
+	@echo "... Gladiator.i"
+	@echo "... Gladiator.s"
 	@echo "... Pathfinding.o"
 	@echo "... Pathfinding.i"
 	@echo "... Pathfinding.s"

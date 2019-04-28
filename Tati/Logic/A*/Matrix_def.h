@@ -1,4 +1,9 @@
 template<typename T>
+Matrix<T>::Matrix() {
+
+}
+
+template<typename T>
 Matrix<T>::Matrix( int rows, int cols){
     setRow(rows);
     setCol(cols);
@@ -48,3 +53,5 @@ template<typename T>
 void Matrix<T>::setCol(int c){
     col = c;
 }
+
+

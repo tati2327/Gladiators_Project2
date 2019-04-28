@@ -8,28 +8,28 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/tati2327/Documentos/GITHUB/P2/Tati/A*/cmake-build-debug"/>
+				<Option working_dir="/home/tati2327/Documentos/GITHUB/P2/Tati/Logic/A*/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/tati2327/Documentos/GITHUB/P2/Tati/A*/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/tati2327/Documentos/GITHUB/P2/Tati/A*/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/tati2327/Documentos/GITHUB/P2/Tati/A*/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/tati2327/Documentos/GITHUB/P2/Tati/A*/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/tati2327/Documentos/GITHUB/P2/Tati/Logic/A*/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/tati2327/Documentos/GITHUB/P2/Tati/Logic/A*/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/tati2327/Documentos/GITHUB/P2/Tati/Logic/A*/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/tati2327/Documentos/GITHUB/P2/Tati/Logic/A*/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/tati2327/Documentos/GITHUB/P2/Tati/A*/cmake-build-debug"/>
+				<Option working_dir="/home/tati2327/Documentos/GITHUB/P2/Tati/Logic/A*/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/tati2327/Documentos/GITHUB/P2/Tati/A*/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/tati2327/Documentos/GITHUB/P2/Tati/A*/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/tati2327/Documentos/GITHUB/P2/Tati/A*/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/tati2327/Documentos/GITHUB/P2/Tati/A*/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/tati2327/Documentos/GITHUB/P2/Tati/Logic/A*/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/tati2327/Documentos/GITHUB/P2/Tati/Logic/A*/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/tati2327/Documentos/GITHUB/P2/Tati/Logic/A*/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/tati2327/Documentos/GITHUB/P2/Tati/Logic/A*/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="A_">
-				<Option output="/home/tati2327/Documentos/GITHUB/P2/Tati/A*/cmake-build-debug/A_" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/tati2327/Documentos/GITHUB/P2/Tati/A*/cmake-build-debug"/>
+				<Option output="/home/tati2327/Documentos/GITHUB/P2/Tati/Logic/A*/cmake-build-debug/A_" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/tati2327/Documentos/GITHUB/P2/Tati/Logic/A*/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -44,15 +44,15 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/tati2327/Documentos/GITHUB/P2/Tati/A*/cmake-build-debug/Makefile&quot;  VERBOSE=1 A_"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/tati2327/Documentos/GITHUB/P2/Tati/A*/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/tati2327/Documentos/GITHUB/P2/Tati/A*/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/tati2327/Documentos/GITHUB/P2/Tati/A*/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/tati2327/Documentos/GITHUB/P2/Tati/Logic/A*/cmake-build-debug/Makefile&quot;  VERBOSE=1 A_"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/tati2327/Documentos/GITHUB/P2/Tati/Logic/A*/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/tati2327/Documentos/GITHUB/P2/Tati/Logic/A*/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/tati2327/Documentos/GITHUB/P2/Tati/Logic/A*/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="A_/fast">
-				<Option output="/home/tati2327/Documentos/GITHUB/P2/Tati/A*/cmake-build-debug/A_" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/tati2327/Documentos/GITHUB/P2/Tati/A*/cmake-build-debug"/>
+				<Option output="/home/tati2327/Documentos/GITHUB/P2/Tati/Logic/A*/cmake-build-debug/A_" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/tati2327/Documentos/GITHUB/P2/Tati/Logic/A*/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -67,87 +67,105 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/tati2327/Documentos/GITHUB/P2/Tati/A*/cmake-build-debug/Makefile&quot;  VERBOSE=1 A_/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/tati2327/Documentos/GITHUB/P2/Tati/A*/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/tati2327/Documentos/GITHUB/P2/Tati/A*/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/tati2327/Documentos/GITHUB/P2/Tati/A*/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/tati2327/Documentos/GITHUB/P2/Tati/Logic/A*/cmake-build-debug/Makefile&quot;  VERBOSE=1 A_/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/tati2327/Documentos/GITHUB/P2/Tati/Logic/A*/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/tati2327/Documentos/GITHUB/P2/Tati/Logic/A*/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/tati2327/Documentos/GITHUB/P2/Tati/Logic/A*/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/tati2327/Documentos/GITHUB/P2/Tati/A*/cmake-build-debug"/>
+				<Option working_dir="/home/tati2327/Documentos/GITHUB/P2/Tati/Logic/A*/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/tati2327/Documentos/GITHUB/P2/Tati/A*/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/tati2327/Documentos/GITHUB/P2/Tati/A*/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/tati2327/Documentos/GITHUB/P2/Tati/A*/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/tati2327/Documentos/GITHUB/P2/Tati/A*/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/tati2327/Documentos/GITHUB/P2/Tati/Logic/A*/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/tati2327/Documentos/GITHUB/P2/Tati/Logic/A*/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/tati2327/Documentos/GITHUB/P2/Tati/Logic/A*/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/tati2327/Documentos/GITHUB/P2/Tati/Logic/A*/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/tati2327/Documentos/GITHUB/P2/Tati/A*/ExplosiveArrow.cpp">
+		<Unit filename="/home/tati2327/Documentos/GITHUB/P2/Tati/Logic/A*/Army.cpp">
 			<Option target="A_"/>
 		</Unit>
-		<Unit filename="/home/tati2327/Documentos/GITHUB/P2/Tati/A*/ExplosiveArrow.h">
+		<Unit filename="/home/tati2327/Documentos/GITHUB/P2/Tati/Logic/A*/Army.h">
 			<Option target="A_"/>
 		</Unit>
-		<Unit filename="/home/tati2327/Documentos/GITHUB/P2/Tati/A*/Field.cpp">
+		<Unit filename="/home/tati2327/Documentos/GITHUB/P2/Tati/Logic/A*/ExplosiveArrow.cpp">
 			<Option target="A_"/>
 		</Unit>
-		<Unit filename="/home/tati2327/Documentos/GITHUB/P2/Tati/A*/Field.h">
+		<Unit filename="/home/tati2327/Documentos/GITHUB/P2/Tati/Logic/A*/ExplosiveArrow.h">
 			<Option target="A_"/>
 		</Unit>
-		<Unit filename="/home/tati2327/Documentos/GITHUB/P2/Tati/A*/FireArrow.cpp">
+		<Unit filename="/home/tati2327/Documentos/GITHUB/P2/Tati/Logic/A*/Field.cpp">
 			<Option target="A_"/>
 		</Unit>
-		<Unit filename="/home/tati2327/Documentos/GITHUB/P2/Tati/A*/FireArrow.h">
+		<Unit filename="/home/tati2327/Documentos/GITHUB/P2/Tati/Logic/A*/Field.h">
 			<Option target="A_"/>
 		</Unit>
-		<Unit filename="/home/tati2327/Documentos/GITHUB/P2/Tati/A*/Game.cpp">
+		<Unit filename="/home/tati2327/Documentos/GITHUB/P2/Tati/Logic/A*/FireArrow.cpp">
 			<Option target="A_"/>
 		</Unit>
-		<Unit filename="/home/tati2327/Documentos/GITHUB/P2/Tati/A*/Game.h">
+		<Unit filename="/home/tati2327/Documentos/GITHUB/P2/Tati/Logic/A*/FireArrow.h">
 			<Option target="A_"/>
 		</Unit>
-		<Unit filename="/home/tati2327/Documentos/GITHUB/P2/Tati/A*/List.h">
+		<Unit filename="/home/tati2327/Documentos/GITHUB/P2/Tati/Logic/A*/Game.cpp">
 			<Option target="A_"/>
 		</Unit>
-		<Unit filename="/home/tati2327/Documentos/GITHUB/P2/Tati/A*/List_def.h">
+		<Unit filename="/home/tati2327/Documentos/GITHUB/P2/Tati/Logic/A*/Game.h">
 			<Option target="A_"/>
 		</Unit>
-		<Unit filename="/home/tati2327/Documentos/GITHUB/P2/Tati/A*/Matrix.h">
+		<Unit filename="/home/tati2327/Documentos/GITHUB/P2/Tati/Logic/A*/GeneticEvolution.cpp">
 			<Option target="A_"/>
 		</Unit>
-		<Unit filename="/home/tati2327/Documentos/GITHUB/P2/Tati/A*/Matrix_def.h">
+		<Unit filename="/home/tati2327/Documentos/GITHUB/P2/Tati/Logic/A*/GeneticEvolution.h">
 			<Option target="A_"/>
 		</Unit>
-		<Unit filename="/home/tati2327/Documentos/GITHUB/P2/Tati/A*/Node.h">
+		<Unit filename="/home/tati2327/Documentos/GITHUB/P2/Tati/Logic/A*/Gladiator.cpp">
 			<Option target="A_"/>
 		</Unit>
-		<Unit filename="/home/tati2327/Documentos/GITHUB/P2/Tati/A*/Node_def.h">
+		<Unit filename="/home/tati2327/Documentos/GITHUB/P2/Tati/Logic/A*/Gladiator.h">
 			<Option target="A_"/>
 		</Unit>
-		<Unit filename="/home/tati2327/Documentos/GITHUB/P2/Tati/A*/Pathfinding.cpp">
+		<Unit filename="/home/tati2327/Documentos/GITHUB/P2/Tati/Logic/A*/List.h">
 			<Option target="A_"/>
 		</Unit>
-		<Unit filename="/home/tati2327/Documentos/GITHUB/P2/Tati/A*/Pathfinding.h">
+		<Unit filename="/home/tati2327/Documentos/GITHUB/P2/Tati/Logic/A*/List_def.h">
 			<Option target="A_"/>
 		</Unit>
-		<Unit filename="/home/tati2327/Documentos/GITHUB/P2/Tati/A*/SingleArrow.cpp">
+		<Unit filename="/home/tati2327/Documentos/GITHUB/P2/Tati/Logic/A*/Matrix.h">
 			<Option target="A_"/>
 		</Unit>
-		<Unit filename="/home/tati2327/Documentos/GITHUB/P2/Tati/A*/SingleArrow.h">
+		<Unit filename="/home/tati2327/Documentos/GITHUB/P2/Tati/Logic/A*/Matrix_def.h">
 			<Option target="A_"/>
 		</Unit>
-		<Unit filename="/home/tati2327/Documentos/GITHUB/P2/Tati/A*/Tower.cpp">
+		<Unit filename="/home/tati2327/Documentos/GITHUB/P2/Tati/Logic/A*/Node.h">
 			<Option target="A_"/>
 		</Unit>
-		<Unit filename="/home/tati2327/Documentos/GITHUB/P2/Tati/A*/Tower.h">
+		<Unit filename="/home/tati2327/Documentos/GITHUB/P2/Tati/Logic/A*/Node_def.h">
 			<Option target="A_"/>
 		</Unit>
-		<Unit filename="/home/tati2327/Documentos/GITHUB/P2/Tati/A*/main.cpp">
+		<Unit filename="/home/tati2327/Documentos/GITHUB/P2/Tati/Logic/A*/Pathfinding.cpp">
 			<Option target="A_"/>
 		</Unit>
-		<Unit filename="/home/tati2327/Documentos/GITHUB/P2/Tati/A*/CMakeLists.txt">
+		<Unit filename="/home/tati2327/Documentos/GITHUB/P2/Tati/Logic/A*/Pathfinding.h">
+			<Option target="A_"/>
+		</Unit>
+		<Unit filename="/home/tati2327/Documentos/GITHUB/P2/Tati/Logic/A*/SingleArrow.cpp">
+			<Option target="A_"/>
+		</Unit>
+		<Unit filename="/home/tati2327/Documentos/GITHUB/P2/Tati/Logic/A*/SingleArrow.h">
+			<Option target="A_"/>
+		</Unit>
+		<Unit filename="/home/tati2327/Documentos/GITHUB/P2/Tati/Logic/A*/Tower.cpp">
+			<Option target="A_"/>
+		</Unit>
+		<Unit filename="/home/tati2327/Documentos/GITHUB/P2/Tati/Logic/A*/Tower.h">
+			<Option target="A_"/>
+		</Unit>
+		<Unit filename="/home/tati2327/Documentos/GITHUB/P2/Tati/Logic/A*/main.cpp">
+			<Option target="A_"/>
+		</Unit>
+		<Unit filename="/home/tati2327/Documentos/GITHUB/P2/Tati/Logic/A*/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>
