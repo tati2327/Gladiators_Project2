@@ -20,8 +20,8 @@ void Arrow3::move(){
   QList<QGraphicsItem *> colliding_items = collidingItems();
   for(int i=0,n=colliding_items.size();i<n;i++){
       if(typeid(*(colliding_items[i]))==typeid (MyPlayer)){
-          g->life_points->setPlainText(QString::number(g->player->life_points-2));
-          g->player->life_points=g->player->life_points-2;
+          g->life_points->setPlainText(QString::number(g->player->life_points-4));
+          g->player->life_points=g->player->life_points-4;
           scene()->removeItem(this);
           if (g->player->life_points<=0){
               delete g->player;
@@ -44,7 +44,7 @@ void Arrow3::move(){
       delete  this;
       return;
     }
-  int mov = 30;
+  int mov = 20;
   double cita = rotation();
   double dy = mov * qSin(qDegreesToRadians(cita));
   double dx = mov * cos(qDegreesToRadians(cita));

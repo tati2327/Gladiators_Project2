@@ -31,6 +31,7 @@ Tower::Tower(QGraphicsItem *parent):QObject(), QGraphicsPixmapItem (){
        points[i].ry()*=SCALE_FACTORY;
      }
    attack_area = new QGraphicsPolygonItem(QPolygonF(points),this);
+   attack_area->hide();
    QTimer *timer = new QTimer();
    QObject::connect(timer,SIGNAL(timeout()),this,SLOT(kill()));
    timer->start(1000);

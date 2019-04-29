@@ -24,7 +24,6 @@ void MyPlayer::keyPressEvent(QKeyEvent *event)
       setPos(x(),y()-63);
     }
   if (pos().x()>605 && pos().y()>598){
-
       g->endgame();
     }
 }

@@ -44,7 +44,7 @@ void Arrow::move(){
       delete  this;
       return;
     }
-  int mov = 30;
+  int mov = 20;
   double cita = rotation();
   double dy = mov * qSin(qDegreesToRadians(cita));
   double dx = mov * cos(qDegreesToRadians(cita));

@@ -25,6 +25,7 @@ Tower2::Tower2()
     }
   attack_area = new QGraphicsPolygonItem(QPolygonF(points),this);
   collide_items=attack_area->collidingItems();
+  attack_area->hide();
   QTimer *timer = new QTimer();
   QObject::connect(timer,SIGNAL(timeout()),this,SLOT(kill()));
   timer->start(1000);
@@ -49,7 +50,7 @@ void Tower2::kill()
       has_target=false;
       return;
     }
-  double closest=200;
+  double closest=190;
   QPointF enemy=QPointF(0,0);
   for(size_t i =0,n = collide_items.size();i<n;i++){
       MyPlayer * player = dynamic_cast<MyPlayer *>(collide_items[i]);

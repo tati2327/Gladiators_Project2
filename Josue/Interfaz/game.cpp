@@ -47,6 +47,12 @@ void Game::displayMenu()
   scene->addItem(quitButton);
 }
 
+void Game::endgame()
+{
+  scene->clear();
+  scene->setBackgroundBrush(QBrush(QImage(":images/inicio.png")));
+}
+
 
 
 void Game::start()
@@ -114,6 +120,7 @@ void Game::start()
   timer = new QTimer();
   QObject::connect(timer,SIGNAL(timeout()),this,SLOT(spawn()));
   timer->start(1000);
+
 }
 
 void Game::close()

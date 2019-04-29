@@ -7,7 +7,7 @@ class MyPlayer:public QObject,public QGraphicsPixmapItem{
 public:
   MyPlayer(QGraphicsItem * parent =0);
   void keyPressEvent(QKeyEvent *event);
-  int life_points=10;
+  int life_points=100;
   int ID=10;
   int age=0;
   int survival_prob=0;

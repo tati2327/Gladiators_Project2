@@ -11,6 +11,7 @@
 
 using namespace std;
 Game *g;
+Client c;
 int juego(int argc, char *argv[]){
   QApplication a(argc,argv);
   //Game *g = new Game();
@@ -20,7 +21,7 @@ int juego(int argc, char *argv[]){
 }
 
 void cliente(){
-  Client c;
+
   c.newClient();
 }
 
