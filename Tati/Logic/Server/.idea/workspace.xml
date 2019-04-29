@@ -1,0 +1,774 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="A_" targetName="A_" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="082d0237-4446-4e33-9213-d5c639620077" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../.idea/Logic.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Game.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JSON.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JSON.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pathfinding.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Server.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Server.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/A_" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/A_.cbp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/A_.dir/CXX.includecache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/A_.dir/DependInfo.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/A_.dir/depend.internal" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/A_.dir/depend.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/A_.dir/link.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeError.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/rapidjson/allocators.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/rapidjson/cursorstreamwrapper.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/rapidjson/document.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/rapidjson/encodedstream.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/rapidjson/encodings.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/rapidjson/error/en.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/rapidjson/error/error.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/rapidjson/filereadstream.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/rapidjson/filewritestream.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/rapidjson/fwd.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/rapidjson/internal/biginteger.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/rapidjson/internal/diyfp.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/rapidjson/internal/dtoa.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/rapidjson/internal/ieee754.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/rapidjson/internal/itoa.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/rapidjson/internal/meta.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/rapidjson/internal/pow10.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/rapidjson/internal/regex.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/rapidjson/internal/stack.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/rapidjson/internal/strfunc.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/rapidjson/internal/strtod.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/rapidjson/internal/swap.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/rapidjson/istreamwrapper.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/rapidjson/memorybuffer.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/rapidjson/memorystream.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/rapidjson/msinttypes/inttypes.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/rapidjson/msinttypes/stdint.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/rapidjson/ostreamwrapper.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/rapidjson/pointer.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/rapidjson/prettywriter.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/rapidjson/rapidjson.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/rapidjson/reader.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/rapidjson/schema.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/rapidjson/stream.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/rapidjson/stringbuffer.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/rapidjson/writer.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Gladiators/.idea/Gladiators.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Gladiators/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Gladiators/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Gladiators/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Gladiators/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Gladiators/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Gladiators/Army.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Army.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Gladiators/Army.h" beforeDir="false" afterPath="$PROJECT_DIR$/Army.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Gladiators/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Gladiators/GeneticEvolution.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/GeneticEvolution.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Gladiators/GeneticEvolution.h" beforeDir="false" afterPath="$PROJECT_DIR$/GeneticEvolution.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Gladiators/Gladiator.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Gladiator.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Gladiators/Gladiator.h" beforeDir="false" afterPath="$PROJECT_DIR$/Gladiator.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Gladiators/List.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Gladiators/List_def.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Gladiators/Node.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Gladiators/Node_def.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Gladiators/cmake-build-debug/CMakeCache.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Gladiators/cmake-build-debug/CMakeFiles/3.13.2/CMakeCCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.13.2/CMakeCCompiler.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Gladiators/cmake-build-debug/CMakeFiles/3.13.2/CMakeCXXCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.13.2/CMakeCXXCompiler.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Gladiators/cmake-build-debug/CMakeFiles/3.13.2/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.13.2/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Gladiators/cmake-build-debug/CMakeFiles/3.13.2/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.13.2/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Gladiators/cmake-build-debug/CMakeFiles/3.13.2/CMakeSystem.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.13.2/CMakeSystem.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Gladiators/cmake-build-debug/CMakeFiles/3.13.2/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.13.2/CompilerIdC/CMakeCCompilerId.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Gladiators/cmake-build-debug/CMakeFiles/3.13.2/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.13.2/CompilerIdCXX/CMakeCXXCompilerId.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Gladiators/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Gladiators/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Gladiators/cmake-build-debug/CMakeFiles/Gladiators.dir/DependInfo.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Gladiators/cmake-build-debug/CMakeFiles/Gladiators.dir/build.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Gladiators/cmake-build-debug/CMakeFiles/Gladiators.dir/cmake_clean.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Gladiators/cmake-build-debug/CMakeFiles/Gladiators.dir/depend.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Gladiators/cmake-build-debug/CMakeFiles/Gladiators.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/A_.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Gladiators/cmake-build-debug/CMakeFiles/Gladiators.dir/link.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Gladiators/cmake-build-debug/CMakeFiles/Gladiators.dir/progress.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Gladiators/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Gladiators/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Gladiators/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Gladiators/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Gladiators/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Gladiators/cmake-build-debug/CMakeFiles/cmake.check_cache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cmake.check_cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Gladiators/cmake-build-debug/CMakeFiles/feature_tests.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Gladiators/cmake-build-debug/CMakeFiles/feature_tests.c" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Gladiators/cmake-build-debug/CMakeFiles/feature_tests.cxx" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.cxx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Gladiators/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Gladiators/cmake-build-debug/Gladiators" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Gladiators/cmake-build-debug/Gladiators.cbp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Gladiators/cmake-build-debug/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Gladiators/cmake-build-debug/cmake_install.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Gladiators/main.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Interfaz/Proyecto2.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Interfaz/Proyecto2.pro.user" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Interfaz/Proyecto2.pro.user.b2be065" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Interfaz/arrow.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Interfaz/arrow.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Interfaz/arrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Interfaz/bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Interfaz/bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Interfaz/button.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Interfaz/button.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Interfaz/client.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Interfaz/client.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Interfaz/coliseo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Interfaz/colisseum.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Interfaz/game.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Interfaz/game.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Interfaz/game.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Interfaz/gamethread.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Interfaz/gamethread.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Interfaz/gladeador.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Interfaz/inicio.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Interfaz/main.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Interfaz/mainmenu.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Interfaz/mainmenu.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Interfaz/mainwindow.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Interfaz/myplayer.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Interfaz/myplayer.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Interfaz/mythread.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Interfaz/mythread.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Interfaz/player.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Interfaz/player.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Interfaz/resources.qrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Interfaz/stadistics.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Interfaz/stadistics.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Interfaz/thread2.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Interfaz/thread2.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Interfaz/torre.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Interfaz/tower.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Interfaz/tower.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Interfaz/tower1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A*/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A*/.idea/A*.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/A*.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A*/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A*/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A*/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A*/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A*/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A*/Army.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A*/Army.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A*/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A*/ExplosiveArrow.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A*/ExplosiveArrow.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A*/Field.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Field.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A*/Field.h" beforeDir="false" afterPath="$PROJECT_DIR$/Field.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A*/FireArrow.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A*/FireArrow.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A*/Game.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A*/Game.h" beforeDir="false" afterPath="$PROJECT_DIR$/Game.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A*/GeneticEvolution.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A*/GeneticEvolution.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A*/Gladiator.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A*/Gladiator.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A*/List.h" beforeDir="false" afterPath="$PROJECT_DIR$/List.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A*/List_def.h" beforeDir="false" afterPath="$PROJECT_DIR$/List_def.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A*/Matrix.h" beforeDir="false" afterPath="$PROJECT_DIR$/Matrix.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A*/Matrix_def.h" beforeDir="false" afterPath="$PROJECT_DIR$/Matrix_def.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A*/Node.h" beforeDir="false" afterPath="$PROJECT_DIR$/Node.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A*/Node_def.h" beforeDir="false" afterPath="$PROJECT_DIR$/Node_def.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A*/Pathfinding.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Pathfinding.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A*/Pathfinding.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A*/SingleArrow.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A*/SingleArrow.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A*/Tower.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A*/Tower.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A*/cmake-build-debug/A_" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A*/cmake-build-debug/A_.cbp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A*/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A*/cmake-build-debug/CMakeFiles/3.13.2/CMakeCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A*/cmake-build-debug/CMakeFiles/3.13.2/CMakeCXXCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A*/cmake-build-debug/CMakeFiles/3.13.2/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A*/cmake-build-debug/CMakeFiles/3.13.2/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A*/cmake-build-debug/CMakeFiles/3.13.2/CMakeSystem.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A*/cmake-build-debug/CMakeFiles/3.13.2/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A*/cmake-build-debug/CMakeFiles/3.13.2/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A*/cmake-build-debug/CMakeFiles/A_.dir/CXX.includecache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A*/cmake-build-debug/CMakeFiles/A_.dir/DependInfo.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A*/cmake-build-debug/CMakeFiles/A_.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/A_.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A*/cmake-build-debug/CMakeFiles/A_.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/A_.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A*/cmake-build-debug/CMakeFiles/A_.dir/depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A*/cmake-build-debug/CMakeFiles/A_.dir/depend.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A*/cmake-build-debug/CMakeFiles/A_.dir/flags.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A*/cmake-build-debug/CMakeFiles/A_.dir/link.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A*/cmake-build-debug/CMakeFiles/A_.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/A_.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A*/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A*/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A*/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A*/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A*/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A*/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A*/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A*/cmake-build-debug/CMakeFiles/cmake.check_cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A*/cmake-build-debug/CMakeFiles/feature_tests.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A*/cmake-build-debug/CMakeFiles/feature_tests.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A*/cmake-build-debug/CMakeFiles/feature_tests.cxx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A*/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A*/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A*/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A*/main.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Qt/build-pruebaThreadQt-Desktop_Qt_5_12_2_GCC_64bit-Debug/.qmake.stash" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Qt/build-pruebaThreadQt-Desktop_Qt_5_12_2_GCC_64bit-Debug/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Qt/build-pruebaThreadQt-Desktop_Qt_5_12_2_GCC_64bit-Debug/moc_mainwindow.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Qt/build-pruebaThreadQt-Desktop_Qt_5_12_2_GCC_64bit-Debug/moc_predefs.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Qt/build-pruebaThreadQt-Desktop_Qt_5_12_2_GCC_64bit-Debug/pruebaThreadQt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Qt/build-pruebaThreadQt-Desktop_Qt_5_12_2_GCC_64bit-Debug/ui_mainwindow.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Qt/pruebaThreadQt/client.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Qt/pruebaThreadQt/client.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Qt/pruebaThreadQt/main.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Qt/pruebaThreadQt/mainwindow.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Qt/pruebaThreadQt/mainwindow.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Qt/pruebaThreadQt/mainwindow.ui" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Qt/pruebaThreadQt/pruebaThreadQt.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Qt/pruebaThreadQt/pruebaThreadQt.pro.user" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../build-Proyecto2-Desktop_Qt_5_12_2_GCC_64bit-Debug/.qmake.stash" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../build-Proyecto2-Desktop_Qt_5_12_2_GCC_64bit-Debug/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../build-Proyecto2-Desktop_Qt_5_12_2_GCC_64bit-Debug/Proyecto2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../build-Proyecto2-Desktop_Qt_5_12_2_GCC_64bit-Debug/moc_arrow.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../build-Proyecto2-Desktop_Qt_5_12_2_GCC_64bit-Debug/moc_button.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../build-Proyecto2-Desktop_Qt_5_12_2_GCC_64bit-Debug/moc_game.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../build-Proyecto2-Desktop_Qt_5_12_2_GCC_64bit-Debug/moc_gamethread.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../build-Proyecto2-Desktop_Qt_5_12_2_GCC_64bit-Debug/moc_mainmenu.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../build-Proyecto2-Desktop_Qt_5_12_2_GCC_64bit-Debug/moc_myplayer.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../build-Proyecto2-Desktop_Qt_5_12_2_GCC_64bit-Debug/moc_mythread.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../build-Proyecto2-Desktop_Qt_5_12_2_GCC_64bit-Debug/moc_predefs.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../build-Proyecto2-Desktop_Qt_5_12_2_GCC_64bit-Debug/moc_thread2.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../build-Proyecto2-Desktop_Qt_5_12_2_GCC_64bit-Debug/moc_tower.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../build-Proyecto2-Desktop_Qt_5_12_2_GCC_64bit-Debug/qrc_resources.cpp" beforeDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Game.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="107">
+              <caret line="75" column="39" selection-start-line="75" selection-start-column="39" selection-end-line="75" selection-end-column="39" />
+              <folding>
+                <element signature="e#0#17#0" expanded="true" />
+                <element signature="e#2409#4313#0" />
+                <element signature="e#4382#4441#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Server.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="157">
+              <caret line="26" selection-start-line="26" selection-end-line="26" />
+              <folding>
+                <element signature="e#49#72#0" expanded="true" />
+                <element signature="e#152#246#0" />
+                <element signature="e#247#383#1" />
+                <element signature="e#386#413#0" />
+                <element signature="e#731#876#0" />
+                <element signature="e#912#1085#0" />
+                <element signature="e#1119#1225#0" />
+                <element signature="e#1261#1418#0" />
+                <element signature="e#1468#1538#0" />
+                <element signature="e#1575#1719#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Server.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="113">
+              <caret line="106" column="15" selection-start-line="106" selection-start-column="15" selection-end-line="106" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/JSON.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="10">
+              <caret line="19" column="31" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
+              <folding>
+                <element signature="e#0#17#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/JSON.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="16" column="15" lean-forward="true" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Game.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="277">
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
+              <folding>
+                <element signature="e#35#54#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Pathfinding.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1159">
+              <caret line="66" column="6" selection-start-line="66" selection-start-column="6" selection-end-line="66" selection-end-column="6" />
+              <folding>
+                <element signature="e#77#455#0" />
+                <element signature="e#457#1778#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Field.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="22" selection-start-line="22" selection-end-line="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Field.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="825">
+              <caret line="55" column="1" selection-start-line="55" selection-start-column="1" selection-end-line="55" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/ExplosiveArrow.cpp" />
+        <option value="$PROJECT_DIR$/ExplosiveArrow.h" />
+        <option value="$PROJECT_DIR$/FireArrow.h" />
+        <option value="$PROJECT_DIR$/FireArrow.cpp" />
+        <option value="$PROJECT_DIR$/SingleArrow.h" />
+        <option value="$PROJECT_DIR$/SingleArrow.cpp" />
+        <option value="$PROJECT_DIR$/Tower.cpp" />
+        <option value="$PROJECT_DIR$/Tower.h" />
+        <option value="$PROJECT_DIR$/List_def.h" />
+        <option value="$PROJECT_DIR$/List.h" />
+        <option value="$PROJECT_DIR$/Node.h" />
+        <option value="$PROJECT_DIR$/Node_def.h" />
+        <option value="$PROJECT_DIR$/Matrix.h" />
+        <option value="$PROJECT_DIR$/Matrix_def.h" />
+        <option value="$PROJECT_DIR$/GeneticEvolution.cpp" />
+        <option value="$PROJECT_DIR$/GeneticEvolution.h" />
+        <option value="$PROJECT_DIR$/Army.cpp" />
+        <option value="$PROJECT_DIR$/Pathfinding.h" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/include/rapidjson/document.h" />
+        <option value="$PROJECT_DIR$/Gladiator.cpp" />
+        <option value="$PROJECT_DIR$/Army.h" />
+        <option value="$PROJECT_DIR$/Field.h" />
+        <option value="$PROJECT_DIR$/Pathfinding.cpp" />
+        <option value="$PROJECT_DIR$/Field.cpp" />
+        <option value="$PROJECT_DIR$/JSON.h" />
+        <option value="$PROJECT_DIR$/main.cpp" />
+        <option value="$PROJECT_DIR$/Game.h" />
+        <option value="$PROJECT_DIR$/Game.cpp" />
+        <option value="$PROJECT_DIR$/Server.h" />
+        <option value="$PROJECT_DIR$/Server.cpp" />
+        <option value="$PROJECT_DIR$/JSON.cpp" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="4">
+    <option name="y" value="25" />
+    <option name="width" value="683" />
+    <option name="height" value="743" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="A_" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Server" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ToolWindowRun.ShowToolbar" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Gladiators" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="A_" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="A_" TARGET_NAME="A_" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="A_" RUN_TARGET_NAME="A_">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="082d0237-4446-4e33-9213-d5c639620077" name="Default Changelist" comment="" />
+      <created>1555733660395</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1555733660395</updated>
+      <workItem from="1555733662532" duration="880000" />
+      <workItem from="1555734825128" duration="10849000" />
+      <workItem from="1555976211275" duration="109000" />
+      <workItem from="1556235850802" duration="2264000" />
+      <workItem from="1556351898258" duration="9369000" />
+      <workItem from="1556424459975" duration="2983000" />
+      <workItem from="1556469411364" duration="8474000" />
+      <workItem from="1556479262049" duration="21580000" />
+      <workItem from="1556506061381" duration="24000" />
+      <workItem from="1556559121691" duration="1174000" />
+      <workItem from="1556560612724" duration="10178000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="67884000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="25" width="683" height="743" extended-state="4" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2244898" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32899022" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.95114005" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4315961" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Database Changes" order="7" />
+      <window_info anchor="bottom" id="Messages" order="8" weight="0.3029316" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="11" />
+      <window_info anchor="bottom" id="CMake" order="12" weight="0.32792208" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="LuaJ" order="3" weight="0.32954547" />
+      <window_info anchor="right" id="Database" order="4" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/ExplosiveArrow.cpp" />
+    <entry file="file://$PROJECT_DIR$/ExplosiveArrow.h" />
+    <entry file="file://$PROJECT_DIR$/FireArrow.cpp" />
+    <entry file="file:///usr/include/c++/7/bits/postypes.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1455">
+          <caret line="97" column="10" selection-start-line="97" selection-start-column="10" selection-end-line="97" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tower.h" />
+    <entry file="file://$PROJECT_DIR$/SingleArrow.cpp" />
+    <entry file="file://$PROJECT_DIR$/Tower.cpp" />
+    <entry file="file://$PROJECT_DIR$/SingleArrow.h" />
+    <entry file="file://$PROJECT_DIR$/Matrix_def.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="e#61#73#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Matrix.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="15" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Node_def.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="e#30#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Node.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="726">
+          <caret line="33" column="25" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/List_def.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="814">
+          <caret line="37" column="32" selection-start-line="37" selection-start-column="27" selection-end-line="37" selection-end-column="32" />
+          <folding>
+            <element signature="e#30#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GeneticEvolution.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GeneticEvolution.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+          <folding>
+            <element signature="e#117#134#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FireArrow.h" />
+    <entry file="file://$PROJECT_DIR$/Pathfinding.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/rapidjson/allocators.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/rapidjson/document.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="1241" selection-start-line="1241" selection-end-line="1241" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gladiator.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gladiator.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2940">
+          <caret line="196" selection-start-line="196" selection-end-line="196" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/List.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="29" selection-start-line="32" selection-start-column="29" selection-end-line="32" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Army.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Army.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Field.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Pathfinding.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1159">
+          <caret line="66" column="6" selection-start-line="66" selection-start-column="6" selection-end-line="66" selection-end-column="6" />
+          <folding>
+            <element signature="e#77#455#0" />
+            <element signature="e#457#1778#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Field.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="825">
+          <caret line="55" column="1" selection-start-line="55" selection-start-column="1" selection-end-line="55" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JSON.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="16" column="15" lean-forward="true" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Game.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="e#35#54#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Game.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="75" column="39" selection-start-line="75" selection-start-column="39" selection-end-line="75" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#17#0" expanded="true" />
+            <element signature="e#2409#4313#0" />
+            <element signature="e#4382#4441#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+          <folding>
+            <element signature="e#49#72#0" expanded="true" />
+            <element signature="e#152#246#0" />
+            <element signature="e#247#383#1" />
+            <element signature="e#386#413#0" />
+            <element signature="e#731#876#0" />
+            <element signature="e#912#1085#0" />
+            <element signature="e#1119#1225#0" />
+            <element signature="e#1261#1418#0" />
+            <element signature="e#1468#1538#0" />
+            <element signature="e#1575#1719#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="106" column="15" selection-start-line="106" selection-start-column="15" selection-end-line="106" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JSON.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10">
+          <caret line="19" column="31" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#17#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

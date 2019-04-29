@@ -1,4 +1,0 @@
-/home/tati2327/clion-2018.3.4/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/tati2327/Documentos/GITHUB/P2/Tati/Logic/A*
--- Configuring done
--- Generating done
--- Build files have been written to: /home/tati2327/Documentos/GITHUB/P2/Tati/Logic/A*/cmake-build-debug

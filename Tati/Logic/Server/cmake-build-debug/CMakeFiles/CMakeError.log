@@ -1,0 +1,55 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/tati2327/Documentos/GITHUB/Project2/Tati/Logic/Server/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_0290c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_0290c.dir/build.make CMakeFiles/cmTC_0290c.dir/build
+make[1]: se entra en el directorio '/home/tati2327/Documentos/GITHUB/Project2/Tati/Logic/Server/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0290c.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_0290c.dir/CheckSymbolExists.c.o   -c /home/tati2327/Documentos/GITHUB/Project2/Tati/Logic/Server/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_0290c
+/home/tati2327/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0290c.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_0290c.dir/CheckSymbolExists.c.o  -o cmTC_0290c 
+CMakeFiles/cmTC_0290c.dir/CheckSymbolExists.c.o: En la función `main':
+CheckSymbolExists.c:(.text+0x1b): referencia a `pthread_create' sin definir
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_0290c.dir/build.make:86: recipe for target 'cmTC_0290c' failed
+make[1]: *** [cmTC_0290c] Error 1
+make[1]: se sale del directorio '/home/tati2327/Documentos/GITHUB/Project2/Tati/Logic/Server/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_0290c/fast' failed
+make: *** [cmTC_0290c/fast] Error 2
+
+File /home/tati2327/Documentos/GITHUB/Project2/Tati/Logic/Server/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/tati2327/Documentos/GITHUB/Project2/Tati/Logic/Server/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_d57fb/fast"
+/usr/bin/make -f CMakeFiles/cmTC_d57fb.dir/build.make CMakeFiles/cmTC_d57fb.dir/build
+make[1]: se entra en el directorio '/home/tati2327/Documentos/GITHUB/Project2/Tati/Logic/Server/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d57fb.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_d57fb.dir/CheckFunctionExists.c.o   -c /home/tati2327/clion-2018.3.4/bin/cmake/linux/share/cmake-3.13/Modules/CheckFunctionExists.c
+Linking C executable cmTC_d57fb
+/home/tati2327/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d57fb.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_d57fb.dir/CheckFunctionExists.c.o  -o cmTC_d57fb -lpthreads 
+/usr/bin/ld: no se puede encontrar -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_d57fb.dir/build.make:86: recipe for target 'cmTC_d57fb' failed
+make[1]: *** [cmTC_d57fb] Error 1
+make[1]: se sale del directorio '/home/tati2327/Documentos/GITHUB/Project2/Tati/Logic/Server/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_d57fb/fast' failed
+make: *** [cmTC_d57fb/fast] Error 2
+
+
