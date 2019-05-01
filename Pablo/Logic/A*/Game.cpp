@@ -10,14 +10,7 @@ Game::Game() {
 
 void Game::newGame() {
     /*! Algoritmo genetico*/
-    generationCount=+1;
-    army.createArmy(army.armySize);
-    army.insertionSort(army.gladiators);
-    army.printArray(army.gladiators,army.armySize);
-    army.setFittest();
-    cout<<"Fittest: " <<army.fittest.getResistance()<<endl;
-    army.setSecondFittest();
-    cout<<"secondFittest: "<<army.secondFittest.getResistance()<<endl;
+
 
     /*! Crear el tablero de juego con los obstaculos iniciales*/
     bool end = false;
@@ -26,18 +19,7 @@ void Game::newGame() {
 }
 
 void Game::play() {
-    srand(time(NULL));
 
-    /*! Se hace el crossover. */
-    cout<<"se inicia el crossovereo"<<endl;
-    gE.crossover(army);
-    generationCount=+1;
-    army.insertionSort(army.gladiators);
-    army.printArray(army.gladiators, army.armySize);
-    army.setFittest();
-    cout<<"Fittest: " <<army.fittest.getResistance()<<endl;
-    army.setSecondFittest();
-    cout<<"secondFittest: "<<army.secondFittest.getResistance()<<endl;
 
     /*! Agregar nuevos obstaculos en el tablero*/
     bool end = false;

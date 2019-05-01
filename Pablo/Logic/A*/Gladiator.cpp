@@ -22,20 +22,20 @@ int Gladiator::calculateFitness() {
     return fitness;
 }
 int Gladiator::calculateResistance() {
-    double resistanceTemp = (calculateEmotionalInt() * 0.10) + (lowerTrunckStrenght * 0.20) +
-                            (upperTrunckStrenght*0.35) + (physicalCondition*0.25);
+    double resistanceTemp = (calculateEmotionalInt() * 0.10) + (lowerTrunckStrenght * 0.27) +
+                            (upperTrunckStrenght*0.27) + (physicalCondition*0.26);
 
     if (15<=age && age<=20){
-        resistanceTemp = resistanceTemp + (4 * 0.10);
+        resistanceTemp = resistanceTemp + (3 * 0.10);
         cout<<"resistance+4"<<endl;
     }else if (20<age && age<=30){
         resistanceTemp = resistanceTemp + (10 * 0.10);
         cout<<"resistance+10"<<endl;
     }else if(30<age && age<=40){
-        resistanceTemp = resistanceTemp + (8 * 0.10);
+        resistanceTemp = resistanceTemp + (7 * 0.10);
         cout<<"resistance+8"<<endl;
     }else if(40<age && age<=50){
-        resistanceTemp = resistanceTemp + (6 * 0.10);
+        resistanceTemp = resistanceTemp + (5 * 0.10);
         cout<<"resistance+6"<<endl;
     }else if(50<age && age<=60){
         resistanceTemp = resistanceTemp + (4 * 0.10);

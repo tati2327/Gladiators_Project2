@@ -16,30 +16,30 @@ Gladiator Army::setValuesTipeA(Gladiator gladiator, int i) {
     gladiator.setId(i+1);
     cout<<"My id is:"<<gladiator.getId()<<endl;
 
-    int random= (rand() % 3) + 1;
+    int random= (rand() % 2) + 0;
     gladiator.setAnger(random);
     cout<<gladiator.getAnger()<<endl;
 
-    int random2= (rand() % 3) + 1;
+    int random2= (rand() % 2) + 0;
     gladiator.setSelfcontrol(random2);
     cout<<gladiator.getSelfControl()<<endl;
 
     gladiator.setEmotionalInt(gladiator.calculateEmotionalInt());
     cout<<"EI"<<gladiator.getEmotionalInt()<<endl;
 
-    int random4= (rand() % 4) + 1;
+    int random4= (rand() % 3) + 1;
     gladiator.setPhysicalCondition(random4);
     cout<<"PC "<<gladiator.getPhysicalCondition()<<endl;
 
-    int random5= (rand() % 4) + 1;
+    int random5= (rand() % 3) + 1;
     gladiator.setUpperTrunckStrenght(random5);
     cout<<"UTS "<<gladiator.getUpperTrunckStrenght()<<endl;
 
-    int random6= (rand() % 4) + 1;
+    int random6= (rand() % 3) + 1;
     gladiator.setLowerTrunckStrenght(random6);
     cout<<"LTS "<<gladiator.getLowerTrunckStrenght()<<endl;
 
-    int random7= rand() % 10 + 40;
+    int random7= rand() % 5 + 15;
     gladiator.setAge(random7);
     cout<<"Edad "<<gladiator.getAge()<<endl;
 
@@ -56,22 +56,22 @@ Gladiator Army::setValuesTipeB(Gladiator gladiator, int i) {
     gladiator.setId(i+1);
     cout<<"My id is:"<<gladiator.getId()<<endl;
 
-    int random= (rand() % 2) + 1;
+    int random= (rand() % 2) + 0;
     gladiator.setAnger(random);
     cout<<gladiator.getAnger()<<endl;
 
-    int random2= (rand() % 2) + 1;
+    int random2= (rand() % 2) + 0;
     gladiator.setSelfcontrol(random2);
     cout<<gladiator.getSelfControl()<<endl;
 
     gladiator.setEmotionalInt(gladiator.calculateEmotionalInt());
     cout<<"EI"<<gladiator.getEmotionalInt()<<endl;
 
-    int random4= (rand() % 3) + 1;
+    int random4= (rand() % 2) + 1;
     gladiator.setPhysicalCondition(random4);
     cout<<"PC "<<gladiator.getPhysicalCondition()<<endl;
 
-    int random5= (rand() % 3) + 1;
+    int random5= (rand() % 2) + 1;
     gladiator.setUpperTrunckStrenght(random5);
     cout<<"UTS "<<gladiator.getUpperTrunckStrenght()<<endl;
 
@@ -94,11 +94,11 @@ Gladiator Army::setValuesTipeC(Gladiator gladiator, int i) {
     gladiator.setId(i+1);
     cout<<"My id is:"<<gladiator.getId()<<endl;
 
-    int random= (rand() % 2) + 1;
+    int random= (rand() % 2) + 0;
     gladiator.setAnger(random);
     cout<<gladiator.getAnger()<<endl;
 
-    int random2= (rand() % 2) + 1;
+    int random2= (rand() % 2) + 0;
     gladiator.setSelfcontrol(random2);
     cout<<gladiator.getSelfControl()<<endl;
 
