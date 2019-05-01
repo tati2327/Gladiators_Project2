@@ -1,6 +1,7 @@
 #include "Game.h"
 
 Game::Game() {
+    this->generationCount=0;
     this->rows = 10;
     this->columns = 10;
     this->board = Matrix<Field>(rows,columns);
@@ -9,7 +10,7 @@ Game::Game() {
 
 void Game::newGame() {
     /*! Algoritmo genetico*/
-    gE.generationCount=+1;
+    generationCount=+1;
     army.createArmy(army.armySize);
     army.insertionSort(army.gladiators);
     army.printArray(army.gladiators,army.armySize);
@@ -22,28 +23,15 @@ void Game::newGame() {
     bool end = false;
     while(!end)
         end = this->addObstacles();
-
 }
 
 void Game::play() {
     srand(time(NULL));
-    /*!La posibilidad de que se haga la mutacion es un 4%.*/
-    int random=(rand() % 99) + 0;
-    if(random==45 or random==8 or random==69 or random==27) {
-        cout<<"se inicia la muteishon"<<endl;
-        gE.mutation(army);
-        army.insertionSort(army.gladiators);
-        army.printArray(army.gladiators, army.armySize);
-        army.setFittest();
-        cout << "Fittest: " << army.fittest.getResistance() << endl;
-        army.setSecondFittest();
-        cout << "secondFittest: " << army.secondFittest.getResistance() << endl;
-    }
 
     /*! Se hace el crossover. */
     cout<<"se inicia el crossovereo"<<endl;
     gE.crossover(army);
-    gE.generationCount=+1;
+    generationCount=+1;
     army.insertionSort(army.gladiators);
     army.printArray(army.gladiators, army.armySize);
     army.setFittest();

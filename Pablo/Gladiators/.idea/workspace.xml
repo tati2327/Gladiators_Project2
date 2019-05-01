@@ -12,6 +12,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4dc83b9b-ed6d-4736-9c89-f03fce0d9172" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeneticEvolution.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/GeneticEvolution.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Gladiators" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Gladiators" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/A*/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Logic/A*/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/A*/Army.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../Logic/A*/Army.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/A*/Army.h" beforeDir="false" afterPath="$PROJECT_DIR$/../Logic/A*/Army.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/A*/Game.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../Logic/A*/Game.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/A*/GeneticEvolution.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../Logic/A*/GeneticEvolution.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/A*/GeneticEvolution.h" beforeDir="false" afterPath="$PROJECT_DIR$/../Logic/A*/GeneticEvolution.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/A*/cmake-build-debug/A_" beforeDir="false" afterPath="$PROJECT_DIR$/../Logic/A*/cmake-build-debug/A_" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/A*/cmake-build-debug/CMakeFiles/A_.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/../Logic/A*/cmake-build-debug/CMakeFiles/A_.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/A*/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../Logic/A*/main.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Tati/Logic/A*/.idea/.name" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Tati/Logic/A*/.idea/A*.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Tati/Logic/A*/.idea/encodings.xml" beforeDir="false" />
@@ -108,8 +121,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="17" column="68" selection-start-line="17" selection-start-column="68" selection-end-line="17" selection-end-column="68" />
+            <state relative-caret-position="603">
+              <caret line="47" column="74" selection-start-line="47" selection-start-column="74" selection-end-line="47" selection-end-column="74" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -129,20 +142,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Army.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
+            <state relative-caret-position="295">
               <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
               <folding>
                 <element signature="e#94#116#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Army.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="17" column="34" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -160,11 +164,20 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Army.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="526">
+              <caret line="99" column="41" lean-forward="true" selection-start-line="99" selection-start-column="41" selection-end-line="99" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/GeneticEvolution.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="572">
-              <caret line="26" column="17" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
+            <state relative-caret-position="101">
+              <caret line="256" column="32" lean-forward="true" selection-start-line="256" selection-start-column="32" selection-end-line="256" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -215,7 +228,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="y" value="27" />
     <option name="width" value="673" />
     <option name="height" value="741" />
@@ -242,7 +255,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../VersionAnterior/Pablo/Gladiators" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -282,23 +295,24 @@
       <workItem from="1555464743391" duration="50298000" />
       <workItem from="1555739523010" duration="157000" />
       <workItem from="1556161761349" duration="688000" />
-      <workItem from="1556471001301" duration="608000" />
+      <workItem from="1556471001301" duration="4295000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70528000" />
+    <option name="totallyTimeSpent" value="74215000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
+    <frame x="67" y="25" width="1853" height="1055" extended-state="7" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16249305" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16249305" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="0" weight="0.3289183" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" />
-      <window_info anchor="bottom" id="Run" order="3" weight="0.94812363" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.77262694" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.09271523" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -351,33 +365,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="17" column="68" selection-start-line="17" selection-start-column="68" selection-end-line="17" selection-end-column="68" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gladiator.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="17" column="27" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Army.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
-          <folding>
-            <element signature="e#94#116#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/List_def.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1562">
@@ -409,17 +396,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Army.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
+          <folding>
+            <element signature="e#94#116#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gladiator.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="17" column="27" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Army.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="17" column="34" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+        <state relative-caret-position="526">
+          <caret line="99" column="41" lean-forward="true" selection-start-line="99" selection-start-column="41" selection-end-line="99" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="603">
+          <caret line="47" column="74" selection-start-line="47" selection-start-column="74" selection-end-line="47" selection-end-column="74" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/GeneticEvolution.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="26" column="17" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
+        <state relative-caret-position="101">
+          <caret line="256" column="32" lean-forward="true" selection-start-line="256" selection-start-column="32" selection-end-line="256" selection-end-column="32" />
         </state>
       </provider>
     </entry>

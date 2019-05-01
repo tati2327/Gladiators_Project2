@@ -1,139 +1,82 @@
-//
-// Created by pablo on 17/04/19.
-//
-
 #include "GeneticEvolution.h"
-using namespace std;
-
 
 GeneticEvolution::GeneticEvolution() {
-    this->generationCount=0;
+    this->generationCount = 0;
+    this->crossingmask1 = "0111001011";
+    this->crossingmask2 = "1010101010";
+    this->crossingmask3 = "101011110";
+
+}
+void GeneticEvolution::applyEvolution() {
+    /*! Primero seleccionamos los 6 con el fitness mas alto y los cruzamos*/
+
 }
 
+void GeneticEvolution::mutation(Gladiator gladiator) {
+    int randomMutation = rand() % 4;
 
-
-void GeneticEvolution::mutation(Army army) {
-    int random= (rand() % 19) + 0;
-    cout<<"Este es random bruhh: "<<random<<endl;
-    int random1=(rand() % 6) + 0;
-
-    cout<<"Este es random1 bruhh: "<<random1<<endl;
-    if(random1==0) {
-        int value=army.gladiators[random].getUpperTrunckStrenght();
-        cout<<"El valor del "<<army.gladiators[random].getResistance()<<"es: "<<value<<endl;
-        int data=changeValue(value);
-        cout<<"pppppp"<<data<<endl;
-        army.gladiators.getNode(random)->data.setUpperTrunckStrenght(data);
-        cout<<"prueba "<<army.gladiators[random].getUpperTrunckStrenght()<<endl;
-        army.gladiators.getNode(random)->data.setResistance(army.gladiators[random].calculateFitness());
-
-
+    if(randomMutation==0) {
+        int value = gladiator.getUpperTrunckStrenght();
+        int data = changeValue(value);
+        gladiator.setUpperTrunckStrenght(data);
+        cout<<"Se muto UTS"<<endl;
     }
-    if(random1==1) {
-        int value1=army.gladiators[random].getLowerTrunckStrenght();
-        cout<<"El valor del "<<army.gladiators[random].getResistance()<<"es: "<<value1<<endl;
+    if(randomMutation==1) {
+        int value1=gladiator.getLowerTrunckStrenght();
         int data=changeValue(value1);
-        cout<<"pppppp"<<data<<endl;
-        army.gladiators.getNode(random)->data.setLowerTrunckStrenght(data);
-        cout<<"prueba"<<army.gladiators[random].getLowerTrunckStrenght()<<endl;
-        army.gladiators.getNode(random)->data.setResistance(army.gladiators[random].calculateFitness());
-
+        gladiator.setLowerTrunckStrenght(data);
+        cout<<"Se muto LTS"<<endl;
     }
-    if(random1==2) {
-        int value2=army.gladiators[random].getAnger();
-        cout<<"El valor del "<<army.gladiators[random].getResistance()<<"es: "<<value2<<endl;
+    if(randomMutation==2) {
+        int value2=gladiator.getAnger();
         int data=changeValue(value2);
-        cout<<"pppppp"<<data<<endl;
-        army.gladiators.getNode(random)->data.setAnger(data);
-        cout<<"prueba"<<army.gladiators[random].getAnger()<<endl;
-        army.gladiators.getNode(random)->data.setEmotionalInt(army.gladiators[random].calculateEmotionalInt());
-        army.gladiators.getNode(random)->data.setResistance(army.gladiators[random].calculateFitness());
-
+        gladiator.setAnger(data);
+        cout<<"Se muto Anger"<<endl;
     }
-    if(random1==3) {
-        int value3=army.gladiators[random].getJoy();
-        cout<<"El valor del "<<army.gladiators[random].getResistance()<<"es: "<<value3<<endl;
-        int data= changeValue(value3);
-        cout<<"pppppp"<<data<<endl;
-        army.gladiators.getNode(random)->data.setJoy(data);
-        cout<<"prueba"<<army.gladiators[random].getJoy()<<endl;
-        army.gladiators.getNode(random)->data.setEmotionalInt(army.gladiators[random].calculateEmotionalInt());
-        army.gladiators.getNode(random)->data.setResistance(army.gladiators[random].calculateFitness());
-    }
-    if(random1==4) {
-        int value4=army.gladiators[random].getSadness();
-        cout<<"El valor del "<<army.gladiators[random].getResistance()<<"es: "<<value4<<endl;
-        int data=changeValue(value4);
-        cout<<"pppppp"<<data<<endl;
-        army.gladiators.getNode(random)->data.setSadness(data);
-        cout<<"prueba"<<army.gladiators[random].getSadness()<<endl;
-        army.gladiators.getNode(random)->data.setEmotionalInt(army.gladiators[random].calculateEmotionalInt());
-        army.gladiators.getNode(random)->data.setResistance(army.gladiators[random].calculateFitness());
-
-    }
-    if(random1==5) {
-        int value5=army.gladiators[random].getSelfControl();
-        cout<<"El valor del "<<army.gladiators[random].getResistance()<<"es: "<<value5<<endl;
+    if(randomMutation==3) {
+        int value5=gladiator.getSelfControl();
         int data=changeValue(value5);
-        cout<<"pppppp"<<data<<endl;
-        army.gladiators.getNode(random)->data.setSelfcontrol(data);
-        cout<<"prueba"<<army.gladiators[random].getSelfControl()<<endl;
-        army.gladiators.getNode(random)->data.setEmotionalInt(army.gladiators[random].calculateEmotionalInt());
-        army.gladiators.getNode(random)->data.setResistance(army.gladiators[random].calculateFitness());
+        gladiator.setSelfcontrol(data);
+        cout<<"Se muto SC"<<endl;
     }
-    if(random1==6) {
-        int value6=army.gladiators[random].getPhysicalCondition();
-        cout<<"El valor del "<<army.gladiators[random].getResistance()<<"es: "<<value6<<endl;
+    if(randomMutation==4) {
+        int value6=gladiator.getPhysicalCondition();
         int data=changeValue(value6);
-        cout<<"pppppp"<<data<<endl;
-        army.gladiators.getNode(random)->data.setPhysicalCondition(data);
-        cout<<"prueba"<<army.gladiators[random].getPhysicalCondition()<<endl;
-        army.gladiators.getNode(random)->data.setResistance(army.gladiators[random].calculateFitness());
+        gladiator.setPhysicalCondition(data);
+        cout<<"Se muto PC"<<endl;
     }
-
 }
 
 int GeneticEvolution::changeValue(int value) {
-    if(value==0){
-        return 1;
-    }
-    if(value==1){
-        return 0;
-    }
-    if (value>=16){
-        return value;
-    }
+    if(value==0) return 1;
+    else if(value==1) return 0;
+    else if (value>=16) return value;
+
     long long binary=decimalToBinary(value);
-    std::string binary_str = std::to_string(binary);
+    string binary_str = to_string(binary);
+
     int size= binary_str.length();
     size=size-1;
-   int random= (rand() % size) + 0;
-   cout<<"le cambie la posicion "<<random<<" del binario"<<endl;
+
+    int random= rand() % size;
     if ("0" == string(1, binary_str[random])) {
         binary_str=binary_str.erase(random,1);
         binary_str=binary_str.insert(random,"1");
     }else{
         binary_str=binary_str.erase(random,1);
         binary_str=binary_str.insert(random,"0");
-   }
-   cout<<"El nuevo binary_str es :"<<binary_str<<endl;
-   binary= atol(binary_str.c_str());
-   cout<<"jjjjjjjjjjj"<<binary<<endl;
-   int decimal_value= binaryToDecimal(binary);
-   cout<<"el numero transformado es: "<<decimal_value<<endl;
-   return decimal_value;
+    }
 
+    binary= atol(binary_str.c_str());
+    int decimal_value= binaryToDecimal(binary);
+    return decimal_value;
 }
 
-
-
 long long GeneticEvolution::decimalToBinary(int n){
-
     long long binaryNumber = 0;
     int remainder, i = 1, step = 1;
 
-    while (n!=0)
-    {
+    while (n!=0){
         remainder = n%2;
         n /= 2;
         binaryNumber += remainder*i;
@@ -142,19 +85,12 @@ long long GeneticEvolution::decimalToBinary(int n){
     return binaryNumber;
 }
 
-
-
 int GeneticEvolution:: binaryToDecimal(long long n){
-    if(n==0){
-        return 0;
-    }
-    if(n==1){
-        return 1;
-    }
+    if(n==0) return 0;
+    if(n==1) return 1;
 
     int decimalNumber = 0, i = 0, remainder;
-    while (n!=0)
-    {
+    while (n!=0){
         remainder = n%10;
         n /= 10;
         decimalNumber += remainder*pow(2,i);
@@ -163,153 +99,134 @@ int GeneticEvolution:: binaryToDecimal(long long n){
     return decimalNumber;
 }
 
+void GeneticEvolution::crossover(Army army,int index1, int index2, int idCount) {
+    Gladiator son;
+    Gladiator parent1=army.gladiators.getNode(index1)->getValue();
+    Gladiator parent2=army.gladiators.getNode(index2)->getValue();
+
+    for (int i = 1; i <= 5; i++) {
+
+        if (i == 1) {
+            int trait1= parent1.getUpperTrunckStrenght();
+            string stringTrait1=convertToString(trait1,1);
+            int trait2=parent2.getUpperTrunckStrenght();
+            string stringTrait2=convertToString(trait2,1);
+            string sonGene="0000000000";
+            son.setUpperTrunckStrenght(makeExchange(stringTrait1, stringTrait2, sonGene));
+
+        }else if (i == 2) {
+            int trait1= parent1.getLowerTrunckStrenght();
+            string stringTrait1=convertToString(trait1,1);
+            int trait2=parent2.getLowerTrunckStrenght();
+            string stringTrait2=convertToString(trait2,1);
+            string sonGene="0000000000";
+            son.setLowerTrunckStrenght(makeExchange(stringTrait1, stringTrait2, sonGene));
 
 
-List<int> GeneticEvolution::fittestGenes(Army army) {
-    List<int> fittestList;
-    fittestList.add(army.fittest.getAge());
-    fittestList.add(army.fittest.getUpperTrunckStrenght());
-    fittestList.add(army.fittest.getLowerTrunckStrenght());
-    fittestList.add(army.fittest.getAnger());
-    fittestList.add(army.fittest.getJoy());
-    fittestList.add(army.fittest.getSadness());
-    fittestList.add(army.fittest.getSelfControl());
-    fittestList.add(army.fittest.getPhysicalCondition());
-    return fittestList;
-}
+        }else if (i == 3) {
+            int trait1= parent1.getAnger();
+            string stringTrait1=convertToString(trait1,2);
+            int trait2=parent2.getAnger();
+            string stringTrait2=convertToString(trait2,2);
+            string sonGene="00000";
+            son.setAnger(makeExchange(stringTrait1, stringTrait2, sonGene));
 
-List<int> GeneticEvolution::secondFittestGenes(Army army) {
-    List<int> secondFittestList;
-    secondFittestList.add(army.secondFittest.getAge());
-    secondFittestList.add(army.secondFittest.getUpperTrunckStrenght());
-    secondFittestList.add(army.secondFittest.getLowerTrunckStrenght());
-    secondFittestList.add(army.secondFittest.getAnger());
-    secondFittestList.add(army.secondFittest.getJoy());
-    secondFittestList.add(army.secondFittest.getSadness());
-    secondFittestList.add(army.secondFittest.getSelfControl());
-    secondFittestList.add(army.secondFittest.getPhysicalCondition());
-    return secondFittestList;
-}
+        }else if (i == 4) {
+            int trait1= parent1.getSelfControl();
+            string stringTrait1=convertToString(trait1,2);
+            int trait2=parent2.getSelfControl();
+            string stringTrait2=convertToString(trait2,2);
+            string sonGene="00000";
+            son.setAnger(makeExchange(stringTrait1, stringTrait2, sonGene));
 
 
-
-
-void GeneticEvolution::crossover(Army army) {
-    Gladiator tmp1;
-    Gladiator tmp2;
-    List<int> fittestList= fittestGenes(army);
-    List<int> secondFittestList= secondFittestGenes(army);
-    int random= (rand() % 7) + 0;
-    for(int i=0; i<=random; i++){
-       if(i==0) {
-           tmp1.setAge(fittestList[i]);
-           tmp2.setPhysicalCondition(secondFittestList[7]);
-       }
-       if(i==1) {
-           tmp1.setUpperTrunckStrenght(fittestList[i]);
-           tmp2.setSelfcontrol(secondFittestList[6]);
-       }
-       if(i==2) {
-           tmp1.setLowerTrunckStrenght(fittestList[i]);
-           tmp2.setSadness(secondFittestList[5]);
-       }
-       if(i==3) {
-           tmp1.setAnger(fittestList[i]);
-           tmp2.setJoy(secondFittestList[4]);
-       }
-       if(i==4) {
-           tmp1.setJoy(fittestList[i]);
-           tmp2.setAnger(secondFittestList[3]);
-       }
-       if(i==5) {
-           tmp1.setSadness(fittestList[i]);
-           tmp2.setLowerTrunckStrenght(secondFittestList[2]);
-       }
-       if(i==6) {
-           tmp1.setSelfcontrol(fittestList[i]);
-           tmp2.setUpperTrunckStrenght(secondFittestList[1]);
-       }
-       if(i==7) {
-           tmp1.setPhysicalCondition(fittestList[i]);
-           tmp2.setAge(secondFittestList[0]);
-       }
-    }
-    if(random==7) {
-        /*! Se asignan a tmp1 y tm2 los atributos que son de "calcular" y los que no se heredan de sus padres.*/
-        tmp1.setId(20 + generationCount + 1);
-        tmp1.setEmotionalInt(tmp1.calculateEmotionalInt());
-        tmp1.setResistance(tmp1.calculateFitness());
-        tmp2.setId(20 + generationCount + 2);
-        tmp2.setEmotionalInt(tmp2.calculateEmotionalInt());
-        tmp2.setResistance(tmp2.calculateFitness());
-        /*! Se asigna tmp1 y tmp2 al gladiador menos apto y el segundo menos apto respectivamente*/
-        army.gladiators[0]=tmp1;
-        army.gladiators[1]=tmp2;
-        /*! Se reordena la lista de gladiadores*/
-        army.insertionSort(army.gladiators);
-        army.printArray(army.gladiators, army.armySize);
-        return;
-
-    }
-    for(int i=random+1; i<=7; i++){
-        if(i==0) {
-            tmp1.setAge(secondFittestList[i]);
-            tmp2.setPhysicalCondition(fittestList[7]);
-        }
-        if(i==1) {
-            tmp1.setUpperTrunckStrenght(secondFittestList[i]);
-            tmp2.setSelfcontrol(fittestList[6]);
-        }
-        if(i==2) {
-            tmp1.setLowerTrunckStrenght(secondFittestList[i]);
-            tmp2.setSadness(fittestList[5]);
-        }
-        if(i==3) {
-            tmp1.setAnger(secondFittestList[i]);
-            tmp2.setJoy(fittestList[4]);
-        }
-        if(i==4) {
-            tmp1.setJoy(secondFittestList[i]);
-            tmp2.setAnger(fittestList[3]);
-        }
-        if(i==5) {
-            tmp1.setSadness(secondFittestList[i]);
-            tmp2.setLowerTrunckStrenght(fittestList[2]);
-        }
-        if(i==6) {
-            tmp1.setSelfcontrol(secondFittestList[i]);
-            tmp2.setUpperTrunckStrenght(fittestList[1]);
-        }
-        if(i==7) {
-            tmp1.setPhysicalCondition(secondFittestList[i]);
-            tmp2.setAge(fittestList[0]);
+        }else if (i == 5) {
+            int trait1= parent1.getPhysicalCondition();
+            string stringTrait1=convertToString(trait1,1);
+            int trait2=parent2.getPhysicalCondition();
+            string stringTrait2=convertToString(trait2,1);
+            string sonGene="0000000000";
+            son.setPhysicalCondition(makeExchange(stringTrait1, stringTrait2, sonGene));
         }
     }
-    /*! Se asignan a tmp1 y tm2 los atributos que son de "calcular" y los que no se heredan de sus padres.*/
-    tmp1.setId(20 + generationCount + 1);
-    tmp1.setEmotionalInt(tmp1.calculateEmotionalInt());
-    tmp1.setResistance(tmp1.calculateFitness());
-    tmp2.setId(20 + generationCount + 2);
-    tmp2.setEmotionalInt(tmp2.calculateEmotionalInt());
-    tmp2.setResistance(tmp2.calculateFitness());
 
-    cout<<"El nuevo valor es: "<<tmp1.getLowerTrunckStrenght()<<endl;
-    cout<<"El nuevo valor es: "<<tmp2.getLowerTrunckStrenght()<<endl;
+    /*! Se asignan a son1, son2, son3 los atributos que son de "calcular" y los que no se heredan de sus padres.*/
+    son.setId(20 + generationCount+idCount);
+    son.setEmotionalInt(son.calculateEmotionalInt());
+    son.setResistance(son.calculateResistance());
 
-
+    int randomMutation = rand() % 100 + 1;
+    if (randomMutation < 5) {
+        mutation(son);
+        son.setEmotionalInt(son.calculateEmotionalInt());
+        son.setResistance(son.calculateResistance());
+        cout <<"Se aplico mutacion en 5 a la generacion "<<generationCount<< endl;
+    }
     /*! Se asigna tmp1 y tmp2 al gladiador menos apto y el segundo menos apto respectivamente*/
-    army.gladiators.getNode(0)->setData(tmp1);
-    cout<<"El nuevo valor del mansote 0 es: "<<army.gladiators[0].getResistance()<<endl;
-    army.gladiators.getNode(1)->setData(tmp2);
-    cout<<"El nuevo valor del mansote 1 es: "<<army.gladiators[1].getResistance()<<endl;
-    /*! Se reordena la lista de gladiadores*/
+    army.gladiators.getNode(0)->setData(son);
+    cout << "El nuevo valor del mansote 0 es: " << army.gladiators[0].getResistance() << endl;
+
+    /*! Se ordena la lista de gladiadores*/
     army.insertionSort(army.gladiators);
     army.printArray(army.gladiators, army.armySize);
-    return;
-
 
 }
+int GeneticEvolution::convertToDecimal(string trait) {
+    int value=0;
+    for(int i=0; i<=9; i++){
+        if("1" == string(1, trait[i])){
+            value++;
+        }
+    }return value;
+}
 
+string GeneticEvolution::convertToString(int trait,int type) {
+    string base;
+    if(type==1){
+        base="00000000000";
+    }else{
+        base="000000";
+    }
 
+    for(int i=trait; i>=1; i--){
+        int random;
+        if(type==1) random = rand() % 10;
+        else random= rand() % 5;
+
+        if ("1" == string(1, base[random])){
+            while("1" == string(1, base[random])){
+                if(type==1) random = rand() % 10;
+                else random= rand()%5;
+            }
+            base=base.erase(random,1);
+            base=base.insert(random,"1");
+        }else{
+            base=base.erase(random,1);
+            base=base.insert(random,"1");
+        }
+
+    }if(type==1) base=base.erase(10,1);
+    else base=base.erase(5,1);
+    return base;
+}
+
+int GeneticEvolution::makeExchange(string parent1, string parent2,string son) {
+    string mask;
+    int randomMask=rand() % 3 +1;
+    if (randomMask == 1) mask =crossingmask1;
+    else if(randomMask==2) mask =crossingmask2;
+    else if(randomMask==3) mask =crossingmask3;
+    cout<<"mascara: "<<mask<<endl;
+    for(int i=0; i<=9;i++){
+        if("1" == string(1, mask[i])){
+            son=son.erase(i,1);
+            son=son.insert(i,string(1, parent1[i]));
+        }else{
+            son=son.erase(i,1);
+            son=son.insert(i,string(1, parent2[i]));
+        }
+    }cout<<son<<endl;
+    return convertToDecimal(son);
+}
 
 

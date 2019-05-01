@@ -12,25 +12,23 @@
 #include "List.h"
 #include <unistd.h>
 
-
 class Army {
 public:
-    int armySize;
     Gladiator fittest;
-    Gladiator secondFittest;
-    List<Gladiator> gladiators;
 
+    int armySize;
+    List<Gladiator> gladiators;
 
 public:
     Army();
+    Gladiator getFittest();
+
     void printArray(List<Gladiator> gladiators, int n);
     void insertionSort(List<Gladiator> gladiators);
     void createArmy(int armySize);
-    Gladiator setRandomValues(Gladiator gladiator,int i);
-    Gladiator setHeuristicValues(Gladiator gladiator, int i);
-    void setFittest();
-    void setSecondFittest();
-
+    Gladiator setValuesTipeA(Gladiator gladiator, int i);
+    Gladiator setValuesTipeB(Gladiator gladiator, int i);
+    Gladiator setValuesTipeC(Gladiator gladiator, int i);
 
 };
 

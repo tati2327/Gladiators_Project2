@@ -18,49 +18,37 @@ int main() {
 
     p.makeRoute();*/
 
-    /*Army army;
+    Army army;
     GeneticEvolution gA;
 
     //Primera generacion.
     gA.generationCount=+1;
-    army.createArmy(army.armySize);
-    army.insertionSort(army.gladiators);
-    army.printArray(army.gladiators,army.armySize);
-    army.setFittest();
-    cout<<"Fittest: " <<army.fittest.getResistance()<<endl;
-    army.setSecondFittest();
-    cout<<"secondFittest: "<<army.secondFittest.getResistance()<<endl;
 
     srand(time(NULL));
 
-    //La posibilidad de que se haga la mutacion es un 4%.
-    int random=(rand() % 99) + 0;
-    if(random==45 or random==8 or random==69 or random==27) {
-        cout<<"se inicia la muteishon"<<endl;
-        gA.mutation(army);
-        army.insertionSort(army.gladiators);
-        army.printArray(army.gladiators, army.armySize);
-        army.setFittest();
-        cout << "Fittest: " << army.fittest.getResistance() << endl;
-        army.setSecondFittest();
-        cout << "secondFittest: " << army.secondFittest.getResistance() << endl;
-    }
-
-
-    //Se hace el crossover.
-    cout<<"se inicia el crossovereo"<<endl;
-    gA.crossover(army);
-    gA.generationCount=+1;
+    army.createArmy(army.armySize);
     army.insertionSort(army.gladiators);
-    army.printArray(army.gladiators, army.armySize);
-    army.setFittest();
-    cout<<"Fittest: " <<army.fittest.getResistance()<<endl;
-    army.setSecondFittest();
-    cout<<"secondFittest: "<<army.secondFittest.getResistance()<<endl;
-    //Segunda Generacion*/
+    army.printArray(army.gladiators,army.armySize);
 
-    Game myGame;
-    myGame.newGame();
+    int i = 0;
+    while (i!=10) {
+        //Se hace el crossover.
+        cout << "Se inicia el crossovereo" << endl;
+        gA.crossover(army,19,18,0);
+        gA.crossover(army,19,17,1);
+
+        gA.crossover(army,19,16,2);
+
+        gA.crossover(army,18,17,3);
+
+        gA.crossover(army,18,16,4);
+
+
+
+        gA.generationCount=+1;
+        i++;
+        cout<< "/////////////////////////////////////////////////////////////////////////////////////"<< endl;
+    }
 
     return 0;
 }

@@ -24,7 +24,7 @@ void GeneticEvolution::setSecondFittest() {
 void GeneticEvolution::mutation() {
     int random= (rand() % 19) + 0;
     cout<<"Este es random bruhh: "<<random<<endl;
-    int random1= 1;//(rand() % 6) + 0;
+    int random1= (rand() % 6) + 0;
 
     cout<<"Este es random1 bruhh: "<<random1<<endl;
     if(random1==0) {

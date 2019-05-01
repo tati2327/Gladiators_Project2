@@ -4,131 +4,151 @@
 using namespace std;
 
 Army::Army() {
-    this->fittest;
-    this->secondFittest;
     this->armySize=20;
 }
 
-void Army::setFittest() {
+Gladiator Army::getFittest() {
     fittest=gladiators[19];
+    return fittest;
 }
 
-void Army::setSecondFittest() {
-    secondFittest=gladiators[18];
-}
-
-Gladiator Army::setRandomValues(Gladiator gladiator, int i) {
+Gladiator Army::setValuesTipeA(Gladiator gladiator, int i) {
     gladiator.setId(i+1);
     cout<<"My id is:"<<gladiator.getId()<<endl;
 
-    int random= (rand() % 5) + 0;
+    int random= (rand() % 3) + 1;
     gladiator.setAnger(random);
     cout<<gladiator.getAnger()<<endl;
 
-    int random1= (rand() % 5) + 0;
-    gladiator.setJoy(random1);
-    cout<<gladiator.getJoy()<<endl;
-
-    int random2= (rand() % 5) + 0;
+    int random2= (rand() % 3) + 1;
     gladiator.setSelfcontrol(random2);
     cout<<gladiator.getSelfControl()<<endl;
 
-    int random3= (rand() % 5) + 0;
-    gladiator.setSadness(random3);
-    cout<<gladiator.getSadness()<<endl;
-
     gladiator.setEmotionalInt(gladiator.calculateEmotionalInt());
-    cout<<"Inteligencia Emocional, inicie aqui zorro :"<<gladiator.getEmotionalInt()<<endl;
+    cout<<"EI"<<gladiator.getEmotionalInt()<<endl;
 
-    int random4= (rand() % 20) + 0;
+    int random4= (rand() % 4) + 1;
     gladiator.setPhysicalCondition(random4);
-    cout<<gladiator.getPhysicalCondition()<<endl;
+    cout<<"PC "<<gladiator.getPhysicalCondition()<<endl;
 
-    int random5= (rand() % 20) + 0;
+    int random5= (rand() % 4) + 1;
     gladiator.setUpperTrunckStrenght(random5);
-    cout<<gladiator.getUpperTrunckStrenght()<<endl;
+    cout<<"UTS "<<gladiator.getUpperTrunckStrenght()<<endl;
 
-    int random6= (rand() % 20) + 0;
+    int random6= (rand() % 4) + 1;
     gladiator.setLowerTrunckStrenght(random6);
-    cout<<gladiator.getLowerTrunckStrenght()<<endl;
+    cout<<"LTS "<<gladiator.getLowerTrunckStrenght()<<endl;
 
-    int random7= (rand() % 40) + 0;
+    int random7= rand() % 10 + 40;
     gladiator.setAge(random7);
-    cout<<"edad"<<gladiator.getAge()<<endl;
+    cout<<"Edad "<<gladiator.getAge()<<endl;
 
-    gladiator.setResistance(gladiator.calculateFitness());
-    cout<<gladiator.getResistance()<<endl;
-    cout<<"Termine RASTAMAN"<<endl;
+    gladiator.setResistance(gladiator.calculateResistance());
+    cout<<"R "<<gladiator.getResistance()<<endl;
+
+
+    cout<<"Se creo un nuevo gladeador"<<endl;
 
     return gladiator;
 }
 
-
-Gladiator Army::setHeuristicValues(Gladiator gladiator, int i) {
+Gladiator Army::setValuesTipeB(Gladiator gladiator, int i) {
     gladiator.setId(i+1);
     cout<<"My id is:"<<gladiator.getId()<<endl;
 
-    gladiator.setAnger(2);
+    int random= (rand() % 2) + 1;
+    gladiator.setAnger(random);
     cout<<gladiator.getAnger()<<endl;
 
-    gladiator.setJoy(3);
-    cout<<gladiator.getJoy()<<endl;
-
-    gladiator.setSelfcontrol(3);
+    int random2= (rand() % 2) + 1;
+    gladiator.setSelfcontrol(random2);
     cout<<gladiator.getSelfControl()<<endl;
 
-    gladiator.setSadness(3);
-    cout<<gladiator.getSadness()<<endl;
-
     gladiator.setEmotionalInt(gladiator.calculateEmotionalInt());
-    cout<<"Inteligencia Emocional, inicie aqui zorro :"<<gladiator.getEmotionalInt()<<endl;
+    cout<<"EI"<<gladiator.getEmotionalInt()<<endl;
 
-    gladiator.setPhysicalCondition(18);
-    cout<<gladiator.getPhysicalCondition()<<endl;
+    int random4= (rand() % 3) + 1;
+    gladiator.setPhysicalCondition(random4);
+    cout<<"PC "<<gladiator.getPhysicalCondition()<<endl;
 
-    gladiator.setUpperTrunckStrenght(3);
-    cout<<gladiator.getUpperTrunckStrenght()<<endl;
+    int random5= (rand() % 3) + 1;
+    gladiator.setUpperTrunckStrenght(random5);
+    cout<<"UTS "<<gladiator.getUpperTrunckStrenght()<<endl;
 
-    gladiator.setLowerTrunckStrenght(18);
-    cout<<gladiator.getLowerTrunckStrenght()<<endl;
+    int random6= (rand() % 3) + 1;
+    gladiator.setLowerTrunckStrenght(random6);
+    cout<<"LTS "<<gladiator.getLowerTrunckStrenght()<<endl;
 
-    gladiator.setAge(17);
-    cout<<"edad"<<gladiator.getAge()<<endl;
+    int random7= rand() % 10 + 50;
+    gladiator.setAge(random7);
+    cout<<"Edad "<<gladiator.getAge()<<endl;
 
-    gladiator.setResistance(gladiator.calculateFitness());
-    cout<<gladiator.getResistance()<<endl;
+    gladiator.setResistance(gladiator.calculateResistance());
+    cout<<"R "<<gladiator.getResistance()<<endl;
+    cout<<"Se creo un nuevo gladeador"<<endl;
 
     return gladiator;
 }
 
+Gladiator Army::setValuesTipeC(Gladiator gladiator, int i) {
+    gladiator.setId(i+1);
+    cout<<"My id is:"<<gladiator.getId()<<endl;
+
+    int random= (rand() % 2) + 1;
+    gladiator.setAnger(random);
+    cout<<gladiator.getAnger()<<endl;
+
+    int random2= (rand() % 2) + 1;
+    gladiator.setSelfcontrol(random2);
+    cout<<gladiator.getSelfControl()<<endl;
+
+    gladiator.setEmotionalInt(gladiator.calculateEmotionalInt());
+    cout<<"EI"<<gladiator.getEmotionalInt()<<endl;
+
+    int random4= (rand() % 2) + 1;
+    gladiator.setPhysicalCondition(random4);
+    cout<<"PC "<<gladiator.getPhysicalCondition()<<endl;
+
+    int random5= (rand() % 2) + 1;
+    gladiator.setUpperTrunckStrenght(random5);
+    cout<<"UTS "<<gladiator.getUpperTrunckStrenght()<<endl;
+
+    int random6= (rand() % 2) + 1;
+    gladiator.setLowerTrunckStrenght(random6);
+    cout<<"LTS "<<gladiator.getLowerTrunckStrenght()<<endl;
+
+    int random7= rand() % 75 + 60;
+    gladiator.setAge(random7);
+    cout<<"Edad "<<gladiator.getAge()<<endl;
+
+    gladiator.setResistance(gladiator.calculateResistance());
+    cout<<"R "<<gladiator.getResistance()<<endl;
+    cout<<"Se creo un nuevo gladeador"<<endl;
+
+    return gladiator;}
 
 void Army::createArmy(int armySize) {
-    srand(time(NULL));
     for (int i = 0; i <= armySize-1; i++) {
-        Gladiator gladiator =Gladiator();
-        if(i==0) {
-            gladiators.add(setHeuristicValues(gladiator, i));
-        }else {
-            gladiators.add(setRandomValues(gladiator, i));
+        Gladiator gladiator;
+        int random = rand() % 100 + 1;
+        if(random<= 60){
+            /*! Crear ejercito tipo C (60%)*/
+            gladiators.add(setValuesTipeA(gladiator, i));
+        }else if(60< random && random <=90){
+            /*! Crear ejercito tipo B (30%)*/
+            gladiators.add(setValuesTipeA(gladiator, i));
+        }else if(90< random && random <=100){
+            /*! Crear ejercito tipo A (10%)*/
+            gladiators.add(setValuesTipeA(gladiator, i));
         }
     }
-    int i=0;
-    while(i<=19) {
-        cout << "Sirve " << gladiators.getData(i).getResistance() << endl;
-        i++;
-    }
 }
-
-
-
 
 void Army:: printArray(List<Gladiator> gladiators, int n) {
     for (int i = 0; i < n; ++i)
         cout << gladiators[i].getResistance() << " " << std::flush;
     std::cout << std::endl;
 }
-
-
 
 void Army:: insertionSort(List<Gladiator> gladiators) {
     int size = gladiators.size();
@@ -138,17 +158,13 @@ void Army:: insertionSort(List<Gladiator> gladiators) {
             swap = 0;
             for (int i = 1; i < size; ++i) {
                 int j = i - 1;
-                //cout << "j es " << j << endl;
-                //cout << "i es " << i << endl;
                 if (gladiators[j].getResistance() > gladiators[i].getResistance()) {
                     Node<Gladiator> temp;
                     temp.setData(gladiators.getData(j));
                     gladiators.getNode(j)->setNode(gladiators.getNode(i));
                     gladiators.getNode(i)->data = temp.data;
                     swap += 1;
-                    //cout << "swapping" << endl;
                 }
-                //this->printArray(gladiators, 20);
             }
         }
     }
