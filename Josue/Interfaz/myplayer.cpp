@@ -23,8 +23,7 @@ void MyPlayer::keyPressEvent(QKeyEvent *event)
   if (event->key()==Qt::Key_Up){
       setPos(x(),y()-63);
     }
-  if (pos().x()>605 && pos().y()>598){
-
+  if (pos().x()>615 && pos().y()>598){
       g->endgame();
     }
 }

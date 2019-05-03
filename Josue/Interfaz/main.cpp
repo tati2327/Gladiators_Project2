@@ -1,9 +1,6 @@
 #include <QApplication>
-#include <gamethread.h>
-#include <mythread.h>
 #include <game.h>
 #include <QDebug>
-#include <thread2.h>
 #include <iostream>
 #include <thread>
 #include <unistd.h>

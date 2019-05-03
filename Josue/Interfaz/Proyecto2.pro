@@ -25,16 +25,13 @@ DEFINES += QT_DEPRECATED_WARNINGS
 CONFIG += c++11
 
 SOURCES += \
+    json.cpp \
         main.cpp \
     myplayer.cpp \
     tower.cpp \
     game.cpp \
-    mythread.cpp \
     client.cpp \
-    gamethread.cpp \
-    mainmenu.cpp \
     button.cpp \
-    thread2.cpp \
     arrow.cpp \
     stadistics.cpp \
     tower2.cpp \
@@ -44,15 +41,16 @@ SOURCES += \
 
 
 HEADERS += \
+    json.h \
+    list.h \
+    list_def.h \
     myplayer.h \
+    node.h \
+    node_def.h \
     tower.h \
     game.h \
-    mythread.h \
     client.h \
-    gamethread.h \
-    mainmenu.h \
     button.h \
-    thread2.h \
     arrow.h \
     stadistics.h \
     tower2.h \

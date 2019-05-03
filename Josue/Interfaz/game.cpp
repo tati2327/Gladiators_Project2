@@ -1,7 +1,6 @@
 #include "game.h"
 #include <QBrush>
 #include <QImage>
-#include "mainmenu.h"
 #include "button.h"
 #include <QDebug>
 #include <tower.h>
@@ -9,7 +8,6 @@
 #include <tower3.h>
 #include <arrow.h>
 #include <stdlib.h>
-
 Game::Game()
 {
   scene=new QGraphicsScene();
@@ -120,6 +118,7 @@ void Game::start()
   timer = new QTimer();
   QObject::connect(timer,SIGNAL(timeout()),this,SLOT(spawn()));
   timer->start(1000);
+
 
 }
 
