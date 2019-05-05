@@ -5,10 +5,21 @@
 #include <thread>
 #include <unistd.h>
 #include "client.h"
-
+#include "json.h"
+#include "list.h"
 using namespace std;
 Game *g;
-Client c;
+int id;
+int resis;
+int jage;
+int jlower;
+int jupper;
+int jexpec;
+int jsurv;
+int jphys;
+List<char> *obs;
+List<char> *movs;
+
 int juego(int argc, char *argv[]){
   QApplication a(argc,argv);
   //Game *g = new Game();
@@ -18,7 +29,7 @@ int juego(int argc, char *argv[]){
 }
 
 void cliente(){
-
+  Client c;
   c.newClient();
 }
 
@@ -28,6 +39,7 @@ int main(int argc, char *argv[])
   std::thread second(cliente);
   first.join();
   second.join();
+
 
   return 0;
 }

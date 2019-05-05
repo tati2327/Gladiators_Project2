@@ -2,12 +2,23 @@
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wunknown-pragmas"
 #pragma clang diagnostic ignored "-Wmissing-noreturn"
-#include "game.h"
-extern Game *g;
+#include "json.h"
+extern int id;
+extern int resis;
+extern int resis;
+extern int jage;
+extern int jlower;
+extern int jupper;
+extern int jexpec;
+extern int jsurv;
+extern int jphys;
+extern List<char> *obs;
+extern List<char> *movs;
+
 Client::Client() {
     newGame = false;
     port = 54000;
-    ipAddress = "192.168.100.9";
+    ipAddress = "192.168.1.4";
 }
 
 void Client::newClient() {
@@ -67,15 +78,19 @@ void Client::manageServer() {
             cout<<"SERVER: "<<messageReived << endl;
             sleep(1);
             myJson.jsonToDocument(messageReived);
-            g->ID->setPlainText(QString(myJson.getId()));
-            g->age->setPlainText(QString(myJson.getAge()));
-            g->resistance->setPlainText(QString(myJson.getResistance()));
-            g->expected_gen->setPlainText(QString(myJson.getExpectedGen()));
-            g->upper_stregth->setPlainText(QString(myJson.getUperStrenght()));
-            g->lower_stregth->setPlainText(QString(myJson.getLowerStrenght()));
-            g->physical_condition->setPlainText(QString(myJson.getPhysicalCondition()));
-            g->emotional_intelligence->setPlainText(QString(myJson.getEmocionalIntelligent()));
+            id = myJson.getId();
+            resis= myJson.getResistance();
+            jage = myJson.getAge();
+            //movs = myJson.getRoute();
+            //myJson.getObstacles();
+            jexpec = myJson.getExpectedGen();
+            jsurv = myJson.getSurvivalProb();
+            jupper = myJson.getUperStrenght();
+            jlower = myJson.getLowerStrenght();
+            jphys = myJson.getPhysicalCondition();
 
+            //cout<<"aaaaaaaaaaaaaaaaaaaahhhhhhhhhhhhhhhhhhhhh"<<g->cont;
+            //g->ID->set(myJson.getId(),920,223,20);
 
 
             /*! Atraves de myJson.get...() se obtienen los datos del gladeador, los obstaculos y la ruta

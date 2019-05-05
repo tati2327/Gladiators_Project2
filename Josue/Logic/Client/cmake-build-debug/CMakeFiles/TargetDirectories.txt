@@ -1,3 +1,0 @@
-/home/josu/Documents/Github/Proyecto2/Josue/Logic/Client/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/josu/Documents/Github/Proyecto2/Josue/Logic/Client/cmake-build-debug/CMakeFiles/Client.dir
-/home/josu/Documents/Github/Proyecto2/Josue/Logic/Client/cmake-build-debug/CMakeFiles/edit_cache.dir

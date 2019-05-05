@@ -69,7 +69,7 @@ List<string> JSON::getRoute() {
 }
 
 int JSON::getId() {
-    return document["id"].IsInt();
+    return document["id"].GetInt();
 }
 
 int JSON::getAge() {

@@ -8,6 +8,16 @@
 #include <tower3.h>
 #include <arrow.h>
 #include <stdlib.h>
+#include <iostream>
+using namespace std;
+extern int id;
+extern int resis;
+extern int jage;
+extern int jlower;
+extern int jupper;
+extern int jexpec;
+extern int jsurv;
+extern int jphys;
 Game::Game()
 {
   scene=new QGraphicsScene();
@@ -73,9 +83,8 @@ void Game::start()
   scene->addItem(life_points);
 
   ID = new Stadistics();
-  ID->set(player->ID,920,223,20);
+  ID->set(id,920,223,20);
   scene->addItem(ID);
-
   age = new Stadistics();
   age->set(player->age,920,257,20);
   scene->addItem(age);
@@ -114,7 +123,16 @@ void Game::start()
   scene->addItem(time_in);
 
   scene->setBackgroundBrush(QBrush(QImage(":images/game.png")));
-
+  ID->setPlainText(QString(QString::number(id)));
+  player->life_points=resis;
+  resistance->setPlainText(QString(QString::number(resis)));
+  life_points->setPlainText(QString(QString::number(resis)));
+  age->setPlainText(QString(QString::number(jage)));
+  upper_stregth->setPlainText(QString(QString::number(jupper)));
+  lower_stregth->setPlainText(QString(QString::number(jlower)));
+  physical_condition->setPlainText(QString(QString::number(jphys)));
+  expected_gen->setPlainText(QString(QString::number(jexpec)));
+  survival_prob->setPlainText(QString(QString::number(jsurv)));
   timer = new QTimer();
   QObject::connect(timer,SIGNAL(timeout()),this,SLOT(spawn()));
   timer->start(1000);
@@ -129,6 +147,16 @@ void Game::close()
 
 void Game::spawn()
 {
+  ID->setPlainText(QString(QString::number(id)));
+  player->life_points=resis;
+  resistance->setPlainText(QString(QString::number(resis)));
+  life_points->setPlainText(QString(QString::number(resis)));
+  age->setPlainText(QString(QString::number(jage)));
+  upper_stregth->setPlainText(QString(QString::number(jupper)));
+  lower_stregth->setPlainText(QString(QString::number(jlower)));
+  physical_condition->setPlainText(QString(QString::number(jphys)));
+  expected_gen->setPlainText(QString(QString::number(jexpec)));
+  survival_prob->setPlainText(QString(QString::number(jsurv)));
   if (cont>=3){
       timer->stop();
       return;
