@@ -117,6 +117,7 @@ void Server::sendMessage(int _clientServer, string messageReceived){
     /*! Se pasa de JSON a un documento */
     JSON myJson; /*!< Instancia para enviar mensajes en formato json */
     myJson.jsonToDocument(messageReceived);
+    srand(time(NULL));
 
     string messageToSend;
     if(myJson.getRequest() == 1){

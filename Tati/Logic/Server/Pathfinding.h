@@ -8,10 +8,12 @@
 class Pathfinding {
     public:
         Pathfinding();
-        Pathfinding(Matrix<Field>& board);
+
+        explicit Pathfinding(Matrix<Field>& board);
 
         List<Field> openSet;
         List<Field> closeSet;
+        List<string> solution;
 
         Field *start;
         Field *end;

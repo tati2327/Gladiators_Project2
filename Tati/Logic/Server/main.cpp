@@ -8,10 +8,14 @@
 
 int main() {
 
-    //Game myGame;
-    //myGame.newGame();
-    Server s;
-    s.initServer();
+    /*Matrix<Field> m = Matrix<Field>(10,10);
+    Pathfinding p = Pathfinding(m);
+    p.makeRoute();*/
+
+    Game myGame;
+    myGame.newGame();
+    //Server s;
+    //s.initServer();
 
     return 0;
 }

@@ -17,11 +17,7 @@ string Game::newGame() {
     army.createArmy(army.armySize);
     army.insertionSort(army.gladiators);
     army.printArray(army.gladiators,army.armySize);
-    army.setFittest();
-    cout<<"Fittest: " <<army.fittest.getResistance()<<endl;
-    army.setSecondFittest();
-    cout<<"secondFittest: "<<army.secondFittest.getResistance()<<endl;
-    myGladiator = army.fittest;
+    myGladiator = army.getFittest();
 
     /*! Crear el tablero de juego con los obstaculos iniciales*/
     string end = "false";
@@ -38,36 +34,19 @@ string Game::newGame() {
                                myGladiator.getExpectedGenerations(),
                                myGladiator.getEmotionalInt(), myGladiator.getUpperTrunckStrenght(),
                                myGladiator.getLowerTrunckStrenght(),
-                               myGladiator.getResistance(), myGladiator.getPhysicalCondition(), message, this->sendRoute());
+                               myGladiator.getResistance(), myGladiator.getPhysicalCondition(), message, this->myRoute.solution);
     return json;
 }
 
 string Game::play() {
-    srand(time(NULL));
-    /*!La posibilidad de que se haga la mutacion es un 4%.*/
-    int random=(rand() % 99) + 0;
-    if(random==45 or random==8 or random==69 or random==27) {
-        cout<<"se inicia la muteishon"<<endl;
-        gE.mutation(army);
-        army.insertionSort(army.gladiators);
-        army.printArray(army.gladiators, army.armySize);
-        army.setFittest();
-        cout << "Fittest: " << army.fittest.getResistance() << endl;
-        army.setSecondFittest();
-        cout << "secondFittest: " << army.secondFittest.getResistance() << endl;
-    }
+    gE.crossover(army,19,18,0);
+    gE.crossover(army,19,17,1);
+    gE.crossover(army,19,16,2);
+    gE.crossover(army,18,17,3);
+    gE.crossover(army,18,16,4);
 
-    /*! Se hace el crossover. */
-    cout<<"se inicia el crossovereo"<<endl;
-    gE.crossover(army);
     gE.generationCount=+1;
-    army.insertionSort(army.gladiators);
-    army.printArray(army.gladiators, army.armySize);
-    army.setFittest();
-    cout<<"Fittest: " <<army.fittest.getResistance()<<endl;
-    army.setSecondFittest();
-    cout<<"secondFittest: "<<army.secondFittest.getResistance()<<endl;
-    myGladiator = army.fittest;
+    myGladiator = army.getFittest();
 
     /*! Agregar nuevos obstaculos en el tablero*/
     string end = "false";
@@ -84,12 +63,11 @@ string Game::play() {
                                   myGladiator.getExpectedGenerations(),
                                   myGladiator.getEmotionalInt(), myGladiator.getUpperTrunckStrenght(),
                                   myGladiator.getLowerTrunckStrenght(),
-                                  myGladiator.getResistance(), myGladiator.getPhysicalCondition(), message, this->sendRoute());
+                                  myGladiator.getResistance(), myGladiator.getPhysicalCondition(), message, this->myRoute.solution);
     return json;
 }
 
 List<string> Game::addObstacles() {
-    srand(time(NULL));
     List<string> answer;
 
     int obstacle_i = (rand() % (rows-1)) + 0;
@@ -137,10 +115,6 @@ List<string> Game::addObstacles() {
     }
     answer.add("false");
     return answer;
-}
-
-List<Field> Game::sendRoute() {
-    return myRoute.closeSet;
 }
 
 

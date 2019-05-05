@@ -24,7 +24,6 @@ class Game {
         string newGame();
         string play();
         List<string> addObstacles();
-        List<Field> sendRoute();
 };
 
 

@@ -12,247 +12,194 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4dc83b9b-ed6d-4736-9c89-f03fce0d9172" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Logic/.idea/Logic.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Logic/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Logic/Server/CMakeLists.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Logic/Server/Game.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Logic/Server/JSON.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Logic/Server/JSON.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Logic/Server/Pathfinding.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Logic/Server/Server.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Logic/Server/Server.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Logic/Server/cmake-build-debug/A_" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Logic/Server/cmake-build-debug/A_.cbp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Logic/Server/cmake-build-debug/CMakeFiles/A_.dir/CXX.includecache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Logic/Server/cmake-build-debug/CMakeFiles/A_.dir/DependInfo.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Logic/Server/cmake-build-debug/CMakeFiles/A_.dir/depend.internal" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Logic/Server/cmake-build-debug/CMakeFiles/A_.dir/depend.make" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Logic/Server/cmake-build-debug/CMakeFiles/A_.dir/link.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Logic/Server/cmake-build-debug/CMakeFiles/CMakeError.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Logic/Server/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Logic/Server/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Logic/Server/include/rapidjson/allocators.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Logic/Server/include/rapidjson/cursorstreamwrapper.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Logic/Server/include/rapidjson/document.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Logic/Server/include/rapidjson/encodedstream.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Logic/Server/include/rapidjson/encodings.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Logic/Server/include/rapidjson/error/en.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Logic/Server/include/rapidjson/error/error.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Logic/Server/include/rapidjson/filereadstream.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Logic/Server/include/rapidjson/filewritestream.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Logic/Server/include/rapidjson/fwd.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Logic/Server/include/rapidjson/internal/biginteger.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Logic/Server/include/rapidjson/internal/diyfp.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Logic/Server/include/rapidjson/internal/dtoa.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Logic/Server/include/rapidjson/internal/ieee754.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Logic/Server/include/rapidjson/internal/itoa.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Logic/Server/include/rapidjson/internal/meta.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Logic/Server/include/rapidjson/internal/pow10.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Logic/Server/include/rapidjson/internal/regex.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Logic/Server/include/rapidjson/internal/stack.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Logic/Server/include/rapidjson/internal/strfunc.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Logic/Server/include/rapidjson/internal/strtod.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Logic/Server/include/rapidjson/internal/swap.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Logic/Server/include/rapidjson/istreamwrapper.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Logic/Server/include/rapidjson/memorybuffer.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Logic/Server/include/rapidjson/memorystream.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Logic/Server/include/rapidjson/msinttypes/inttypes.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Logic/Server/include/rapidjson/msinttypes/stdint.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Logic/Server/include/rapidjson/ostreamwrapper.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Logic/Server/include/rapidjson/pointer.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Logic/Server/include/rapidjson/prettywriter.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Logic/Server/include/rapidjson/rapidjson.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Logic/Server/include/rapidjson/reader.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Logic/Server/include/rapidjson/schema.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Logic/Server/include/rapidjson/stream.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Logic/Server/include/rapidjson/stringbuffer.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Logic/Server/include/rapidjson/writer.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Logic/Server/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Gladiators.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Logic/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Logic/Server/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Logic/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Logic/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Army.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../Logic/Server/Army.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Army.h" beforeDir="false" afterPath="$PROJECT_DIR$/../Logic/Server/Army.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeneticEvolution.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../Logic/Server/GeneticEvolution.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeneticEvolution.h" beforeDir="false" afterPath="$PROJECT_DIR$/../Logic/Server/GeneticEvolution.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gladiator.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../Logic/Server/Gladiator.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gladiator.h" beforeDir="false" afterPath="$PROJECT_DIR$/../Logic/Server/Gladiator.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/List.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/List_def.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Node.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Node_def.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.13.2/CMakeCCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../Logic/Server/cmake-build-debug/CMakeFiles/3.13.2/CMakeCCompiler.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.13.2/CMakeCXXCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../Logic/Server/cmake-build-debug/CMakeFiles/3.13.2/CMakeCXXCompiler.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.13.2/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../Logic/Server/cmake-build-debug/CMakeFiles/3.13.2/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.13.2/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../Logic/Server/cmake-build-debug/CMakeFiles/3.13.2/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.13.2/CMakeSystem.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../Logic/Server/cmake-build-debug/CMakeFiles/3.13.2/CMakeSystem.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.13.2/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" afterPath="$PROJECT_DIR$/../Logic/Server/cmake-build-debug/CMakeFiles/3.13.2/CompilerIdC/CMakeCCompilerId.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.13.2/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../Logic/Server/cmake-build-debug/CMakeFiles/3.13.2/CompilerIdCXX/CMakeCXXCompilerId.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Gladiators.dir/DependInfo.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Gladiators.dir/build.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Gladiators.dir/cmake_clean.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Gladiators.dir/depend.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Gladiators.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/../Logic/Server/cmake-build-debug/CMakeFiles/A_.dir/flags.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Gladiators.dir/link.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Gladiators.dir/progress.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../Logic/Server/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Logic/Server/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Logic/Server/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cmake.check_cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Logic/Server/cmake-build-debug/CMakeFiles/cmake.check_cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../Logic/Server/cmake-build-debug/CMakeFiles/feature_tests.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.c" beforeDir="false" afterPath="$PROJECT_DIR$/../Logic/Server/cmake-build-debug/CMakeFiles/feature_tests.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.cxx" beforeDir="false" afterPath="$PROJECT_DIR$/../Logic/Server/cmake-build-debug/CMakeFiles/feature_tests.cxx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Gladiators" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Gladiators.cbp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Interfaz/Proyecto2.pro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Interfaz/Proyecto2.pro.user" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Interfaz/Proyecto2.pro.user.b2be065" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Interfaz/arrow.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Interfaz/arrow.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Interfaz/arrow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Interfaz/bg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Interfaz/bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Interfaz/button.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Interfaz/button.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Interfaz/client.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Interfaz/client.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Interfaz/coliseo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Interfaz/colisseum.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Interfaz/game.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Interfaz/game.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Interfaz/game.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Interfaz/gamethread.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Interfaz/gamethread.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Interfaz/gladeador.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Interfaz/inicio.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Interfaz/main.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Interfaz/mainmenu.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Interfaz/mainmenu.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Interfaz/mainwindow.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Interfaz/myplayer.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Interfaz/myplayer.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Interfaz/mythread.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Interfaz/mythread.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Interfaz/player.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Interfaz/player.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Interfaz/resources.qrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Interfaz/stadistics.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Interfaz/stadistics.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Interfaz/thread2.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Interfaz/thread2.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Interfaz/torre.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Interfaz/tower.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Interfaz/tower.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Interfaz/tower1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Logic/A*/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/../Logic/Server/.idea/.name" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Logic/A*/.idea/A*.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Logic/Server/.idea/A*.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Logic/A*/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Logic/Server/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Logic/A*/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Logic/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Logic/A*/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Logic/Server/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Logic/A*/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Logic/Server/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Logic/A*/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Logic/A*/Army.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Logic/A*/Army.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Logic/A*/CMakeLists.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Logic/A*/ExplosiveArrow.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Logic/A*/ExplosiveArrow.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Logic/A*/Field.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../Logic/Server/Field.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Logic/A*/Field.h" beforeDir="false" afterPath="$PROJECT_DIR$/../Logic/Server/Field.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Logic/A*/FireArrow.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Logic/A*/FireArrow.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Logic/A*/Game.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Logic/A*/Game.h" beforeDir="false" afterPath="$PROJECT_DIR$/../Logic/Server/Game.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Logic/A*/GeneticEvolution.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Logic/A*/GeneticEvolution.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Logic/A*/Gladiator.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Logic/A*/Gladiator.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Logic/A*/List.h" beforeDir="false" afterPath="$PROJECT_DIR$/../Logic/Server/List.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Logic/A*/List_def.h" beforeDir="false" afterPath="$PROJECT_DIR$/../Logic/Server/List_def.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Logic/A*/Matrix.h" beforeDir="false" afterPath="$PROJECT_DIR$/../Logic/Server/Matrix.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Logic/A*/Matrix_def.h" beforeDir="false" afterPath="$PROJECT_DIR$/../Logic/Server/Matrix_def.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Logic/A*/Node.h" beforeDir="false" afterPath="$PROJECT_DIR$/../Logic/Server/Node.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Logic/A*/Node_def.h" beforeDir="false" afterPath="$PROJECT_DIR$/../Logic/Server/Node_def.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Logic/A*/Pathfinding.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../Logic/Server/Pathfinding.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Logic/A*/Pathfinding.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Logic/A*/SingleArrow.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Logic/A*/SingleArrow.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Logic/A*/Tower.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Logic/A*/Tower.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Logic/A*/cmake-build-debug/A_" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Logic/A*/cmake-build-debug/A_.cbp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Logic/A*/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Logic/Server/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Logic/A*/cmake-build-debug/CMakeFiles/3.13.2/CMakeCCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Logic/A*/cmake-build-debug/CMakeFiles/3.13.2/CMakeCXXCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Logic/A*/cmake-build-debug/CMakeFiles/3.13.2/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Logic/A*/cmake-build-debug/CMakeFiles/3.13.2/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Logic/A*/cmake-build-debug/CMakeFiles/3.13.2/CMakeSystem.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Logic/A*/cmake-build-debug/CMakeFiles/3.13.2/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Logic/A*/cmake-build-debug/CMakeFiles/3.13.2/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Logic/A*/cmake-build-debug/CMakeFiles/A_.dir/CXX.includecache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Logic/A*/cmake-build-debug/CMakeFiles/A_.dir/DependInfo.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Logic/A*/cmake-build-debug/CMakeFiles/A_.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../Logic/Server/cmake-build-debug/CMakeFiles/A_.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Logic/A*/cmake-build-debug/CMakeFiles/A_.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../Logic/Server/cmake-build-debug/CMakeFiles/A_.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Logic/A*/cmake-build-debug/CMakeFiles/A_.dir/depend.internal" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Logic/A*/cmake-build-debug/CMakeFiles/A_.dir/depend.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Logic/A*/cmake-build-debug/CMakeFiles/A_.dir/flags.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Logic/A*/cmake-build-debug/CMakeFiles/A_.dir/link.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Logic/A*/cmake-build-debug/CMakeFiles/A_.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/../Logic/Server/cmake-build-debug/CMakeFiles/A_.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Logic/A*/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../Logic/Server/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Logic/A*/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/../Logic/Server/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Logic/A*/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Logic/A*/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/../Logic/Server/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Logic/A*/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Logic/A*/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Logic/A*/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Logic/A*/cmake-build-debug/CMakeFiles/cmake.check_cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Logic/A*/cmake-build-debug/CMakeFiles/feature_tests.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Logic/A*/cmake-build-debug/CMakeFiles/feature_tests.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Logic/A*/cmake-build-debug/CMakeFiles/feature_tests.cxx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Logic/A*/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Logic/A*/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../Logic/Server/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Logic/A*/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../Logic/Server/cmake-build-debug/cmake_install.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Logic/A*/main.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Qt/build-pruebaThreadQt-Desktop_Qt_5_12_2_GCC_64bit-Debug/.qmake.stash" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Qt/build-pruebaThreadQt-Desktop_Qt_5_12_2_GCC_64bit-Debug/Makefile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Qt/build-pruebaThreadQt-Desktop_Qt_5_12_2_GCC_64bit-Debug/moc_mainwindow.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Qt/build-pruebaThreadQt-Desktop_Qt_5_12_2_GCC_64bit-Debug/moc_predefs.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Qt/build-pruebaThreadQt-Desktop_Qt_5_12_2_GCC_64bit-Debug/pruebaThreadQt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Qt/build-pruebaThreadQt-Desktop_Qt_5_12_2_GCC_64bit-Debug/ui_mainwindow.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Qt/pruebaThreadQt/client.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Qt/pruebaThreadQt/client.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Qt/pruebaThreadQt/main.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Qt/pruebaThreadQt/mainwindow.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Qt/pruebaThreadQt/mainwindow.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Qt/pruebaThreadQt/mainwindow.ui" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Qt/pruebaThreadQt/pruebaThreadQt.pro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Qt/pruebaThreadQt/pruebaThreadQt.pro.user" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../build-Proyecto2-Desktop_Qt_5_12_2_GCC_64bit-Debug/.qmake.stash" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../build-Proyecto2-Desktop_Qt_5_12_2_GCC_64bit-Debug/Makefile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../build-Proyecto2-Desktop_Qt_5_12_2_GCC_64bit-Debug/Proyecto2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../build-Proyecto2-Desktop_Qt_5_12_2_GCC_64bit-Debug/moc_arrow.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../build-Proyecto2-Desktop_Qt_5_12_2_GCC_64bit-Debug/moc_button.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../build-Proyecto2-Desktop_Qt_5_12_2_GCC_64bit-Debug/moc_game.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../build-Proyecto2-Desktop_Qt_5_12_2_GCC_64bit-Debug/moc_gamethread.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../build-Proyecto2-Desktop_Qt_5_12_2_GCC_64bit-Debug/moc_mainmenu.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../build-Proyecto2-Desktop_Qt_5_12_2_GCC_64bit-Debug/moc_myplayer.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../build-Proyecto2-Desktop_Qt_5_12_2_GCC_64bit-Debug/moc_mythread.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../build-Proyecto2-Desktop_Qt_5_12_2_GCC_64bit-Debug/moc_predefs.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../build-Proyecto2-Desktop_Qt_5_12_2_GCC_64bit-Debug/moc_thread2.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../build-Proyecto2-Desktop_Qt_5_12_2_GCC_64bit-Debug/moc_tower.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../build-Proyecto2-Desktop_Qt_5_12_2_GCC_64bit-Debug/qrc_resources.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Client/.idea/Client.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Client/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Client/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Client/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Client/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Client/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Client/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Client/Client.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Client/Client.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Client/JSON.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Client/JSON.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Client/List.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Client/List_def.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Client/Node.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Client/Node_def.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Client/cmake-build-debug/CMakeCache.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Client/cmake-build-debug/CMakeFiles/3.13.2/CMakeCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Client/cmake-build-debug/CMakeFiles/3.13.2/CMakeCXXCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Client/cmake-build-debug/CMakeFiles/3.13.2/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Client/cmake-build-debug/CMakeFiles/3.13.2/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Client/cmake-build-debug/CMakeFiles/3.13.2/CMakeSystem.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Client/cmake-build-debug/CMakeFiles/3.13.2/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Client/cmake-build-debug/CMakeFiles/3.13.2/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Client/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Client/cmake-build-debug/CMakeFiles/CMakeError.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Client/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Client/cmake-build-debug/CMakeFiles/Client.dir/CXX.includecache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Client/cmake-build-debug/CMakeFiles/Client.dir/DependInfo.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Client/cmake-build-debug/CMakeFiles/Client.dir/build.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Client/cmake-build-debug/CMakeFiles/Client.dir/cmake_clean.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Client/cmake-build-debug/CMakeFiles/Client.dir/depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Client/cmake-build-debug/CMakeFiles/Client.dir/depend.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Client/cmake-build-debug/CMakeFiles/Client.dir/flags.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Client/cmake-build-debug/CMakeFiles/Client.dir/link.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Client/cmake-build-debug/CMakeFiles/Client.dir/progress.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Client/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Client/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Client/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Client/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Client/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Client/cmake-build-debug/CMakeFiles/cmake.check_cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Client/cmake-build-debug/CMakeFiles/feature_tests.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Client/cmake-build-debug/CMakeFiles/feature_tests.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Client/cmake-build-debug/CMakeFiles/feature_tests.cxx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Client/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Client/cmake-build-debug/Client" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Client/cmake-build-debug/Client.cbp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Client/cmake-build-debug/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Client/cmake-build-debug/cmake_install.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Client/include/rapidjson/allocators.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Client/include/rapidjson/cursorstreamwrapper.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Client/include/rapidjson/document.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Client/include/rapidjson/encodedstream.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Client/include/rapidjson/encodings.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Client/include/rapidjson/error/en.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Client/include/rapidjson/error/error.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Client/include/rapidjson/filereadstream.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Client/include/rapidjson/filewritestream.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Client/include/rapidjson/fwd.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Client/include/rapidjson/internal/biginteger.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Client/include/rapidjson/internal/diyfp.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Client/include/rapidjson/internal/dtoa.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Client/include/rapidjson/internal/ieee754.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Client/include/rapidjson/internal/itoa.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Client/include/rapidjson/internal/meta.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Client/include/rapidjson/internal/pow10.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Client/include/rapidjson/internal/regex.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Client/include/rapidjson/internal/stack.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Client/include/rapidjson/internal/strfunc.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Client/include/rapidjson/internal/strtod.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Client/include/rapidjson/internal/swap.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Client/include/rapidjson/istreamwrapper.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Client/include/rapidjson/memorybuffer.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Client/include/rapidjson/memorystream.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Client/include/rapidjson/msinttypes/inttypes.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Client/include/rapidjson/msinttypes/stdint.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Client/include/rapidjson/ostreamwrapper.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Client/include/rapidjson/pointer.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Client/include/rapidjson/prettywriter.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Client/include/rapidjson/rapidjson.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Client/include/rapidjson/reader.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Client/include/rapidjson/schema.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Client/include/rapidjson/stream.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Client/include/rapidjson/stringbuffer.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Client/include/rapidjson/writer.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Client/main.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Server/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Server/.idea/A*.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Server/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Server/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Server/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Server/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Server/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Server/Army.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Server/Army.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Server/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Server/Field.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Server/Field.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Server/Game.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Server/Game.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Server/GeneticEvolution.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Server/GeneticEvolution.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Server/Gladiator.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Server/Gladiator.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Server/JSON.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Server/JSON.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Server/List.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Server/List_def.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Server/Matrix.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Server/Matrix_def.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Server/Node.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Server/Node_def.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Server/Pathfinding.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Server/Pathfinding.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Server/Server.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Server/Server.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Server/cmake-build-debug/A_" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Server/cmake-build-debug/A_.cbp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Server/cmake-build-debug/CMakeCache.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Server/cmake-build-debug/CMakeFiles/3.13.2/CMakeCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Server/cmake-build-debug/CMakeFiles/3.13.2/CMakeCXXCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Server/cmake-build-debug/CMakeFiles/3.13.2/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Server/cmake-build-debug/CMakeFiles/3.13.2/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Server/cmake-build-debug/CMakeFiles/3.13.2/CMakeSystem.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Server/cmake-build-debug/CMakeFiles/3.13.2/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Server/cmake-build-debug/CMakeFiles/3.13.2/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Server/cmake-build-debug/CMakeFiles/A_.dir/CXX.includecache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Server/cmake-build-debug/CMakeFiles/A_.dir/DependInfo.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Server/cmake-build-debug/CMakeFiles/A_.dir/build.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Server/cmake-build-debug/CMakeFiles/A_.dir/cmake_clean.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Server/cmake-build-debug/CMakeFiles/A_.dir/depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Server/cmake-build-debug/CMakeFiles/A_.dir/depend.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Server/cmake-build-debug/CMakeFiles/A_.dir/flags.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Server/cmake-build-debug/CMakeFiles/A_.dir/link.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Server/cmake-build-debug/CMakeFiles/A_.dir/progress.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Server/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Server/cmake-build-debug/CMakeFiles/CMakeError.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Server/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Server/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Server/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Server/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Server/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Server/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Server/cmake-build-debug/CMakeFiles/cmake.check_cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Server/cmake-build-debug/CMakeFiles/feature_tests.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Server/cmake-build-debug/CMakeFiles/feature_tests.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Server/cmake-build-debug/CMakeFiles/feature_tests.cxx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Server/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Server/cmake-build-debug/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Server/cmake-build-debug/cmake_install.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Server/include/rapidjson/allocators.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Server/include/rapidjson/cursorstreamwrapper.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Server/include/rapidjson/document.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Server/include/rapidjson/encodedstream.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Server/include/rapidjson/encodings.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Server/include/rapidjson/error/en.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Server/include/rapidjson/error/error.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Server/include/rapidjson/filereadstream.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Server/include/rapidjson/filewritestream.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Server/include/rapidjson/fwd.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Server/include/rapidjson/internal/biginteger.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Server/include/rapidjson/internal/diyfp.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Server/include/rapidjson/internal/dtoa.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Server/include/rapidjson/internal/ieee754.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Server/include/rapidjson/internal/itoa.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Server/include/rapidjson/internal/meta.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Server/include/rapidjson/internal/pow10.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Server/include/rapidjson/internal/regex.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Server/include/rapidjson/internal/stack.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Server/include/rapidjson/internal/strfunc.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Server/include/rapidjson/internal/strtod.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Server/include/rapidjson/internal/swap.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Server/include/rapidjson/istreamwrapper.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Server/include/rapidjson/memorybuffer.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Server/include/rapidjson/memorystream.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Server/include/rapidjson/msinttypes/inttypes.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Server/include/rapidjson/msinttypes/stdint.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Server/include/rapidjson/ostreamwrapper.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Server/include/rapidjson/pointer.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Server/include/rapidjson/prettywriter.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Server/include/rapidjson/rapidjson.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Server/include/rapidjson/reader.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Server/include/rapidjson/schema.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Server/include/rapidjson/stream.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Server/include/rapidjson/stringbuffer.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Server/include/rapidjson/writer.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic/Server/main.cpp" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -281,8 +228,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="457">
-              <caret line="45" column="24" selection-start-line="7" selection-start-column="4" selection-end-line="45" selection-end-column="24" />
+            <state relative-caret-position="30">
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -409,7 +356,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Logic" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -451,16 +398,18 @@
       <workItem from="1556161761349" duration="688000" />
       <workItem from="1556471001301" duration="608000" />
       <workItem from="1556564519339" duration="610000" />
+      <workItem from="1556849027661" duration="597000" />
+      <workItem from="1556859166134" duration="604000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71138000" />
+    <option name="totallyTimeSpent" value="72339000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1366" height="743" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16515152" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16969697" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="0" weight="0.3289183" />
@@ -519,6 +468,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Gladiator.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -554,6 +513,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/GeneticEvolution.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="17" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/GeneticEvolution.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="495">
@@ -565,23 +531,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2415">
           <caret line="161" column="19" selection-start-line="161" selection-start-column="19" selection-end-line="161" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GeneticEvolution.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="17" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="457">
-          <caret line="45" column="24" selection-start-line="7" selection-start-column="4" selection-end-line="45" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>

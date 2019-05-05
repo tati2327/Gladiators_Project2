@@ -16,7 +16,7 @@ void JSON::jsonToDocument(string json) {
 
 string JSON::serializePlay(int id, int age, int survivalProb, int expectedGen, int emotionalIntelligent,
                            int uperStrenght, int lowerStrenght, int resistance, int physicalCondition,
-                           List<string> obstacles, List<Field> route) {
+                           List<string> obstacles, List<string> route) {
     document.RemoveAllMembers();
     Document::AllocatorType& allocator = document.GetAllocator();
     document.AddMember("request",3, allocator);
@@ -43,7 +43,7 @@ string JSON::serializePlay(int id, int age, int survivalProb, int expectedGen, i
 
     /*! Agrega la ruta al JSON*/
     for(int i = 0; i<route.size(); i++){
-        temp.SetString((to_string(route.getData(i).i)+to_string(route.getData(i).j)).c_str(),2,allocator);
+        temp.SetString((route.getData(i)).c_str(),2,allocator);
         myRoute.PushBack(temp, allocator);
     }
 
