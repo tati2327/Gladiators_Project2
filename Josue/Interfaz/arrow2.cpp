@@ -14,7 +14,7 @@ Arrow2::Arrow2(QGraphicsItem *parent)
 
   QTimer *move_timer = new QTimer(this);
   connect(move_timer,SIGNAL(timeout()),this,SLOT(move()));
-  move_timer->start(30);
+  move_timer->start(20);
 }
 
 void Arrow2::move(){
@@ -35,7 +35,7 @@ void Arrow2::move(){
               p->setFocus();
               g->cont=0;
               g->timer->stop();
-              g->timer->start(1000);
+              g->timer->start(2000);
             }
           delete this;
           return;

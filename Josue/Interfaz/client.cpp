@@ -21,7 +21,7 @@ extern int jtime;
 Client::Client() {
     newGame = false;
     port = 54000;
-    ipAddress = "192.168.1.4";
+    ipAddress = "192.168.43.209";
 }
 
 void Client::newClient() {
