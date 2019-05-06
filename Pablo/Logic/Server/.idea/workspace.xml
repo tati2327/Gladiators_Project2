@@ -11,76 +11,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="082d0237-4446-4e33-9213-d5c639620077" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../A*/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A*/.idea/A*.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A*/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A*/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A*/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A*/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A*/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A*/Army.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A*/Army.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A*/CMakeLists.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A*/ExplosiveArrow.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A*/ExplosiveArrow.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A*/Field.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A*/Field.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A*/FireArrow.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A*/FireArrow.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A*/Game.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A*/Game.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A*/GeneticEvolution.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A*/GeneticEvolution.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A*/Gladiator.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A*/Gladiator.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A*/List.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A*/List_def.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A*/Matrix.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A*/Matrix_def.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A*/Node.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A*/Node_def.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A*/Pathfinding.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A*/Pathfinding.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A*/SingleArrow.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A*/SingleArrow.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A*/Tower.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A*/Tower.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A*/cmake-build-debug/A_" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A*/cmake-build-debug/A_.cbp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A*/cmake-build-debug/CMakeCache.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A*/cmake-build-debug/CMakeFiles/3.13.2/CMakeCCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A*/cmake-build-debug/CMakeFiles/3.13.2/CMakeCXXCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A*/cmake-build-debug/CMakeFiles/3.13.2/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A*/cmake-build-debug/CMakeFiles/3.13.2/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A*/cmake-build-debug/CMakeFiles/3.13.2/CMakeSystem.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A*/cmake-build-debug/CMakeFiles/3.13.2/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A*/cmake-build-debug/CMakeFiles/3.13.2/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A*/cmake-build-debug/CMakeFiles/A_.dir/CXX.includecache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A*/cmake-build-debug/CMakeFiles/A_.dir/DependInfo.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A*/cmake-build-debug/CMakeFiles/A_.dir/build.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A*/cmake-build-debug/CMakeFiles/A_.dir/cmake_clean.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A*/cmake-build-debug/CMakeFiles/A_.dir/depend.internal" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A*/cmake-build-debug/CMakeFiles/A_.dir/depend.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A*/cmake-build-debug/CMakeFiles/A_.dir/flags.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A*/cmake-build-debug/CMakeFiles/A_.dir/link.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A*/cmake-build-debug/CMakeFiles/A_.dir/progress.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A*/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A*/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A*/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A*/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A*/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A*/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A*/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A*/cmake-build-debug/CMakeFiles/cmake.check_cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A*/cmake-build-debug/CMakeFiles/feature_tests.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A*/cmake-build-debug/CMakeFiles/feature_tests.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A*/cmake-build-debug/CMakeFiles/feature_tests.cxx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A*/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A*/cmake-build-debug/Makefile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A*/cmake-build-debug/cmake_install.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A*/main.cpp" beforeDir="false" />
-    </list>
+    <list default="true" id="082d0237-4446-4e33-9213-d5c639620077" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -92,85 +23,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Pathfinding.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Server.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="423">
-              <caret line="119" column="4" lean-forward="true" selection-start-line="119" selection-start-column="4" selection-end-line="119" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Game.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="572">
-              <caret line="26" selection-start-line="26" selection-end-line="26" />
-              <folding>
-                <element signature="e#35#54#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Game.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="990">
-              <caret line="45" column="27" selection-start-line="45" selection-start-column="27" selection-end-line="45" selection-end-column="27" />
-              <folding>
-                <element signature="e#0#17#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/GeneticEvolution.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="550">
-              <caret line="34" selection-start-line="34" selection-end-line="34" />
-              <folding>
-                <element signature="e#117#134#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/JSON.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="20" column="64" selection-start-line="20" selection-start-column="64" selection-end-line="20" selection-end-column="64" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/JSON.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="639">
-              <caret line="48" selection-start-line="48" selection-end-line="48" />
-              <folding>
-                <element signature="e#0#17#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+            <state relative-caret-position="157">
+              <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -178,11 +34,44 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/GeneticEvolution.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="143" column="41" lean-forward="true" selection-start-line="143" selection-start-column="41" selection-end-line="143" selection-end-column="41" />
+            <state relative-caret-position="44">
+              <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+              <folding>
+                <element signature="e#31#243#0" />
+                <element signature="e#367#1801#0" />
+                <element signature="e#1938#2000#0" />
+                <element signature="e#3612#4250#0" />
+                <element signature="e#4252#4415#0" />
+                <element signature="e#4859#8620#0" />
+                <element signature="e#5919#6180#0" />
+                <element signature="e#6182#6953#0" />
+                <element signature="e#9109#9793#0" />
+                <element signature="e#7599#8075#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Army.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="513">
+              <caret line="100" column="33" selection-start-line="100" selection-start-column="33" selection-end-line="100" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/GeneticEvolution.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="396">
+              <caret line="18" column="91" lean-forward="true" selection-start-line="18" selection-start-column="91" selection-end-line="18" selection-end-column="91" />
+              <folding>
+                <element signature="e#117#134#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -209,7 +98,6 @@
         <option value="$PROJECT_DIR$/Node_def.h" />
         <option value="$PROJECT_DIR$/Matrix.h" />
         <option value="$PROJECT_DIR$/Matrix_def.h" />
-        <option value="$PROJECT_DIR$/Army.cpp" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/include/rapidjson/document.h" />
         <option value="$PROJECT_DIR$/Army.h" />
@@ -223,10 +111,11 @@
         <option value="$PROJECT_DIR$/Pathfinding.h" />
         <option value="$PROJECT_DIR$/Game.h" />
         <option value="$PROJECT_DIR$/Pathfinding.cpp" />
-        <option value="$PROJECT_DIR$/GeneticEvolution.h" />
         <option value="$PROJECT_DIR$/Game.cpp" />
         <option value="$PROJECT_DIR$/main.cpp" />
+        <option value="$PROJECT_DIR$/Army.cpp" />
         <option value="$PROJECT_DIR$/GeneticEvolution.cpp" />
+        <option value="$PROJECT_DIR$/GeneticEvolution.h" />
       </list>
     </option>
   </component>
@@ -317,12 +206,12 @@
       <workItem from="1556863639624" duration="1164000" />
       <workItem from="1556864936165" duration="1110000" />
       <workItem from="1557031910174" duration="4741000" />
-      <workItem from="1557089845027" duration="5415000" />
+      <workItem from="1557089845027" duration="15235000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="85944000" />
+    <option name="totallyTimeSpent" value="95764000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
@@ -332,9 +221,9 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32899022" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.33554083" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.048859935" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3289183" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.9580574" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.56401765" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -461,22 +350,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gladiator.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1500">
-          <caret line="100" selection-start-line="100" selection-end-line="100" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Army.h">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Army.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Field.h">
       <provider selected="true" editor-type-id="text-editor">
@@ -536,23 +411,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GeneticEvolution.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
-          <folding>
-            <element signature="e#117#134#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gladiator.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Pathfinding.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -577,10 +435,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Gladiator.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="100" selection-start-line="100" selection-end-line="100" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gladiator.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Army.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="100" column="33" selection-start-line="100" selection-start-column="33" selection-end-line="100" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+        <state relative-caret-position="157">
+          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
@@ -589,8 +468,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/GeneticEvolution.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="143" column="41" lean-forward="true" selection-start-line="143" selection-start-column="41" selection-end-line="143" selection-end-column="41" />
+        <state relative-caret-position="44">
+          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+          <folding>
+            <element signature="e#31#243#0" />
+            <element signature="e#367#1801#0" />
+            <element signature="e#1938#2000#0" />
+            <element signature="e#3612#4250#0" />
+            <element signature="e#4252#4415#0" />
+            <element signature="e#4859#8620#0" />
+            <element signature="e#5919#6180#0" />
+            <element signature="e#6182#6953#0" />
+            <element signature="e#9109#9793#0" />
+            <element signature="e#7599#8075#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GeneticEvolution.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="18" column="91" lean-forward="true" selection-start-line="18" selection-start-column="91" selection-end-line="18" selection-end-column="91" />
+          <folding>
+            <element signature="e#117#134#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
