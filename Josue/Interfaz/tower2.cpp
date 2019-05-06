@@ -7,12 +7,6 @@ extern Game * g;
 Tower2::Tower2()
 {
   setPixmap(QPixmap(":/images/TorreFuego.png"));
-  srand(time(NULL));
-  int randwidth = rand()%10;
-  int randheight = rand()%10;
-  int posx=randwidth*66.5+72;
-  int posy=randheight*64+29;
-  setPos(posx,posy);
   QVector<QPoint> points;
   points << QPoint(-3,-2) << QPoint(-3,3) << QPoint(4,3) << QPoint(4,- 2);
 

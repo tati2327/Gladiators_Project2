@@ -12,9 +12,12 @@ extern int jupper;
 extern int jexpec;
 extern int jsurv;
 extern int jphys;
-extern List<char> *obs;
+extern string obs1;
 extern List<char> *movs;
-
+extern bool status;
+extern bool poner;
+extern string rute;
+extern int jtime;
 Client::Client() {
     newGame = false;
     port = 54000;
@@ -55,15 +58,20 @@ void Client::manageServer() {
             newGame = true;
             messageToSend = myJsonToSend.serializeNewPlay();
         } else {
-            messageToSend = myJsonToSend.serializeNextIteration();
+            messageToSend=myJsonToSend.serializeNextIteration();
         }
-
+        int sendRes=-1;
         /*! Enviar mensaje al servidor*/
-        int sendRes = static_cast<int>(send(sockClient, messageToSend.c_str(), strlen(messageToSend.c_str()), 0));
+        if (status){
+            sendRes= static_cast<int>(send(sockClient, messageToSend.c_str(), strlen(messageToSend.c_str()), 0));
+            cout<<sendRes<<endl;
+            status=false;
+          }
         if (sendRes == -1){
-            cout << "No se pudo mandar mensaje al servidor!!"<<endl;
+            //cout << "No se pudo mandar mensaje al servidor!!"<<endl;
             continue;
         }
+
 
         /*! Espera una respuesta...*/
         memset(buf, 0, 4096);
@@ -75,23 +83,22 @@ void Client::manageServer() {
             JSON myJson; /*!< Instancia del Json para mandar mensajes*/
             /*! Se lee la respuesta del servidor*/
             messageReived = string(buf, static_cast<unsigned long>(bytesReceived));
+
             cout<<"SERVER: "<<messageReived << endl;
             sleep(1);
             myJson.jsonToDocument(messageReived);
             id = myJson.getId();
             resis= myJson.getResistance();
             jage = myJson.getAge();
-            //movs = myJson.getRoute();
-            //myJson.getObstacles();
+            obs1= myJson.obs1();
             jexpec = myJson.getExpectedGen();
             jsurv = myJson.getSurvivalProb();
             jupper = myJson.getUperStrenght();
             jlower = myJson.getLowerStrenght();
             jphys = myJson.getPhysicalCondition();
-
-            //cout<<"aaaaaaaaaaaaaaaaaaaahhhhhhhhhhhhhhhhhhhhh"<<g->cont;
-            //g->ID->set(myJson.getId(),920,223,20);
-
+            //myJson.getRoute();
+            rute = myJson.rute();
+            poner=true;
 
             /*! Atraves de myJson.get...() se obtienen los datos del gladeador, los obstaculos y la ruta
              * Despues se usan esos datos para colocarlos enn a pantalla, darle la ruta al gladiador y si

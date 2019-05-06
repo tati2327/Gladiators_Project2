@@ -7,19 +7,11 @@
 #include "arrow.h"
 #include "game.h"
 #include "myplayer.h"
-
 extern Game * g;
-
 Tower::Tower(QGraphicsItem *parent):QObject(), QGraphicsPixmapItem (){
    setPixmap(QPixmap(":/images/TorreSimple.png"));
-   srand(time(NULL));
-   int randwidth = rand()%10;
-   int randheight = rand()%10;
-   int posx=randwidth*66.5+72;
-   int posy=randheight*64+29;
-   setPos(posx,posy);
-   //setRect(0,0,30,30);
 
+   //setRect(0,0,30,30);
    QVector<QPoint> points;
    points << QPoint(-1,-1) << QPoint(-1,2) << QPoint(3,2) << QPoint(3,- 1);
 

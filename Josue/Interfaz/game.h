@@ -7,9 +7,9 @@
 #include "myplayer.h"
 #include <QObject>
 #include <QWidget>
-
 #include "stadistics.h"
 #include<QKeyEvent>
+
 class Game:public QGraphicsView
 {
   Q_OBJECT
@@ -21,6 +21,8 @@ public:
   Stadistics *life_points;
   Stadistics* ID, *age, *survival_prob, *expected_gen, *emotional_intelligence,*upper_stregth,*lower_stregth,*resistance,*physical_condition,*time_in;
   QTimer *timer;
+
+  void putTowers();
   int cont=0;
   void displayMenu();
   void endgame();

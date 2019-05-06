@@ -23,6 +23,8 @@ class JSON {
         int getRequest();
         List<string> getObstacles();
         List<string> getRoute();
+        string obs1();
+        string rute();
         int getId();
         int getAge();
         int getSurvivalProb();

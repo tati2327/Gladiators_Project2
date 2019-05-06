@@ -7,18 +7,23 @@
 #include "client.h"
 #include "json.h"
 #include "list.h"
+#include "string.h"
 using namespace std;
 Game *g;
 int id;
 int resis;
-int jage;
 int jlower;
 int jupper;
+int jage;
 int jexpec;
 int jsurv;
 int jphys;
-List<char> *obs;
+string obs1;
+string rute;
 List<char> *movs;
+bool poner=false;
+bool status=true;
+int jtime;
 
 int juego(int argc, char *argv[]){
   QApplication a(argc,argv);

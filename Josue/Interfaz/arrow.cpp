@@ -7,6 +7,7 @@
 #include "game.h"
 #include <QGraphicsScene>
 extern  Game* g;
+extern bool status;
 Arrow::Arrow(QGraphicsItem *parent)
 {
   setPixmap(QPixmap(":images/SimpleArrow.png"));
@@ -25,10 +26,10 @@ void Arrow::move(){
           scene()->removeItem(this);
           if (g->player->life_points<=0){
               delete g->player;
+              status=true;
               MyPlayer *p = new MyPlayer();
               g->player = p;
               g->scene->addItem(p);
-              g->life_points->setPlainText(QString::number(g->player->life_points));
               p->setPos(71,32);
               p->setFlag(QGraphicsItem::ItemIsFocusable);
               p->setFocus();

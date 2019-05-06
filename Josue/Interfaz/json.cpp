@@ -6,7 +6,6 @@ using namespace rapidjson;
 using namespace std;
 
 Document document(kObjectType);
-
 JSON::JSON() = default;
 
 void JSON::jsonToDocument(string json) {
@@ -40,9 +39,9 @@ string JSON::serializeNextIteration() {
     Writer<StringBuffer> writer(strbuf);
     document.Accept(writer);
 
-    cout<<"***********************************************************"<<endl;
-    std::cout <<strbuf.GetString()<< std::endl;
-    cout<<"***********************************************************"<<endl;
+   // cout<<"***********************************************************"<<endl;
+    //std::cout <<strbuf.GetString()<< std::endl;
+   // cout<<"***********************************************************"<<endl;
     return strbuf.GetString();
 }
 
@@ -55,18 +54,41 @@ List<string> JSON::getObstacles() {
     Value temp = document["obstacles"].GetArray();
     for(int i = 0; i < temp.Size(); i++){
         obstacles.add(temp[i].GetString());
+        cout<<temp[i].GetString();
     }
     return obstacles;
 }
 
 List<string> JSON::getRoute() {
     List<string> rute;
-    Value temp = document["rute"].GetArray();
+    Value temp = document["route"].GetArray();
     for(int i = 0; i < temp.Size(); i++){
         rute.add(temp[i].GetString());
     }
     return rute;
 }
+
+string JSON::obs1()
+{
+  Value temp = document["obstacles"].GetArray();
+  string a=temp[0].GetString();
+  string b=temp[1].GetString();
+  string c=temp[2].GetString();
+  string d=a+b+c;
+  return d;
+}
+
+string JSON::rute()
+{
+    Value temp = document["route"].GetArray();
+    string a = "";
+    for(int i = 0; i < temp.Size(); i++){
+        a=a+temp[i].GetString();
+    }
+    return a;
+}
+
+
 
 int JSON::getId() {
     return document["id"].GetInt();

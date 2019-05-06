@@ -9,6 +9,7 @@
 #include <arrow.h>
 #include <stdlib.h>
 #include <iostream>
+#include "string.h"
 using namespace std;
 extern int id;
 extern int resis;
@@ -18,6 +19,10 @@ extern int jupper;
 extern int jexpec;
 extern int jsurv;
 extern int jphys;
+extern bool status;
+extern string obs1;
+extern string rute;
+extern bool poner;
 Game::Game()
 {
   scene=new QGraphicsScene();
@@ -32,6 +37,72 @@ Game::Game()
 
   view->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
   view->setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
+
+}
+
+void Game::putTowers()
+{
+  int t1x = int(obs1[0])-48;
+  int t1y = int(obs1[1])-48;
+  int t2x = int(obs1[2])-48;
+  int t2y = int(obs1[3])-48;
+  int t3x = int(obs1[4])-48;
+  int t3y = int(obs1[5])-48;
+  srand(time(NULL));
+  int t1 =(rand()%3)+0;
+  int t2 =(rand()%3)+0;
+  int t3 =(rand()%3)+0;
+    if (t1==0){
+        Tower * tower = new Tower();
+        tower->setPos(t1x*66.5+72,t1y*64+29);
+        scene->addItem(tower);
+
+      }
+    if (t1==1){
+        Tower2 * tower = new Tower2();
+
+        tower->setPos(t1x*66.5+72,t1y*64+29);
+        scene->addItem(tower);
+      }
+    if (t1==2){
+        Tower3 * tower = new Tower3();
+
+        tower->setPos(t1x*66.5+72,t1y*64+29);
+        scene->addItem(tower);
+
+      }
+    if (t2==0){
+
+        Tower * tower = new Tower();
+        scene->addItem(tower);
+        tower->setPos(t2x*66.5+72,t2y*64+29);
+      }
+    if (t2==1){
+        Tower2 * tower = new Tower2();
+        scene->addItem(tower);
+        tower->setPos(t2x*66.5+72,t2y*64+29);
+      }
+    if (t2==2){
+        Tower3 * tower = new Tower3();
+        scene->addItem(tower);
+        tower->setPos(t2x*66.5+72,t2y*64+29);
+      }
+    if (t3==0){
+        Tower * tower = new Tower();
+        scene->addItem(tower);
+        tower->setPos(t3x*66.5+72,t3y*64+29);
+      }
+    if (t3==1){
+        Tower2 * tower = new Tower2();
+        scene->addItem(tower);
+        tower->setPos(t3x*66.5+72,t3y*64+29);
+      }
+    if (t3==2){
+        Tower3 * tower = new Tower3();
+        scene->addItem(tower);
+        tower->setPos(t3x*66.5+72,t3y*64+29);
+      }
+
 
 }
 
@@ -138,46 +209,58 @@ void Game::start()
   timer->start(1000);
 
 
+
+
 }
 
 void Game::close()
 {
   view->close();
 }
-
+int cont=0;
 void Game::spawn()
 {
-  ID->setPlainText(QString(QString::number(id)));
-  player->life_points=resis;
-  resistance->setPlainText(QString(QString::number(resis)));
-  life_points->setPlainText(QString(QString::number(resis)));
-  age->setPlainText(QString(QString::number(jage)));
-  upper_stregth->setPlainText(QString(QString::number(jupper)));
-  lower_stregth->setPlainText(QString(QString::number(jlower)));
-  physical_condition->setPlainText(QString(QString::number(jphys)));
-  expected_gen->setPlainText(QString(QString::number(jexpec)));
-  survival_prob->setPlainText(QString(QString::number(jsurv)));
-  if (cont>=3){
-      timer->stop();
-      return;
+  if (cont<rute.size()){
+      player->setPos((int(rute[cont])-48)*66.5+72,(int(rute[cont+1])-48)*64+29);
+      cont=cont+2;
     }
-  srand(time(NULL));
-  int t = (rand()%3)+0;
-  if (t==0){
-      Tower * tower = new Tower();
-      scene->addItem(tower);
-      cont++;
+
+    if (poner){
+      ID->setPlainText(QString(QString::number(id)));
+      player->life_points=resis;
+      resistance->setPlainText(QString(QString::number(resis)));
+      life_points->setPlainText(QString(QString::number(resis)));
+      age->setPlainText(QString(QString::number(jage)));
+      upper_stregth->setPlainText(QString(QString::number(jupper)));
+      lower_stregth->setPlainText(QString(QString::number(jlower)));
+      physical_condition->setPlainText(QString(QString::number(jphys)));
+      expected_gen->setPlainText(QString(QString::number(jexpec)));
+      survival_prob->setPlainText(QString(QString::number(jsurv)));
+      putTowers();
+      poner=false;
     }
-  if (t==1){
-      Tower2 * tower = new Tower2();
-      scene->addItem(tower);
-      cont++;
-    }
-  if (t==2){
-      Tower3 * tower = new Tower3();
-      scene->addItem(tower);
-      cont++;
-    }
+
+//  if (cont>=3){
+//      timer->stop();
+//      return;
+//    }
+//  srand(time(NULL));
+//  int t = (rand()%3)+0;
+//  if (t==0){
+//      Tower * tower = new Tower();
+//      scene->addItem(tower);
+//      cont++;
+//    }
+//  if (t==1){
+//      Tower2 * tower = new Tower2();
+//      scene->addItem(tower);
+//      cont++;
+//    }
+//  if (t==2){
+//      Tower3 * tower = new Tower3();
+//      scene->addItem(tower);
+//      cont++;
+//    }
 
 
 }
