@@ -1,4 +1,4 @@
-/home/josu/Documents/clion-2018.3.4/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/josu/Desktop/Logic/Server
+/home/josu/Documents/clion-2018.3.4/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/josu/Documents/Github/Proyecto2/Josue/Logic/Server
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/josu/Desktop/Logic/Server/cmake-build-debug
+-- Build files have been written to: /home/josu/Documents/Github/Proyecto2/Josue/Logic/Server/cmake-build-debug
