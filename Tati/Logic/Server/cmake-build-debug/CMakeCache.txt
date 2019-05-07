@@ -223,6 +223,12 @@ ProcessorCount_cmd_getconf:FILEPATH=/usr/bin/getconf
 //Path to a program.
 ProcessorCount_cmd_sysctl:FILEPATH=/sbin/sysctl
 
+//Value Computed by CMake
+Server_BINARY_DIR:STATIC=/home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Server/cmake-build-debug
+
+//Value Computed by CMake
+Server_SOURCE_DIR:STATIC=/home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Server
+
 
 ########################
 # INTERNAL cache entries

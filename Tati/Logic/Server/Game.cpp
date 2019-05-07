@@ -13,7 +13,7 @@ Game::Game() {
 
 string Game::newGame() {
     /*! Algoritmo genetico*/
-    gE.generationCount = +1;
+    gE.generationCount+=1;
     army.createArmy(army.armySize);
     army.insertionSort(army.gladiators);
     army.printArray(army.gladiators, army.armySize);
@@ -55,13 +55,13 @@ string Game::newGame() {
 }
 
 string Game::play() {
-    gE.crossover(army,19,18,0);
-    gE.crossover(army,19,17,1);
-    gE.crossover(army,19,16,2);
-    gE.crossover(army,18,17,3);
-    gE.crossover(army,18,16,4);
+    gE.crossover(army,19,18);
+    gE.crossover(army,19,17);
+    gE.crossover(army,19,16);
+    gE.crossover(army,18,17);
+    gE.crossover(army,18,16);
 
-    gE.generationCount=+1;
+    gE.generationCount+=1;
     myGladiator = army.getFittest();
 
     /*! Agregar nuevos obstaculos en el tablero*/

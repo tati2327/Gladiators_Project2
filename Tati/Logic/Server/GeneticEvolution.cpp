@@ -2,104 +2,144 @@
 
 GeneticEvolution::GeneticEvolution() {
     this->generationCount = 0;
-    this->crossingmask1 = "0111001011";
-    this->crossingmask2 = "1010101010";
-    this->crossingmask3 = "101011110";
-
-}
-void GeneticEvolution::applyEvolution() {
-    /*! Primero seleccionamos los 6 con el fitness mas alto y los cruzamos*/
+    this->crossingMask1 = "0111001011";
+    this->crossingMask2 = "1010101010";
+    this->crossingMask3 = "101011110";
+    this->lastId=20;
 
 }
 
-void GeneticEvolution::mutation(Gladiator gladiator) {
+void GeneticEvolution::mutation(Gladiator &gladiator) {
     int randomMutation = rand() % 4;
 
     if(randomMutation==0) {
+        cout<<"upper strenght"<<endl;
         int value = gladiator.getUpperTrunckStrenght();
-        int data = changeValue(value);
-        gladiator.setUpperTrunckStrenght(data);
+        cout<<"En la mutacion el int final es: "<<value<<endl;
+        string data=convertToString(value,1);
+        int newValue= mutateChromosome(data, 1);
+        gladiator.setUpperTrunckStrenght(newValue);
         cout<<"Se muto UTS"<<endl;
     }
     if(randomMutation==1) {
-        int value1=gladiator.getLowerTrunckStrenght();
-        int data=changeValue(value1);
-        gladiator.setLowerTrunckStrenght(data);
+        cout<<"lower strenght"<<endl;
+        int value = gladiator.getLowerTrunckStrenght();
+        cout<<"En la mutacion el int final es: "<<value<<endl;
+        string data=convertToString(value,1);
+        int newValue= mutateChromosome(data, 1);
+        gladiator.setLowerTrunckStrenght(newValue);
         cout<<"Se muto LTS"<<endl;
     }
     if(randomMutation==2) {
-        int value2=gladiator.getAnger();
-        int data=changeValue(value2);
-        gladiator.setAnger(data);
+        cout<<"anger"<<endl;
+        int value = gladiator.getAnger();
+        cout<<"En la mutacion el int final es: "<<value<<endl;
+        string data=convertToString(value,2);
+        int newValue= mutateChromosome(data, 2);
+        gladiator.setAnger(newValue);
         cout<<"Se muto Anger"<<endl;
     }
     if(randomMutation==3) {
-        int value5=gladiator.getSelfControl();
-        int data=changeValue(value5);
-        gladiator.setSelfcontrol(data);
+        cout<<"self control"<<endl;
+        int value = gladiator.getSelfControl();
+        cout<<"En la mutacion el int final es: "<<value<<endl;
+        string data=convertToString(value,2);
+        int newValue= mutateChromosome(data, 2);
+        gladiator.setSelfcontrol(newValue);
         cout<<"Se muto SC"<<endl;
     }
     if(randomMutation==4) {
-        int value6=gladiator.getPhysicalCondition();
-        int data=changeValue(value6);
-        gladiator.setPhysicalCondition(data);
+        cout<<"physical condi"<<endl;
+        int value = gladiator.getPhysicalCondition();
+        cout<<"En la mutacion el int final es: "<<value<<endl;
+        string data=convertToString(value,1);
+        int newValue= mutateChromosome(data, 1);
+        gladiator.setPhysicalCondition(newValue);
         cout<<"Se muto PC"<<endl;
     }
 }
 
-int GeneticEvolution::changeValue(int value) {
-    if(value==0) return 1;
-    else if(value==1) return 0;
-    else if (value>=16) return value;
+void GeneticEvolution::invertion(Gladiator &gladiator) {
+    int randomMutation = rand() % 4;
+    if(randomMutation==0) {
+        cout<<"upper strenght"<<endl;
+        string data=convertToString(gladiator.getUpperTrunckStrenght(),1);
+        int newValue= invertGene(data, 1);
+        gladiator.setUpperTrunckStrenght(newValue);
+        cout<<"Se muto UTS"<<endl;
+    }
 
-    long long binary=decimalToBinary(value);
-    string binary_str = to_string(binary);
+    if(randomMutation==1) {
+        cout<<"lower strenght"<<endl;
+        string data=convertToString(gladiator.getLowerTrunckStrenght(),1);
+        int newValue= invertGene(data, 1);
+        gladiator.setLowerTrunckStrenght(newValue);
+        cout<<"Se muto LTS"<<endl;
+    }
+    if(randomMutation==2) {
+        cout<<"el valor del anger: "<<gladiator.getAnger()<<endl;
+        string data=convertToString(gladiator.getAnger(),2);
+        int newValue= invertGene(data, 2);
+        gladiator.setAnger(newValue);
+        cout<<"Se muto Anger"<<endl;
+    }
+    if(randomMutation==3) {
+        cout<<"el valor del selfControl: "<<gladiator.getSelfControl()<<endl;
+        string data=convertToString(gladiator.getSelfControl(),2);
+        int newValue= invertGene(data, 2);
+        gladiator.setSelfcontrol(newValue);
+        cout<<"Se muto SC"<<endl;
+    }
+    if(randomMutation==4) {
+        cout<<"Physical condi"<<endl;
+        string data=convertToString(gladiator.getPhysicalCondition(),1);
+        int newValue= invertGene(data, 1);
+        gladiator.setPhysicalCondition(newValue);
+        cout<<"Se muto PC"<<endl;
+    }
+}
 
-    int size= binary_str.length();
-    size=size-1;
-
-    int random= rand() % size;
-    if ("0" == string(1, binary_str[random])) {
-        binary_str=binary_str.erase(random,1);
-        binary_str=binary_str.insert(random,"1");
+int GeneticEvolution::mutateChromosome(string value, int type) {
+    int random;
+    if(type==1){
+        random=rand()% 9;
     }else{
-        binary_str=binary_str.erase(random,1);
-        binary_str=binary_str.insert(random,"0");
+        random=rand()% 4;
     }
-
-    binary= atol(binary_str.c_str());
-    int decimal_value= binaryToDecimal(binary);
-    return decimal_value;
+    cout<<"En la mutacion el string inicial es: "<<value<<endl;
+    if ("0" == string(1, value[random])) {
+        value=value.erase(random,1);
+        value=value.insert(random,"1");
+    }else{
+        value=value.erase(random,1);
+        value=value.insert(random,"0");
+    }
+    cout<<"En la mutacion el string final es: "<<value<<endl;
+    int newValue=convertToDecimal(value,type);
+    cout<<"En la mutacion el int final es: "<<newValue<<endl;
+    return newValue;
 }
 
-long long GeneticEvolution::decimalToBinary(int n){
-    long long binaryNumber = 0;
-    int remainder, i = 1, step = 1;
-
-    while (n!=0){
-        remainder = n%2;
-        n /= 2;
-        binaryNumber += remainder*i;
-        i *= 10;
+int GeneticEvolution::invertGene(string value, int type) {
+    int size;
+    if (type==1)size=9;
+    else size=4;
+    cout<<"El string inicial en la inversion es: "<<value<<endl;
+    for(int i=0;i<=size;i++){
+        if ("0" == string(1, value[i])) {
+            value=value.erase(i,1);
+            value=value.insert(i,"1");
+        }else{
+            value=value.erase(i,1);
+            value=value.insert(i,"0");
+        }
     }
-    return binaryNumber;
+    cout<<"El string final en la inversion es: "<<value<<endl;
+    int newValue=convertToDecimal(value,type);
+    return newValue;
 }
 
-int GeneticEvolution:: binaryToDecimal(long long n){
-    if(n==0) return 0;
-    if(n==1) return 1;
-
-    int decimalNumber = 0, i = 0, remainder;
-    while (n!=0){
-        remainder = n%10;
-        n /= 10;
-        decimalNumber += remainder*pow(2,i);
-        ++i;
-    }
-    return decimalNumber;
-}
-
-void GeneticEvolution::crossover(Army army,int index1, int index2, int idCount) {
+void GeneticEvolution::crossover(Army army,int index1, int index2) {
     Gladiator son;
     Gladiator parent1=army.gladiators.getNode(index1)->getValue();
     Gladiator parent2=army.gladiators.getNode(index2)->getValue();
@@ -112,7 +152,7 @@ void GeneticEvolution::crossover(Army army,int index1, int index2, int idCount) 
             int trait2=parent2.getUpperTrunckStrenght();
             string stringTrait2=convertToString(trait2,1);
             string sonGene="0000000000";
-            son.setUpperTrunckStrenght(makeExchange(stringTrait1, stringTrait2, sonGene));
+            son.setUpperTrunckStrenght(makeExchange(stringTrait1, stringTrait2, sonGene,1));
 
         }else if (i == 2) {
             int trait1= parent1.getLowerTrunckStrenght();
@@ -120,24 +160,28 @@ void GeneticEvolution::crossover(Army army,int index1, int index2, int idCount) 
             int trait2=parent2.getLowerTrunckStrenght();
             string stringTrait2=convertToString(trait2,1);
             string sonGene="0000000000";
-            son.setLowerTrunckStrenght(makeExchange(stringTrait1, stringTrait2, sonGene));
+            son.setLowerTrunckStrenght(makeExchange(stringTrait1, stringTrait2, sonGene,1));
 
 
         }else if (i == 3) {
             int trait1= parent1.getAnger();
+            cout<<"parent1 del Anger"<<trait1<<endl;
             string stringTrait1=convertToString(trait1,2);
             int trait2=parent2.getAnger();
+            cout<<"parent2 del Anger"<<trait2<<endl;
             string stringTrait2=convertToString(trait2,2);
             string sonGene="00000";
-            son.setAnger(makeExchange(stringTrait1, stringTrait2, sonGene));
+            son.setAnger(makeExchange(stringTrait1, stringTrait2, sonGene,2));
 
         }else if (i == 4) {
             int trait1= parent1.getSelfControl();
+            cout<<"parent1 del self"<<trait1<<endl;
             string stringTrait1=convertToString(trait1,2);
             int trait2=parent2.getSelfControl();
+            cout<<"parent2 del self"<<trait2<<endl;
             string stringTrait2=convertToString(trait2,2);
             string sonGene="00000";
-            son.setAnger(makeExchange(stringTrait1, stringTrait2, sonGene));
+            son.setAnger(makeExchange(stringTrait1, stringTrait2, sonGene,2));
 
 
         }else if (i == 5) {
@@ -146,34 +190,46 @@ void GeneticEvolution::crossover(Army army,int index1, int index2, int idCount) 
             int trait2=parent2.getPhysicalCondition();
             string stringTrait2=convertToString(trait2,1);
             string sonGene="0000000000";
-            son.setPhysicalCondition(makeExchange(stringTrait1, stringTrait2, sonGene));
+            son.setPhysicalCondition(makeExchange(stringTrait1, stringTrait2, sonGene,1));
         }
     }
 
     /*! Se asignan a son1, son2, son3 los atributos que son de "calcular" y los que no se heredan de sus padres.*/
-    son.setId(20 + generationCount+idCount);
+    son.setId(lastId+1);
     son.setEmotionalInt(son.calculateEmotionalInt());
     son.setResistance(son.calculateResistance());
-
+    lastId=son.getId();
+    /*!En base a un 5% de probabilidad se realiza la mutacion y con un 3% de probabilidad se realiza la inversion */
     int randomMutation = rand() % 100 + 1;
-    if (randomMutation < 5) {
+    if (randomMutation < 6){
         mutation(son);
-        son.setEmotionalInt(son.calculateEmotionalInt());
-        son.setResistance(son.calculateResistance());
-        cout <<"Se aplico mutacion en 5 a la generacion "<<generationCount<< endl;
+        if (randomMutation <4) {
+            invertion(son);
+            son.setEmotionalInt(son.calculateEmotionalInt());
+            son.setResistance(son.calculateResistance());
+        }else{
+            son.setEmotionalInt(son.calculateEmotionalInt());
+            son.setResistance(son.calculateResistance());
+        }
     }
+
     /*! Se asigna tmp1 y tmp2 al gladiador menos apto y el segundo menos apto respectivamente*/
     army.gladiators.getNode(0)->setData(son);
-    cout << "El nuevo valor del mansote 0 es: " << army.gladiators[0].getResistance() << endl;
+    cout << "El gladiador nuevo tiene una resistencia de: " << army.gladiators[0].getResistance() << endl;
 
     /*! Se ordena la lista de gladiadores*/
     army.insertionSort(army.gladiators);
     army.printArray(army.gladiators, army.armySize);
 
 }
-int GeneticEvolution::convertToDecimal(string trait) {
+
+int GeneticEvolution::convertToDecimal(string trait, int type) {
+    int size;
+    if (type==1)size=9;
+    else size=4;
+
     int value=0;
-    for(int i=0; i<=9; i++){
+    for(int i=0; i<=size; i++){
         if("1" == string(1, trait[i])){
             value++;
         }
@@ -210,14 +266,18 @@ string GeneticEvolution::convertToString(int trait,int type) {
     return base;
 }
 
-int GeneticEvolution::makeExchange(string parent1, string parent2,string son) {
+int GeneticEvolution::makeExchange(string parent1, string parent2,string son,int type) {
+    int size;
+    if(type==1)size=9;
+    else size=4;
+
     string mask;
     int randomMask=rand() % 3 +1;
-    if (randomMask == 1) mask =crossingmask1;
-    else if(randomMask==2) mask =crossingmask2;
-    else if(randomMask==3) mask =crossingmask3;
-    cout<<"mascara: "<<mask<<endl;
-    for(int i=0; i<=9;i++){
+    if (randomMask == 1) mask =crossingMask1;
+    else if(randomMask==2) mask =crossingMask2;
+    else if(randomMask==3) mask =crossingMask3;
+    //cout<<"mascara: "<<mask<<endl;
+    for(int i=0; i<=size;i++){
         if("1" == string(1, mask[i])){
             son=son.erase(i,1);
             son=son.insert(i,string(1, parent1[i]));
@@ -225,8 +285,16 @@ int GeneticEvolution::makeExchange(string parent1, string parent2,string son) {
             son=son.erase(i,1);
             son=son.insert(i,string(1, parent2[i]));
         }
-    }cout<<son<<endl;
-    return convertToDecimal(son);
+    }//cout<<son<<endl;
+    return convertToDecimal(son, type);
 }
 
-
+void GeneticEvolution::updateAge(Army army) {
+    for(int i=0;i<=19;i++){
+        army.gladiators.getData(i).setAge(army.gladiators.getData(i).getAge()+1);
+        army.gladiators.getData(i).setResistance(army.gladiators.getData(i).calculateResistance());
+        army.gladiators.getData(i).setFitness(army.gladiators.getData(i).calculateFitness());
+        /*! Falta volver a calcular la prob de supervivencia y las genExpec*/
+    }
+    army.insertionSort(army.gladiators);
+}

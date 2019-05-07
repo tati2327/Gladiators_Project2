@@ -16,11 +16,11 @@ Gladiator Army::setValuesTipeA(Gladiator gladiator, int i) {
     gladiator.setId(i+1);
     cout<<"My id is:"<<gladiator.getId()<<endl;
 
-    int random= (rand() % 2) + 0;
+    int random= (rand() % 2) + 1;
     gladiator.setAnger(random);
     cout<<gladiator.getAnger()<<endl;
 
-    int random2= (rand() % 2) + 0;
+    int random2= (rand() % 2) + 1;
     gladiator.setSelfcontrol(random2);
     cout<<gladiator.getSelfControl()<<endl;
 
@@ -56,11 +56,11 @@ Gladiator Army::setValuesTipeB(Gladiator gladiator, int i) {
     gladiator.setId(i+1);
     cout<<"My id is:"<<gladiator.getId()<<endl;
 
-    int random= (rand() % 2) + 0;
+    int random= (rand() % 2) + 1;
     gladiator.setAnger(random);
     cout<<gladiator.getAnger()<<endl;
 
-    int random2= (rand() % 2) + 0;
+    int random2= (rand() % 2) + 1;
     gladiator.setSelfcontrol(random2);
     cout<<gladiator.getSelfControl()<<endl;
 
@@ -94,11 +94,11 @@ Gladiator Army::setValuesTipeC(Gladiator gladiator, int i) {
     gladiator.setId(i+1);
     cout<<"My id is:"<<gladiator.getId()<<endl;
 
-    int random= (rand() % 2) + 0;
+    int random= (rand() % 2) + 1;
     gladiator.setAnger(random);
     cout<<gladiator.getAnger()<<endl;
 
-    int random2= (rand() % 2) + 0;
+    int random2= (rand() % 2) + 1;
     gladiator.setSelfcontrol(random2);
     cout<<gladiator.getSelfControl()<<endl;
 

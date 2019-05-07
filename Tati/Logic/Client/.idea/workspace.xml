@@ -11,7 +11,18 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f9c2c479-038a-4bdd-a577-f0fd5ea167b2" name="Default Changelist" comment="" />
+    <list default="true" id="f9c2c479-038a-4bdd-a577-f0fd5ea167b2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/Army.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/Army.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/Game.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/Game.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/GeneticEvolution.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/GeneticEvolution.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/GeneticEvolution.h" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/GeneticEvolution.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/cmake-build-debug/CMakeFiles/CMakeError.log" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/cmake-build-debug/CMakeFiles/CMakeError.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -177,15 +188,16 @@
       <workItem from="1554727803962" duration="1421000" />
       <workItem from="1556560819239" duration="5846000" />
       <workItem from="1557203933473" duration="338000" />
-      <workItem from="1557205631998" duration="594000" />
+      <workItem from="1557205631998" duration="1465000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20151000" />
+    <option name="totallyTimeSpent" value="21022000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="683" y="27" width="673" height="741" extended-state="4" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.36363637" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
