@@ -156,7 +156,8 @@ bool Pathfinding::makeRoute() {
                 solution.add(tempSolution.getData(j));
 
             auto finish = std::chrono::high_resolution_clock::now();
-            cout << "Duración " << chrono::duration_cast<chrono::microseconds>(finish - timeStart).count()<< " microsegundos" << endl;
+            time = static_cast<int>(chrono::duration_cast<chrono::milliseconds>(finish - timeStart).count());
+            cout << "Duración " << time<< " milisegundos" << endl;
             this->cleanAll();
             return true;
         }
@@ -211,7 +212,8 @@ bool Pathfinding::makeRoute() {
                     solution.add(tempSolution.getData(j));
 
                 auto finish = std::chrono::high_resolution_clock::now();
-                cout << "Duración " << chrono::duration_cast<chrono::microseconds>(finish - timeStart).count()<< " microsegundos" << endl;
+                time = static_cast<int>(chrono::duration_cast<chrono::milliseconds>(finish - timeStart).count());
+                cout << "Duración " << time<< " milisegundos" << endl;
                 this->cleanAll();
                 return true;
             }

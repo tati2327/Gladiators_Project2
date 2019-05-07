@@ -26,13 +26,6 @@ void Server::initServer(){
 
     this->addClient();
     this->manageClient(client.clientSocket);
-
-    /*! Inicio el hilo de escuchar */
-    /*thread t_add(&Server::addClient, this);
-    t_add.join();
-
-    thread t_manage(&Server::manageClient, this, client.clientSocket);
-    t_manage.join();*/
 }
 
 bool Server::newServer() {

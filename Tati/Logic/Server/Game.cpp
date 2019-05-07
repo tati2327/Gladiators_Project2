@@ -47,8 +47,10 @@ string Game::newGame() {
                                myGladiator.getExpectedGenerations(),
                                myGladiator.getEmotionalInt(), myGladiator.getUpperTrunckStrenght(),
                                myGladiator.getLowerTrunckStrenght(),
-                               myGladiator.getResistance(), myGladiator.getPhysicalCondition(), obstaclesList, this->myRoute.solution);
+                               myGladiator.getResistance(), myGladiator.getPhysicalCondition(), obstaclesList,
+                               this->myRoute.solution, myRoute.time, gE.generationCount);
     obstaclesList.cleanList();
+    myRoute.time = 0;
     return json;
 }
 
@@ -90,8 +92,10 @@ string Game::play() {
                                   myGladiator.getExpectedGenerations(),
                                   myGladiator.getEmotionalInt(), myGladiator.getUpperTrunckStrenght(),
                                   myGladiator.getLowerTrunckStrenght(),
-                                  myGladiator.getResistance(), myGladiator.getPhysicalCondition(), obstaclesList, this->myRoute.solution);
+                                  myGladiator.getResistance(), myGladiator.getPhysicalCondition(), obstaclesList,
+                                  this->myRoute.solution, myRoute.time, gE.generationCount);
     obstaclesList.cleanList();
+    myRoute.time = 0;
     return json;
 }
 
