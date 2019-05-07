@@ -10,34 +10,14 @@
 #include <stdlib.h>
 #include <iostream>
 #include "string.h"
-
-// Widget used to display charts
 #include <QtCharts/QChartView>
-
-// Used to draw bars representing data provided
-// grouped into categories
 #include <QtCharts/QBarSeries>
-
-// Represents 1 set of bars in a bar chart
 #include <QtCharts/QBarSet>
-
-// Displays the color used to represent each
-// QBarSet
 #include <QtCharts/QLegend>
-
-// Adds categories to the charts axes
 #include <QtCharts/QBarCategoryAxis>
-
-// Used to create stacked bar charts
 #include <QtCharts/QHorizontalStackedBarSeries>
-
-// Used to create a line chart
 #include <QtCharts/QLineSeries>
-
-// Used to change names on axis
 #include <QtCharts/QCategoryAxis>
-
-// Used to make Pie Charts
 #include <QtCharts/QPieSeries>
 #include <QtCharts/QPieSlice>
 
@@ -200,7 +180,7 @@ void Game::endgame()
          chart->addSeries(series);
 
          // Set title
-         chart->setTitle("Batting Avg by Year");
+         chart->setTitle("Gladiators by Resistance");
 
          // Define starting animation
          // NoAnimation, GridAxisAnimations, SeriesAnimations

@@ -130,7 +130,7 @@ bool Game::addObstacle2() {
     string end = to_string(myRoute.end->i)+to_string(myRoute.end->j);
 
     /*! Validar si el obstaculo esta en la entrada o la salida*/
-    if(obstacle1 == "00" or obstacle1 == end){
+    if(obstacle1 == "00" or obstacle1 == "99"){
         cout<<"ERROR el obstaculo 1 esta en la entrada o la salida "<<obstacle_i<<obstacle_j<<endl;
         return false;
     }
@@ -145,14 +145,14 @@ bool Game::addObstacle2() {
 }
 
 bool Game::addObstacle3() {
-    int obstacle_i = (rand() % (rows-1)) + 0;
-    int obstacle_j = (rand() % (columns-1)) + 0;
+    int obstacle_i = (rand() % (rows)) + 0;
+    int obstacle_j = (rand() % (columns)) + 0;
 
     string obstacle1 = to_string(obstacle_i)+to_string(obstacle_j);
     string end = to_string(myRoute.end->i)+to_string(myRoute.end->j);
 
     /*! Validar si el obstaculo esta en la entrada o la salida*/
-    if(obstacle1 == "00" or obstacle1 == end){
+    if(obstacle1 == "00" or obstacle1 == "99"){
         cout<<"ERROR el obstaculo 1 esta en la entrada o la salida "<<obstacle_i<<obstacle_j<<endl;
         return false;
     }
