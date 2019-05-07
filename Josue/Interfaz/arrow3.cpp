@@ -14,7 +14,7 @@ Arrow3::Arrow3(QGraphicsItem *parent)
 
   QTimer *move_timer = new QTimer(this);
   connect(move_timer,SIGNAL(timeout()),this,SLOT(move()));
-  move_timer->start(20);
+  move_timer->start(15);
 }
 
 void Arrow3::move(){

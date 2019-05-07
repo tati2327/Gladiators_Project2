@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="A_"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/josu/Desktop/Logic/Server"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/josu/Desktop/Logic/Server/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/josu/Desktop/Logic/Server/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/josu/Desktop/Logic/Server/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/josu/Desktop/Logic/Server/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/josu/Desktop/Logic/Server"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/josu/Desktop/Logic/Server/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/josu/Desktop/Logic/Server/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/josu/Desktop/Logic/Server/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/josu/Desktop/Logic/Server/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="A_">
+				<Option output="/home/josu/Desktop/Logic/Server/A_" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/josu/Desktop/Logic/Server"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/josu/Desktop/Logic/Server/./include/rapidjson"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/josu/Desktop/Logic/Server/Makefile&quot;  VERBOSE=1 A_"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/josu/Desktop/Logic/Server/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/josu/Desktop/Logic/Server/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/josu/Desktop/Logic/Server/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="A_/fast">
+				<Option output="/home/josu/Desktop/Logic/Server/A_" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/josu/Desktop/Logic/Server"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/josu/Desktop/Logic/Server/./include/rapidjson"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/josu/Desktop/Logic/Server/Makefile&quot;  VERBOSE=1 A_/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/josu/Desktop/Logic/Server/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/josu/Desktop/Logic/Server/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/josu/Desktop/Logic/Server/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/josu/Desktop/Logic/Server"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/josu/Desktop/Logic/Server/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/josu/Desktop/Logic/Server/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/josu/Desktop/Logic/Server/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/josu/Desktop/Logic/Server/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/josu/Desktop/Logic/Server/Army.cpp">
+			<Option target="A_"/>
+		</Unit>
+		<Unit filename="/home/josu/Desktop/Logic/Server/Army.h">
+			<Option target="A_"/>
+		</Unit>
+		<Unit filename="/home/josu/Desktop/Logic/Server/Field.cpp">
+			<Option target="A_"/>
+		</Unit>
+		<Unit filename="/home/josu/Desktop/Logic/Server/Field.h">
+			<Option target="A_"/>
+		</Unit>
+		<Unit filename="/home/josu/Desktop/Logic/Server/Game.cpp">
+			<Option target="A_"/>
+		</Unit>
+		<Unit filename="/home/josu/Desktop/Logic/Server/Game.h">
+			<Option target="A_"/>
+		</Unit>
+		<Unit filename="/home/josu/Desktop/Logic/Server/GeneticEvolution.cpp">
+			<Option target="A_"/>
+		</Unit>
+		<Unit filename="/home/josu/Desktop/Logic/Server/GeneticEvolution.h">
+			<Option target="A_"/>
+		</Unit>
+		<Unit filename="/home/josu/Desktop/Logic/Server/Gladiator.cpp">
+			<Option target="A_"/>
+		</Unit>
+		<Unit filename="/home/josu/Desktop/Logic/Server/Gladiator.h">
+			<Option target="A_"/>
+		</Unit>
+		<Unit filename="/home/josu/Desktop/Logic/Server/JSON.cpp">
+			<Option target="A_"/>
+		</Unit>
+		<Unit filename="/home/josu/Desktop/Logic/Server/JSON.h">
+			<Option target="A_"/>
+		</Unit>
+		<Unit filename="/home/josu/Desktop/Logic/Server/List.h">
+			<Option target="A_"/>
+		</Unit>
+		<Unit filename="/home/josu/Desktop/Logic/Server/List_def.h">
+			<Option target="A_"/>
+		</Unit>
+		<Unit filename="/home/josu/Desktop/Logic/Server/Matrix.h">
+			<Option target="A_"/>
+		</Unit>
+		<Unit filename="/home/josu/Desktop/Logic/Server/Matrix_def.h">
+			<Option target="A_"/>
+		</Unit>
+		<Unit filename="/home/josu/Desktop/Logic/Server/Node.h">
+			<Option target="A_"/>
+		</Unit>
+		<Unit filename="/home/josu/Desktop/Logic/Server/Node_def.h">
+			<Option target="A_"/>
+		</Unit>
+		<Unit filename="/home/josu/Desktop/Logic/Server/Pathfinding.cpp">
+			<Option target="A_"/>
+		</Unit>
+		<Unit filename="/home/josu/Desktop/Logic/Server/Pathfinding.h">
+			<Option target="A_"/>
+		</Unit>
+		<Unit filename="/home/josu/Desktop/Logic/Server/Server.cpp">
+			<Option target="A_"/>
+		</Unit>
+		<Unit filename="/home/josu/Desktop/Logic/Server/Server.h">
+			<Option target="A_"/>
+		</Unit>
+		<Unit filename="/home/josu/Desktop/Logic/Server/main.cpp">
+			<Option target="A_"/>
+		</Unit>
+		<Unit filename="/home/josu/Desktop/Logic/Server/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

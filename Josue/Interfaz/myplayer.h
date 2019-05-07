@@ -2,13 +2,15 @@
 #define MYPLAYER_H
 #include <QObject>
 #include <QGraphicsPixmapItem>
+
+extern int resis;
 class MyPlayer:public QObject,public QGraphicsPixmapItem{
   Q_OBJECT
 public:
   MyPlayer(QGraphicsItem * parent =0);
   void keyPressEvent(QKeyEvent *event);
-  int life_points=100;
-  int ID=10;
+  int life_points=resis;
+  int ID;
   int age=0;
   int survival_prob=0;
   int expected_gen=0;
