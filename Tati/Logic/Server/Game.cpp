@@ -13,20 +13,33 @@ Game::Game() {
 
 string Game::newGame() {
     /*! Algoritmo genetico*/
-    gE.generationCount=+1;
+    gE.generationCount = +1;
     army.createArmy(army.armySize);
     army.insertionSort(army.gladiators);
-    army.printArray(army.gladiators,army.armySize);
+    army.printArray(army.gladiators, army.armySize);
     myGladiator = army.getFittest();
 
-    /*! Crear el tablero de juego con los obstaculos iniciales*/
-    string end = "false";
-    List<string> message;
-    while(end == "false") {
-        message = this->addObstacles();
-        end = message[0];
+    /*! Agregar nuevos obstaculos en el tablero*/
+    bool end = false;
+    while(!end) {
+        while(!end) end = this->addObstacle2(); end=false;
+        cout<<"Se agrego el obstaculo 1"<<endl;
+        while(!end) end = this->addObstacle2(); end=false;
+        cout<<"Se agrego el obstaculo 2"<<endl;
+        while(!end) end = this->addObstacle3(); end=false;
+        cout<<"Se agrego el obstaculo 3"<<endl;
+
+        myRoute = Pathfinding(board);
+        if(myRoute.makeRoute())
+            end = true;
+
+        if(!end){
+            board.operator()(obstaclesList.getData(0)[0]-'0',obstaclesList.getData(0)[1]-'0').obstacle=false;
+            board.operator()(obstaclesList.getData(1)[0]-'0',obstaclesList.getData(1)[1]-'0').obstacle=false;
+            board.operator()(obstaclesList.getData(2)[0]-'0',obstaclesList.getData(2)[1]-'0').obstacle=false;
+            obstaclesList.cleanList();
+        }
     }
-    message.deleteNode("true");
 
     /*! Convertir los datos a json para que el servidor los envie al cliente*/
     JSON j;
@@ -34,7 +47,8 @@ string Game::newGame() {
                                myGladiator.getExpectedGenerations(),
                                myGladiator.getEmotionalInt(), myGladiator.getUpperTrunckStrenght(),
                                myGladiator.getLowerTrunckStrenght(),
-                               myGladiator.getResistance(), myGladiator.getPhysicalCondition(), message, this->myRoute.solution);
+                               myGladiator.getResistance(), myGladiator.getPhysicalCondition(), obstaclesList, this->myRoute.solution);
+    obstaclesList.cleanList();
     return json;
 }
 
@@ -49,13 +63,26 @@ string Game::play() {
     myGladiator = army.getFittest();
 
     /*! Agregar nuevos obstaculos en el tablero*/
-    string end = "false";
-    List<string> message;
-    while(end == "false") {
-        message = this->addObstacles();
-        end = message[0];
+    bool end = false;
+    while(!end) {
+        while(!end) end = this->addObstacle2(); end=false;
+        cout<<"Se agrego el obstaculo 1"<<endl;
+        while(!end) end = this->addObstacle2(); end=false;
+        cout<<"Se agrego el obstaculo 2"<<endl;
+        while(!end) end = this->addObstacle3(); end=false;
+        cout<<"Se agrego el obstaculo 3"<<endl;
+
+        myRoute = Pathfinding(board);
+        if(myRoute.makeRoute())
+            end = true;
+
+        if(!end){
+            board.operator()(obstaclesList.getData(0)[0]-'0',obstaclesList.getData(0)[1]-'0').obstacle=false;
+            board.operator()(obstaclesList.getData(1)[0]-'0',obstaclesList.getData(1)[1]-'0').obstacle=false;
+            board.operator()(obstaclesList.getData(2)[0]-'0',obstaclesList.getData(2)[1]-'0').obstacle=false;
+            obstaclesList.cleanList();
+        }
     }
-    message.deleteNode("true");
 
     /*! Convertir los datos a json para que el servidor los envie al cliente*/
     JSON j;
@@ -63,58 +90,75 @@ string Game::play() {
                                   myGladiator.getExpectedGenerations(),
                                   myGladiator.getEmotionalInt(), myGladiator.getUpperTrunckStrenght(),
                                   myGladiator.getLowerTrunckStrenght(),
-                                  myGladiator.getResistance(), myGladiator.getPhysicalCondition(), message, this->myRoute.solution);
+                                  myGladiator.getResistance(), myGladiator.getPhysicalCondition(), obstaclesList, this->myRoute.solution);
+    obstaclesList.cleanList();
     return json;
 }
 
-List<string> Game::addObstacles() {
-    List<string> answer;
-
+bool Game::addObstacle1() {
     int obstacle_i = (rand() % (rows-1)) + 0;
     int obstacle_j = (rand() % (columns-1)) + 0;
-    int obstacle2_i = (rand() % (rows-1)) + 0;
-    int obstacle2_j = (rand() % (columns-1)) + 0;
-    int obstacle3_i = (rand() % (rows-1)) + 0;
-    int obstacle3_j = (rand() % (columns-1)) + 0;
 
+    string obstacle1 = to_string(obstacle_i)+to_string(obstacle_j);
+    string end = to_string(myRoute.end->i)+to_string(myRoute.end->j);
 
     /*! Validar si el obstaculo esta en la entrada o la salida*/
-    if((obstacle_i == myRoute.start->i and obstacle_j == myRoute.start->j)
-        or (obstacle_i == myRoute.end->i and obstacle_j == myRoute.end->j)){
-        cout<<"ERROR el obstaculo esta en la entrada o la salida "<<obstacle_i<<obstacle_j<<endl;
-        answer.add("false");
-        return answer;
+    if(obstacle1 == "00" or obstacle1 == end){
+        cout<<"ERROR el obstaculo 1 esta en la entrada o la salida "<<obstacle_i<<obstacle_j<<endl;
+        return false;
     }
-    if((obstacle2_i == myRoute.start->i and obstacle2_j == myRoute.start->j)
-       or (obstacle2_i == myRoute.end->i and obstacle2_j == myRoute.end->j)){
-        cout<<"ERROR el obstaculo esta en la entrada o la salida "<<obstacle2_i<<obstacle2_j<<endl;
-        answer.add("false");
-        return answer;
-    }
-    if((obstacle3_i == myRoute.start->i and obstacle3_j == myRoute.start->j)
-       or (obstacle3_i == myRoute.end->i and obstacle3_j == myRoute.end->j)){
-        cout<<"ERROR el obstaculo esta en la entrada o la salida "<<obstacle3_i<<obstacle3_j<<endl;
-        answer.add("false");
-        return answer;
+    if(board.operator()(obstacle_i,obstacle_j).obstacle){
+        cout<<"Error"<<endl;
+        return false;
     }
 
-    /*! Se agrega el obstaculo*/
     board.operator()(obstacle_i,obstacle_j).addObstacle();
-    board.operator()(obstacle2_i,obstacle2_j).addObstacle();
-    board.operator()(obstacle3_i,obstacle3_j).addObstacle();
+    obstaclesList.add(obstacle1);
+    return true;
+}
 
-    /*! Se calcula la ruta para saber si hay solucion*/
-    myRoute = Pathfinding(board);
+bool Game::addObstacle2() {
+    int obstacle_i = (rand() % (rows-1)) + 0;
+    int obstacle_j = (rand() % (columns-1)) + 0;
 
-    if(myRoute.makeRoute()) {
-        answer.add("true");
-        answer.add(to_string(obstacle_i)+to_string(obstacle_j));
-        answer.add(to_string(obstacle2_i)+to_string(obstacle2_j));
-        answer.add(to_string(obstacle3_i)+to_string(obstacle3_j));
-        return answer;
+    string obstacle1 = to_string(obstacle_i)+to_string(obstacle_j);
+    string end = to_string(myRoute.end->i)+to_string(myRoute.end->j);
+
+    /*! Validar si el obstaculo esta en la entrada o la salida*/
+    if(obstacle1 == "00" or obstacle1 == end){
+        cout<<"ERROR el obstaculo 1 esta en la entrada o la salida "<<obstacle_i<<obstacle_j<<endl;
+        return false;
     }
-    answer.add("false");
-    return answer;
+    if(board.operator()(obstacle_i,obstacle_j).obstacle){
+        cout<<"Error"<<endl;
+        return false;
+    }
+
+    board.operator()(obstacle_i,obstacle_j).addObstacle();
+    obstaclesList.add(obstacle1);
+    return true;
+}
+
+bool Game::addObstacle3() {
+    int obstacle_i = (rand() % (rows-1)) + 0;
+    int obstacle_j = (rand() % (columns-1)) + 0;
+
+    string obstacle1 = to_string(obstacle_i)+to_string(obstacle_j);
+    string end = to_string(myRoute.end->i)+to_string(myRoute.end->j);
+
+    /*! Validar si el obstaculo esta en la entrada o la salida*/
+    if(obstacle1 == "00" or obstacle1 == end){
+        cout<<"ERROR el obstaculo 1 esta en la entrada o la salida "<<obstacle_i<<obstacle_j<<endl;
+        return false;
+    }
+    if(board.operator()(obstacle_i,obstacle_j).obstacle){
+        cout<<"Error"<<endl;
+        return false;
+    }
+
+    board.operator()(obstacle_i,obstacle_j).addObstacle();
+    obstaclesList.add(obstacle1);
+    return true;
 }
 
 

@@ -19,11 +19,15 @@ class Game {
         int generationCount;
         Pathfinding myRoute;
         Gladiator myGladiator;
+        List<string> obstaclesList;
 
         Game();
         string newGame();
         string play();
-        List<string> addObstacles();
+        bool addObstacle1();
+        bool addObstacle2();
+        bool addObstacle3();
+
 };
 
 

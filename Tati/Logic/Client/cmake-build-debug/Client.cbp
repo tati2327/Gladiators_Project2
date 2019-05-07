@@ -8,33 +8,33 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/tati2327/Documentos/GITHUB/Project2/Tati/Logic/Client/cmake-build-debug"/>
+				<Option working_dir="/home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Client/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/tati2327/Documentos/GITHUB/Project2/Tati/Logic/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/tati2327/Documentos/GITHUB/Project2/Tati/Logic/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/tati2327/Documentos/GITHUB/Project2/Tati/Logic/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/tati2327/Documentos/GITHUB/Project2/Tati/Logic/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/tati2327/Documentos/GITHUB/Project2/Tati/Logic/Client/cmake-build-debug"/>
+				<Option working_dir="/home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Client/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/tati2327/Documentos/GITHUB/Project2/Tati/Logic/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/tati2327/Documentos/GITHUB/Project2/Tati/Logic/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/tati2327/Documentos/GITHUB/Project2/Tati/Logic/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/tati2327/Documentos/GITHUB/Project2/Tati/Logic/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Client">
-				<Option output="/home/tati2327/Documentos/GITHUB/Project2/Tati/Logic/Client/cmake-build-debug/Client" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/tati2327/Documentos/GITHUB/Project2/Tati/Logic/Client/cmake-build-debug"/>
+				<Option output="/home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Client/cmake-build-debug/Client" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Client/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/tati2327/Documentos/GITHUB/Project2/Tati/Logic/Client/./include/rapidjson"/>
+					<Add directory="/home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Client/./include/rapidjson"/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
 					<Add directory="/usr/include/c++/7/backward"/>
@@ -45,20 +45,20 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/tati2327/Documentos/GITHUB/Project2/Tati/Logic/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 Client"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/tati2327/Documentos/GITHUB/Project2/Tati/Logic/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/tati2327/Documentos/GITHUB/Project2/Tati/Logic/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/tati2327/Documentos/GITHUB/Project2/Tati/Logic/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 Client"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Client/fast">
-				<Option output="/home/tati2327/Documentos/GITHUB/Project2/Tati/Logic/Client/cmake-build-debug/Client" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/tati2327/Documentos/GITHUB/Project2/Tati/Logic/Client/cmake-build-debug"/>
+				<Option output="/home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Client/cmake-build-debug/Client" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Client/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/tati2327/Documentos/GITHUB/Project2/Tati/Logic/Client/./include/rapidjson"/>
+					<Add directory="/home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Client/./include/rapidjson"/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
 					<Add directory="/usr/include/c++/7/backward"/>
@@ -69,51 +69,51 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/tati2327/Documentos/GITHUB/Project2/Tati/Logic/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 Client/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/tati2327/Documentos/GITHUB/Project2/Tati/Logic/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/tati2327/Documentos/GITHUB/Project2/Tati/Logic/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/tati2327/Documentos/GITHUB/Project2/Tati/Logic/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 Client/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/tati2327/Documentos/GITHUB/Project2/Tati/Logic/Client/cmake-build-debug"/>
+				<Option working_dir="/home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Client/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/tati2327/Documentos/GITHUB/Project2/Tati/Logic/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/tati2327/Documentos/GITHUB/Project2/Tati/Logic/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/tati2327/Documentos/GITHUB/Project2/Tati/Logic/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/tati2327/Documentos/GITHUB/Project2/Tati/Logic/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/tati2327/Documentos/GITHUB/Project2/Tati/Logic/Client/Client.cpp">
+		<Unit filename="/home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Client/Client.cpp">
 			<Option target="Client"/>
 		</Unit>
-		<Unit filename="/home/tati2327/Documentos/GITHUB/Project2/Tati/Logic/Client/Client.h">
+		<Unit filename="/home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Client/Client.h">
 			<Option target="Client"/>
 		</Unit>
-		<Unit filename="/home/tati2327/Documentos/GITHUB/Project2/Tati/Logic/Client/JSON.cpp">
+		<Unit filename="/home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Client/JSON.cpp">
 			<Option target="Client"/>
 		</Unit>
-		<Unit filename="/home/tati2327/Documentos/GITHUB/Project2/Tati/Logic/Client/JSON.h">
+		<Unit filename="/home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Client/JSON.h">
 			<Option target="Client"/>
 		</Unit>
-		<Unit filename="/home/tati2327/Documentos/GITHUB/Project2/Tati/Logic/Client/List.h">
+		<Unit filename="/home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Client/List.h">
 			<Option target="Client"/>
 		</Unit>
-		<Unit filename="/home/tati2327/Documentos/GITHUB/Project2/Tati/Logic/Client/List_def.h">
+		<Unit filename="/home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Client/List_def.h">
 			<Option target="Client"/>
 		</Unit>
-		<Unit filename="/home/tati2327/Documentos/GITHUB/Project2/Tati/Logic/Client/Node.h">
+		<Unit filename="/home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Client/Node.h">
 			<Option target="Client"/>
 		</Unit>
-		<Unit filename="/home/tati2327/Documentos/GITHUB/Project2/Tati/Logic/Client/Node_def.h">
+		<Unit filename="/home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Client/Node_def.h">
 			<Option target="Client"/>
 		</Unit>
-		<Unit filename="/home/tati2327/Documentos/GITHUB/Project2/Tati/Logic/Client/main.cpp">
+		<Unit filename="/home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Client/main.cpp">
 			<Option target="Client"/>
 		</Unit>
-		<Unit filename="/home/tati2327/Documentos/GITHUB/Project2/Tati/Logic/Client/CMakeLists.txt">
+		<Unit filename="/home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Client/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>
