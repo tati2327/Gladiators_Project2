@@ -18,6 +18,8 @@ class Pathfinding {
         Field *start;
         Field *end;
 
+        int time;
+
         int rows, cols;
 
         Matrix<Field> *board;
@@ -25,6 +27,7 @@ class Pathfinding {
         void addNeighbors(Field *_field);
         int heuristic(Field a, Field b);
         bool makeRoute();
+        void cleanAll();
 };
 
 

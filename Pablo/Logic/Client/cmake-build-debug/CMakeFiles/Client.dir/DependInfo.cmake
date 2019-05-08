@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/tati2327/Documentos/GITHUB/Project2/Tati/Logic/Client/Client.cpp" "/home/tati2327/Documentos/GITHUB/Project2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/Client.dir/Client.cpp.o"
-  "/home/tati2327/Documentos/GITHUB/Project2/Tati/Logic/Client/JSON.cpp" "/home/tati2327/Documentos/GITHUB/Project2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/Client.dir/JSON.cpp.o"
-  "/home/tati2327/Documentos/GITHUB/Project2/Tati/Logic/Client/main.cpp" "/home/tati2327/Documentos/GITHUB/Project2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/Client.dir/main.cpp.o"
+  "/home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Client/Client.cpp" "/home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/Client.dir/Client.cpp.o"
+  "/home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Client/JSON.cpp" "/home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/Client.dir/JSON.cpp.o"
+  "/home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Client/main.cpp" "/home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/Client.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

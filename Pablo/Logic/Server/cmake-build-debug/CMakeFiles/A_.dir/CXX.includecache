@@ -248,14 +248,6 @@ unistd.h
 List.h
 /home/pablo/Documentos/Github/Gladiators/Pablo/Logic/Server/List.h
 
-/home/pablo/Documentos/Github/Gladiators/Pablo/Logic/Server/Game.cpp
-Game.h
-/home/pablo/Documentos/Github/Gladiators/Pablo/Logic/Server/Game.h
-JSON.h
-/home/pablo/Documentos/Github/Gladiators/Pablo/Logic/Server/JSON.h
-document.h
--
-
 /home/pablo/Documentos/Github/Gladiators/Pablo/Logic/Server/Game.h
 Matrix.h
 /home/pablo/Documentos/Github/Gladiators/Pablo/Logic/Server/Matrix.h
@@ -271,10 +263,6 @@ Pathfinding.h
 /home/pablo/Documentos/Github/Gladiators/Pablo/Logic/Server/Pathfinding.h
 JSON.h
 /home/pablo/Documentos/Github/Gladiators/Pablo/Logic/Server/JSON.h
-
-/home/pablo/Documentos/Github/Gladiators/Pablo/Logic/Server/GeneticEvolution.cpp
-GeneticEvolution.h
-/home/pablo/Documentos/Github/Gladiators/Pablo/Logic/Server/GeneticEvolution.h
 
 /home/pablo/Documentos/Github/Gladiators/Pablo/Logic/Server/GeneticEvolution.h
 Army.h
@@ -335,32 +323,6 @@ List.h
 /home/pablo/Documentos/Github/Gladiators/Pablo/Logic/Server/List.h
 Matrix.h
 /home/pablo/Documentos/Github/Gladiators/Pablo/Logic/Server/Matrix.h
-
-/home/pablo/Documentos/Github/Gladiators/Pablo/Logic/Server/Server.cpp
-Server.h
-/home/pablo/Documentos/Github/Gladiators/Pablo/Logic/Server/Server.h
-Server.h
-/home/pablo/Documentos/Github/Gladiators/Pablo/Logic/Server/Server.h
-Game.h
-/home/pablo/Documentos/Github/Gladiators/Pablo/Logic/Server/Game.h
-iostream
--
-sys/types.h
--
-unistd.h
--
-sys/socket.h
--
-netdb.h
--
-arpa/inet.h
--
-string.h
--
-string
--
-thread
--
 
 /home/pablo/Documentos/Github/Gladiators/Pablo/Logic/Server/Server.h
 netinet/in.h

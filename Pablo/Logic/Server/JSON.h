@@ -18,7 +18,7 @@ class JSON {
         void jsonToDocument(string json);
         string serializePlay(int id, int age, int survivalProb, int expectedGen, int emotionalIntelligent,
                              int uperStrenght, int lowerStrenght, int resistance, int physicalCondition,
-                             List<string> obstacles, List<string> route);
+                             List<string> obstacles, List<string> route, int time, int iteration);
 
         int getRequest();
 };

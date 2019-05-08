@@ -1,3 +1,3 @@
-/home/tati2327/Documentos/GITHUB/Project2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/tati2327/Documentos/GITHUB/Project2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/Client.dir
-/home/tati2327/Documentos/GITHUB/Project2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/Client.dir
+/home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/edit_cache.dir

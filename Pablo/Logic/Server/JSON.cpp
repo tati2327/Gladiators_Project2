@@ -16,7 +16,7 @@ void JSON::jsonToDocument(string json) {
 
 string JSON::serializePlay(int id, int age, int survivalProb, int expectedGen, int emotionalIntelligent,
                            int uperStrenght, int lowerStrenght, int resistance, int physicalCondition,
-                           List<string> obstacles, List<string> route) {
+                           List<string> obstacles, List<string> route, int time, int iteration) {
     document.RemoveAllMembers();
     Document::AllocatorType& allocator = document.GetAllocator();
     document.AddMember("request",3, allocator);
@@ -49,6 +49,8 @@ string JSON::serializePlay(int id, int age, int survivalProb, int expectedGen, i
 
     document.AddMember("obstacles", myObstacles, allocator);
     document.AddMember("route", myRoute, allocator);
+    document.AddMember("time", time, allocator);
+    document.AddMember("iteration", iteration, allocator);
 
     StringBuffer strbuf;
     Writer<StringBuffer> writer(strbuf);

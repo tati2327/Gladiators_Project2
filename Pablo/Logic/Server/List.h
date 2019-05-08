@@ -32,6 +32,8 @@ public:
      */
     void deleteNode(T _data);
 
+    void deleteIndex(int index);
+
     /*!
     * getData()
     * Retorna un dato de tipo T
@@ -68,6 +70,8 @@ public:
      * @return el dato de un elemento de la lista
      */
     T operator [](int index);
+
+    void cleanList();
 };
 
 #include "List_def.h"

@@ -8,16 +8,11 @@
 
 int main() {
 
-    /*Matrix<Field> m = Matrix<Field>(10,10);
-    Pathfinding p = Pathfinding(m);
-    p.makeRoute();*/
-
-    Game myGame;
     srand(time(NULL));
+    Game myGame;
     myGame.newGame();
     myGame.play();
-    cout<<"///////////////////////////////////////////////////////////////////"<<endl;
-    myGame.play();
+
     //Server s;
     //s.initServer();
 
