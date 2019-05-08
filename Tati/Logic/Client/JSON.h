@@ -34,6 +34,16 @@ class JSON {
         int getTime();
         int getIteration();
 
+        List<int> getGraphicResistance();
+        List<int> getGraphicUperStrenght();
+        List<int> getGraphicLowerStrenght();
+        List<int> getGraphicEmotionalInt();
+        List<int> getGraphicPhysicalCond();
+        List<int> getGraphicAge();
+        List<int> getGraphicSurvivalProb();
+        List<int> getGraphicExpectedGen();
+        List<int> getGraphicFitness();
+        List<int> getGraphicId();
 };
 
 #endif //SERVER_JSON_H

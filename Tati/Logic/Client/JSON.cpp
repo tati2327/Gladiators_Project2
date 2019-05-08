@@ -112,6 +112,96 @@ int JSON::getIteration() {
     return document["iteration"].GetInt();
 }
 
+List<int> JSON::getGraphicResistance() {
+    List<int > resistance;
+    Value temp = document["resistance"].GetArray();
+    for(int i = 0; i < temp.Size(); i++){
+        resistance.add(temp[i].GetInt());
+    }
+    return resistance;
+}
+
+List<int> JSON::getGraphicUperStrenght() {
+    List<int > uperStrenght;
+    Value temp = document["uperStrenght"].GetArray();
+    for(int i = 0; i < temp.Size(); i++){
+        uperStrenght.add(temp[i].GetInt());
+    }
+    return uperStrenght;
+}
+
+List<int> JSON::getGraphicLowerStrenght() {
+    List<int > lowerStrenght;
+    Value temp = document["lowerStrenght"].GetArray();
+    for(int i = 0; i < temp.Size(); i++){
+        lowerStrenght.add(temp[i].GetInt());
+    }
+    return lowerStrenght;
+}
+
+List<int> JSON::getGraphicEmotionalInt() {
+    List<int > emotionalInt;
+    Value temp = document["emotionalIntelligent"].GetArray();
+    for(int i = 0; i < temp.Size(); i++){
+        emotionalInt.add(temp[i].GetInt());
+    }
+    return emotionalInt;
+}
+
+List<int> JSON::getGraphicPhysicalCond() {
+    List<int > physicalCondition;
+    Value temp = document["physicalCondition"].GetArray();
+    for(int i = 0; i < temp.Size(); i++){
+        physicalCondition.add(temp[i].GetInt());
+    }
+    return physicalCondition;
+}
+
+List<int> JSON::getGraphicAge() {
+    List<int > age;
+    Value temp = document["age"].GetArray();
+    for(int i = 0; i < temp.Size(); i++){
+        age.add(temp[i].GetInt());
+    }
+    return age;
+}
+
+List<int> JSON::getGraphicSurvivalProb() {
+    List<int > survivalProb;
+    Value temp = document["survivalProb"].GetArray();
+    for(int i = 0; i < temp.Size(); i++){
+        survivalProb.add(temp[i].GetInt());
+    }
+    return survivalProb;
+}
+
+List<int> JSON::getGraphicExpectedGen() {
+    List<int > expectedGen;
+    Value temp = document["expectedGen"].GetArray();
+    for(int i = 0; i < temp.Size(); i++){
+        expectedGen.add(temp[i].GetInt());
+    }
+    return expectedGen;
+}
+
+List<int> JSON::getGraphicFitness() {
+    List<int > fitness;
+    Value temp = document["fitness"].GetArray();
+    for(int i = 0; i < temp.Size(); i++){
+        fitness.add(temp[i].GetInt());
+    }
+    return fitness;
+}
+
+List<int> JSON::getGraphicId() {
+    List<int > id;
+    Value temp = document["id"].GetArray();
+    for(int i = 0; i < temp.Size(); i++){
+        id.add(temp[i].GetInt());
+    }
+    return id;
+}
+
 
 
 

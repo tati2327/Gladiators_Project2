@@ -11,24 +11,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="082d0237-4446-4e33-9213-d5c639620077" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../Client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/JSON.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/JSON.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/JSON.h" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/JSON.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Army.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Army.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Game.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game.h" beforeDir="false" afterPath="$PROJECT_DIR$/Game.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeneticEvolution.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/GeneticEvolution.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeneticEvolution.h" beforeDir="false" afterPath="$PROJECT_DIR$/GeneticEvolution.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gladiator.h" beforeDir="false" afterPath="$PROJECT_DIR$/Gladiator.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JSON.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/JSON.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JSON.h" beforeDir="false" afterPath="$PROJECT_DIR$/JSON.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Server.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/A_" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/A_" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/A_.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/A_.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
-    </list>
+    <list default="true" id="082d0237-4446-4e33-9213-d5c639620077" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,91 +22,24 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Game.cpp">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Server.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="82" column="47" lean-forward="true" selection-start-line="82" selection-start-column="47" selection-end-line="82" selection-end-column="47" />
+            <state relative-caret-position="-1133">
+              <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/JSON.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+            <state relative-caret-position="143">
+              <caret line="134" column="26" selection-start-line="134" selection-start-column="24" selection-end-line="134" selection-end-column="26" />
               <folding>
                 <element signature="e#0#17#0" expanded="true" />
                 <element signature="e#295#2377#0" />
-                <element signature="e#2379#5801#0" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/JSON.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="23" column="89" lean-forward="true" selection-start-line="23" selection-start-column="89" selection-end-line="23" selection-end-column="89" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Game.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="46" column="38" lean-forward="true" selection-start-line="46" selection-start-column="38" selection-end-line="46" selection-end-column="38" />
-              <folding>
-                <element signature="e#35#54#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Gladiator.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1500">
-              <caret line="100" selection-start-line="100" selection-end-line="100" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Field.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" selection-start-line="13" selection-end-line="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Field.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="900">
-              <caret line="60" column="27" selection-start-line="60" selection-start-column="27" selection-end-line="60" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -155,8 +71,6 @@
         <option value="$PROJECT_DIR$/Army.h" />
         <option value="$PROJECT_DIR$/Server.h" />
         <option value="$PROJECT_DIR$/Gladiator.cpp" />
-        <option value="$PROJECT_DIR$/Field.h" />
-        <option value="$PROJECT_DIR$/Field.cpp" />
         <option value="$PROJECT_DIR$/List_def.h" />
         <option value="$PROJECT_DIR$/List.h" />
         <option value="$PROJECT_DIR$/Pathfinding.h" />
@@ -165,15 +79,16 @@
         <option value="$PROJECT_DIR$/main.cpp" />
         <option value="$PROJECT_DIR$/Gladiator.h" />
         <option value="$PROJECT_DIR$/JSON.h" />
-        <option value="$PROJECT_DIR$/JSON.cpp" />
         <option value="$PROJECT_DIR$/Server.cpp" />
         <option value="$PROJECT_DIR$/Game.h" />
         <option value="$PROJECT_DIR$/Game.cpp" />
+        <option value="$PROJECT_DIR$/Field.h" />
+        <option value="$PROJECT_DIR$/Field.cpp" />
+        <option value="$PROJECT_DIR$/JSON.cpp" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="683" />
+  <component name="ProjectFrameBounds" extendedState="4">
     <option name="y" value="25" />
     <option name="width" value="683" />
     <option name="height" value="743" />
@@ -203,7 +118,7 @@
   <component name="PropertiesComponent">
     <property name="ToolWindowRun.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../Server" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Client" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -268,15 +183,15 @@
       <workItem from="1557343575586" duration="212000" />
       <workItem from="1557343800183" duration="1580000" />
       <workItem from="1557348532081" duration="214000" />
-      <workItem from="1557349107264" duration="3010000" />
+      <workItem from="1557349107264" duration="3944000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="104398000" />
+    <option name="totallyTimeSpent" value="105332000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="25" width="1366" height="743" extended-state="6" />
+    <frame x="0" y="25" width="683" height="743" extended-state="4" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.14469697" />
@@ -471,17 +386,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.cpp">
+    <entry file="file://$PROJECT_DIR$/JSON.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
-          <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+          <caret line="25" column="25" lean-forward="true" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Field.h">
+    <entry file="file://$PROJECT_DIR$/Game.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        <state relative-caret-position="330">
+          <caret line="43" column="40" lean-forward="true" selection-start-line="43" selection-start-column="40" selection-end-line="43" selection-end-column="40" />
+          <folding>
+            <element signature="e#35#54#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Game.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="427">
+          <caret line="87" lean-forward="true" selection-start-line="87" selection-end-line="87" />
         </state>
       </provider>
     </entry>
@@ -494,51 +419,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Field.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="900">
-          <caret line="60" column="27" selection-start-line="60" selection-start-column="27" selection-end-line="60" selection-end-column="27" />
+        <state relative-caret-position="105">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/JSON.h">
+    <entry file="file://$PROJECT_DIR$/Field.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="23" column="89" lean-forward="true" selection-start-line="23" selection-start-column="89" selection-end-line="23" selection-end-column="89" />
+        <state relative-caret-position="75">
+          <caret line="5" column="13" lean-forward="true" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/JSON.cpp">
+    <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-          <folding>
-            <element signature="e#0#17#0" expanded="true" />
-            <element signature="e#295#2377#0" />
-            <element signature="e#2379#5801#0" />
-          </folding>
+        <state relative-caret-position="165">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Server.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="16" column="26" lean-forward="true" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+        <state relative-caret-position="-1133">
+          <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Game.h">
+    <entry file="file://$PROJECT_DIR$/JSON.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="46" column="38" lean-forward="true" selection-start-line="46" selection-start-column="38" selection-end-line="46" selection-end-column="38" />
+        <state relative-caret-position="143">
+          <caret line="134" column="26" selection-start-line="134" selection-start-column="24" selection-end-line="134" selection-end-column="26" />
           <folding>
-            <element signature="e#35#54#0" expanded="true" />
+            <element signature="e#0#17#0" expanded="true" />
+            <element signature="e#295#2377#0" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Game.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="82" column="47" lean-forward="true" selection-start-line="82" selection-start-column="47" selection-end-line="82" selection-end-column="47" />
         </state>
       </provider>
     </entry>
