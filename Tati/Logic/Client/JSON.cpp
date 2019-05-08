@@ -104,6 +104,14 @@ int JSON::getPhysicalCondition() {
     return document["physicalCondition"].GetInt();
 }
 
+int JSON::getTime() {
+    return document["time"].GetInt();
+}
+
+int JSON::getIteration() {
+    return document["iteration"].GetInt();
+}
+
 
 
 

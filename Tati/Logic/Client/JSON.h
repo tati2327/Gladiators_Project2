@@ -31,6 +31,9 @@ class JSON {
         int getLowerStrenght();
         int getResistance();
         int getPhysicalCondition();
+        int getTime();
+        int getIteration();
+
 };
 
 #endif //SERVER_JSON_H

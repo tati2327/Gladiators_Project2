@@ -20,14 +20,14 @@ Gladiator Army::setValuesTipeA(Gladiator gladiator, int i) {
     gladiator.setAnger(random);
     cout<<gladiator.getAnger()<<endl;
 
-    int random2= (rand() % 2) + 1;
+    int random2= (rand() % 1) + 1;
     gladiator.setSelfcontrol(random2);
     cout<<gladiator.getSelfControl()<<endl;
 
     gladiator.setEmotionalInt(gladiator.calculateEmotionalInt());
     cout<<"EI"<<gladiator.getEmotionalInt()<<endl;
 
-    int random4= (rand() % 3) + 1;
+    int random4= (rand() % 2) + 1;
     gladiator.setPhysicalCondition(random4);
     cout<<"PC "<<gladiator.getPhysicalCondition()<<endl;
 
@@ -35,7 +35,7 @@ Gladiator Army::setValuesTipeA(Gladiator gladiator, int i) {
     gladiator.setUpperTrunckStrenght(random5);
     cout<<"UTS "<<gladiator.getUpperTrunckStrenght()<<endl;
 
-    int random6= (rand() % 3) + 1;
+    int random6= (rand() % 2) + 1;
     gladiator.setLowerTrunckStrenght(random6);
     cout<<"LTS "<<gladiator.getLowerTrunckStrenght()<<endl;
 
@@ -71,11 +71,11 @@ Gladiator Army::setValuesTipeB(Gladiator gladiator, int i) {
     gladiator.setPhysicalCondition(random4);
     cout<<"PC "<<gladiator.getPhysicalCondition()<<endl;
 
-    int random5= (rand() % 2) + 1;
+    int random5= (rand() % 1) + 1;
     gladiator.setUpperTrunckStrenght(random5);
     cout<<"UTS "<<gladiator.getUpperTrunckStrenght()<<endl;
 
-    int random6= (rand() % 3) + 1;
+    int random6= (rand() % 1) + 1;
     gladiator.setLowerTrunckStrenght(random6);
     cout<<"LTS "<<gladiator.getLowerTrunckStrenght()<<endl;
 
@@ -94,7 +94,7 @@ Gladiator Army::setValuesTipeC(Gladiator gladiator, int i) {
     gladiator.setId(i+1);
     cout<<"My id is:"<<gladiator.getId()<<endl;
 
-    int random= (rand() % 2) + 1;
+    int random= (rand() % 1) + 1;
     gladiator.setAnger(random);
     cout<<gladiator.getAnger()<<endl;
 
@@ -109,11 +109,11 @@ Gladiator Army::setValuesTipeC(Gladiator gladiator, int i) {
     gladiator.setPhysicalCondition(random4);
     cout<<"PC "<<gladiator.getPhysicalCondition()<<endl;
 
-    int random5= (rand() % 2) + 1;
+    int random5= (rand() % 1) + 1;
     gladiator.setUpperTrunckStrenght(random5);
     cout<<"UTS "<<gladiator.getUpperTrunckStrenght()<<endl;
 
-    int random6= (rand() % 2) + 1;
+    int random6= (rand() % 1) + 1;
     gladiator.setLowerTrunckStrenght(random6);
     cout<<"LTS "<<gladiator.getLowerTrunckStrenght()<<endl;
 
@@ -133,10 +133,10 @@ void Army::createArmy(int armySize) {
         int random = rand() % 100 + 1;
         if(random<= 60){
             /*! Crear ejercito tipo C (60%)*/
-            gladiators.add(setValuesTipeA(gladiator, i));
+            gladiators.add(setValuesTipeC(gladiator, i));
         }else if(60< random && random <=90){
             /*! Crear ejercito tipo B (30%)*/
-            gladiators.add(setValuesTipeA(gladiator, i));
+            gladiators.add(setValuesTipeB(gladiator, i));
         }else if(90< random && random <=100){
             /*! Crear ejercito tipo A (10%)*/
             gladiators.add(setValuesTipeA(gladiator, i));

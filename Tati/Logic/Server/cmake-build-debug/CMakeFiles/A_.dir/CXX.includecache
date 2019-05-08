@@ -232,6 +232,12 @@ emmintrin.h
 arm_neon.h
 -
 
+/home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Server/Army.cpp
+Army.h
+/home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Server/Army.h
+iostream
+-
+
 /home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Server/Army.h
 Gladiator.h
 /home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Server/Gladiator.h
@@ -248,6 +254,14 @@ unistd.h
 List.h
 /home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Server/List.h
 
+/home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Server/Game.cpp
+Game.h
+/home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Server/Game.h
+JSON.h
+/home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Server/JSON.h
+document.h
+-
+
 /home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Server/Game.h
 Matrix.h
 /home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Server/Matrix.h
@@ -263,6 +277,10 @@ Pathfinding.h
 /home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Server/Pathfinding.h
 JSON.h
 /home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Server/JSON.h
+
+/home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Server/GeneticEvolution.cpp
+GeneticEvolution.h
+/home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Server/GeneticEvolution.h
 
 /home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Server/GeneticEvolution.h
 Army.h
@@ -323,6 +341,32 @@ List.h
 /home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Server/List.h
 Matrix.h
 /home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Server/Matrix.h
+
+/home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Server/Server.cpp
+Server.h
+/home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Server/Server.h
+Server.h
+/home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Server/Server.h
+Game.h
+/home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Server/Game.h
+iostream
+-
+sys/types.h
+-
+unistd.h
+-
+sys/socket.h
+-
+netdb.h
+-
+arpa/inet.h
+-
+string.h
+-
+string
+-
+thread
+-
 
 /home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Server/Server.h
 netinet/in.h

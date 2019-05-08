@@ -10,24 +10,44 @@
 #include "JSON.h"
 
 class Game {
-
     public:
         int rows, columns;
         Matrix<Field> board;
         Army army;
         GeneticEvolution gE;
-        int generationCount;
         Pathfinding myRoute;
         Gladiator myGladiator;
         List<string> obstaclesList;
+        List<Gladiator> historicalArmy;
 
         Game();
         string newGame();
         string play();
-        bool addObstacle1();
-        bool addObstacle2();
-        bool addObstacle3();
+        bool addObstacle();
+        void addToHistoricalArmy(List<Gladiator> army);
+        string sendGraphic();
 
+        void addResistance(List<Gladiator> historicalArmy);
+        void addUpperStrenght(List<Gladiator> historicalArmy);
+        void addLowerStrenght(List<Gladiator> historicalArmy);
+        void addEmotionalIntelligence(List<Gladiator> historicalArmy);
+        void addPhysicalCondition(List<Gladiator> historicalArmy);
+        void addAge(List<Gladiator> historicalArmy);
+        void addExpectedGenerations(List<Gladiator> historicalArmy);
+        void addSurvivalProb(List<Gladiator> historicalArmy);
+        void addFitness(List<Gladiator> historicalArmy);
+        void addId(List<Gladiator> historicalArmy);
+
+        List<int> resistance;
+        List<int> upperStrenght;
+        List<int> lowerStrenght;
+        List<int> emotionalIntelligence;
+        List<int> physicalCondition;
+        List<int> age;
+        List<int> expectedGenerations;
+        List<int> survivalProb;
+        List<int> fitness;
+        List<int> id;
 };
 
 
