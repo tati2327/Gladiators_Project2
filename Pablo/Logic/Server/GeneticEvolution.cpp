@@ -2,9 +2,9 @@
 
 GeneticEvolution::GeneticEvolution() {
     this->generationCount = 0;
-    this->crossingMask1 = "11100101101100101101";
-    this->crossingMask2 = "10101110101011100101";
-    this->crossingMask3 = "10101101001110101010";
+    this->crossingMask1 = "1110010110110010110110101101001110101010";
+    this->crossingMask2 = "1010111010101110010110101101001110101010";
+    this->crossingMask3 = "1010110100111010101010101110101011100101";
     this->lastId=20;
 
 }
@@ -151,7 +151,7 @@ void GeneticEvolution::crossover(Army army,int index1, int index2) {
             string stringTrait1=convertToString(trait1,1);
             int trait2=parent2.getUpperTrunckStrenght();
             string stringTrait2=convertToString(trait2,1);
-            string sonGene="00000000000000000000";
+            string sonGene="0000000000000000000000000000000000000000";
             son.setUpperTrunckStrenght(makeExchange(stringTrait1, stringTrait2, sonGene,1));
 
         }else if (i == 2) {
@@ -159,7 +159,7 @@ void GeneticEvolution::crossover(Army army,int index1, int index2) {
             string stringTrait1=convertToString(trait1,1);
             int trait2=parent2.getLowerTrunckStrenght();
             string stringTrait2=convertToString(trait2,1);
-            string sonGene="00000000000000000000";
+            string sonGene="0000000000000000000000000000000000000000";
             son.setLowerTrunckStrenght(makeExchange(stringTrait1, stringTrait2, sonGene,1));
 
 
@@ -170,7 +170,7 @@ void GeneticEvolution::crossover(Army army,int index1, int index2) {
             int trait2=parent2.getAnger();
             cout<<"parent2 del Anger"<<trait2<<endl;
             string stringTrait2=convertToString(trait2,2);
-            string sonGene="0000000000";
+            string sonGene="00000000000000000000";
             son.setAnger(makeExchange(stringTrait1, stringTrait2, sonGene,2));
 
         }else if (i == 4) {
@@ -180,7 +180,7 @@ void GeneticEvolution::crossover(Army army,int index1, int index2) {
             int trait2=parent2.getSelfControl();
             cout<<"parent2 del self"<<trait2<<endl;
             string stringTrait2=convertToString(trait2,2);
-            string sonGene="0000000000";
+            string sonGene="00000000000000000000";
             son.setAnger(makeExchange(stringTrait1, stringTrait2, sonGene,2));
 
 
@@ -189,7 +189,7 @@ void GeneticEvolution::crossover(Army army,int index1, int index2) {
             string stringTrait1=convertToString(trait1,1);
             int trait2=parent2.getPhysicalCondition();
             string stringTrait2=convertToString(trait2,1);
-            string sonGene="00000000000000000000";
+            string sonGene="0000000000000000000000000000000000000000";
             son.setPhysicalCondition(makeExchange(stringTrait1, stringTrait2, sonGene,1));
         }
     }
@@ -225,8 +225,8 @@ void GeneticEvolution::crossover(Army army,int index1, int index2) {
 
 int GeneticEvolution::convertToDecimal(string trait, int type) {
     int size;
-    if (type==1)size=19;
-    else size=9;
+    if (type==1)size=39;
+    else size=19;
 
     int value=0;
     for(int i=0; i<=size; i++){
@@ -240,22 +240,22 @@ string GeneticEvolution::convertToString(int trait,int type) {
     string base;
 
     if(type==1){
-        base="00000000000000000000";
+        base="00000000000000000000000000000000000000000";
 
     }else{
-        base="0000000000";
+        base="000000000000000000000";
 
     }
 
     for(int i=trait; i>=1; i--){
         int random;
-        if(type==1) random = rand() % 20;
-        else random= rand() % 10;
+        if(type==1) random = rand() % 41;
+        else random= rand() % 21;
 
         if ("1" == string(1, base[random])){
             while("1" == string(1, base[random])){
-                if(type==1) random = rand() % 20;
-                else random= rand()%10;
+                if(type==1) random = rand() % 41;
+                else random= rand()%21;
             }
             base=base.erase(random,1);
             base=base.insert(random,"1");
@@ -266,15 +266,15 @@ string GeneticEvolution::convertToString(int trait,int type) {
 
     }
 
-    if(type==1) base=base.erase(20,1);
-    else base=base.erase(10,1);
+    if(type==1) base=base.erase(41,1);
+    else base=base.erase(21,1);
     return base;
 }
 
 int GeneticEvolution::makeExchange(string parent1, string parent2,string son,int type) {
     int size;
-    if(type==1)size=19;
-    else size=9;
+    if(type==1)size=39;
+    else size=19;
     string mask;
     int randomMask=rand() % 3 +1;
     if (randomMask == 1) mask =crossingMask1;

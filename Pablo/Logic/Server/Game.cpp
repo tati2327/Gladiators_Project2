@@ -19,6 +19,9 @@ string Game::newGame() {
     army.insertionSort(army.gladiators);
     army.printArray(army.gladiators, army.armySize);
     myGladiator = army.getFittest();
+    gE.updateAge(army);
+    addToHistoricalArmy(army.gladiators);
+
 
     /*! Agregar nuevos obstaculos en el tablero*/
     bool end = false;
@@ -56,6 +59,7 @@ string Game::newGame() {
 }
 
 string Game::play() {
+    gE.updateAge(army);
     gE.crossover(army,19,18);
     gE.crossover(army,19,17);
     gE.crossover(army,19,16);

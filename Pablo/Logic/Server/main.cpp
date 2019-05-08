@@ -9,12 +9,35 @@
 int main() {
 
     srand(time(NULL));
-    Game myGame;
+    /*Game myGame;
     myGame.newGame();
-    myGame.play();
+    myGame.play();*/
 
     //Server s;
     //s.initServer();
+    GeneticEvolution gE;
+    Army army;
+    srand(time(NULL));
+    army.createArmy(army.armySize);
+    army.insertionSort(army.gladiators);
+    army.printArray(army.gladiators, army.armySize);
+    gE.updateAge(army);
+
+
+    int i=0;
+    while(i!=15){
+        gE.updateAge(army);
+        gE.crossover(army,19,18);
+        gE.crossover(army,19,17);
+        gE.crossover(army,19,16);
+        gE.crossover(army,18,17);
+        gE.crossover(army,18,16);
+
+        gE.generationCount+=1;
+        i++;
+    }
+
+
 
     return 0;
 }
