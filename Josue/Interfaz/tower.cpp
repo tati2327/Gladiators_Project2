@@ -8,6 +8,7 @@
 #include "game.h"
 #include "myplayer.h"
 extern Game * g;
+extern bool shoot;
 Tower::Tower(QGraphicsItem *parent):QObject(), QGraphicsPixmapItem (){
    setPixmap(QPixmap(":/images/TorreSimple.png"));
 
@@ -26,7 +27,7 @@ Tower::Tower(QGraphicsItem *parent):QObject(), QGraphicsPixmapItem (){
    attack_area->hide();
    QTimer *timer = new QTimer();
    QObject::connect(timer,SIGNAL(timeout()),this,SLOT(kill()));
-   timer->start(1000);
+   timer->start(1800);
 }
 
 void Tower::attack()
@@ -44,27 +45,30 @@ void Tower::attack()
 
 void Tower::kill()
 {
-  collide_items=attack_area->collidingItems();
-  if (collide_items.size()==1){
-      has_target=false;
-      return;
-    }
-  double closest=100;
-  QPointF enemy=QPointF(0,0);
-  for(size_t i =0,n = collide_items.size();i<n;i++){
-      MyPlayer * player = dynamic_cast<MyPlayer *>(collide_items[i]);
+  if (shoot){
+      collide_items=attack_area->collidingItems();
+      if (collide_items.size()==1){
+          has_target=false;
+          return;
+        }
+      double closest=100;
+      QPointF enemy=QPointF(0,0);
+      for(size_t i =0,n = collide_items.size();i<n;i++){
+          MyPlayer * player = dynamic_cast<MyPlayer *>(collide_items[i]);
 
-      if (player){
-          double this_dist = distanceTo(player);
-          if (this_dist<closest){
-              closest=this_dist;
-              enemy=collide_items[i]->pos();
-              has_target=true;
-              attack_point= enemy;
-              attack();
+          if (player){
+              double this_dist = distanceTo(player);
+              if (this_dist<closest){
+                  closest=this_dist;
+                  enemy=collide_items[i]->pos();
+                  has_target=true;
+                  attack_point= enemy;
+                  attack();
+                }
             }
         }
     }
+
 
 
 }

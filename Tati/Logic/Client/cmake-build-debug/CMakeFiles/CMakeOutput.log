@@ -1,4 +1,4 @@
-The system is: Linux - 4.15.0-47-generic - x86_64
+The system is: Linux - 4.15.0-48-generic - x86_64
 Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
 Compiler: /usr/bin/cc 
 Build flags: 
@@ -10,7 +10,7 @@ The output was:
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
 
-The C compiler identification is GNU, found in "/home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/3.13.2/CompilerIdC/a.out"
+The C compiler identification is GNU, found in "/home/josu/Documents/Github/Proyecto2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/3.13.2/CompilerIdC/a.out"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
 Compiler: /usr/bin/c++ 
@@ -23,80 +23,80 @@ The output was:
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
 
-The CXX compiler identification is GNU, found in "/home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/3.13.2/CompilerIdCXX/a.out"
+The CXX compiler identification is GNU, found in "/home/josu/Documents/Github/Proyecto2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/3.13.2/CompilerIdCXX/a.out"
 
 Determining if the C compiler works passed with the following output:
-Change Dir: /home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/josu/Documents/Github/Proyecto2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_408bd/fast"
-/usr/bin/make -f CMakeFiles/cmTC_408bd.dir/build.make CMakeFiles/cmTC_408bd.dir/build
-make[1]: se entra en el directorio '/home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_408bd.dir/testCCompiler.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_408bd.dir/testCCompiler.c.o   -c /home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/CMakeTmp/testCCompiler.c
-Linking C executable cmTC_408bd
-/home/tati2327/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_408bd.dir/link.txt --verbose=1
-/usr/bin/cc      CMakeFiles/cmTC_408bd.dir/testCCompiler.c.o  -o cmTC_408bd 
-make[1]: se sale del directorio '/home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_9b93d/fast"
+/usr/bin/make -f CMakeFiles/cmTC_9b93d.dir/build.make CMakeFiles/cmTC_9b93d.dir/build
+make[1]: Entering directory '/home/josu/Documents/Github/Proyecto2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9b93d.dir/testCCompiler.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_9b93d.dir/testCCompiler.c.o   -c /home/josu/Documents/Github/Proyecto2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_9b93d
+/home/josu/Documents/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9b93d.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_9b93d.dir/testCCompiler.c.o  -o cmTC_9b93d 
+make[1]: Leaving directory '/home/josu/Documents/Github/Proyecto2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: /home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/josu/Documents/Github/Proyecto2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_9791b/fast"
-/usr/bin/make -f CMakeFiles/cmTC_9791b.dir/build.make CMakeFiles/cmTC_9791b.dir/build
-make[1]: se entra en el directorio '/home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_9791b.dir/CMakeCCompilerABI.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_9791b.dir/CMakeCCompilerABI.c.o   -c /home/tati2327/clion-2018.3.4/bin/cmake/linux/share/cmake-3.13/Modules/CMakeCCompilerABI.c
-Linking C executable cmTC_9791b
-/home/tati2327/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9791b.dir/link.txt --verbose=1
-/usr/bin/cc     -v CMakeFiles/cmTC_9791b.dir/CMakeCCompilerABI.c.o  -o cmTC_9791b 
+Run Build Command:"/usr/bin/make" "cmTC_1a46f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_1a46f.dir/build.make CMakeFiles/cmTC_1a46f.dir/build
+make[1]: Entering directory '/home/josu/Documents/Github/Proyecto2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1a46f.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_1a46f.dir/CMakeCCompilerABI.c.o   -c /home/josu/Documents/clion-2018.3.4/bin/cmake/linux/share/cmake-3.13/Modules/CMakeCCompilerABI.c
+Linking C executable cmTC_1a46f
+/home/josu/Documents/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1a46f.dir/link.txt --verbose=1
+/usr/bin/cc     -v CMakeFiles/cmTC_1a46f.dir/CMakeCCompilerABI.c.o  -o cmTC_1a46f 
 Using built-in specs.
 COLLECT_GCC=/usr/bin/cc
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper
 OFFLOAD_TARGET_NAMES=nvptx-none
 OFFLOAD_TARGET_DEFAULT=1
 Target: x86_64-linux-gnu
-Configured with: ../src/configure -v --with-pkgversion='Ubuntu 7.3.0-27ubuntu1~18.04' --with-bugurl=file:///usr/share/doc/gcc-7/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-7 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 7.4.0-1ubuntu1~18.04' --with-bugurl=file:///usr/share/doc/gcc-7/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-7 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
 Thread model: posix
-gcc version 7.3.0 (Ubuntu 7.3.0-27ubuntu1~18.04) 
+gcc version 7.4.0 (Ubuntu 7.4.0-1ubuntu1~18.04) 
 COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_9791b' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccVbRCh2.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_9791b /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. CMakeFiles/cmTC_9791b.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_9791b' '-mtune=generic' '-march=x86-64'
-make[1]: se sale del directorio '/home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/CMakeTmp'
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_1a46f' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/cc0qQhKG.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_1a46f /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. CMakeFiles/cmTC_1a46f.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_1a46f' '-mtune=generic' '-march=x86-64'
+make[1]: Leaving directory '/home/josu/Documents/Github/Proyecto2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
 Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/josu/Documents/Github/Proyecto2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_9791b/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_9791b.dir/build.make CMakeFiles/cmTC_9791b.dir/build]
-  ignore line: [make[1]: se entra en el directorio '/home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/CMakeTmp']
-  ignore line: [Building C object CMakeFiles/cmTC_9791b.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/usr/bin/cc    -o CMakeFiles/cmTC_9791b.dir/CMakeCCompilerABI.c.o   -c /home/tati2327/clion-2018.3.4/bin/cmake/linux/share/cmake-3.13/Modules/CMakeCCompilerABI.c]
-  ignore line: [Linking C executable cmTC_9791b]
-  ignore line: [/home/tati2327/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9791b.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/cc     -v CMakeFiles/cmTC_9791b.dir/CMakeCCompilerABI.c.o  -o cmTC_9791b ]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_1a46f/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_1a46f.dir/build.make CMakeFiles/cmTC_1a46f.dir/build]
+  ignore line: [make[1]: Entering directory '/home/josu/Documents/Github/Proyecto2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_1a46f.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc    -o CMakeFiles/cmTC_1a46f.dir/CMakeCCompilerABI.c.o   -c /home/josu/Documents/clion-2018.3.4/bin/cmake/linux/share/cmake-3.13/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTC_1a46f]
+  ignore line: [/home/josu/Documents/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1a46f.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc     -v CMakeFiles/cmTC_1a46f.dir/CMakeCCompilerABI.c.o  -o cmTC_1a46f ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/cc]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper]
   ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
   ignore line: [OFFLOAD_TARGET_DEFAULT=1]
   ignore line: [Target: x86_64-linux-gnu]
-  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 7.3.0-27ubuntu1~18.04' --with-bugurl=file:///usr/share/doc/gcc-7/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-7 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 7.4.0-1ubuntu1~18.04' --with-bugurl=file:///usr/share/doc/gcc-7/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-7 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
   ignore line: [Thread model: posix]
-  ignore line: [gcc version 7.3.0 (Ubuntu 7.3.0-27ubuntu1~18.04) ]
+  ignore line: [gcc version 7.4.0 (Ubuntu 7.4.0-1ubuntu1~18.04) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_9791b' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccVbRCh2.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_9791b /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. CMakeFiles/cmTC_9791b.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_1a46f' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/cc0qQhKG.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_1a46f /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. CMakeFiles/cmTC_1a46f.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o]
     arg [/usr/lib/gcc/x86_64-linux-gnu/7/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccVbRCh2.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/cc0qQhKG.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -115,7 +115,7 @@ Parsed C implicit link information from above output:
     arg [-znow] ==> ignore
     arg [-zrelro] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_9791b] ==> ignore
+    arg [cmTC_1a46f] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o] ==> ignore
@@ -127,7 +127,7 @@ Parsed C implicit link information from above output:
     arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
     arg [-L/usr/lib/gcc/x86_64-linux-gnu/7/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/7/../../..]
-    arg [CMakeFiles/cmTC_9791b.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [CMakeFiles/cmTC_1a46f.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [--push-state] ==> ignore
     arg [--as-needed] ==> ignore
@@ -157,17 +157,17 @@ Parsed C implicit link information from above output:
 
 
 Detecting C [-std=c11] compiler features compiled with the following output:
-Change Dir: /home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/josu/Documents/Github/Proyecto2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_13d51/fast"
-/usr/bin/make -f CMakeFiles/cmTC_13d51.dir/build.make CMakeFiles/cmTC_13d51.dir/build
-make[1]: se entra en el directorio '/home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_13d51.dir/feature_tests.c.o
-/usr/bin/cc   -std=c11 -o CMakeFiles/cmTC_13d51.dir/feature_tests.c.o   -c /home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/feature_tests.c
-Linking C executable cmTC_13d51
-/home/tati2327/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_13d51.dir/link.txt --verbose=1
-/usr/bin/cc      CMakeFiles/cmTC_13d51.dir/feature_tests.c.o  -o cmTC_13d51 
-make[1]: se sale del directorio '/home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_22d7d/fast"
+/usr/bin/make -f CMakeFiles/cmTC_22d7d.dir/build.make CMakeFiles/cmTC_22d7d.dir/build
+make[1]: Entering directory '/home/josu/Documents/Github/Proyecto2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_22d7d.dir/feature_tests.c.o
+/usr/bin/cc   -std=c11 -o CMakeFiles/cmTC_22d7d.dir/feature_tests.c.o   -c /home/josu/Documents/Github/Proyecto2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/feature_tests.c
+Linking C executable cmTC_22d7d
+/home/josu/Documents/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_22d7d.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_22d7d.dir/feature_tests.c.o  -o cmTC_22d7d 
+make[1]: Leaving directory '/home/josu/Documents/Github/Proyecto2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -177,17 +177,17 @@ make[1]: se sale del directorio '/home/tati2327/Documentos/GITHUB/Proyecto_2/Tat
 
 
 Detecting C [-std=c99] compiler features compiled with the following output:
-Change Dir: /home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/josu/Documents/Github/Proyecto2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_05141/fast"
-/usr/bin/make -f CMakeFiles/cmTC_05141.dir/build.make CMakeFiles/cmTC_05141.dir/build
-make[1]: se entra en el directorio '/home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_05141.dir/feature_tests.c.o
-/usr/bin/cc   -std=c99 -o CMakeFiles/cmTC_05141.dir/feature_tests.c.o   -c /home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/feature_tests.c
-Linking C executable cmTC_05141
-/home/tati2327/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_05141.dir/link.txt --verbose=1
-/usr/bin/cc      CMakeFiles/cmTC_05141.dir/feature_tests.c.o  -o cmTC_05141 
-make[1]: se sale del directorio '/home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_95964/fast"
+/usr/bin/make -f CMakeFiles/cmTC_95964.dir/build.make CMakeFiles/cmTC_95964.dir/build
+make[1]: Entering directory '/home/josu/Documents/Github/Proyecto2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_95964.dir/feature_tests.c.o
+/usr/bin/cc   -std=c99 -o CMakeFiles/cmTC_95964.dir/feature_tests.c.o   -c /home/josu/Documents/Github/Proyecto2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/feature_tests.c
+Linking C executable cmTC_95964
+/home/josu/Documents/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_95964.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_95964.dir/feature_tests.c.o  -o cmTC_95964 
+make[1]: Leaving directory '/home/josu/Documents/Github/Proyecto2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -197,17 +197,17 @@ make[1]: se sale del directorio '/home/tati2327/Documentos/GITHUB/Proyecto_2/Tat
 
 
 Detecting C [-std=c90] compiler features compiled with the following output:
-Change Dir: /home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/josu/Documents/Github/Proyecto2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_ddcc7/fast"
-/usr/bin/make -f CMakeFiles/cmTC_ddcc7.dir/build.make CMakeFiles/cmTC_ddcc7.dir/build
-make[1]: se entra en el directorio '/home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_ddcc7.dir/feature_tests.c.o
-/usr/bin/cc   -std=c90 -o CMakeFiles/cmTC_ddcc7.dir/feature_tests.c.o   -c /home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/feature_tests.c
-Linking C executable cmTC_ddcc7
-/home/tati2327/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ddcc7.dir/link.txt --verbose=1
-/usr/bin/cc      CMakeFiles/cmTC_ddcc7.dir/feature_tests.c.o  -o cmTC_ddcc7 
-make[1]: se sale del directorio '/home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_2f647/fast"
+/usr/bin/make -f CMakeFiles/cmTC_2f647.dir/build.make CMakeFiles/cmTC_2f647.dir/build
+make[1]: Entering directory '/home/josu/Documents/Github/Proyecto2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2f647.dir/feature_tests.c.o
+/usr/bin/cc   -std=c90 -o CMakeFiles/cmTC_2f647.dir/feature_tests.c.o   -c /home/josu/Documents/Github/Proyecto2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/feature_tests.c
+Linking C executable cmTC_2f647
+/home/josu/Documents/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2f647.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_2f647.dir/feature_tests.c.o  -o cmTC_2f647 
+make[1]: Leaving directory '/home/josu/Documents/Github/Proyecto2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -215,77 +215,77 @@ make[1]: se sale del directorio '/home/tati2327/Documentos/GITHUB/Proyecto_2/Tat
     Feature record: C_FEATURE:0c_static_assert
     Feature record: C_FEATURE:0c_variadic_macros
 Determining if the CXX compiler works passed with the following output:
-Change Dir: /home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/josu/Documents/Github/Proyecto2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_f5380/fast"
-/usr/bin/make -f CMakeFiles/cmTC_f5380.dir/build.make CMakeFiles/cmTC_f5380.dir/build
-make[1]: se entra en el directorio '/home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_f5380.dir/testCXXCompiler.cxx.o
-/usr/bin/c++     -o CMakeFiles/cmTC_f5380.dir/testCXXCompiler.cxx.o -c /home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
-Linking CXX executable cmTC_f5380
-/home/tati2327/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f5380.dir/link.txt --verbose=1
-/usr/bin/c++       CMakeFiles/cmTC_f5380.dir/testCXXCompiler.cxx.o  -o cmTC_f5380 
-make[1]: se sale del directorio '/home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_ff74c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ff74c.dir/build.make CMakeFiles/cmTC_ff74c.dir/build
+make[1]: Entering directory '/home/josu/Documents/Github/Proyecto2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_ff74c.dir/testCXXCompiler.cxx.o
+/usr/bin/c++     -o CMakeFiles/cmTC_ff74c.dir/testCXXCompiler.cxx.o -c /home/josu/Documents/Github/Proyecto2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_ff74c
+/home/josu/Documents/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ff74c.dir/link.txt --verbose=1
+/usr/bin/c++       CMakeFiles/cmTC_ff74c.dir/testCXXCompiler.cxx.o  -o cmTC_ff74c 
+make[1]: Leaving directory '/home/josu/Documents/Github/Proyecto2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: /home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/josu/Documents/Github/Proyecto2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_d128f/fast"
-/usr/bin/make -f CMakeFiles/cmTC_d128f.dir/build.make CMakeFiles/cmTC_d128f.dir/build
-make[1]: se entra en el directorio '/home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_d128f.dir/CMakeCXXCompilerABI.cpp.o
-/usr/bin/c++     -o CMakeFiles/cmTC_d128f.dir/CMakeCXXCompilerABI.cpp.o -c /home/tati2327/clion-2018.3.4/bin/cmake/linux/share/cmake-3.13/Modules/CMakeCXXCompilerABI.cpp
-Linking CXX executable cmTC_d128f
-/home/tati2327/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d128f.dir/link.txt --verbose=1
-/usr/bin/c++      -v CMakeFiles/cmTC_d128f.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_d128f 
+Run Build Command:"/usr/bin/make" "cmTC_abb8c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_abb8c.dir/build.make CMakeFiles/cmTC_abb8c.dir/build
+make[1]: Entering directory '/home/josu/Documents/Github/Proyecto2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_abb8c.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++     -o CMakeFiles/cmTC_abb8c.dir/CMakeCXXCompilerABI.cpp.o -c /home/josu/Documents/clion-2018.3.4/bin/cmake/linux/share/cmake-3.13/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTC_abb8c
+/home/josu/Documents/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_abb8c.dir/link.txt --verbose=1
+/usr/bin/c++      -v CMakeFiles/cmTC_abb8c.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_abb8c 
 Using built-in specs.
 COLLECT_GCC=/usr/bin/c++
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper
 OFFLOAD_TARGET_NAMES=nvptx-none
 OFFLOAD_TARGET_DEFAULT=1
 Target: x86_64-linux-gnu
-Configured with: ../src/configure -v --with-pkgversion='Ubuntu 7.3.0-27ubuntu1~18.04' --with-bugurl=file:///usr/share/doc/gcc-7/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-7 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 7.4.0-1ubuntu1~18.04' --with-bugurl=file:///usr/share/doc/gcc-7/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-7 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
 Thread model: posix
-gcc version 7.3.0 (Ubuntu 7.3.0-27ubuntu1~18.04) 
+gcc version 7.4.0 (Ubuntu 7.4.0-1ubuntu1~18.04) 
 COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_d128f' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccwxC2Fi.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_d128f /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. CMakeFiles/cmTC_d128f.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_d128f' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
-make[1]: se sale del directorio '/home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/CMakeTmp'
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_abb8c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccWSQ0do.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_abb8c /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. CMakeFiles/cmTC_abb8c.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_abb8c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+make[1]: Leaving directory '/home/josu/Documents/Github/Proyecto2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
 Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/josu/Documents/Github/Proyecto2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_d128f/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_d128f.dir/build.make CMakeFiles/cmTC_d128f.dir/build]
-  ignore line: [make[1]: se entra en el directorio '/home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/CMakeTmp']
-  ignore line: [Building CXX object CMakeFiles/cmTC_d128f.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/usr/bin/c++     -o CMakeFiles/cmTC_d128f.dir/CMakeCXXCompilerABI.cpp.o -c /home/tati2327/clion-2018.3.4/bin/cmake/linux/share/cmake-3.13/Modules/CMakeCXXCompilerABI.cpp]
-  ignore line: [Linking CXX executable cmTC_d128f]
-  ignore line: [/home/tati2327/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d128f.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/c++      -v CMakeFiles/cmTC_d128f.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_d128f ]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_abb8c/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_abb8c.dir/build.make CMakeFiles/cmTC_abb8c.dir/build]
+  ignore line: [make[1]: Entering directory '/home/josu/Documents/Github/Proyecto2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_abb8c.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++     -o CMakeFiles/cmTC_abb8c.dir/CMakeCXXCompilerABI.cpp.o -c /home/josu/Documents/clion-2018.3.4/bin/cmake/linux/share/cmake-3.13/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTC_abb8c]
+  ignore line: [/home/josu/Documents/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_abb8c.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++      -v CMakeFiles/cmTC_abb8c.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_abb8c ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/c++]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper]
   ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
   ignore line: [OFFLOAD_TARGET_DEFAULT=1]
   ignore line: [Target: x86_64-linux-gnu]
-  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 7.3.0-27ubuntu1~18.04' --with-bugurl=file:///usr/share/doc/gcc-7/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-7 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 7.4.0-1ubuntu1~18.04' --with-bugurl=file:///usr/share/doc/gcc-7/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-7 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
   ignore line: [Thread model: posix]
-  ignore line: [gcc version 7.3.0 (Ubuntu 7.3.0-27ubuntu1~18.04) ]
+  ignore line: [gcc version 7.4.0 (Ubuntu 7.4.0-1ubuntu1~18.04) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_d128f' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccwxC2Fi.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_d128f /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. CMakeFiles/cmTC_d128f.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_abb8c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccWSQ0do.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_abb8c /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. CMakeFiles/cmTC_abb8c.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o]
     arg [/usr/lib/gcc/x86_64-linux-gnu/7/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccwxC2Fi.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccWSQ0do.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -304,7 +304,7 @@ Parsed CXX implicit link information from above output:
     arg [-znow] ==> ignore
     arg [-zrelro] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_d128f] ==> ignore
+    arg [cmTC_abb8c] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o] ==> ignore
@@ -316,7 +316,7 @@ Parsed CXX implicit link information from above output:
     arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
     arg [-L/usr/lib/gcc/x86_64-linux-gnu/7/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/7/../../..]
-    arg [CMakeFiles/cmTC_d128f.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [CMakeFiles/cmTC_abb8c.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lm] ==> lib [m]
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -342,17 +342,17 @@ Parsed CXX implicit link information from above output:
 
 
 Detecting CXX [-std=c++1z] compiler features compiled with the following output:
-Change Dir: /home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/josu/Documents/Github/Proyecto2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_c24fb/fast"
-/usr/bin/make -f CMakeFiles/cmTC_c24fb.dir/build.make CMakeFiles/cmTC_c24fb.dir/build
-make[1]: se entra en el directorio '/home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_c24fb.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++1z -o CMakeFiles/cmTC_c24fb.dir/feature_tests.cxx.o -c /home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_c24fb
-/home/tati2327/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c24fb.dir/link.txt --verbose=1
-/usr/bin/c++       CMakeFiles/cmTC_c24fb.dir/feature_tests.cxx.o  -o cmTC_c24fb 
-make[1]: se sale del directorio '/home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_591d9/fast"
+/usr/bin/make -f CMakeFiles/cmTC_591d9.dir/build.make CMakeFiles/cmTC_591d9.dir/build
+make[1]: Entering directory '/home/josu/Documents/Github/Proyecto2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_591d9.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++1z -o CMakeFiles/cmTC_591d9.dir/feature_tests.cxx.o -c /home/josu/Documents/Github/Proyecto2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_591d9
+/home/josu/Documents/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_591d9.dir/link.txt --verbose=1
+/usr/bin/c++       CMakeFiles/cmTC_591d9.dir/feature_tests.cxx.o  -o cmTC_591d9 
+make[1]: Leaving directory '/home/josu/Documents/Github/Proyecto2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -415,17 +415,17 @@ make[1]: se sale del directorio '/home/tati2327/Documentos/GITHUB/Proyecto_2/Tat
 
 
 Detecting CXX [-std=c++14] compiler features compiled with the following output:
-Change Dir: /home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/josu/Documents/Github/Proyecto2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_416a0/fast"
-/usr/bin/make -f CMakeFiles/cmTC_416a0.dir/build.make CMakeFiles/cmTC_416a0.dir/build
-make[1]: se entra en el directorio '/home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_416a0.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++14 -o CMakeFiles/cmTC_416a0.dir/feature_tests.cxx.o -c /home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_416a0
-/home/tati2327/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_416a0.dir/link.txt --verbose=1
-/usr/bin/c++       CMakeFiles/cmTC_416a0.dir/feature_tests.cxx.o  -o cmTC_416a0 
-make[1]: se sale del directorio '/home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_eceb2/fast"
+/usr/bin/make -f CMakeFiles/cmTC_eceb2.dir/build.make CMakeFiles/cmTC_eceb2.dir/build
+make[1]: Entering directory '/home/josu/Documents/Github/Proyecto2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_eceb2.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++14 -o CMakeFiles/cmTC_eceb2.dir/feature_tests.cxx.o -c /home/josu/Documents/Github/Proyecto2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_eceb2
+/home/josu/Documents/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_eceb2.dir/link.txt --verbose=1
+/usr/bin/c++       CMakeFiles/cmTC_eceb2.dir/feature_tests.cxx.o  -o cmTC_eceb2 
+make[1]: Leaving directory '/home/josu/Documents/Github/Proyecto2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -488,17 +488,17 @@ make[1]: se sale del directorio '/home/tati2327/Documentos/GITHUB/Proyecto_2/Tat
 
 
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
-Change Dir: /home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/josu/Documents/Github/Proyecto2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_fe297/fast"
-/usr/bin/make -f CMakeFiles/cmTC_fe297.dir/build.make CMakeFiles/cmTC_fe297.dir/build
-make[1]: se entra en el directorio '/home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_fe297.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++11 -o CMakeFiles/cmTC_fe297.dir/feature_tests.cxx.o -c /home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_fe297
-/home/tati2327/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fe297.dir/link.txt --verbose=1
-/usr/bin/c++       CMakeFiles/cmTC_fe297.dir/feature_tests.cxx.o  -o cmTC_fe297 
-make[1]: se sale del directorio '/home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_6fc56/fast"
+/usr/bin/make -f CMakeFiles/cmTC_6fc56.dir/build.make CMakeFiles/cmTC_6fc56.dir/build
+make[1]: Entering directory '/home/josu/Documents/Github/Proyecto2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_6fc56.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++11 -o CMakeFiles/cmTC_6fc56.dir/feature_tests.cxx.o -c /home/josu/Documents/Github/Proyecto2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_6fc56
+/home/josu/Documents/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6fc56.dir/link.txt --verbose=1
+/usr/bin/c++       CMakeFiles/cmTC_6fc56.dir/feature_tests.cxx.o  -o cmTC_6fc56 
+make[1]: Leaving directory '/home/josu/Documents/Github/Proyecto2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
@@ -561,17 +561,17 @@ make[1]: se sale del directorio '/home/tati2327/Documentos/GITHUB/Proyecto_2/Tat
 
 
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
-Change Dir: /home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/josu/Documents/Github/Proyecto2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_8f514/fast"
-/usr/bin/make -f CMakeFiles/cmTC_8f514.dir/build.make CMakeFiles/cmTC_8f514.dir/build
-make[1]: se entra en el directorio '/home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_8f514.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++98 -o CMakeFiles/cmTC_8f514.dir/feature_tests.cxx.o -c /home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_8f514
-/home/tati2327/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8f514.dir/link.txt --verbose=1
-/usr/bin/c++       CMakeFiles/cmTC_8f514.dir/feature_tests.cxx.o  -o cmTC_8f514 
-make[1]: se sale del directorio '/home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_9936c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_9936c.dir/build.make CMakeFiles/cmTC_9936c.dir/build
+make[1]: Entering directory '/home/josu/Documents/Github/Proyecto2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_9936c.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++98 -o CMakeFiles/cmTC_9936c.dir/feature_tests.cxx.o -c /home/josu/Documents/Github/Proyecto2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_9936c
+/home/josu/Documents/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9936c.dir/link.txt --verbose=1
+/usr/bin/c++       CMakeFiles/cmTC_9936c.dir/feature_tests.cxx.o  -o cmTC_9936c 
+make[1]: Leaving directory '/home/josu/Documents/Github/Proyecto2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
@@ -632,30 +632,30 @@ make[1]: se sale del directorio '/home/tati2327/Documentos/GITHUB/Proyecto_2/Tat
     Feature record: CXX_FEATURE:0cxx_variadic_macros
     Feature record: CXX_FEATURE:0cxx_variadic_templates
 Determining if the include file pthread.h exists passed with the following output:
-Change Dir: /home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/josu/Documents/Github/Proyecto2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_68c1c/fast"
-/usr/bin/make -f CMakeFiles/cmTC_68c1c.dir/build.make CMakeFiles/cmTC_68c1c.dir/build
-make[1]: se entra en el directorio '/home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_68c1c.dir/CheckIncludeFile.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_68c1c.dir/CheckIncludeFile.c.o   -c /home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c
-Linking C executable cmTC_68c1c
-/home/tati2327/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_68c1c.dir/link.txt --verbose=1
-/usr/bin/cc      CMakeFiles/cmTC_68c1c.dir/CheckIncludeFile.c.o  -o cmTC_68c1c 
-make[1]: se sale del directorio '/home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_67518/fast"
+/usr/bin/make -f CMakeFiles/cmTC_67518.dir/build.make CMakeFiles/cmTC_67518.dir/build
+make[1]: Entering directory '/home/josu/Documents/Github/Proyecto2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_67518.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_67518.dir/CheckIncludeFile.c.o   -c /home/josu/Documents/Github/Proyecto2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_67518
+/home/josu/Documents/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_67518.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_67518.dir/CheckIncludeFile.c.o  -o cmTC_67518 
+make[1]: Leaving directory '/home/josu/Documents/Github/Proyecto2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
 Determining if the function pthread_create exists in the pthread passed with the following output:
-Change Dir: /home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/josu/Documents/Github/Proyecto2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_f9674/fast"
-/usr/bin/make -f CMakeFiles/cmTC_f9674.dir/build.make CMakeFiles/cmTC_f9674.dir/build
-make[1]: se entra en el directorio '/home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_f9674.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_f9674.dir/CheckFunctionExists.c.o   -c /home/tati2327/clion-2018.3.4/bin/cmake/linux/share/cmake-3.13/Modules/CheckFunctionExists.c
-Linking C executable cmTC_f9674
-/home/tati2327/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f9674.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_f9674.dir/CheckFunctionExists.c.o  -o cmTC_f9674 -lpthread 
-make[1]: se sale del directorio '/home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_aaf21/fast"
+/usr/bin/make -f CMakeFiles/cmTC_aaf21.dir/build.make CMakeFiles/cmTC_aaf21.dir/build
+make[1]: Entering directory '/home/josu/Documents/Github/Proyecto2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_aaf21.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_aaf21.dir/CheckFunctionExists.c.o   -c /home/josu/Documents/clion-2018.3.4/bin/cmake/linux/share/cmake-3.13/Modules/CheckFunctionExists.c
+Linking C executable cmTC_aaf21
+/home/josu/Documents/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_aaf21.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_aaf21.dir/CheckFunctionExists.c.o  -o cmTC_aaf21 -lpthread 
+make[1]: Leaving directory '/home/josu/Documents/Github/Proyecto2/Tati/Logic/Client/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 

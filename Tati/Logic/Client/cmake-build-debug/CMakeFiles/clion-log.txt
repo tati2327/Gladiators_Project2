@@ -1,6 +1,6 @@
-/home/tati2327/clion-2018.3.4/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Client
--- The C compiler identification is GNU 7.3.0
--- The CXX compiler identification is GNU 7.3.0
+/home/josu/Documents/clion-2018.3.4/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/josu/Documents/Github/Proyecto2/Tati/Logic/Client
+-- The C compiler identification is GNU 7.4.0
+-- The CXX compiler identification is GNU 7.4.0
 -- Check for working C compiler: /usr/bin/cc
 -- Check for working C compiler: /usr/bin/cc -- works
 -- Detecting C compiler ABI info
@@ -24,4 +24,4 @@
 -- Found Threads: TRUE  
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Client/cmake-build-debug
+-- Build files have been written to: /home/josu/Documents/Github/Proyecto2/Tati/Logic/Client/cmake-build-debug

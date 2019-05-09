@@ -18,6 +18,7 @@ public:
   QGraphicsView *view;
   QGraphicsScene *scene;
   MyPlayer *player;
+
   Stadistics *life_points;
   Stadistics* ID, *age, *survival_prob, *expected_gen, *emotional_intelligence,*upper_stregth,*lower_stregth,*resistance,*physical_condition,*time_in;
   QTimer *timer;

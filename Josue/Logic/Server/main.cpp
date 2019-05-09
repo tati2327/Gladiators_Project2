@@ -8,10 +8,10 @@
 
 int main() {
 
-    /*srand(time(NULL));
-    Game myGame;
-    myGame.newGame();
-    myGame.play();*/
+    srand(time(NULL));
+    //Game myGame;
+    //myGame.newGame();
+    //myGame.play();
 
     Server s;
     s.initServer();

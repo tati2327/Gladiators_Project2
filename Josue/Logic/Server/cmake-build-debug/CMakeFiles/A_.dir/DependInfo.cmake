@@ -4,15 +4,15 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/josu/Documents/Github/Proyecto2/Josue/Logic/Server/Army.cpp" "/home/josu/Documents/Github/Proyecto2/Josue/Logic/Server/cmake-build-debug/CMakeFiles/A_.dir/Army.cpp.o"
-  "/home/josu/Documents/Github/Proyecto2/Josue/Logic/Server/Field.cpp" "/home/josu/Documents/Github/Proyecto2/Josue/Logic/Server/cmake-build-debug/CMakeFiles/A_.dir/Field.cpp.o"
-  "/home/josu/Documents/Github/Proyecto2/Josue/Logic/Server/Game.cpp" "/home/josu/Documents/Github/Proyecto2/Josue/Logic/Server/cmake-build-debug/CMakeFiles/A_.dir/Game.cpp.o"
-  "/home/josu/Documents/Github/Proyecto2/Josue/Logic/Server/GeneticEvolution.cpp" "/home/josu/Documents/Github/Proyecto2/Josue/Logic/Server/cmake-build-debug/CMakeFiles/A_.dir/GeneticEvolution.cpp.o"
-  "/home/josu/Documents/Github/Proyecto2/Josue/Logic/Server/Gladiator.cpp" "/home/josu/Documents/Github/Proyecto2/Josue/Logic/Server/cmake-build-debug/CMakeFiles/A_.dir/Gladiator.cpp.o"
-  "/home/josu/Documents/Github/Proyecto2/Josue/Logic/Server/JSON.cpp" "/home/josu/Documents/Github/Proyecto2/Josue/Logic/Server/cmake-build-debug/CMakeFiles/A_.dir/JSON.cpp.o"
-  "/home/josu/Documents/Github/Proyecto2/Josue/Logic/Server/Pathfinding.cpp" "/home/josu/Documents/Github/Proyecto2/Josue/Logic/Server/cmake-build-debug/CMakeFiles/A_.dir/Pathfinding.cpp.o"
-  "/home/josu/Documents/Github/Proyecto2/Josue/Logic/Server/Server.cpp" "/home/josu/Documents/Github/Proyecto2/Josue/Logic/Server/cmake-build-debug/CMakeFiles/A_.dir/Server.cpp.o"
-  "/home/josu/Documents/Github/Proyecto2/Josue/Logic/Server/main.cpp" "/home/josu/Documents/Github/Proyecto2/Josue/Logic/Server/cmake-build-debug/CMakeFiles/A_.dir/main.cpp.o"
+  "/home/josu/Desktop/Server/Army.cpp" "/home/josu/Desktop/Server/cmake-build-debug/CMakeFiles/A_.dir/Army.cpp.o"
+  "/home/josu/Desktop/Server/Field.cpp" "/home/josu/Desktop/Server/cmake-build-debug/CMakeFiles/A_.dir/Field.cpp.o"
+  "/home/josu/Desktop/Server/Game.cpp" "/home/josu/Desktop/Server/cmake-build-debug/CMakeFiles/A_.dir/Game.cpp.o"
+  "/home/josu/Desktop/Server/GeneticEvolution.cpp" "/home/josu/Desktop/Server/cmake-build-debug/CMakeFiles/A_.dir/GeneticEvolution.cpp.o"
+  "/home/josu/Desktop/Server/Gladiator.cpp" "/home/josu/Desktop/Server/cmake-build-debug/CMakeFiles/A_.dir/Gladiator.cpp.o"
+  "/home/josu/Desktop/Server/JSON.cpp" "/home/josu/Desktop/Server/cmake-build-debug/CMakeFiles/A_.dir/JSON.cpp.o"
+  "/home/josu/Desktop/Server/Pathfinding.cpp" "/home/josu/Desktop/Server/cmake-build-debug/CMakeFiles/A_.dir/Pathfinding.cpp.o"
+  "/home/josu/Desktop/Server/Server.cpp" "/home/josu/Desktop/Server/cmake-build-debug/CMakeFiles/A_.dir/Server.cpp.o"
+  "/home/josu/Desktop/Server/main.cpp" "/home/josu/Desktop/Server/cmake-build-debug/CMakeFiles/A_.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

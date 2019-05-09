@@ -450,7 +450,7 @@ void Game::spawn()
       poner=false;
     }
   if (cont<rute.size()){
-      player->setPos((int(rute[cont])-48)*66.5+83,(int(rute[cont+1])-48)*64+30);
+      player->setPos((int(rute[cont])-48)*66.5+73,(int(rute[cont+1])-48)*64+29);
       cont=cont+2;
       if (cont>0){
           shoot=true;

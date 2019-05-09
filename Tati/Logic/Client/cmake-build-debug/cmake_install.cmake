@@ -1,4 +1,4 @@
-# Install script for directory: /home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Client
+# Install script for directory: /home/josu/Documents/Github/Proyecto2/Tati/Logic/Client
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Client/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/josu/Documents/Github/Proyecto2/Tati/Logic/Client/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

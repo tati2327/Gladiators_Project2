@@ -8,13 +8,14 @@
 #include <QGraphicsScene>
 extern  Game* g;
 extern bool status;
+extern bool shoot;
 Arrow3::Arrow3(QGraphicsItem *parent)
 {
   setPixmap(QPixmap(":images/Explosive.png"));
 
   QTimer *move_timer = new QTimer(this);
   connect(move_timer,SIGNAL(timeout()),this,SLOT(move()));
-  move_timer->start(15);
+  move_timer->start(10);
 }
 
 void Arrow3::move(){
@@ -36,6 +37,18 @@ void Arrow3::move(){
               g->cont=0;
               g->timer->stop();
               g->timer->start(2000);
+              shoot=false;
+              g->ID->setPlainText(QString(QString::number(0)));
+              g->player->life_points=resis;
+              g->resistance->setPlainText(QString(QString::number(0)));
+              g->life_points->setPlainText(QString(QString::number(0)));
+              g->age->setPlainText(QString(QString::number(0)));
+              g->upper_stregth->setPlainText(QString(QString::number(0)));
+              g->lower_stregth->setPlainText(QString(QString::number(0)));
+              g->physical_condition->setPlainText(QString(QString::number(0)));
+              g->expected_gen->setPlainText(QString(QString::number(0)));
+              g->survival_prob->setPlainText(QString(QString::number(0)));
+              g->time_in->setPlainText(QString(QString::number(0)));
             }
           delete this;
           return;

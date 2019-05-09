@@ -8,7 +8,6 @@ class Field {
         int f, g, h, i, j;
         bool inLine, inDiagonal, obstacle;
         string father;
-        bool initG;
 
         Field();
 

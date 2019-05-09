@@ -6,5 +6,5 @@ CXX_FLAGS = -g   -std=gnu++14
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/tati2327/Documentos/GITHUB/Proyecto_2/Tati/Logic/Client/./include/rapidjson 
+CXX_INCLUDES = -I/home/josu/Documents/Github/Proyecto2/Tati/Logic/Client/./include/rapidjson 
 

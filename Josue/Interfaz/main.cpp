@@ -24,6 +24,8 @@ List<char> *movs;
 bool poner=false;
 bool status=true;
 int jtime;
+int jiteration;
+bool shoot=false;
 
 int juego(int argc, char *argv[]){
   QApplication a(argc,argv);

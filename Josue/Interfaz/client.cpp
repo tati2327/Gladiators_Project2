@@ -18,10 +18,11 @@ extern bool status;
 extern bool poner;
 extern string rute;
 extern int jtime;
+extern int jiteration;
 Client::Client() {
     newGame = false;
     port = 54000;
-    ipAddress = "192.168.43.209";
+    ipAddress = "192.168.1.4";
 }
 
 void Client::newClient() {
@@ -96,8 +97,9 @@ void Client::manageServer() {
             jupper = myJson.getUperStrenght();
             jlower = myJson.getLowerStrenght();
             jphys = myJson.getPhysicalCondition();
-            //myJson.getRoute();
             rute = myJson.rute();
+            jiteration = myJson.getIteration();
+            jtime = myJson.getTime();
             poner=true;
 
             /*! Atraves de myJson.get...() se obtienen los datos del gladeador, los obstaculos y la ruta
