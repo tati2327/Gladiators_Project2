@@ -19,6 +19,7 @@ class JSON {
 
         string serializeNewPlay();
         string serializeNextIteration();
+        string serializeGraphic();
 
         int getRequest();
         List<string> getObstacles();

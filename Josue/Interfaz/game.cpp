@@ -40,8 +40,10 @@ extern string rute;
 extern bool poner;
 extern int jiteration;
 extern int jtime;
+extern bool finished;
 string backuprute;
 int backuptime;
+
 extern bool shoot;
 Game::Game()
 {
@@ -334,15 +336,7 @@ void Game::endgame()
          //view->close();
          chartView->show();
 
-//         // Used to change the palette
-//         QPalette pal = qApp->palette();
 
-//         // Change the color around the chart widget and text
-//         pal.setColor(QPalette::Window, QRgb(0xffffff));
-//         pal.setColor(QPalette::WindowText, QRgb(0x404044));
-
-//         // Apply palette changes to the application
-//         qApp->setPalette(pal);
 
 }
 
@@ -450,7 +444,7 @@ void Game::spawn()
       poner=false;
     }
   if (cont<rute.size()){
-      player->setPos((int(rute[cont])-48)*66.5+83,(int(rute[cont+1])-48)*64+30);
+      player->setPos((int(rute[cont])-48)*66.5+73,(int(rute[cont+1])-48)*64+29);
       cont=cont+2;
       if (cont>0){
           shoot=true;
@@ -458,6 +452,8 @@ void Game::spawn()
 
     }
   if (player->pos().x()>615 && player->pos().y()>598){
+      finished = true;
+      timer->stop();
       endgame();
 }
 

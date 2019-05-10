@@ -26,6 +26,7 @@ bool status=true;
 int jtime;
 int jiteration;
 bool shoot=false;
+bool finished=false;
 
 int juego(int argc, char *argv[]){
   QApplication a(argc,argv);

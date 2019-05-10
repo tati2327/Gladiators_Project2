@@ -19,6 +19,8 @@ extern bool poner;
 extern string rute;
 extern int jtime;
 extern int jiteration;
+extern bool finished;
+int count;
 Client::Client() {
     newGame = false;
     port = 54000;
@@ -58,8 +60,19 @@ void Client::manageServer() {
         if(!newGame){
             newGame = true;
             messageToSend = myJsonToSend.serializeNewPlay();
+            count=1;
         } else {
-            messageToSend=myJsonToSend.serializeNextIteration();
+            if (status){
+                messageToSend=myJsonToSend.serializeNextIteration();
+                count=1;
+              }
+            if (finished){
+                messageToSend = myJsonToSend.serializeGraphic();
+                finished=false;
+                status=true;
+                count=2;
+              }
+
         }
         int sendRes=-1;
         /*! Enviar mensaje al servidor*/
@@ -84,23 +97,30 @@ void Client::manageServer() {
             JSON myJson; /*!< Instancia del Json para mandar mensajes*/
             /*! Se lee la respuesta del servidor*/
             messageReived = string(buf, static_cast<unsigned long>(bytesReceived));
+            if (count==2){
+                myJson.jsonToDocument(messageReived);
 
+              }
             cout<<"SERVER: "<<messageReived << endl;
             sleep(1);
-            myJson.jsonToDocument(messageReived);
-            id = myJson.getId();
-            resis= myJson.getResistance();
-            jage = myJson.getAge();
-            obs1= myJson.obs1();
-            jexpec = myJson.getExpectedGen();
-            jsurv = myJson.getSurvivalProb();
-            jupper = myJson.getUperStrenght();
-            jlower = myJson.getLowerStrenght();
-            jphys = myJson.getPhysicalCondition();
-            rute = myJson.rute();
-            jiteration = myJson.getIteration();
-            jtime = myJson.getTime();
-            poner=true;
+            if (count==1){
+                myJson.jsonToDocument(messageReived);
+                id = myJson.getId();
+                resis= myJson.getResistance();
+                jage = myJson.getAge();
+                obs1= myJson.obs1();
+                jexpec = myJson.getExpectedGen();
+                jsurv = myJson.getSurvivalProb();
+                jupper = myJson.getUperStrenght();
+                jlower = myJson.getLowerStrenght();
+                jphys = myJson.getPhysicalCondition();
+                rute = myJson.rute();
+                jiteration = myJson.getIteration();
+                jtime = myJson.getTime();
+                poner=true;
+              }
+
+
 
             /*! Atraves de myJson.get...() se obtienen los datos del gladeador, los obstaculos y la ruta
              * Despues se usan esos datos para colocarlos enn a pantalla, darle la ruta al gladiador y si

@@ -33,7 +33,7 @@ string JSON::serializeNextIteration() {
     document.RemoveAllMembers();
     Document::AllocatorType& allocator = document.GetAllocator();
     document.AddMember("request",2, allocator);
-    document.AddMember("message","otra iteración..", allocator);
+    document.AddMember("message","otra iteracion..", allocator);
 
     StringBuffer strbuf;
     Writer<StringBuffer> writer(strbuf);
@@ -43,6 +43,23 @@ string JSON::serializeNextIteration() {
     //std::cout <<strbuf.GetString()<< std::endl;
    // cout<<"***********************************************************"<<endl;
     return strbuf.GetString();
+}
+
+string JSON::serializeGraphic()
+{
+  document.RemoveAllMembers();
+  Document::AllocatorType& allocator = document.GetAllocator();
+  document.AddMember("request",5, allocator);
+  document.AddMember("message","grafico", allocator);
+
+  StringBuffer strbuf;
+  Writer<StringBuffer> writer(strbuf);
+  document.Accept(writer);
+
+ // cout<<"***********************************************************"<<endl;
+  //std::cout <<strbuf.GetString()<< std::endl;
+ // cout<<"*********************
+  return strbuf.GetString();
 }
 
 int JSON::getRequest() {
