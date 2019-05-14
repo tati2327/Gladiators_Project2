@@ -20,7 +20,10 @@ extern string rute;
 extern int jtime;
 extern int jiteration;
 extern bool finished;
+extern List<int> gid;
+extern List<int> gresistance;
 int count;
+extern bool graph;
 Client::Client() {
     newGame = false;
     port = 54000;
@@ -99,6 +102,13 @@ void Client::manageServer() {
             messageReived = string(buf, static_cast<unsigned long>(bytesReceived));
             if (count==2){
                 myJson.jsonToDocument(messageReived);
+                cout<<"perro1"<<endl;
+                gresistance = myJson.getGraphicResistance();
+                cout<<"perro1"<<endl;
+                gid= myJson.getGraphicId();
+                cout<<"perro1"<<endl;
+
+                 graph=true;
 
               }
             cout<<"SERVER: "<<messageReived << endl;

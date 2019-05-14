@@ -3,6 +3,7 @@
 #include <QKeyEvent>
 #include "game.h"
 extern Game *g;
+extern bool finished;
 MyPlayer::MyPlayer(QGraphicsItem *parent):QObject(),QGraphicsPixmapItem ()
 {
   setPixmap(QPixmap(":/images/Gladeador2.png"));
@@ -23,6 +24,8 @@ void MyPlayer::keyPressEvent(QKeyEvent *event)
   if (event->key()==Qt::Key_Up){
       setPos(x(),y()-63);
     }
+
+
   if (pos().x()>615 && pos().y()>598){
       g->endgame();
     }

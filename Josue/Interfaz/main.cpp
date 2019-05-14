@@ -27,6 +27,9 @@ int jtime;
 int jiteration;
 bool shoot=false;
 bool finished=false;
+List<int> gid;
+List<int> gresistance;
+bool graph=false;;
 
 int juego(int argc, char *argv[]){
   QApplication a(argc,argv);

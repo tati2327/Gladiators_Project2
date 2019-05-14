@@ -20,6 +20,7 @@
 #include <QtCharts/QCategoryAxis>
 #include <QtCharts/QPieSeries>
 #include <QtCharts/QPieSlice>
+#include "list.h"
 
 // Define the scope for your variables and functions
 QT_CHARTS_USE_NAMESPACE
@@ -41,6 +42,9 @@ extern bool poner;
 extern int jiteration;
 extern int jtime;
 extern bool finished;
+extern List<int> gid;
+extern List<int> gresistance;
+extern bool graph;
 string backuprute;
 int backuptime;
 
@@ -134,52 +138,52 @@ void Game::putTowers()
             }
         }
       if(jiteration>=3 && jiteration<5){
-          if (t1>=0 && t1<=2){
+          if (t1>=0 && t1<=5){
               Tower * tower = new Tower();
               tower->setPos(t1x*66.5+72,t1y*64+29);
               scene->addItem(tower);
 
             }
-          if (t1>2 && t1<=6){
+          if (t1>5 && t1<=7){
               Tower2 * tower = new Tower2();
 
               tower->setPos(t1x*66.5+72,t1y*64+29);
               scene->addItem(tower);
             }
-          if (t1>6 && t1<=9){
+          if (t1>7 && t1<=9){
               Tower3 * tower = new Tower3();
 
               tower->setPos(t1x*66.5+72,t1y*64+29);
               scene->addItem(tower);
 
             }
-          if (t2>=0 && t2<=2){
+          if (t2>=0 && t2<=5){
 
               Tower * tower = new Tower();
               scene->addItem(tower);
               tower->setPos(t2x*66.5+72,t2y*64+29);
             }
-          if (t2>2 && t2<=6){
+          if (t2>5 && t2<=7){
               Tower2 * tower = new Tower2();
               scene->addItem(tower);
               tower->setPos(t2x*66.5+72,t2y*64+29);
             }
-          if (t2>6 && t2<=9){
+          if (t2>7 && t2<=9){
               Tower3 * tower = new Tower3();
               scene->addItem(tower);
               tower->setPos(t2x*66.5+72,t2y*64+29);
             }
-          if (t3>=0 && t3<=2){
+          if (t3>=0 && t3<=5){
               Tower * tower = new Tower();
               scene->addItem(tower);
               tower->setPos(t3x*66.5+72,t3y*64+29);
             }
-          if (t3>2 && t3<=6){
+          if (t3>5 && t3<=7){
               Tower2 * tower = new Tower2();
               scene->addItem(tower);
               tower->setPos(t3x*66.5+72,t3y*64+29);
             }
-          if (t3>6 && t3<=9){
+          if (t3>7 && t3<=9){
               Tower3 * tower = new Tower3();
               scene->addItem(tower);
               tower->setPos(t3x*66.5+72,t3y*64+29);
@@ -270,71 +274,54 @@ void Game::endgame()
 {
   scene->clear();
   scene->setBackgroundBrush(QBrush(QImage(":images/inicio.png")));
+  while(!graph){
+
+    }
   // Assign names to the set of bars used
-         QBarSet *set0 = new QBarSet("Altuve");
-         QBarSet *set1 = new QBarSet("Martinez");
-         QBarSet *set2 = new QBarSet("Segura");
-         QBarSet *set3 = new QBarSet("Simmons");
-         QBarSet *set4 = new QBarSet("Trout");
+  QBarSeries *series = new QBarSeries();
+  for(int i =0;i<gid.size();i++){
+      QBarSet *set = new QBarSet(QString::number(gid.getData(i)));
+      *set << gresistance.getData(i);
+      series->append(set);
+    }
 
-         // Assign values for each bar
-         *set0 << 283 << 341 << 313 << 338 << 346 << 335;
-         *set1 << 250 << 315 << 282 << 307 << 303 << 330;
-         *set2 << 294 << 246 << 257 << 319 << 300 << 325;
-         *set3 << 248 << 244 << 265 << 281 << 278 << 313;
-         *set4 << 323 << 287 << 299 << 315 << 306 << 313;
+   QChart *chart = new QChart();
 
-         // Add all sets of data to the chart as a whole
-         // 1. Bar Chart
-         QBarSeries *series = new QBarSeries();
+    // Add the chart
+     chart->addSeries(series);
 
-         // 2. Stacked bar chart
-         // QHorizontalStackedBarSeries *series = new QHorizontalStackedBarSeries();
-         series->append(set0);
-         series->append(set1);
-         series->append(set2);
-         series->append(set3);
-         series->append(set4);
+     // Set title
+     chart->setTitle("Gladiators by Resistance");
 
-         // Used to define the bar chart to display, title
-         // legend,
-         QChart *chart = new QChart();
+     // Define starting animation
+     // NoAnimation, GridAxisAnimations, SeriesAnimations
+     chart->setAnimationOptions(QChart::AllAnimations);
 
-         // Add the chart
-         chart->addSeries(series);
+     // Holds the category titles
+     QStringList categories;
+     categories<<"ID";
 
-         // Set title
-         chart->setTitle("Gladiators by Resistance");
+     // Adds categories to the axes
+     QBarCategoryAxis *axis = new QBarCategoryAxis();
+     axis->append(categories);
+     chart->createDefaultAxes();
 
-         // Define starting animation
-         // NoAnimation, GridAxisAnimations, SeriesAnimations
-         chart->setAnimationOptions(QChart::AllAnimations);
+     // 1. Bar chart
+     //chart->setAxisX(axis, series);
 
-         // Holds the category titles
-         QStringList categories;
-         categories << "2013" << "2014" << "2015" << "2016" << "2017" << "2018";
+     // 2. Stacked Bar chart
+     // chart->setAxisY(axis, series);
 
-         // Adds categories to the axes
-         QBarCategoryAxis *axis = new QBarCategoryAxis();
-         axis->append(categories);
-         chart->createDefaultAxes();
+     // Define where the legend is displayed
+     chart->legend()->setVisible(true);
+     chart->legend()->setAlignment(Qt::AlignBottom);
 
-         // 1. Bar chart
-         chart->setAxisX(axis, series);
+     // Used to display the chart
+     QChartView *chartView = new QChartView(chart);
+     chartView->setRenderHint(QPainter::Antialiasing);
 
-         // 2. Stacked Bar chart
-         // chart->setAxisY(axis, series);
-
-         // Define where the legend is displayed
-         chart->legend()->setVisible(true);
-         chart->legend()->setAlignment(Qt::AlignBottom);
-
-         // Used to display the chart
-         QChartView *chartView = new QChartView(chart);
-         chartView->setRenderHint(QPainter::Antialiasing);
-
-         //view->close();
-         chartView->show();
+     //view->close();
+     chartView->show();
 
 
 
@@ -455,6 +442,8 @@ void Game::spawn()
       finished = true;
       timer->stop();
       endgame();
+
+
 }
 
 

@@ -162,7 +162,9 @@ int JSON::getIteration() {
 List<int> JSON::getGraphicResistance() {
     List<int > resistance;
     Value temp = document["resistance"].GetArray();
+    cout<<"quep"<<endl;
     for(int i = 0; i < temp.Size(); i++){
+        cout<<"try"<<i<<endl;
         resistance.add(temp[i].GetInt());
     }
     return resistance;
