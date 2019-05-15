@@ -6,6 +6,12 @@
 
 #IncludeRegexTransform: 
 
+/home/pablo/Documentos/Github/Gladiators/Pablo/Logic/Server/Army.cpp
+Army.h
+/home/pablo/Documentos/Github/Gladiators/Pablo/Logic/Server/Army.h
+iostream
+-
+
 /home/pablo/Documentos/Github/Gladiators/Pablo/Logic/Server/Army.h
 Gladiator.h
 /home/pablo/Documentos/Github/Gladiators/Pablo/Logic/Server/Gladiator.h
@@ -17,18 +23,6 @@ List.h
 /home/pablo/Documentos/Github/Gladiators/Pablo/Logic/Server/List.h
 unistd.h
 -
-
-/home/pablo/Documentos/Github/Gladiators/Pablo/Logic/Server/GeneticEvolution.cpp
-GeneticEvolution.h
-/home/pablo/Documentos/Github/Gladiators/Pablo/Logic/Server/GeneticEvolution.h
-
-/home/pablo/Documentos/Github/Gladiators/Pablo/Logic/Server/GeneticEvolution.h
-Army.h
-/home/pablo/Documentos/Github/Gladiators/Pablo/Logic/Server/Army.h
-Army.h
-/home/pablo/Documentos/Github/Gladiators/Pablo/Logic/Server/Army.h
-Gladiator.h
-/home/pablo/Documentos/Github/Gladiators/Pablo/Logic/Server/Gladiator.h
 
 /home/pablo/Documentos/Github/Gladiators/Pablo/Logic/Server/Gladiator.h
 cmath

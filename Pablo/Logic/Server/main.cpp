@@ -16,7 +16,7 @@ int main() {
     //Server s;
     //s.initServer();
     GeneticEvolution gE;
-    /*Army army;
+    Army army;
     srand(time(NULL));
     army.createArmy(army.armySize);
     army.insertionSort(army.gladiators);
@@ -41,7 +41,7 @@ int main() {
         army.insertionSort(army.gladiators);
         army.printArray(army.gladiators, army.armySize);
         i++;
-    }*/
+    }
 
 
 

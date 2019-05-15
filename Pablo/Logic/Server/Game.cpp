@@ -19,7 +19,6 @@ string Game::newGame() {
     army.insertionSort(army.gladiators);
     army.printArray(army.gladiators, army.armySize);
     myGladiator = army.getFittest();
-    gE.updateAge(army);
     addToHistoricalArmy(army.gladiators);
 
 

@@ -30,6 +30,8 @@ public:
      */
     int calculateResistance();
     int calculateEmotionalInt();
+    int calculateExpectedGenerations(int i);
+    int calculateSurvivalProb();
     int calculateFitness();
 
     /*----------------------------------GETTERS------------------------------------------------*/

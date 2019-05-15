@@ -6,7 +6,6 @@ GeneticEvolution::GeneticEvolution() {
     this->crossingMask2 = "1010111010101110010110101101001110101010";
     this->crossingMask3 = "1010110100111010101010101110101011100101";
     this->lastId=20;
-
 }
 
 void GeneticEvolution::mutation(Gladiator &gladiator) {
@@ -214,6 +213,7 @@ void GeneticEvolution::crossover(Army army,int index1, int index2) {
     son.setId(lastId+1);
     son.setEmotionalInt(son.calculateEmotionalInt());
     son.setResistance(son.calculateResistance());
+    son.setFitness(son.calculateFitness());
     lastId=son.getId();
     /*!En base a un 5% de probabilidad se realiza la mutacion y con un 3% de probabilidad se realiza la inversion */
     int randomMutation = rand() % 100 + 1;
@@ -223,9 +223,11 @@ void GeneticEvolution::crossover(Army army,int index1, int index2) {
             invertion(son);
             son.setEmotionalInt(son.calculateEmotionalInt());
             son.setResistance(son.calculateResistance());
+            son.setFitness(son.calculateFitness());
         }else{
             son.setEmotionalInt(son.calculateEmotionalInt());
             son.setResistance(son.calculateResistance());
+            son.setFitness(son.calculateFitness());
         }
     }
 
@@ -233,7 +235,6 @@ void GeneticEvolution::crossover(Army army,int index1, int index2) {
     newGladiators.add(son);
     cout << "El gladiador nuevo tiene una resistencia de//////////////////////: " << son.getResistance() << endl;
 
-    /*! Se ordena la lista de gladiadores*/
 }
 
 int GeneticEvolution::convertToDecimal(string trait, int type) {
@@ -312,7 +313,7 @@ void GeneticEvolution::updateAge(Army army) {
     for(int i=0;i<=19;i++){
         army.gladiators.getData(i).setAge(army.gladiators.getData(i).getAge()+1);
         army.gladiators.getData(i).setResistance(army.gladiators.getData(i).calculateResistance());
-        //army.gladiators.getData(i).setFitness(army.gladiators.getData(i).calculateFitness());
+        army.gladiators.getData(i).setFitness( army.gladiators.getData(i).calculateFitness());
         /*! Falta volver a calcular la prob de supervivencia y las genExpec*/
     }
     army.insertionSort(army.gladiators);

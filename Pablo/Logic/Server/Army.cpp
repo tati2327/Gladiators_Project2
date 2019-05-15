@@ -47,8 +47,15 @@ Gladiator Army::setValuesTipeA(Gladiator gladiator, int i) {
     cout<<"R "<<gladiator.getResistance()<<endl;
 
 
-    cout<<"Se creo un nuevo gladeador"<<endl;
+    gladiator.setExpectedGenerations(gladiator.calculateExpectedGenerations(i));
+    cout<<"Expected"<<gladiator.getExpectedGenerations()<<endl;
 
+    gladiator.setSurvivalProb(gladiator.calculateSurvivalProb());
+    cout<<"survival"<<gladiator.getSurvivalProb()<<endl;
+
+    gladiator.setFitness(gladiator.calculateFitness());
+    cout<<"Fitness "<<gladiator.getFitness()<<endl;
+    cout<<"Se creo un nuevo gladeador"<<endl;
     return gladiator;
 }
 
@@ -85,8 +92,16 @@ Gladiator Army::setValuesTipeB(Gladiator gladiator, int i) {
 
     gladiator.setResistance(gladiator.calculateResistance());
     cout<<"R "<<gladiator.getResistance()<<endl;
-    cout<<"Se creo un nuevo gladeador"<<endl;
 
+    gladiator.setExpectedGenerations(gladiator.calculateExpectedGenerations(i));
+    cout<<"Expected"<<gladiator.getExpectedGenerations()<<endl;
+
+    gladiator.setSurvivalProb(gladiator.calculateSurvivalProb());
+    cout<<"survival"<<gladiator.getSurvivalProb()<<endl;
+
+    gladiator.setFitness(gladiator.calculateFitness());
+    cout<<"Fitness "<<gladiator.getFitness()<<endl;
+    cout<<"Se creo un nuevo gladeador"<<endl;
     return gladiator;
 }
 
@@ -123,8 +138,17 @@ Gladiator Army::setValuesTipeC(Gladiator gladiator, int i) {
 
     gladiator.setResistance(gladiator.calculateResistance());
     cout<<"R "<<gladiator.getResistance()<<endl;
-    cout<<"Se creo un nuevo gladeador"<<endl;
 
+
+    gladiator.setExpectedGenerations(gladiator.calculateExpectedGenerations(i));
+    cout<<"Expected"<<gladiator.getExpectedGenerations()<<endl;
+
+    gladiator.setSurvivalProb(gladiator.calculateSurvivalProb());
+    cout<<"survival"<<gladiator.getSurvivalProb()<<endl;
+
+    gladiator.setFitness(gladiator.calculateFitness());
+    cout<<"Fitness "<<gladiator.getFitness()<<endl;
+    cout<<"Se creo un nuevo gladeador"<<endl;
     return gladiator;}
 
 void Army::createArmy(int armySize) {
@@ -145,9 +169,10 @@ void Army::createArmy(int armySize) {
 }
 
 void Army:: printArray(List<Gladiator> gladiators, int n) {
-    for (int i = 0; i < n; ++i)
-        cout << gladiators[i].getResistance() << " " << std::flush;
-    std::cout << std::endl;
+    for (int i = 0; i < n; ++i) {
+        cout << gladiators[i].getFitness() << " " << std::flush<<endl;
+        std::cout << std::endl;
+    }
 }
 
 void Army:: insertionSort(List<Gladiator> gladiators) {
@@ -158,7 +183,7 @@ void Army:: insertionSort(List<Gladiator> gladiators) {
             swap = 0;
             for (int i = 1; i < size; ++i) {
                 int j = i - 1;
-                if (gladiators[j].getResistance() > gladiators[i].getResistance()) {
+                if (gladiators[j].getFitness() > gladiators[i].getFitness()) {
                     Node<Gladiator> temp;
                     temp.setData(gladiators.getData(j));
                     gladiators.getNode(j)->setNode(gladiators.getNode(i));
