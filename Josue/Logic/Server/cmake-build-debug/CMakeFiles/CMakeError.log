@@ -1,24 +1,24 @@
 Determining if the pthread_create exist failed with the following output:
-Change Dir: /home/josu/Desktop/Server/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/josu/Documents/Github/Proyecto2/Josue/Logic/Server/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_4336f/fast"
-/usr/bin/make -f CMakeFiles/cmTC_4336f.dir/build.make CMakeFiles/cmTC_4336f.dir/build
-make[1]: Entering directory '/home/josu/Desktop/Server/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_4336f.dir/CheckSymbolExists.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_4336f.dir/CheckSymbolExists.c.o   -c /home/josu/Desktop/Server/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-Linking C executable cmTC_4336f
-/home/josu/Documents/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4336f.dir/link.txt --verbose=1
-/usr/bin/cc      CMakeFiles/cmTC_4336f.dir/CheckSymbolExists.c.o  -o cmTC_4336f 
-CMakeFiles/cmTC_4336f.dir/CheckSymbolExists.c.o: In function `main':
+Run Build Command:"/usr/bin/make" "cmTC_f305e/fast"
+/usr/bin/make -f CMakeFiles/cmTC_f305e.dir/build.make CMakeFiles/cmTC_f305e.dir/build
+make[1]: Entering directory '/home/josu/Documents/Github/Proyecto2/Josue/Logic/Server/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f305e.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_f305e.dir/CheckSymbolExists.c.o   -c /home/josu/Documents/Github/Proyecto2/Josue/Logic/Server/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_f305e
+/home/josu/Documents/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f305e.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_f305e.dir/CheckSymbolExists.c.o  -o cmTC_f305e 
+CMakeFiles/cmTC_f305e.dir/CheckSymbolExists.c.o: In function `main':
 CheckSymbolExists.c:(.text+0x1b): undefined reference to `pthread_create'
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_4336f.dir/build.make:86: recipe for target 'cmTC_4336f' failed
-make[1]: *** [cmTC_4336f] Error 1
-make[1]: Leaving directory '/home/josu/Desktop/Server/cmake-build-debug/CMakeFiles/CMakeTmp'
-Makefile:121: recipe for target 'cmTC_4336f/fast' failed
-make: *** [cmTC_4336f/fast] Error 2
+CMakeFiles/cmTC_f305e.dir/build.make:86: recipe for target 'cmTC_f305e' failed
+make[1]: *** [cmTC_f305e] Error 1
+make[1]: Leaving directory '/home/josu/Documents/Github/Proyecto2/Josue/Logic/Server/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_f305e/fast' failed
+make: *** [cmTC_f305e/fast] Error 2
 
-File /home/josu/Desktop/Server/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+File /home/josu/Documents/Github/Proyecto2/Josue/Logic/Server/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
 /* */
 #include <pthread.h>
 
@@ -34,22 +34,22 @@ int main(int argc, char** argv)
 }
 
 Determining if the function pthread_create exists in the pthreads failed with the following output:
-Change Dir: /home/josu/Desktop/Server/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/josu/Documents/Github/Proyecto2/Josue/Logic/Server/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_6ad6f/fast"
-/usr/bin/make -f CMakeFiles/cmTC_6ad6f.dir/build.make CMakeFiles/cmTC_6ad6f.dir/build
-make[1]: Entering directory '/home/josu/Desktop/Server/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_6ad6f.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_6ad6f.dir/CheckFunctionExists.c.o   -c /home/josu/Documents/clion-2018.3.4/bin/cmake/linux/share/cmake-3.13/Modules/CheckFunctionExists.c
-Linking C executable cmTC_6ad6f
-/home/josu/Documents/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6ad6f.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_6ad6f.dir/CheckFunctionExists.c.o  -o cmTC_6ad6f -lpthreads 
+Run Build Command:"/usr/bin/make" "cmTC_f7dc8/fast"
+/usr/bin/make -f CMakeFiles/cmTC_f7dc8.dir/build.make CMakeFiles/cmTC_f7dc8.dir/build
+make[1]: Entering directory '/home/josu/Documents/Github/Proyecto2/Josue/Logic/Server/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f7dc8.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_f7dc8.dir/CheckFunctionExists.c.o   -c /home/josu/Documents/clion-2018.3.4/bin/cmake/linux/share/cmake-3.13/Modules/CheckFunctionExists.c
+Linking C executable cmTC_f7dc8
+/home/josu/Documents/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f7dc8.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_f7dc8.dir/CheckFunctionExists.c.o  -o cmTC_f7dc8 -lpthreads 
 /usr/bin/ld: cannot find -lpthreads
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_6ad6f.dir/build.make:86: recipe for target 'cmTC_6ad6f' failed
-make[1]: *** [cmTC_6ad6f] Error 1
-make[1]: Leaving directory '/home/josu/Desktop/Server/cmake-build-debug/CMakeFiles/CMakeTmp'
-Makefile:121: recipe for target 'cmTC_6ad6f/fast' failed
-make: *** [cmTC_6ad6f/fast] Error 2
+CMakeFiles/cmTC_f7dc8.dir/build.make:86: recipe for target 'cmTC_f7dc8' failed
+make[1]: *** [cmTC_f7dc8] Error 1
+make[1]: Leaving directory '/home/josu/Documents/Github/Proyecto2/Josue/Logic/Server/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_f7dc8/fast' failed
+make: *** [cmTC_f7dc8/fast] Error 2
 
 

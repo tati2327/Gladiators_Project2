@@ -9,6 +9,8 @@ Game::Game() {
     this->rows = 10;
     this->columns = 10;
     this->board = Matrix<Field>(rows,columns);
+    error = 0;
+    myRoute = Pathfinding(board);
 }
 
 string Game::newGame() {
@@ -18,11 +20,12 @@ string Game::newGame() {
     army.insertionSort(army.gladiators);
     army.printArray(army.gladiators, army.armySize);
 
+
     myGladiator = army.getFittest();
+    gE.updateAge(army);
     addToHistoricalArmy(army.gladiators);
     /*! Agregar nuevos obstaculos en el tablero y calcular la ruta*/
     bool end = false;
-    int error = 0;
     if(error < 10) {
         error = 0;
         while (!end) {
@@ -30,7 +33,6 @@ string Game::newGame() {
                     myRoute = Pathfinding(board);
                     break;
                 }
-//            while (!end) {
                 while (!end) end = this->addObstacle();
                 end = false;
                 cout << "Se agrego el obstaculo 1" << endl;
@@ -74,10 +76,16 @@ string Game::newGame() {
 string Game::play() {
     gE.updateAge(army);
     gE.crossover(army,19,18);
+    gE.crossover(army,18,19);
+    gE.crossover(army,19,18);
     gE.crossover(army,19,17);
     gE.crossover(army,19,16);
     gE.crossover(army,18,17);
     gE.crossover(army,18,16);
+    gE.addNewGladiators(gE.newGladiators,army);
+    gE.newGladiators.cleanList();
+    army.insertionSort(army.gladiators);
+    army.printArray(army.gladiators,army.armySize);
 
     gE.generationCount+=1;
     myGladiator = army.getFittest();
@@ -85,7 +93,6 @@ string Game::play() {
 
     /*! Agregar nuevos obstaculos en el tablero y calcular la ruta*/
     bool end = false;
-    int error = 0;
     while(!end) {
         if (error>10){
             myRoute = Pathfinding(board);
@@ -128,31 +135,10 @@ bool Game::addObstacle() {
     int obstacle_i = (rand() % (rows)) + 0;
     int obstacle_j = (rand() % (columns)) + 0;
     string obstacle1 = to_string(obstacle_i)+to_string(obstacle_j);
-    //string end = to_string(myRoute.end->i)+to_string(myRoute.end->j);
-
-    /*! Validar si el obstaculo esta en la entrada o la salida*/
-    if(obstacle1 == "00" or obstacle1 == "99"){
-        cout<<"ERROR el obstaculo 1 esta en la entrada o la salida "<<obstacle_i<<obstacle_j<<endl;
-        return false;
-    }
-    if(board.operator()(obstacle_i,obstacle_j).obstacle){
-        cout<<"Error"<<endl;
-        return false;
-    }
-    board.operator()(obstacle_i,obstacle_j).addObstacle();
-    obstaclesList.add(obstacle1);
-    return true;
-}
-
-bool Game::addObstacle2() {
-    int obstacle_i = (rand() % (rows)) + 0;
-    int obstacle_j = (rand() % (columns)) + 0;
-
-    string obstacle1 = to_string(obstacle_i)+to_string(obstacle_j);
     string end = to_string(myRoute.end->i)+to_string(myRoute.end->j);
 
     /*! Validar si el obstaculo esta en la entrada o la salida*/
-    if(obstacle1 == "00" or obstacle1 == "99"){
+    if(obstacle1 == "00" or obstacle1 == end){
         cout<<"ERROR el obstaculo 1 esta en la entrada o la salida "<<obstacle_i<<obstacle_j<<endl;
         return false;
     }
@@ -160,29 +146,6 @@ bool Game::addObstacle2() {
         cout<<"Error"<<endl;
         return false;
     }
-
-    board.operator()(obstacle_i,obstacle_j).addObstacle();
-    obstaclesList.add(obstacle1);
-    return true;
-}
-
-bool Game::addObstacle3() {
-    int obstacle_i = (rand() % (rows)) + 0;
-    int obstacle_j = (rand() % (columns)) + 0;
-
-    string obstacle1 = to_string(obstacle_i)+to_string(obstacle_j);
-    string end = to_string(myRoute.end->i)+to_string(myRoute.end->j);
-
-    /*! Validar si el obstaculo esta en la entrada o la salida*/
-    if(obstacle1 == "00" or obstacle1 == "99"){
-        cout<<"ERROR el obstaculo 1 esta en la entrada o la salida "<<obstacle_i<<obstacle_j<<endl;
-        return false;
-    }
-    if(board.operator()(obstacle_i,obstacle_j).obstacle){
-        cout<<"Error"<<endl;
-        return false;
-    }
-
     board.operator()(obstacle_i,obstacle_j).addObstacle();
     obstaclesList.add(obstacle1);
     return true;

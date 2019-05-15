@@ -18,7 +18,7 @@ Gladiator::Gladiator() {
     this->expectedGenerations=0;
 }
 int Gladiator::calculateFitness() {
-    fitness=calculateResistance()+expectedGenerations+survivalProb;
+    fitness= resistance+expectedGenerations+survivalProb;
     return fitness;
 }
 int Gladiator::calculateResistance() {

@@ -37,7 +37,7 @@ bool Server::newServer() {
 
     hint.sin_family = AF_INET;
     hint.sin_port = htons(54000);
-    inet_pton(AF_INET, "192.168.1.4", &hint.sin_addr);
+    inet_pton(AF_INET, "192.168.100.21", &hint.sin_addr);
     return true;
 }
 

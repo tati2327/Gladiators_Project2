@@ -122,10 +122,20 @@ int GeneticEvolution::mutateChromosome(string value, int type) {
 
 int GeneticEvolution::invertGene(string value, int type) {
     int size;
-    if (type==1)size=19;
-    else size=9;
+    int randomInitial;
+    int randomFinal;
+    if (type==1){
+        randomInitial=rand()%17;
+        size = 19-randomInitial;
+        randomFinal = rand()% size + randomInitial;
+    }
+    else {
+        randomInitial = rand()%7;
+        size = 9 -randomInitial;
+        randomFinal = rand()%size + randomInitial;
+    }
     cout<<"El string inicial en la inversion es: "<<value<<endl;
-    for(int i=0;i<=size;i++){
+    for(int i=randomInitial;i<=randomFinal;i++){
         if ("0" == string(1, value[i])) {
             value=value.erase(i,1);
             value=value.insert(i,"1");
@@ -214,12 +224,9 @@ void GeneticEvolution::crossover(Army army,int index1, int index2) {
     }
 
     /*! Se asigna tmp1 y tmp2 al gladiador menos apto y el segundo menos apto respectivamente*/
-    army.gladiators.getNode(0)->setData(son);
+    newGladiators.add(son);
     cout << "El gladiador nuevo tiene una resistencia de: " << army.gladiators[0].getResistance() << endl;
 
-    /*! Se ordena la lista de gladiadores*/
-    army.insertionSort(army.gladiators);
-    army.printArray(army.gladiators, army.armySize);
 
 }
 
@@ -303,4 +310,13 @@ void GeneticEvolution::updateAge(Army army) {
         /*! Falta volver a calcular la prob de supervivencia y las genExpec*/
     }
     army.insertionSort(army.gladiators);
+}
+
+
+void GeneticEvolution::addNewGladiators(List<Gladiator> newGladiators, Army army){
+    int size = newGladiators.size();
+    for(int i=0;i<=size-1;i++){
+        army.gladiators.getNode(i)->setData(newGladiators.getData(i));
+    }
+
 }

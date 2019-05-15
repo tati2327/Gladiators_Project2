@@ -16,9 +16,8 @@ public:
     string crossingMask1;/*! "Molde1" para saber si tomar un cromosoma de un padre u otro */
     string crossingMask2;/*! "Molde2" para saber si tomar un cromosoma de un padre u otro */
     string crossingMask3;/*! "Molde3" para saber si tomar un cromosoma de un padre u otro */
-    string crossingMask4;
-    string crossingMask5;
     int lastId; /*!Contador para que ayuda para calcular el ID de los nuevos gladiadores */
+    List<Gladiator> newGladiators;
 
 
 
@@ -91,6 +90,7 @@ public:
      */
     int mutateChromosome(string value, int type);
 
+    void addNewGladiators(List<Gladiator> newGladiator, Army army);
 };
 
 

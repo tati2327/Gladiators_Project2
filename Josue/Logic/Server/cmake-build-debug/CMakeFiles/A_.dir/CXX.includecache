@@ -232,89 +232,89 @@ emmintrin.h
 arm_neon.h
 -
 
-/home/josu/Desktop/Server/Army.cpp
+/home/josu/Documents/Github/Proyecto2/Josue/Logic/Server/Army.cpp
 Army.h
-/home/josu/Desktop/Server/Army.h
+/home/josu/Documents/Github/Proyecto2/Josue/Logic/Server/Army.h
 iostream
 -
 
-/home/josu/Desktop/Server/Army.h
+/home/josu/Documents/Github/Proyecto2/Josue/Logic/Server/Army.h
 Gladiator.h
-/home/josu/Desktop/Server/Gladiator.h
+/home/josu/Documents/Github/Proyecto2/Josue/Logic/Server/Gladiator.h
 cstdlib
 -
 ctime
 -
 List.h
-/home/josu/Desktop/Server/List.h
+/home/josu/Documents/Github/Proyecto2/Josue/Logic/Server/List.h
 unistd.h
 -
 
-/home/josu/Desktop/Server/Field.cpp
+/home/josu/Documents/Github/Proyecto2/Josue/Logic/Server/Field.cpp
 Field.h
-/home/josu/Desktop/Server/Field.h
+/home/josu/Documents/Github/Proyecto2/Josue/Logic/Server/Field.h
 
-/home/josu/Desktop/Server/Field.h
+/home/josu/Documents/Github/Proyecto2/Josue/Logic/Server/Field.h
 List.h
-/home/josu/Desktop/Server/List.h
+/home/josu/Documents/Github/Proyecto2/Josue/Logic/Server/List.h
 
-/home/josu/Desktop/Server/Game.cpp
+/home/josu/Documents/Github/Proyecto2/Josue/Logic/Server/Game.cpp
 Game.h
-/home/josu/Desktop/Server/Game.h
+/home/josu/Documents/Github/Proyecto2/Josue/Logic/Server/Game.h
 JSON.h
-/home/josu/Desktop/Server/JSON.h
+/home/josu/Documents/Github/Proyecto2/Josue/Logic/Server/JSON.h
 document.h
 -
 Gladiator.h
-/home/josu/Desktop/Server/Gladiator.h
+/home/josu/Documents/Github/Proyecto2/Josue/Logic/Server/Gladiator.h
 
-/home/josu/Desktop/Server/Game.h
+/home/josu/Documents/Github/Proyecto2/Josue/Logic/Server/Game.h
 Matrix.h
-/home/josu/Desktop/Server/Matrix.h
+/home/josu/Documents/Github/Proyecto2/Josue/Logic/Server/Matrix.h
 Field.h
-/home/josu/Desktop/Server/Field.h
+/home/josu/Documents/Github/Proyecto2/Josue/Logic/Server/Field.h
 Gladiator.h
-/home/josu/Desktop/Server/Gladiator.h
+/home/josu/Documents/Github/Proyecto2/Josue/Logic/Server/Gladiator.h
 Army.h
-/home/josu/Desktop/Server/Army.h
+/home/josu/Documents/Github/Proyecto2/Josue/Logic/Server/Army.h
 GeneticEvolution.h
-/home/josu/Desktop/Server/GeneticEvolution.h
+/home/josu/Documents/Github/Proyecto2/Josue/Logic/Server/GeneticEvolution.h
 Pathfinding.h
-/home/josu/Desktop/Server/Pathfinding.h
+/home/josu/Documents/Github/Proyecto2/Josue/Logic/Server/Pathfinding.h
 JSON.h
-/home/josu/Desktop/Server/JSON.h
+/home/josu/Documents/Github/Proyecto2/Josue/Logic/Server/JSON.h
 
-/home/josu/Desktop/Server/GeneticEvolution.cpp
+/home/josu/Documents/Github/Proyecto2/Josue/Logic/Server/GeneticEvolution.cpp
 GeneticEvolution.h
-/home/josu/Desktop/Server/GeneticEvolution.h
+/home/josu/Documents/Github/Proyecto2/Josue/Logic/Server/GeneticEvolution.h
 
-/home/josu/Desktop/Server/GeneticEvolution.h
+/home/josu/Documents/Github/Proyecto2/Josue/Logic/Server/GeneticEvolution.h
 Army.h
-/home/josu/Desktop/Server/Army.h
+/home/josu/Documents/Github/Proyecto2/Josue/Logic/Server/Army.h
 Army.h
-/home/josu/Desktop/Server/Army.h
+/home/josu/Documents/Github/Proyecto2/Josue/Logic/Server/Army.h
 Gladiator.h
-/home/josu/Desktop/Server/Gladiator.h
+/home/josu/Documents/Github/Proyecto2/Josue/Logic/Server/Gladiator.h
 
-/home/josu/Desktop/Server/Gladiator.cpp
+/home/josu/Documents/Github/Proyecto2/Josue/Logic/Server/Gladiator.cpp
 iostream
 -
 Gladiator.h
-/home/josu/Desktop/Server/Gladiator.h
+/home/josu/Documents/Github/Proyecto2/Josue/Logic/Server/Gladiator.h
 
-/home/josu/Desktop/Server/Gladiator.h
+/home/josu/Documents/Github/Proyecto2/Josue/Logic/Server/Gladiator.h
 cmath
 -
 
-/home/josu/Desktop/Server/JSON.cpp
+/home/josu/Documents/Github/Proyecto2/Josue/Logic/Server/JSON.cpp
 JSON.h
-/home/josu/Desktop/Server/JSON.h
+/home/josu/Documents/Github/Proyecto2/Josue/Logic/Server/JSON.h
 cstdio
 -
 cstring
 -
 
-/home/josu/Desktop/Server/JSON.h
+/home/josu/Documents/Github/Proyecto2/Josue/Logic/Server/JSON.h
 iostream
 -
 allocators.h
@@ -326,55 +326,55 @@ document.h
 writer.h
 -
 List.h
-/home/josu/Desktop/Server/List.h
+/home/josu/Documents/Github/Proyecto2/Josue/Logic/Server/List.h
 Field.h
-/home/josu/Desktop/Server/Field.h
+/home/josu/Documents/Github/Proyecto2/Josue/Logic/Server/Field.h
 
-/home/josu/Desktop/Server/List.h
+/home/josu/Documents/Github/Proyecto2/Josue/Logic/Server/List.h
 iostream
 -
 Node.h
-/home/josu/Desktop/Server/Node.h
+/home/josu/Documents/Github/Proyecto2/Josue/Logic/Server/Node.h
 List_def.h
-/home/josu/Desktop/Server/List_def.h
+/home/josu/Documents/Github/Proyecto2/Josue/Logic/Server/List_def.h
 
-/home/josu/Desktop/Server/List_def.h
+/home/josu/Documents/Github/Proyecto2/Josue/Logic/Server/List_def.h
 
-/home/josu/Desktop/Server/Matrix.h
+/home/josu/Documents/Github/Proyecto2/Josue/Logic/Server/Matrix.h
 List.h
-/home/josu/Desktop/Server/List.h
+/home/josu/Documents/Github/Proyecto2/Josue/Logic/Server/List.h
 Matrix_def.h
-/home/josu/Desktop/Server/Matrix_def.h
+/home/josu/Documents/Github/Proyecto2/Josue/Logic/Server/Matrix_def.h
 
-/home/josu/Desktop/Server/Matrix_def.h
+/home/josu/Documents/Github/Proyecto2/Josue/Logic/Server/Matrix_def.h
 
-/home/josu/Desktop/Server/Node.h
+/home/josu/Documents/Github/Proyecto2/Josue/Logic/Server/Node.h
 Node_def.h
-/home/josu/Desktop/Server/Node_def.h
+/home/josu/Documents/Github/Proyecto2/Josue/Logic/Server/Node_def.h
 
-/home/josu/Desktop/Server/Node_def.h
+/home/josu/Documents/Github/Proyecto2/Josue/Logic/Server/Node_def.h
 
-/home/josu/Desktop/Server/Pathfinding.cpp
+/home/josu/Documents/Github/Proyecto2/Josue/Logic/Server/Pathfinding.cpp
 Pathfinding.h
-/home/josu/Desktop/Server/Pathfinding.h
+/home/josu/Documents/Github/Proyecto2/Josue/Logic/Server/Pathfinding.h
 chrono
 -
 
-/home/josu/Desktop/Server/Pathfinding.h
+/home/josu/Documents/Github/Proyecto2/Josue/Logic/Server/Pathfinding.h
 Field.h
-/home/josu/Desktop/Server/Field.h
+/home/josu/Documents/Github/Proyecto2/Josue/Logic/Server/Field.h
 List.h
-/home/josu/Desktop/Server/List.h
+/home/josu/Documents/Github/Proyecto2/Josue/Logic/Server/List.h
 Matrix.h
-/home/josu/Desktop/Server/Matrix.h
+/home/josu/Documents/Github/Proyecto2/Josue/Logic/Server/Matrix.h
 
-/home/josu/Desktop/Server/Server.cpp
+/home/josu/Documents/Github/Proyecto2/Josue/Logic/Server/Server.cpp
 Server.h
-/home/josu/Desktop/Server/Server.h
+/home/josu/Documents/Github/Proyecto2/Josue/Logic/Server/Server.h
 Server.h
-/home/josu/Desktop/Server/Server.h
+/home/josu/Documents/Github/Proyecto2/Josue/Logic/Server/Server.h
 Game.h
-/home/josu/Desktop/Server/Game.h
+/home/josu/Documents/Github/Proyecto2/Josue/Logic/Server/Game.h
 iostream
 -
 sys/types.h
@@ -394,7 +394,7 @@ string
 thread
 -
 
-/home/josu/Desktop/Server/Server.h
+/home/josu/Documents/Github/Proyecto2/Josue/Logic/Server/Server.h
 netinet/in.h
 -
 vector
@@ -402,23 +402,23 @@ vector
 iostream
 -
 JSON.h
-/home/josu/Desktop/Server/JSON.h
+/home/josu/Documents/Github/Proyecto2/Josue/Logic/Server/JSON.h
 Game.h
-/home/josu/Desktop/Server/Game.h
+/home/josu/Documents/Github/Proyecto2/Josue/Logic/Server/Game.h
 
-/home/josu/Desktop/Server/main.cpp
+/home/josu/Documents/Github/Proyecto2/Josue/Logic/Server/main.cpp
 iostream
 -
 Field.h
-/home/josu/Desktop/Server/Field.h
+/home/josu/Documents/Github/Proyecto2/Josue/Logic/Server/Field.h
 Pathfinding.h
-/home/josu/Desktop/Server/Pathfinding.h
+/home/josu/Documents/Github/Proyecto2/Josue/Logic/Server/Pathfinding.h
 Matrix.h
-/home/josu/Desktop/Server/Matrix.h
+/home/josu/Documents/Github/Proyecto2/Josue/Logic/Server/Matrix.h
 GeneticEvolution.h
-/home/josu/Desktop/Server/GeneticEvolution.h
+/home/josu/Documents/Github/Proyecto2/Josue/Logic/Server/GeneticEvolution.h
 Game.h
-/home/josu/Desktop/Server/Game.h
+/home/josu/Documents/Github/Proyecto2/Josue/Logic/Server/Game.h
 Server.h
-/home/josu/Desktop/Server/Server.h
+/home/josu/Documents/Github/Proyecto2/Josue/Logic/Server/Server.h
 

@@ -27,7 +27,7 @@ extern bool graph;
 Client::Client() {
     newGame = false;
     port = 54000;
-    ipAddress = "192.168.1.4";
+    ipAddress = "192.168.100.21";
 }
 
 void Client::newClient() {
