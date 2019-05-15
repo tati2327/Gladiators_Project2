@@ -7,7 +7,10 @@
 #include <cmath>
 
 using namespace std;
-
+/*!
+ * Clase Gladiador
+ * Crea el prototipo de gladiador 
+ */
 class Gladiator {
 private:
     int id, age, survivalProb, expectedGenerations, emotionalInt, selfcontrol, anger,

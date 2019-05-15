@@ -109,7 +109,7 @@ Gladiator Army::setValuesTipeC(Gladiator gladiator, int i) {
     gladiator.setId(i+1);
     cout<<"My id is:"<<gladiator.getId()<<endl;
 
-    int random= (rand() % 1) + 1;
+    int random= (rand() % 2) + 1;
     gladiator.setAnger(random);
     cout<<gladiator.getAnger()<<endl;
 
@@ -170,7 +170,8 @@ void Army::createArmy(int armySize) {
 
 void Army:: printArray(List<Gladiator> gladiators, int n) {
     for (int i = 0; i < n; ++i) {
-        cout << gladiators[i].getFitness() << " " << std::flush<<endl;
+        cout << gladiators[i].getFitness() << " " << std::flush;
+        cout <<"Emotional  "<< gladiators[i].getEmotionalInt() << " " << std::flush;
         std::cout << std::endl;
     }
 }
