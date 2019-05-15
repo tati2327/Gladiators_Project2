@@ -117,7 +117,7 @@ Gladiator Army::setValuesTipeC(Gladiator gladiator, int i) {
     gladiator.setLowerTrunckStrenght(random6);
     cout<<"LTS "<<gladiator.getLowerTrunckStrenght()<<endl;
 
-    int random7= rand() % 75 + 60;
+    int random7= rand() % 15 + 60;
     gladiator.setAge(random7);
     cout<<"Edad "<<gladiator.getAge()<<endl;
 

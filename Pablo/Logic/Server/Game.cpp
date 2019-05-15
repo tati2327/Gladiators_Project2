@@ -61,10 +61,16 @@ string Game::newGame() {
 string Game::play() {
     gE.updateAge(army);
     gE.crossover(army,19,18);
+    gE.crossover(army,18,19);
+    gE.crossover(army,19,18);
     gE.crossover(army,19,17);
     gE.crossover(army,19,16);
     gE.crossover(army,18,17);
     gE.crossover(army,18,16);
+    gE.addNewGladiators(gE.newGladiators,army);
+    gE.newGladiators.cleanList();
+    army.insertionSort(army.gladiators);
+    army.printArray(army.gladiators, army.armySize);
 
     gE.generationCount+=1;
     myGladiator = army.getFittest();
