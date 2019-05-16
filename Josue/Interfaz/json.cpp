@@ -122,8 +122,8 @@ int JSON::getAge() {
     return document["age"].GetInt();
 }
 
-int JSON::getSurvivalProb() {
-    return document["survivalProb"].GetInt();
+float JSON::getSurvivalProb() {
+    return document["survivalProb"].GetFloat();
 }
 
 int JSON::getExpectedGen() {
@@ -131,7 +131,7 @@ int JSON::getExpectedGen() {
 }
 
 int JSON::getEmocionalIntelligent() {
-    return document["emocionalIntelligent"].GetInt();
+    return document["emotionalIntelligent"].GetInt();
 }
 
 int JSON::getUperStrenght() {

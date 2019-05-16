@@ -28,7 +28,7 @@ class JSON {
         string rute();
         int getId();
         int getAge();
-        int getSurvivalProb();
+        float getSurvivalProb();
         int getExpectedGen();
         int getEmocionalIntelligent();
         int getUperStrenght();

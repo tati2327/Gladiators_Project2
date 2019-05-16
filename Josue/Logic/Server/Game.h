@@ -49,7 +49,7 @@ class Game {
         List<int> physicalCondition;
         List<int> age;
         List<int> expectedGenerations;
-        List<int> survivalProb;
+        List<float> survivalProb;
         List<int> fitness;
         List<int> id;
 };

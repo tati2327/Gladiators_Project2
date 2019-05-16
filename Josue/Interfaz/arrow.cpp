@@ -9,6 +9,7 @@
 extern  Game* g;
 extern bool status;
 extern bool shoot;
+extern int jiteration;
 Arrow::Arrow(QGraphicsItem *parent)
 {
   setPixmap(QPixmap(":images/SimpleArrow.png"));
@@ -36,7 +37,12 @@ void Arrow::move(){
               p->setFocus();
               g->cont=0;
               g->timer->stop();
-              g->timer->start(2000);
+              if (jiteration>=5){
+                  g->timer->start(1000);
+                }
+              else{
+                  g->timer->start(2000);
+                }
               shoot=false;
               g->ID->setPlainText(QString(QString::number(0)));
               g->player->life_points=resis;

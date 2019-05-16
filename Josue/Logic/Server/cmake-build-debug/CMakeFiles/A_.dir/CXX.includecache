@@ -250,10 +250,6 @@ List.h
 unistd.h
 -
 
-/home/josu/Documents/Github/Proyecto2/Josue/Logic/Server/Field.cpp
-Field.h
-/home/josu/Documents/Github/Proyecto2/Josue/Logic/Server/Field.h
-
 /home/josu/Documents/Github/Proyecto2/Josue/Logic/Server/Field.h
 List.h
 /home/josu/Documents/Github/Proyecto2/Josue/Logic/Server/List.h
@@ -306,14 +302,6 @@ Gladiator.h
 cmath
 -
 
-/home/josu/Documents/Github/Proyecto2/Josue/Logic/Server/JSON.cpp
-JSON.h
-/home/josu/Documents/Github/Proyecto2/Josue/Logic/Server/JSON.h
-cstdio
--
-cstring
--
-
 /home/josu/Documents/Github/Proyecto2/Josue/Logic/Server/JSON.h
 iostream
 -
@@ -353,12 +341,6 @@ Node_def.h
 /home/josu/Documents/Github/Proyecto2/Josue/Logic/Server/Node_def.h
 
 /home/josu/Documents/Github/Proyecto2/Josue/Logic/Server/Node_def.h
-
-/home/josu/Documents/Github/Proyecto2/Josue/Logic/Server/Pathfinding.cpp
-Pathfinding.h
-/home/josu/Documents/Github/Proyecto2/Josue/Logic/Server/Pathfinding.h
-chrono
--
 
 /home/josu/Documents/Github/Proyecto2/Josue/Logic/Server/Pathfinding.h
 Field.h

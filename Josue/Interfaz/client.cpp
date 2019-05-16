@@ -5,13 +5,13 @@
 #include "json.h"
 extern int id;
 extern int resis;
-extern int resis;
 extern int jage;
 extern int jlower;
 extern int jupper;
 extern int jexpec;
-extern int jsurv;
+extern float jsurv;
 extern int jphys;
+extern int jem;
 extern string obs1;
 extern List<char> *movs;
 extern bool status;
@@ -109,6 +109,7 @@ void Client::manageServer() {
                 cout<<"perro1"<<endl;
 
                  graph=true;
+                 close(sockClient);
 
               }
             cout<<"SERVER: "<<messageReived << endl;
@@ -119,11 +120,13 @@ void Client::manageServer() {
                 resis= myJson.getResistance();
                 jage = myJson.getAge();
                 obs1= myJson.obs1();
+                jem = myJson.getEmocionalIntelligent();
                 jexpec = myJson.getExpectedGen();
                 jsurv = myJson.getSurvivalProb();
                 jupper = myJson.getUperStrenght();
                 jlower = myJson.getLowerStrenght();
                 jphys = myJson.getPhysicalCondition();
+
                 rute = myJson.rute();
                 jiteration = myJson.getIteration();
                 jtime = myJson.getTime();

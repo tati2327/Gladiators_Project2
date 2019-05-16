@@ -33,8 +33,9 @@ extern int jage;
 extern int jlower;
 extern int jupper;
 extern int jexpec;
-extern int jsurv;
+extern float jsurv;
 extern int jphys;
+extern int jem;
 extern bool status;
 extern string obs1;
 extern string rute;
@@ -398,6 +399,7 @@ void Game::start()
   lower_stregth->setPlainText(QString(QString::number(jlower)));
   physical_condition->setPlainText(QString(QString::number(jphys)));
   expected_gen->setPlainText(QString(QString::number(jexpec)));
+  emotional_intelligence->setPlainText(QString(QString::number(jem)));
   survival_prob->setPlainText(QString(QString::number(jsurv)));
   timer = new QTimer();
   QObject::connect(timer,SIGNAL(timeout()),this,SLOT(spawn()));
@@ -425,7 +427,7 @@ void Game::spawn()
       lower_stregth->setPlainText(QString(QString::number(jlower)));
       physical_condition->setPlainText(QString(QString::number(jphys)));
       expected_gen->setPlainText(QString(QString::number(jexpec)));
-      survival_prob->setPlainText(QString(QString::number(jsurv)));
+      survival_prob->setPlainText(QString(QString::number(jsurv)+QString("%")));
       time_in->setPlainText(QString(QString::number(jtime)+" ms"));
       putTowers();
       poner=false;

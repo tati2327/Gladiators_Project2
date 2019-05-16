@@ -14,7 +14,7 @@ void JSON::jsonToDocument(string json) {
     cout<<"De json a documento exitosamente!!"<<endl;
 }
 
-string JSON::serializePlay(int id, int age, int survivalProb, int expectedGen, int emotionalIntelligent,
+string JSON::serializePlay(int id, int age, float survivalProb, int expectedGen, int emotionalIntelligent,
                            int uperStrenght, int lowerStrenght, int resistance, int physicalCondition,
                            List<string> obstacles, List<string> route, int time, int iteration) {
     document.RemoveAllMembers();
@@ -64,7 +64,7 @@ string JSON::serializePlay(int id, int age, int survivalProb, int expectedGen, i
 
 string JSON::serializeGraphic(List<int> resistance, List<int> uperStrenght, List<int> lowerStrenght,
                               List<int> emotionalInt, List<int> physicalCond, List<int> age,
-                              List<int> expectedGenerations, List<int> survivalProb, List<int> fitness, List<int> id) {
+                              List<int> expectedGenerations, List<float> survivalProb, List<int> fitness, List<int> id) {
     document.RemoveAllMembers();
     Document::AllocatorType& allocator = document.GetAllocator();
 

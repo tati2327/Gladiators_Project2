@@ -22,7 +22,6 @@ string Game::newGame() {
 
 
     myGladiator = army.getFittest();
-    gE.updateAge(army);
     addToHistoricalArmy(army.gladiators);
     /*! Agregar nuevos obstaculos en el tablero y calcular la ruta*/
     bool end = false;

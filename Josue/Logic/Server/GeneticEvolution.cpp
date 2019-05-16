@@ -191,7 +191,7 @@ void GeneticEvolution::crossover(Army army,int index1, int index2) {
             cout<<"parent2 del self"<<trait2<<endl;
             string stringTrait2=convertToString(trait2,2);
             string sonGene="00000000000000000000";
-            son.setAnger(makeExchange(stringTrait1, stringTrait2, sonGene,2));
+            son.setSelfcontrol(makeExchange(stringTrait1, stringTrait2, sonGene,2));
 
 
         }else if (i == 5) {
@@ -208,6 +208,7 @@ void GeneticEvolution::crossover(Army army,int index1, int index2) {
     son.setId(lastId+1);
     son.setEmotionalInt(son.calculateEmotionalInt());
     son.setResistance(son.calculateResistance());
+    son.setFitness(son.calculateFitness());
     lastId=son.getId();
     /*!En base a un 5% de probabilidad se realiza la mutacion y con un 3% de probabilidad se realiza la inversion */
     int randomMutation = rand() % 100 + 1;
@@ -217,9 +218,11 @@ void GeneticEvolution::crossover(Army army,int index1, int index2) {
             invertion(son);
             son.setEmotionalInt(son.calculateEmotionalInt());
             son.setResistance(son.calculateResistance());
+            son.setFitness(son.calculateFitness());
         }else{
             son.setEmotionalInt(son.calculateEmotionalInt());
             son.setResistance(son.calculateResistance());
+            son.setFitness(son.calculateFitness());
         }
     }
 
@@ -256,13 +259,13 @@ string GeneticEvolution::convertToString(int trait,int type) {
 
     for(int i=trait; i>=1; i--){
         int random;
-        if(type==1) random = rand() % 41;
-        else random= rand() % 21;
+        if(type==1) random = rand() % 40;
+        else random= rand() % 20;
 
         if ("1" == string(1, base[random])){
             while("1" == string(1, base[random])){
-                if(type==1) random = rand() % 41;
-                else random= rand()%21;
+                if(type==1) random = rand() % 40;
+                else random= rand()%20;
             }
             base=base.erase(random,1);
             base=base.insert(random,"1");
@@ -273,8 +276,8 @@ string GeneticEvolution::convertToString(int trait,int type) {
 
     }
 
-    if(type==1) base=base.erase(41,1);
-    else base=base.erase(21,1);
+    if(type==1) base=base.erase(40,1);
+    else base=base.erase(20,1);
     return base;
 }
 

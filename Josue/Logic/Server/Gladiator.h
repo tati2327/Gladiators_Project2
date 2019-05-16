@@ -6,8 +6,9 @@ using namespace std;
 
 class Gladiator {
 private:
-    int id, age, survivalProb, expectedGenerations, emotionalInt, selfcontrol, anger,
+    int id, age, expectedGenerations, emotionalInt, selfcontrol, anger,
             upperTrunckStrenght, lowerTrunckStrenght, resistance, physicalCondition, fitness;
+    float survivalProb;
 public:
     int getExpectedGenerations() const;
 
@@ -27,9 +28,11 @@ public:
     int calculateResistance();
     int calculateEmotionalInt();
     int calculateFitness();
+    int calculateExpectedGenerations(int i);
+    float calculateSurvivalProb();
 
     /*----------------------------------GETTERS------------------------------------------------*/
-    int getSurvivalProb() ;
+    float getSurvivalProb() ;
     int getEmotionalInt() ;
     int getSelfControl() ;
     int getAnger() ;

@@ -16,12 +16,12 @@ class JSON {
     public:
         JSON();
         void jsonToDocument(string json);
-        string serializePlay(int id, int age, int survivalProb, int expectedGen, int emotionalIntelligent,
+        string serializePlay(int id, int age, float survivalProb, int expectedGen, int emotionalIntelligent,
                              int uperStrenght, int lowerStrenght, int resistance, int physicalCondition,
                              List<string> obstacles, List<string> route, int time, int iteration);
         string serializeGraphic(List<int> resistance, List<int> uperStrenght, List<int> lowerStrenght,
                                 List<int> emotionalInt, List<int> physicalCond, List<int> age, List<int> expectedGenerations,
-                                List<int> survivalProb, List<int> fitness, List<int> id);
+                                List<float> survivalProb, List<int> fitness, List<int> id);
 
         int getRequest();
 };
