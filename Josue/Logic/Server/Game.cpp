@@ -20,7 +20,6 @@ string Game::newGame() {
     army.insertionSort(army.gladiators);
     army.printArray(army.gladiators, army.armySize);
 
-
     myGladiator = army.getFittest();
     addToHistoricalArmy(army.gladiators);
     /*! Agregar nuevos obstaculos en el tablero y calcular la ruta*/
@@ -58,6 +57,11 @@ string Game::newGame() {
                 error++;
             }
         }
+    if (obstaclesList.size()>0){
+        towerp.add(obstaclesList[0]);
+        towerp.add(obstaclesList[1]);
+        towerp.add(obstaclesList[2]);
+    }
 
     /*! Convertir los datos a json para que el servidor los envie al cliente*/
     JSON j;
@@ -116,7 +120,11 @@ string Game::play() {
         }
         error++;
     }
-
+    if (obstaclesList.size()>0){
+        towerp.add(obstaclesList[0]);
+        towerp.add(obstaclesList[1]);
+        towerp.add(obstaclesList[2]);
+    }
     /*! Convertir los datos a json para que el servidor los envie al cliente*/
     JSON j;
     string json = j.serializePlay(myGladiator.getId(), myGladiator.getAge(), myGladiator.getSurvivalProb(),
@@ -130,14 +138,542 @@ string Game::play() {
     return json;
 }
 
+string Game::reorder(){
+    List<string> towerpos;
+    int x;
+    int y;
+    Field temp;
+    Field cur;
+    for (int i=0;i<towerpos.size();i++){
+        x=towerp[i][0];
+        y=towerp[i][1];
+        cur= board.operator()(x,y);
+
+        if (x-1 == -1){
+            if (y-1==-1){
+                temp= board.operator()(x+1,y+1);
+                if (!temp.obstacle){
+                    temp.obstacle=true;
+                    cur.obstacle=false;
+                    myRoute = Pathfinding(board);
+                    if (myRoute.makeRoute()){
+                        string newobstacle = to_string(x+1)+to_string(y+1);
+                        towerpos.add(newobstacle);
+                        continue;
+                    }
+                    else{
+                        temp.obstacle=false;
+                        cur.obstacle=true;
+                    }
+                }
+                temp= board.operator()(x+1,y);
+                if (!temp.obstacle){
+                    temp.obstacle=true;
+                    cur.obstacle=false;
+                    myRoute = Pathfinding(board);
+                    if (myRoute.makeRoute()){
+                        string newobstacle = to_string(x+1)+to_string(y);
+                        towerpos.add(newobstacle);
+                        continue;
+                    }
+                    else{
+                        temp.obstacle=false;
+                        cur.obstacle=true;
+                    }
+                }
+                temp=board.operator()(x,y+1);
+                if (!temp.obstacle){
+                    temp.obstacle=true;
+                    cur.obstacle=false;
+                    myRoute = Pathfinding(board);
+                    if (myRoute.makeRoute()){
+                        string newobstacle = to_string(x)+to_string(y+1);
+                        towerpos.add(newobstacle);
+                        continue;
+                    }
+                    else{
+                        temp.obstacle=false;
+                        cur.obstacle=true;
+                    }
+                }
+            }
+            if (y+1 == 10){
+                temp = board.operator()(x+1,y-1);
+                if (!temp.obstacle){
+                    temp.obstacle=true;
+                    cur.obstacle=false;
+                    myRoute = Pathfinding(board);
+                    if (myRoute.makeRoute()){
+                        string newobstacle = to_string(x+1)+to_string(y-1);
+                        towerpos.add(newobstacle);
+                        continue;
+                    }
+                    else{
+                        temp.obstacle=false;
+                        cur.obstacle=true;
+                    }
+                }
+                temp = board.operator()(x,y-1);
+                if (!temp.obstacle){
+                    temp.obstacle=true;
+                    cur.obstacle=false;
+                    myRoute = Pathfinding(board);
+                    if (myRoute.makeRoute()){
+                        string newobstacle = to_string(x)+to_string(y-1);
+                        towerpos.add(newobstacle);
+                        continue;
+                    }
+                    else{
+                        temp.obstacle=false;
+                        cur.obstacle=true;
+                    }
+                }
+                temp = board.operator()(x+1,y);
+                if (!temp.obstacle){
+                    temp.obstacle=true;
+                    cur.obstacle=false;
+                    myRoute = Pathfinding(board);
+                    if (myRoute.makeRoute()){
+                        string newobstacle = to_string(x+1)+to_string(y);
+                        towerpos.add(newobstacle);
+                        continue;
+                    }
+                    else{
+                        temp.obstacle=false;
+                        cur.obstacle=true;
+                    }
+                }
+
+            }
+            else{
+                temp = board.operator()(x+1,y);
+                if (!temp.obstacle){
+                    temp.obstacle=true;
+                    cur.obstacle=false;
+                    myRoute = Pathfinding(board);
+                    if (myRoute.makeRoute()){
+                        string newobstacle = to_string(x+1)+to_string(y);
+                        towerpos.add(newobstacle);
+                        continue;
+                    }
+                    else{
+                        temp.obstacle=false;
+                        cur.obstacle=true;
+                    }
+                }
+                temp = board.operator()(x+1,y-1);
+                if (!temp.obstacle){
+                    temp.obstacle=true;
+                    cur.obstacle=false;
+                    myRoute = Pathfinding(board);
+                    if (myRoute.makeRoute()){
+                        string newobstacle = to_string(x+1)+to_string(y-1);
+                        towerpos.add(newobstacle);
+                        continue;
+                    }
+                    else{
+                        temp.obstacle=false;
+                        cur.obstacle=true;
+                    }
+                }
+                temp = board.operator()(x+1,y+1);
+                if (!temp.obstacle){
+                    temp.obstacle=true;
+                    cur.obstacle=false;
+                    myRoute = Pathfinding(board);
+                    if (myRoute.makeRoute()){
+                        string newobstacle = to_string(x+1)+to_string(y+1);
+                        towerpos.add(newobstacle);
+                        continue;
+                    }
+                    else{
+                        temp.obstacle=false;
+                        cur.obstacle=true;
+                    }
+                }
+
+                temp = board.operator()(x,y-1);
+                if (!temp.obstacle){
+                    temp.obstacle=true;
+                    cur.obstacle=false;
+                    myRoute = Pathfinding(board);
+                    if (myRoute.makeRoute()){
+                        string newobstacle = to_string(x)+to_string(y-1);
+                        towerpos.add(newobstacle);
+                        continue;
+                    }
+                    else{
+                        temp.obstacle=false;
+                        cur.obstacle=true;
+                    }
+                }
+                temp = board.operator()(x,y+1);
+                if (!temp.obstacle){
+                    temp.obstacle=true;
+                    cur.obstacle=false;
+                    myRoute = Pathfinding(board);
+                    if (myRoute.makeRoute()){
+                        string newobstacle = to_string(x)+to_string(y+1);
+                        towerpos.add(newobstacle);
+                        continue;
+                    }
+                    else{
+                        temp.obstacle=false;
+                        cur.obstacle=true;
+                    }
+                }
+
+        }
+        if (x+1 == 10){
+            if (y-1==-1){
+                temp= board.operator()(x-1,y+1);
+                if (!temp.obstacle){
+                    temp.obstacle=true;
+                    cur.obstacle=false;
+                    myRoute = Pathfinding(board);
+                    if (myRoute.makeRoute()){
+                        string newobstacle = to_string(x-1)+to_string(y+1);
+                        towerpos.add(newobstacle);
+                        continue;
+                    }
+                    else{
+                        temp.obstacle=false;
+                        cur.obstacle=true;
+                    }
+                }
+                temp= board.operator()(x-1,y);
+                if (!temp.obstacle){
+                    temp.obstacle=true;
+                    cur.obstacle=false;
+                    myRoute = Pathfinding(board);
+                    if (myRoute.makeRoute()){
+                        string newobstacle = to_string(x-1)+to_string(y);
+                        towerpos.add(newobstacle);
+                        continue;
+                    }
+                    else{
+                        temp.obstacle=false;
+                        cur.obstacle=true;
+                    }
+                }
+                temp=board.operator()(x,y+1);
+                if (!temp.obstacle){
+                    temp.obstacle=true;
+                    cur.obstacle=false;
+                    myRoute = Pathfinding(board);
+                    if (myRoute.makeRoute()){
+                        string newobstacle = to_string(x)+to_string(y+1);
+                        towerpos.add(newobstacle);
+                        continue;
+                    }
+                    else{
+                        temp.obstacle=false;
+                        cur.obstacle=true;
+                    }
+                }
+
+            }
+            if (y+1 == 10) {
+                temp = board.operator()(x - 1, y - 1);
+                if (!temp.obstacle) {
+                    temp.obstacle = true;
+                    cur.obstacle = false;
+                    myRoute = Pathfinding(board);
+                    if (myRoute.makeRoute()) {
+                        string newobstacle = to_string(x - 1) + to_string(y - 1);
+                        towerpos.add(newobstacle);
+                        continue;
+                    } else {
+                        temp.obstacle = false;
+                        cur.obstacle = true;
+                    }
+                }
+                temp = board.operator()(x, y - 1);
+                if (!temp.obstacle) {
+                    temp.obstacle = true;
+                    cur.obstacle = false;
+                    myRoute = Pathfinding(board);
+                    if (myRoute.makeRoute()) {
+                        string newobstacle = to_string(x) + to_string(y - 1);
+                        towerpos.add(newobstacle);
+                        continue;
+                    } else {
+                        temp.obstacle = false;
+                        cur.obstacle = true;
+                    }
+                }
+                temp = board.operator()(x - 1, y);
+                if (!temp.obstacle) {
+                    temp.obstacle = true;
+                    cur.obstacle = false;
+                    myRoute = Pathfinding(board);
+                    if (myRoute.makeRoute()) {
+                        string newobstacle = to_string(x - 1) + to_string(y);
+                        towerpos.add(newobstacle);
+                        continue;
+                    } else {
+                        temp.obstacle = false;
+                        cur.obstacle = true;
+                    }
+                }
+            }
+
+            else{
+
+                temp = board.operator()(x,y-1);
+                if (!temp.obstacle){
+                    temp.obstacle=true;
+                    cur.obstacle=false;
+                    myRoute = Pathfinding(board);
+                    if (myRoute.makeRoute()){
+                        string newobstacle = to_string(x)+to_string(y-1);
+                        towerpos.add(newobstacle);
+                        continue;
+                    }
+                    else{
+                        temp.obstacle=false;
+                        cur.obstacle=true;
+                    }
+                }
+                temp = board.operator()(x,y+1);
+                if (!temp.obstacle){
+                    temp.obstacle=true;
+                    cur.obstacle=false;
+                    myRoute = Pathfinding(board);
+                    if (myRoute.makeRoute()){
+                        string newobstacle = to_string(x)+to_string(y+1);
+                        towerpos.add(newobstacle);
+                        continue;
+                    }
+                    else{
+                        temp.obstacle=false;
+                        cur.obstacle=true;
+                    }
+                }
+                temp = board.operator()(x-1,y);
+                if (!temp.obstacle){
+                    temp.obstacle=true;
+                    cur.obstacle=false;
+                    myRoute = Pathfinding(board);
+                    if (myRoute.makeRoute()){
+                        string newobstacle = to_string(x-1)+to_string(y);
+                        towerpos.add(newobstacle);
+                        continue;
+                    }
+                    else{
+                        temp.obstacle=false;
+                        cur.obstacle=true;
+                    }
+                }
+                temp = board.operator()(x-1,y-1);
+                if (!temp.obstacle){
+                    temp.obstacle=true;
+                    cur.obstacle=false;
+                    myRoute = Pathfinding(board);
+                    if (myRoute.makeRoute()){
+                        string newobstacle = to_string(x-1)+to_string(y-1);
+                        towerpos.add(newobstacle);
+                        continue;
+                    }
+                    else{
+                        temp.obstacle=false;
+                        cur.obstacle=true;
+                    }
+                }
+                temp = board.operator()(x-1,y+1);
+                if (!temp.obstacle){
+                    temp.obstacle=true;
+                    cur.obstacle=false;
+                    myRoute = Pathfinding(board);
+                    if (myRoute.makeRoute()){
+                        string newobstacle = to_string(x-1)+to_string(y+1);
+                        towerpos.add(newobstacle);
+                        continue;
+                    }
+                    else{
+                        temp.obstacle=false;
+                        cur.obstacle=true;
+                    }
+                }
+
+            }
+            }
+        }
+        if (y-1 == -1){
+            temp = board.operator()(x+1,y);
+            if (!temp.obstacle){
+                temp.obstacle=true;
+                cur.obstacle=false;
+                myRoute = Pathfinding(board);
+                if (myRoute.makeRoute()){
+                    string newobstacle = to_string(x+1)+to_string(y);
+                    towerpos.add(newobstacle);
+                    continue;
+                }
+                else{
+                    temp.obstacle=false;
+                    cur.obstacle=true;
+                }
+            }
+            temp = board.operator()(x-1,y);
+            if (!temp.obstacle){
+                temp.obstacle=true;
+                cur.obstacle=false;
+                myRoute = Pathfinding(board);
+                if (myRoute.makeRoute()){
+                    string newobstacle = to_string(x-1)+to_string(y);
+                    towerpos.add(newobstacle);
+                    continue;
+                }
+                else{
+                    temp.obstacle=false;
+                    cur.obstacle=true;
+                }
+            }
+            temp = board.operator()(x+1,y+1);
+            if (!temp.obstacle){
+                temp.obstacle=true;
+                cur.obstacle=false;
+                myRoute = Pathfinding(board);
+                if (myRoute.makeRoute()){
+                    string newobstacle = to_string(x+1)+to_string(y+1);
+                    towerpos.add(newobstacle);
+                    continue;
+                }
+                else{
+                    temp.obstacle=false;
+                    cur.obstacle=true;
+                }
+            }
+            temp = board.operator()(x-1,y+1);
+            if (!temp.obstacle){
+                temp.obstacle=true;
+                cur.obstacle=false;
+                myRoute = Pathfinding(board);
+                if (myRoute.makeRoute()){
+                    string newobstacle = to_string(x-1)+to_string(y+1);
+                    towerpos.add(newobstacle);
+                    continue;
+                }
+                else{
+                    temp.obstacle=false;
+                    cur.obstacle=true;
+                }
+            }
+            temp = board.operator()(x,y+1);
+            if (!temp.obstacle){
+                temp.obstacle=true;
+                cur.obstacle=false;
+                myRoute = Pathfinding(board);
+                if (myRoute.makeRoute()){
+                    string newobstacle = to_string(x)+to_string(y+1);
+                    towerpos.add(newobstacle);
+                    continue;
+                }
+                else{
+                    temp.obstacle=false;
+                    cur.obstacle=true;
+                }
+            }
+        }
+        if (y+1 == 10){
+            temp = board.operator()(x+1,y);
+            if (!temp.obstacle){
+                temp.obstacle=true;
+                cur.obstacle=false;
+                myRoute = Pathfinding(board);
+                if (myRoute.makeRoute()){
+                    string newobstacle = to_string(x+1)+to_string(y);
+                    towerpos.add(newobstacle);
+                    continue;
+                }
+                else{
+                    temp.obstacle=false;
+                    cur.obstacle=true;
+                }
+            }
+            temp = board.operator()(x-1,y);
+            if (!temp.obstacle){
+                temp.obstacle=true;
+                cur.obstacle=false;
+                myRoute = Pathfinding(board);
+                if (myRoute.makeRoute()){
+                    string newobstacle = to_string(x-1)+to_string(y);
+                    towerpos.add(newobstacle);
+                    continue;
+                }
+                else{
+                    temp.obstacle=false;
+                    cur.obstacle=true;
+                }
+            }
+            temp = board.operator()(x+1,y-1);
+            if (!temp.obstacle){
+                temp.obstacle=true;
+                cur.obstacle=false;
+                myRoute = Pathfinding(board);
+                if (myRoute.makeRoute()){
+                    string newobstacle = to_string(x+1)+to_string(y-1);
+                    towerpos.add(newobstacle);
+                    continue;
+                }
+                else{
+                    temp.obstacle=false;
+                    cur.obstacle=true;
+                }
+            }
+            temp = board.operator()(x-1,y-1);
+            if (!temp.obstacle){
+                temp.obstacle=true;
+                cur.obstacle=false;
+                myRoute = Pathfinding(board);
+                if (myRoute.makeRoute()){
+                    string newobstacle = to_string(x-1)+to_string(y-1);
+                    towerpos.add(newobstacle);
+                    continue;
+                }
+                else{
+                    temp.obstacle=false;
+                    cur.obstacle=true;
+                }
+            }
+            temp = board.operator()(x,y-1);
+            if (!temp.obstacle){
+                temp.obstacle=true;
+                cur.obstacle=false;
+                myRoute = Pathfinding(board);
+                if (myRoute.makeRoute()){
+                    string newobstacle = to_string(x)+to_string(y-1);
+                    towerpos.add(newobstacle);
+                    continue;
+                }
+                else{
+                    temp.obstacle=false;
+                    cur.obstacle=true;
+                }
+            }
+        }
+        else{
+            string newobstacle = to_string(x)+to_string(y);
+            towerpos.add(newobstacle);
+        }
+        }
+
+    //towerp = towerpos;
+
+    JSON j;
+    string json = j.serializereorder(towerp);
+    return json;
+}
+
 bool Game::addObstacle() {
     int obstacle_i = (rand() % (rows)) + 0;
     int obstacle_j = (rand() % (columns)) + 0;
     string obstacle1 = to_string(obstacle_i)+to_string(obstacle_j);
-    string end = to_string(myRoute.end->i)+to_string(myRoute.end->j);
+    //string end = to_string(myRoute.end->i)+to_string(myRoute.end->j);
 
     /*! Validar si el obstaculo esta en la entrada o la salida*/
-    if(obstacle1 == "00" or obstacle1 == end){
+    if(obstacle1 == "00" or obstacle1 == "99"){
         cout<<"ERROR el obstaculo 1 esta en la entrada o la salida "<<obstacle_i<<obstacle_j<<endl;
         return false;
     }

@@ -55,6 +55,7 @@ void Arrow3::move(){
               g->expected_gen->setPlainText(QString(QString::number(0)));
               g->survival_prob->setPlainText(QString(QString::number(0)));
               g->time_in->setPlainText(QString(QString::number(0)));
+              g->emotional_intelligence->setPlainText(QString(QString::number(0)));
             }
           delete this;
           return;

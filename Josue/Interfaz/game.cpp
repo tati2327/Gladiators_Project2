@@ -45,10 +45,16 @@ extern int jtime;
 extern bool finished;
 extern List<int> gid;
 extern List<int> gresistance;
+extern List<float> survival;
+extern List<int> physical;
+extern List<int> expected;
+extern List<int> aget;
+extern List<int> uppers;
+extern List<int> lowers;
+extern List<int> emotional;
 extern bool graph;
 string backuprute;
 int backuptime;
-
 extern bool shoot;
 Game::Game()
 {
@@ -69,6 +75,7 @@ Game::Game()
 
 void Game::putTowers()
 {
+
   if (obs1=="a"){
     rute=backuprute;
 
@@ -91,6 +98,7 @@ void Game::putTowers()
               Tower * tower = new Tower();
               tower->setPos(t1x*66.5+72,t1y*64+29);
               scene->addItem(tower);
+
 
             }
           if (t1>0 && t1<=3){
@@ -288,43 +296,210 @@ void Game::endgame()
 
    QChart *chart = new QChart();
 
-    // Add the chart
      chart->addSeries(series);
 
-     // Set title
      chart->setTitle("Gladiators by Resistance");
 
-     // Define starting animation
-     // NoAnimation, GridAxisAnimations, SeriesAnimations
      chart->setAnimationOptions(QChart::AllAnimations);
 
-     // Holds the category titles
      QStringList categories;
      categories<<"ID";
-
-     // Adds categories to the axes
      QBarCategoryAxis *axis = new QBarCategoryAxis();
      axis->append(categories);
      chart->createDefaultAxes();
 
-     // 1. Bar chart
-     //chart->setAxisX(axis, series);
-
-     // 2. Stacked Bar chart
-     // chart->setAxisY(axis, series);
-
-     // Define where the legend is displayed
      chart->legend()->setVisible(true);
      chart->legend()->setAlignment(Qt::AlignBottom);
 
-     // Used to display the chart
+
      QChartView *chartView = new QChartView(chart);
      chartView->setRenderHint(QPainter::Antialiasing);
 
-     //view->close();
      chartView->show();
 
+     QBarSeries *series2 = new QBarSeries();
+     for(int i =0;i<gid.size();i++){
+         QBarSet *set = new QBarSet(QString::number(gid.getData(i)));
+         *set << survival.getData(i);
+         series2->append(set);
+       }
 
+      QChart *chart2 = new QChart();
+
+
+        chart2->addSeries(series2);
+
+        chart2->setTitle("Gladiators by Survival Probability");
+
+        chart2->setAnimationOptions(QChart::AllAnimations);
+
+        QStringList categories2;
+        categories2<<"ID";
+
+        QBarCategoryAxis *axis2 = new QBarCategoryAxis();
+        axis2->append(categories);
+        chart2->createDefaultAxes();
+
+
+        chart2->legend()->setVisible(true);
+        chart2->legend()->setAlignment(Qt::AlignBottom);
+
+
+        QChartView *chartView2 = new QChartView(chart2);
+        chartView2->setRenderHint(QPainter::Antialiasing);
+
+
+        chartView2->show();
+
+        QBarSeries *series3 = new QBarSeries();
+        for(int i =0;i<gid.size();i++){
+            QBarSet *set = new QBarSet(QString::number(gid.getData(i)));
+            *set << physical.getData(i);
+            series3->append(set);
+          }
+        QChart *chart3 = new QChart();
+
+          chart3->addSeries(series3);
+
+          chart3->setTitle("Gladiators by Physical Condition");
+
+          chart3->setAnimationOptions(QChart::AllAnimations);
+
+          QStringList categories3;
+          categories3<<"ID";
+
+          QBarCategoryAxis *axis3 = new QBarCategoryAxis();
+          axis3->append(categories);
+          chart3->createDefaultAxes();
+
+
+          chart3->legend()->setVisible(true);
+          chart3->legend()->setAlignment(Qt::AlignBottom);
+
+          QChartView *chartView3 = new QChartView(chart3);
+          chartView3->setRenderHint(QPainter::Antialiasing);
+
+          chartView3->show();
+
+          QBarSeries *series4 = new QBarSeries();
+          for(int i =0;i<gid.size();i++){
+              QBarSet *set = new QBarSet(QString::number(gid.getData(i)));
+              *set << emotional.getData(i);
+              series4->append(set);
+            }
+          QChart *chart4 = new QChart();
+
+            chart4->addSeries(series4);
+
+            chart4->setTitle("Gladiators by Emotional Intelligence");
+
+            chart4->setAnimationOptions(QChart::AllAnimations);
+
+            QStringList categories4;
+            categories4<<"ID";
+
+            QBarCategoryAxis *axis4 = new QBarCategoryAxis();
+            axis4->append(categories);
+            chart4->createDefaultAxes();
+
+
+            chart4->legend()->setVisible(true);
+            chart4->legend()->setAlignment(Qt::AlignBottom);
+
+            QChartView *chartView4 = new QChartView(chart4);
+            chartView4->setRenderHint(QPainter::Antialiasing);
+
+            chartView4->show();
+
+            QBarSeries *series5 = new QBarSeries();
+            for(int i =0;i<gid.size();i++){
+                QBarSet *set = new QBarSet(QString::number(gid.getData(i)));
+                *set << uppers.getData(i);
+                series5->append(set);
+              }
+            QChart *chart5 = new QChart();
+
+              chart5->addSeries(series3);
+
+              chart5->setTitle("Gladiators by Upper Strenght");
+
+              chart5->setAnimationOptions(QChart::AllAnimations);
+
+              QStringList categories5;
+              categories3<<"ID";
+
+              QBarCategoryAxis *axis5 = new QBarCategoryAxis();
+              axis5->append(categories);
+              chart5->createDefaultAxes();
+
+
+              chart5->legend()->setVisible(true);
+              chart5->legend()->setAlignment(Qt::AlignBottom);
+
+              QChartView *chartView5 = new QChartView(chart5);
+              chartView5->setRenderHint(QPainter::Antialiasing);
+
+              chartView5->show();
+
+              QBarSeries *series6 = new QBarSeries();
+              for(int i =0;i<gid.size();i++){
+                  QBarSet *set = new QBarSet(QString::number(gid.getData(i)));
+                  *set << lowers.getData(i);
+                  series6->append(set);
+                }
+              QChart *chart6 = new QChart();
+
+                chart6->addSeries(series3);
+
+                chart6->setTitle("Gladiators by Lower Strenght");
+
+                chart6->setAnimationOptions(QChart::AllAnimations);
+
+                QStringList categories6;
+                categories6<<"ID";
+
+                QBarCategoryAxis *axis6 = new QBarCategoryAxis();
+                axis6->append(categories);
+                chart6->createDefaultAxes();
+
+
+                chart6->legend()->setVisible(true);
+                chart6->legend()->setAlignment(Qt::AlignBottom);
+
+                QChartView *chartView6 = new QChartView(chart6);
+                chartView6->setRenderHint(QPainter::Antialiasing);
+
+                chartView6->show();
+
+                QBarSeries *series7 = new QBarSeries();
+                for(int i =0;i<gid.size();i++){
+                    QBarSet *set = new QBarSet(QString::number(gid.getData(i)));
+                    *set << aget.getData(i);
+                    series7->append(set);
+                  }
+                QChart *chart7 = new QChart();
+
+                  chart7->addSeries(series7);
+
+                  chart7->setTitle("Gladiators by Age");
+
+                  chart7->setAnimationOptions(QChart::AllAnimations);
+
+                  QStringList categories7;
+                  categories7<<"ID";
+
+                  QBarCategoryAxis *axis7 = new QBarCategoryAxis();
+                  axis7->append(categories);
+                  chart7->createDefaultAxes();
+
+
+                  chart7->legend()->setVisible(true);
+                  chart7->legend()->setAlignment(Qt::AlignBottom);
+
+                  QChartView *chartView7 = new QChartView(chart7);
+                  chartView7->setRenderHint(QPainter::Antialiasing);
+
+                  chartView7->show();
 
 }
 
@@ -429,6 +604,7 @@ void Game::spawn()
       expected_gen->setPlainText(QString(QString::number(jexpec)));
       survival_prob->setPlainText(QString(QString::number(jsurv)+QString("%")));
       time_in->setPlainText(QString(QString::number(jtime)+" ms"));
+      emotional_intelligence->setPlainText(QString(QString::number(jem)));
       putTowers();
       poner=false;
     }

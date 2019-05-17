@@ -19,6 +19,7 @@ class Game {
         Gladiator myGladiator;
         List<string> obstaclesList;
         List<Gladiator> historicalArmy;
+        List<string> towerp;
         int error;
 
 
@@ -26,11 +27,11 @@ class Game {
         string newGame();
         string play();
         bool addObstacle();
-       bool addObstacle2();
+        bool addObstacle2();
         bool addObstacle3();
         void addToHistoricalArmy(List<Gladiator> army);
         string sendGraphic();
-
+        string reorder();
         void addResistance(List<Gladiator> historicalArmy);
         void addUpperStrenght(List<Gladiator> historicalArmy);
         void addLowerStrenght(List<Gladiator> historicalArmy);

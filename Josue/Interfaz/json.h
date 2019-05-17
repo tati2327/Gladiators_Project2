@@ -20,10 +20,12 @@ class JSON {
         string serializeNewPlay();
         string serializeNextIteration();
         string serializeGraphic();
+        string serializereorder();
 
         int getRequest();
         List<string> getObstacles();
         List<string> getRoute();
+        List<string> getTowers();
         string obs1();
         string rute();
         int getId();
@@ -44,7 +46,7 @@ class JSON {
         List<int> getGraphicEmotionalInt();
         List<int> getGraphicPhysicalCond();
         List<int> getGraphicAge();
-        List<int> getGraphicSurvivalProb();
+        List<float> getGraphicSurvivalProb();
         List<int> getGraphicExpectedGen();
         List<int> getGraphicFitness();
         List<int> getGraphicId();

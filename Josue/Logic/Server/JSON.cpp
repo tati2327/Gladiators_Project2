@@ -149,6 +149,30 @@ int JSON::getRequest() {
     return document["request"].GetInt();
 }
 
+string JSON::serializereorder(List<string> towerpos) {
+    document.RemoveAllMembers();
+    Document::AllocatorType& allocator = document.GetAllocator();
+
+    Value myTowerpos(kArrayType);
+    Value temp;
+    for(int i = 0; i<towerpos.size(); i++){
+        temp.SetString((towerpos.getData(i)).c_str(),2,allocator);
+        myTowerpos.PushBack(temp, allocator);
+    }
+
+    document.AddMember("request",4, allocator);
+    document.AddMember("towerpos", myTowerpos, allocator);
+
+    StringBuffer strbuf;
+    Writer<StringBuffer> writer(strbuf);
+    document.Accept(writer);
+
+    cout<<"***********************************************************"<<endl;
+    std::cout <<strbuf.GetString()<< std::endl;
+    cout<<"***********************************************************"<<endl;
+    return strbuf.GetString();
+}
+
 
 
 

@@ -37,7 +37,7 @@ bool Server::newServer() {
 
     hint.sin_family = AF_INET;
     hint.sin_port = htons(54000);
-    inet_pton(AF_INET, "192.168.100.21", &hint.sin_addr);
+    inet_pton(AF_INET, "192.168.1.4", &hint.sin_addr);
     return true;
 }
 
@@ -118,6 +118,10 @@ void Server::sendMessage(int _clientServer, string messageReceived){
     }if(myJson.getRequest() == 5){
         messageToSend = myGame.sendGraphic();
     }
+    if(myJson.getRequest()==4){
+        messageToSend = myGame.reorder();
+    }
+
 
     /*!Se envia el mensaje*/
     send(_clientServer, messageToSend.c_str(), strlen(messageToSend.c_str()), 0);

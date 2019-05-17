@@ -30,7 +30,17 @@ bool shoot=false;
 bool finished=false;
 List<int> gid;
 List<int> gresistance;
-bool graph=false;;
+List<int> physical;
+List<float> survival;
+List<int> expected;
+List<int> aget;
+List<int> uppers;
+List<int> lowers;
+List<int> emotional;
+bool graph=false;
+bool movet=false;
+bool ya=false;
+
 
 int juego(int argc, char *argv[]){
   QApplication a(argc,argv);

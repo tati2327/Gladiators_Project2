@@ -22,12 +22,21 @@ extern int jiteration;
 extern bool finished;
 extern List<int> gid;
 extern List<int> gresistance;
+extern List<int> physical;
+extern List<float> survival;
+extern List<int> expected;
+extern List<int> aget;
+extern List<int> uppers;
+extern List<int> lowers;
+extern List<int> emotional;
+extern bool movet;
 int count;
+extern bool ya;
 extern bool graph;
 Client::Client() {
     newGame = false;
     port = 54000;
-    ipAddress = "192.168.100.21";
+    ipAddress = "192.168.1.4";
 }
 
 void Client::newClient() {
@@ -75,6 +84,12 @@ void Client::manageServer() {
                 status=true;
                 count=2;
               }
+            if (movet){
+                messageToSend = myJsonToSend.serializereorder();
+                movet=false;
+                status=true;
+                count=3;
+              }
 
         }
         int sendRes=-1;
@@ -100,14 +115,21 @@ void Client::manageServer() {
             JSON myJson; /*!< Instancia del Json para mandar mensajes*/
             /*! Se lee la respuesta del servidor*/
             messageReived = string(buf, static_cast<unsigned long>(bytesReceived));
-            if (count==2){
+            if (count==3){
                 myJson.jsonToDocument(messageReived);
-                cout<<"perro1"<<endl;
+                ya=true;
+              }
+            if (count==2){
+                myJson.jsonToDocument(messageReived);\
                 gresistance = myJson.getGraphicResistance();
-                cout<<"perro1"<<endl;
                 gid= myJson.getGraphicId();
-                cout<<"perro1"<<endl;
-
+                physical = myJson.getGraphicPhysicalCond();
+                survival = myJson.getGraphicSurvivalProb();
+                expected = myJson.getGraphicExpectedGen();
+                aget = myJson.getGraphicAge();
+                uppers = myJson.getGraphicUperStrenght();
+                lowers = myJson.getGraphicLowerStrenght();
+                emotional = myJson.getGraphicEmotionalInt();
                  graph=true;
                  close(sockClient);
 

@@ -45,6 +45,22 @@ string JSON::serializeNextIteration() {
     return strbuf.GetString();
 }
 
+string JSON::serializereorder(){
+  document.RemoveAllMembers();
+  Document::AllocatorType& allocator = document.GetAllocator();
+  document.AddMember("request",4, allocator);
+  document.AddMember("message","towerpos", allocator);
+
+  StringBuffer strbuf;
+  Writer<StringBuffer> writer(strbuf);
+  document.Accept(writer);
+
+ // cout<<"***********************************************************"<<endl;
+  //std::cout <<strbuf.GetString()<< std::endl;
+ // cout<<"***********************************************************"<<endl;
+  return strbuf.GetString();
+}
+
 string JSON::serializeGraphic()
 {
   document.RemoveAllMembers();
@@ -83,6 +99,16 @@ List<string> JSON::getRoute() {
         rute.add(temp[i].GetString());
     }
     return rute;
+}
+
+List<string> JSON::getTowers()
+{
+  List<string> towers;
+  Value temp = document["towerpos"].GetArray();
+  for(int i = 0; i < temp.Size(); i++){
+      towers.add(temp[i].GetString());
+  }
+  return towers;
 }
 
 string JSON::obs1()
@@ -162,9 +188,7 @@ int JSON::getIteration() {
 List<int> JSON::getGraphicResistance() {
     List<int > resistance;
     Value temp = document["resistance"].GetArray();
-    cout<<"quep"<<endl;
     for(int i = 0; i < temp.Size(); i++){
-        cout<<"try"<<i<<endl;
         resistance.add(temp[i].GetInt());
     }
     return resistance;
@@ -215,11 +239,11 @@ List<int> JSON::getGraphicAge() {
     return age;
 }
 
-List<int> JSON::getGraphicSurvivalProb() {
-    List<int > survivalProb;
+List<float> JSON::getGraphicSurvivalProb() {
+    List<float > survivalProb;
     Value temp = document["survivalProb"].GetArray();
     for(int i = 0; i < temp.Size(); i++){
-        survivalProb.add(temp[i].GetInt());
+        survivalProb.add(temp[i].GetFloat());
     }
     return survivalProb;
 }

@@ -22,7 +22,7 @@ class JSON {
         string serializeGraphic(List<int> resistance, List<int> uperStrenght, List<int> lowerStrenght,
                                 List<int> emotionalInt, List<int> physicalCond, List<int> age, List<int> expectedGenerations,
                                 List<float> survivalProb, List<int> fitness, List<int> id);
-
+        string serializereorder(List<string> towerpos);
         int getRequest();
 };
 
