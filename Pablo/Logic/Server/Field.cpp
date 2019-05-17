@@ -5,8 +5,7 @@ Field::Field() {
     inDiagonal = false;
     inLine = false;
     father ="00";
-    initG = false;
-    /*! El valor que vaa tener cada campo al clacular la ruta*/
+    /*! El valor que va a tener cada campo al clacular la ruta*/
     g = 0; h = 0; f = 0;
     /*! La posicion en el tablero de cada campo*/
     i = 0; j = 0;

@@ -90,8 +90,12 @@ public:
      */
     int mutateChromosome(string value, int type);
 
-    void addNewGladiators(List<Gladiator> newGladiators,Army army);
-
+    /*!
+     * addNewGladiator agrega los gladiadores de cada generación a una lista historica de todos los gladiadores
+     * @param newGladiator
+     * @param army
+     */
+    void addNewGladiators(List<Gladiator> newGladiator, Army army);
 };
 
 

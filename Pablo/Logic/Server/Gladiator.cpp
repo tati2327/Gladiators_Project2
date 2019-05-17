@@ -49,27 +49,28 @@ int Gladiator::calculateResistance() {
     return resistance;
 }
 
+int Gladiator::calculateExpectedGenerations(int i) {
+    expectedGenerations=((i)/6);
+    return expectedGenerations;
+}
+
+float Gladiator::calculateSurvivalProb() {
+    age = age+1;
+    float newResistance = calculateResistance();
+    cout<<"perrooooooooooooooooooooooooooooooo1"<<newResistance<<endl;
+    survivalProb=((newResistance/270.0)*100);
+    cout<<"perrooooooooooooooooooooooooooooooo1"<<survivalProb<<endl;
+    age=age-1;
+    return survivalProb;
+}
 
 int Gladiator::calculateEmotionalInt() {
     emotionalInt = anger+selfcontrol;
     return emotionalInt;
 }
 
-int Gladiator::calculateExpectedGenerations(int i) {
-    expectedGenerations=((20-i)/6);
-    return expectedGenerations;
-}
-
-int Gladiator::calculateSurvivalProb() {
-    age = age+1;
-    int newResistance = calculateResistance();
-    survivalProb=((newResistance/270)*100);
-    age=age-1;
-    return survivalProb;
-}
-
 /*--------------------------------------GETTERS--------------------------------------------------------*/
-int Gladiator::getSurvivalProb()  {
+float Gladiator::getSurvivalProb()  {
     return survivalProb;
 }
 

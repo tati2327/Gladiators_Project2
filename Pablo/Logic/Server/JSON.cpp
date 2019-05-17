@@ -14,7 +14,7 @@ void JSON::jsonToDocument(string json) {
     cout<<"De json a documento exitosamente!!"<<endl;
 }
 
-string JSON::serializePlay(int id, int age, int survivalProb, int expectedGen, int emotionalIntelligent,
+string JSON::serializePlay(int id, int age, float survivalProb, int expectedGen, int emotionalIntelligent,
                            int uperStrenght, int lowerStrenght, int resistance, int physicalCondition,
                            List<string> obstacles, List<string> route, int time, int iteration) {
     document.RemoveAllMembers();
@@ -60,6 +60,89 @@ string JSON::serializePlay(int id, int age, int survivalProb, int expectedGen, i
     std::cout <<strbuf.GetString()<< std::endl;
     cout<<"***********************************************************"<<endl;
     return strbuf.GetString();
+}
+
+string JSON::serializeGraphic(List<int> resistance, List<int> uperStrenght, List<int> lowerStrenght,
+                              List<int> emotionalInt, List<int> physicalCond, List<int> age,
+                              List<int> expectedGenerations, List<float> survivalProb, List<int> fitness, List<int> id) {
+    document.RemoveAllMembers();
+    Document::AllocatorType& allocator = document.GetAllocator();
+
+    /*! Creo el array*/
+    Value myResistance(kArrayType);
+    Value myId(kArrayType);
+    Value myAge(kArrayType);
+    Value myUperStrenght(kArrayType);
+    Value myLowerStrenght(kArrayType);
+    Value myExpectedGenerations(kArrayType);
+    Value mySurvivalProb(kArrayType);
+    Value myFitness(kArrayType);
+    Value myEmotionalInt(kArrayType);
+    Value myPhysicalCond(kArrayType);
+
+
+    /*! Agrega las resistencias al JSON*/
+    for(int i = 0; i<resistance.size(); i++){
+        myResistance.PushBack(resistance.getData(i), allocator);
+    }
+    /*! Agrega las resistencias al JSON*/
+    for(int i = 0; i<uperStrenght.size(); i++) {
+        myUperStrenght.PushBack(uperStrenght.getData(i), allocator);
+    }
+    /*! Agrega las resistencias al JSON*/
+    for(int i = 0; i<id.size(); i++){
+        myId.PushBack(id.getData(i), allocator);
+    }
+    /*! Agrega las resistencias al JSON*/
+    for(int i = 0; i<lowerStrenght.size(); i++){
+        myLowerStrenght.PushBack(lowerStrenght.getData(i), allocator);
+    }
+    /*! Agrega las resistencias al JSON*/
+    for(int i = 0; i<emotionalInt.size(); i++){
+        myEmotionalInt.PushBack(emotionalInt.getData(i), allocator);
+    }
+    /*! Agrega las resistencias al JSON*/
+    for(int i = 0; i<physicalCond.size(); i++){
+        myPhysicalCond.PushBack(physicalCond.getData(i), allocator);
+    }
+    /*! Agrega las resistencias al JSON*/
+    for(int i = 0; i<age.size(); i++){
+        myAge.PushBack(age.getData(i), allocator);
+    }
+    /*! Agrega las resistencias al JSON*/
+    for(int i = 0; i<survivalProb.size(); i++){
+        mySurvivalProb.PushBack(survivalProb.getData(i), allocator);
+    }
+    /*! Agrega las resistencias al JSON*/
+    for(int i = 0; i<expectedGenerations.size(); i++){
+        myExpectedGenerations.PushBack(expectedGenerations.getData(i), allocator);
+    }
+    /*! Agrega las resistencias al JSON*/
+    for(int i = 0; i<fitness.size(); i++){
+        myFitness.PushBack(fitness.getData(i), allocator);
+    }
+
+    document.AddMember("request",5, allocator);
+    document.AddMember("resistance", myResistance, allocator);
+    document.AddMember("uperStrenght", myUperStrenght, allocator);
+    document.AddMember("lowerStrenght", myLowerStrenght, allocator);
+    document.AddMember("emotionalIntelligent", myEmotionalInt, allocator);
+    document.AddMember("physicalCondition", myPhysicalCond, allocator);
+    document.AddMember("age", myAge, allocator);
+    document.AddMember("survivalProb", mySurvivalProb, allocator);
+    document.AddMember("expectedGen", myExpectedGenerations, allocator);
+    document.AddMember("fitness", myFitness, allocator);
+    document.AddMember("id", myId, allocator);
+
+    StringBuffer strbuf;
+    Writer<StringBuffer> writer(strbuf);
+    document.Accept(writer);
+
+    cout<<"***********************************************************"<<endl;
+    std::cout <<strbuf.GetString()<< std::endl;
+    cout<<"***********************************************************"<<endl;
+    return strbuf.GetString();
+
 }
 
 int JSON::getRequest() {

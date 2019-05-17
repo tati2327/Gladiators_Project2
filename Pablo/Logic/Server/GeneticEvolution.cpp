@@ -6,6 +6,7 @@ GeneticEvolution::GeneticEvolution() {
     this->crossingMask2 = "1010111010101110010110101101001110101010";
     this->crossingMask3 = "1010110100111010101010101110101011100101";
     this->lastId=20;
+
 }
 
 void GeneticEvolution::mutation(Gladiator &gladiator) {
@@ -124,23 +125,17 @@ int GeneticEvolution::invertGene(string value, int type) {
     int randomInitial;
     int randomFinal;
     if (type==1){
-        randomInitial=rand()% 17;
-        cout<<"random inicial"<<randomInitial<<endl;
-        size=19-randomInitial;
-        randomFinal=rand()% size + randomInitial;
-        cout<<"random final"<<randomFinal<<endl;
+        randomInitial=rand()%17;
+        size = 19-randomInitial;
+        randomFinal = rand()% size + randomInitial;
     }
     else {
-        randomInitial=rand()% 7;
-        cout<<"random inicial"<<randomInitial<<endl;
-        size=9-randomInitial;
-        randomFinal=rand()% size + randomInitial;
-        cout<<"random final"<<randomFinal<<endl;
+        randomInitial = rand()%7;
+        size = 9 -randomInitial;
+        randomFinal = rand()%size + randomInitial;
     }
-
-
     cout<<"El string inicial en la inversion es: "<<value<<endl;
-    for(int i=randomInitial ;i<=randomFinal;i++){
+    for(int i=randomInitial;i<=randomFinal;i++){
         if ("0" == string(1, value[i])) {
             value=value.erase(i,1);
             value=value.insert(i,"1");
@@ -233,7 +228,8 @@ void GeneticEvolution::crossover(Army army,int index1, int index2) {
 
     /*! Se asigna tmp1 y tmp2 al gladiador menos apto y el segundo menos apto respectivamente*/
     newGladiators.add(son);
-    cout << "El gladiador nuevo tiene una resistencia de//////////////////////: " << son.getResistance() << endl;
+    cout << "El gladiador nuevo tiene una resistencia de: " << army.gladiators[0].getResistance() << endl;
+
 
 }
 
@@ -303,7 +299,7 @@ int GeneticEvolution::makeExchange(string parent1, string parent2,string son,int
             son=son.erase(i,1);
             son=son.insert(i,string(1, parent2[i]));
         }
-    }cout<<son<<endl;
+    }//cout<<son<<endl;
 
 
     return convertToDecimal(son, type);
@@ -313,15 +309,17 @@ void GeneticEvolution::updateAge(Army army) {
     for(int i=0;i<=19;i++){
         army.gladiators.getData(i).setAge(army.gladiators.getData(i).getAge()+1);
         army.gladiators.getData(i).setResistance(army.gladiators.getData(i).calculateResistance());
-        army.gladiators.getData(i).setFitness( army.gladiators.getData(i).calculateFitness());
+        army.gladiators.getData(i).setFitness(army.gladiators.getData(i).calculateFitness());
         /*! Falta volver a calcular la prob de supervivencia y las genExpec*/
     }
     army.insertionSort(army.gladiators);
 }
 
+
 void GeneticEvolution::addNewGladiators(List<Gladiator> newGladiators, Army army){
-    int size= newGladiators.size();
-    for(int i=0; i<=size-1; i++){
+    int size = newGladiators.size();
+    for(int i=0;i<=size-1;i++){
         army.gladiators.getNode(i)->setData(newGladiators.getData(i));
     }
+
 }
