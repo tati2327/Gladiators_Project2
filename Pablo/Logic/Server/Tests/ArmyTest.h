@@ -31,19 +31,19 @@ public:
      * @param gladiators
      * @param n indica el tamaño de la lista
      */
-    void printArray(List<Gladiator> gladiators, int n);
+    bool printArray(List<Gladiator> gladiators, int n);
 
     /*!
      * insertionSort ordena la lista de menor a mayor fitness
      * @param gladiators
      */
-    void insertionSort(List<Gladiator> gladiators);
+    bool insertionSort(List<Gladiator> gladiators);
 
     /*!
      * createArmy es la encargada de ir generando uno por uno a los gladidores de la población incial
      * @param armySize
      */
-    void createArmy(int armySize);
+    bool createArmy(int armySize);
 
     /*!
      * setValuesTypeA crea gladiadores con la mayor probabilidad de ser los mejores en la población inicial

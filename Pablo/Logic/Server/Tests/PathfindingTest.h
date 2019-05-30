@@ -1,7 +1,7 @@
 #ifndef A_PATHFINDING_H
 #define A_PATHFINDING_H
 
-#include "Field.h"
+#include "FieldTest.h"
 #include "../List.h"
 #include "../Matrix.h"
 
@@ -24,7 +24,7 @@ class Pathfinding {
          * addNeightbors añade los vecinos de un field
          * @param _field
          */
-        void addNeighbors(Field *_field);
+        bool addNeighbors(Field *_field);
 
         /*!
          * heuristic calcula el h
@@ -38,7 +38,7 @@ class Pathfinding {
         /*!
          * cleanAll borra todos los elementos de la lista
          */
-        void cleanAll();
+        bool cleanAll();
 };
 
 
